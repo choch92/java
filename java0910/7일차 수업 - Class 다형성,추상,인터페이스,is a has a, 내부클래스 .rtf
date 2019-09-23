@@ -1,0 +1,654 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset129 NanumMyeongjo;\f1\fnil\fcharset129 NanumMyeongjoBold;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red127\green0\blue85;\red15\green28\blue191;
+\red43\green7\blue255;\red106\green62\blue62;\red63\green127\blue95;\red251\green0\blue7;\red63\green118\blue24;
+\red100\green100\blue100;\red25\green61\blue255;\red0\green0\blue0;\red106\green62\blue62;\red100\green100\blue100;
+\red255\green255\blue255;\red40\green43\blue38;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red0\green0\blue192;\red42\green0\blue255;\red251\green0\blue7;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c57801\c10087\c40812;\cssrgb\c7342\c21370\c79544;
+\cssrgb\c22832\c20540\c100000;\cssrgb\c49493\c31512\c30931;\cssrgb\c30410\c56319\c44740;\cssrgb\c99893\c12008\c0;\cssrgb\c30799\c52644\c12430;
+\cssrgb\c46833\c46834\c46775;\cssrgb\c13005\c35866\c100000;\cssrgb\c0\c1\c1;\cssrgb\c49492\c31512\c30930;\cssrgb\c46832\c46833\c46774;
+\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c20832\c22006\c19963;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;\cssrgb\c100000\c12195\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14280\viewh19240\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb2 7\'c0\'cf\'c2\'f7(cho)\
+\
+**\'b4\'d9\'c7\'fc\'bc\'ba(Polymorphism)\'b1\'b8\'c7\'f6\
+\
+1. Protoss, Zerg, Terran \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'b0\'f8\'b0\'dd\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b1\'b8\'c7\'f6\
+\
+2. \'bd\'c7\'c7\'e0\'c0\'bb \'c0\'a7\'c7\'d1 Main \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad 3\'b0\'b3\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\
+	\
+\'bd\'c7\'bd\'c0)\
+\
+1) Protoss Class\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Protoss \{\
+	\cf3 public\cf0  \cf3 void\cf0  attack() \{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c7\'c1\'b7\'ce\'c5\'e4\'bd\'ba\'c0\'c7 \'b0\'f8\'b0\'dd\\n"\cf0 );	\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 2) Zerg Class\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Zerg \{\
+	\cf3 public\cf0  \cf3 void\cf0  offemce() \{\
+		System.\ul out\ulnone .printf(\cf5 "\'c0\'fa\'b1\'d7\'c0\'c7 \'b0\'f8\'b0\'dd\\n"\cf0 );\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 3) Terran Class\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Terran \{\
+	\cf3 public\cf0  \cf3 void\cf0  \'b0\'f8\'b0\'dd() \{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c5\'d7\'b6\'f5\'c0\'c7 \'b0\'f8\'b0\'dd\\n"\cf0 );\}\}\
+4) \'bd\'c7\'c7\'e0\'c0\'bb \'c0\'a7\'c7\'d1 Main \'c5\'ac\'b7\'a1\'bd\'ba\
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Main \{\
+		\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf7 //\ul \ulc7 Protoss\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\cf0 \
+		Protoss \cf6 p\cf0  = \cf3 new\cf0  Protoss();\
+		\cf6 p\cf0 .attack();\
+	\
+		\cf7 //\ul Zerg\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba \cf0 \
+		Zerg \cf6 z\cf0  = \cf3 new\cf0  Zerg();\
+		\cf6 z\cf0 .offence();\
+	\
+		\cf7 //\ul Terran\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\cf0 \
+		Terran \cf6 t\cf0  = \cf3 new\cf0  Terran();\
+		\cf6 t\cf0 .\'b0\'f8\'b0\'dd();\
+		\}\
+\}\
+\'b0\'e1\'b0\'fa)\
+\'c7\'c1\'b7\'ce\'c5\'e4\'bd\'ba\'c0\'c7 \'b0\'f8\'b0\'dd\
+\'c0\'fa\'b1\'d7\'c0\'c7 \'b0\'f8\'b0\'dd\
+\'c5\'d7\'b6\'f5\'c0\'c7 \'b0\'f8\'b0\'dd\
+\
+=> \'c0\'a7 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'ba 3\'b0\'b3\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2\'b5\'a5 \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'b8\'a7\'c0\'cc \'c0\'fc\'ba\'ce \'b4\'d9\'b8\'a8\'b4\'cf\'b4\'d9.\
+\'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'db\'be\'f7\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bc\'ad\'b7\'ce \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5 3\'b0\'b3\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b5\'bf\'c0\'cf\'c7\'d1 \'b6\'c7\'b4\'c2 \'c0\'af\'bb\'e7\'c7\'d1 \'c0\'db\'be\'f7\'c0\'bb \'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'b8\'a7\'c0\'ba \'b5\'bf\'c0\'cf\'c7\'cf\'b0\'d4 \'c0\'db\'bc\'ba\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c7\'cf\'b1\'e2 \'c6\'ed\'b8\'ae\'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'c0\'cc\'b7\'b1 \'c0\'db\'be\'f7\'c0\'ba \'ba\'b8\'c5\'eb\'c0\'ba \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c7\'d8\'b0\'e1\'c7\'cf\'b0\'ed \'c1\'f6\'b1\'dd\'c3\'b3\'b7\'b3 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'c0\'db\'be\'f7\'c0\'bb \'c7\'cf\'c1\'f6 \'be\'ca\'be\'d2\'b4\'d9\'b8\'e9\
+\'bd\'c7\'c7\'e0 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b1\'e2 \'c0\'cc\'c0\'fc\'bf\'a1 \'c8\'ae\'c0\'ce\'c7\'d8\'bc\'ad \'bc\'f6\'c1\'a4\
+\
+3. Protoss, Zerg, Terran \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'f8\'b0\'dd \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'b8\'a7\'c0\'bb \'c5\'eb\'c0\'cf(\'be\'c6\'b7\'a1\'bf\'a1 \'bd\'c7\'bd\'c0)-\'bc\'f6\'c1\'a4 \'bf\'a1 \'c5\'eb\'c0\'cf\'c7\'d8\'b3\'f5\'c0\'bd)\
+\
+4. \'bd\'c7\'c7\'e0\'c0\'bb \'c0\'a7\'c7\'d1 Main \'c5\'ac\'b7\'a1\'bd\'ba \'bc\'f6\'c1\'a4\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Main \{\
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf7 //\ul Protoss\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\cf0 \
+		Protoss \cf6 p\cf0  = \cf3 new\cf0  Protoss();\
+		\cf6 p\cf0 .attack();\
+		\
+		\cf7 //\ul Zerg\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba \cf0 \
+		Zerg \cf6 z\cf0  = \cf3 new\cf0  Zerg();\
+		\cf7 //z.offence();\cf0 \
+		\cf6 z\cf0 .\ul attack\ulnone ();\
+		\
+		\cf7 //\ul Terran\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\cf0 \
+		Terran \cf6 t\cf0  = \cf3 new\cf0  Terran();\
+		\cf7 //t.\'b0\'f8\'b0\'dd();\cf0 \
+		\cf6 t\cf0 .\ul attack\ulnone ();\
+	\}\
+\}\
+\
+=> \'c0\'af\'bb\'e7\'c7\'d1 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'b8\'a7\'c0\'bb \'c0\'fc\'ba\'ce \'b5\'bf\'c0\'cf\'c7\'cf\'b0\'d4 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c4\'da\'b5\'e5\'b8\'a6 \'c0\'d0\'b1\'e2 \'c1\'c1\'b0\'d4 \'b8\'b8\'b5\'e9\'be\'fa\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b8\'b8\'c0\'cf \'c0\'a7 3\'b0\'b3\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'c0\'af\'c0\'fa \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'bf\'ac\'b0\'e1\'c7\'d1\'b4\'d9\'b8\'e9 \'c4\'da\'b5\'e5\'b0\'a1 \'c0\'fc\'ba\'ce \'b4\'d9\'b8\'a3\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 3\'b0\'b3\'c0\'c7 \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'c7\'ca\'bf\'e4\'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'bd\'ba\'b8\'b6\'c6\'ae \'c6\'f9 \'be\'ee\'c7\'c3\'b8\'ae\'c4\'c9\'c0\'cc\'bc\'c7\'c0\'ba \'c0\'cc\'ba\'a5\'c6\'ae\'c0\'c7 \'b0\'b3\'bc\'f6\'b0\'a1 \'c0\'fb\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c0\'a7\'c3\'b3\'b7\'b3 \'c0\'db\'bc\'ba\'c7\'cf\'b8\'e9 \'c0\'cc\'ba\'a5\'c6\'ae \'bf\'ac\'b0\'e1\'ba\'ce\'ba\'d0\'c0\'cc \'be\'ee\'b7\'c1\'bf\'f6\'c1\'fd\'b4\'cf\'b4\'d9.\
+\'be\'ee\'c2\'f7\'c7\'c7 \'c0\'a7\'c0\'c7 \'b0\'e6\'bf\'ec\'c3\'b3\'b7\'b3 \'be\'ee\'b4\'c0 \'c7\'d1 \'bc\'f8\'b0\'a3\'bf\'a1 \'c7\'cf\'b3\'aa\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\'b8\'e9 \'bb\'f3\'bc\'d3(Inheritance - is a \'b0\'fc\'b0\'e8)\'b0\'fa \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'e7\'c1\'a4\'c0\'c7(Overriding)\
+\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b5\'bf\'c0\'cf\'c7\'d1 \'c4\'da\'b5\'e5\'b0\'a1 \'b4\'eb\'c0\'d4\'b5\'c8 \'b0\'b4\'c3\'bc\'bf\'a1 \'b5\'fb\'b6\'f3\'bc\'ad \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'b8\'b8\'b5\'e9\'be\'ee \'c1\'dd\'b4\'cf\'b4\'d9.\
+\
+5. \'c0\'a7 3\'b0\'b3\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'c7\'cf\'b3\'aa\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf Star\'b6\'f3\'b4\'c2 \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+6. Protoss, Zerg, Terran \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 Star \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce\'ba\'ce\'c5\'cd \'bb\'f3\'bc\'d3\'b9\'de\'b5\'b5\'b7\'cf \'b8\'b8\'b5\'ec\'b4\'cf\'b4\'d9.\
+\'bb\'f3\'bc\'d3\'c0\'bb \'c7\'d2 \'b6\'a7\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7 \'b5\'da\'bf\'a1 extends \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7\'c0\'c7 \'c7\'fc\'c5\'c2\'b7\'ce \'c0\'db\'bc\'ba\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+7. Main \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 main \'b8\'de\'bc\'d2\'b5\'e5 \'b3\'bb\'bf\'eb\'c0\'bb \'bc\'f6\'c1\'a4\
+=>\cf8  \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c2\'fc\'c1\'b6\'c7\'fc \'ba\'af\'bc\'f6\'bf\'a1 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc \'c2\'fc\'c1\'b6\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+\'c2\'fc\'c1\'b6\'c7\'fc \'ba\'af\'bc\'f6\'b0\'a1 \'c1\'d6\'be\'ee\'c1\'f6\'b8\'e9 \'c0\'cc \'ba\'af\'bc\'f6\'bf\'a1\'b4\'c2 \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc \'bb\'d3 \'be\'c6\'b4\'cf\'b6\'f3 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'c0\'c7 \'c2\'fc\'c1\'b6\'b5\'b5 \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'c2\'fc\'c1\'b6\'c7\'fc \'ba\'af\'bc\'f6\'b0\'a1 \'c8\'a3\'c3\'e2\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c0\'cc\'b8\'a7\'b5\'e9\'c0\'ba \'ba\'af\'bc\'f6\'b0\'a1 \'bc\'b1\'be\'f0\'b5\'c9 \'b6\'a7 \'bb\'e7\'bf\'eb\'b5\'c8 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'c7 \'b0\'cd\'b5\'e9\'c0\'d4\'b4\'cf\'b4\'d9.\
+s\'b4\'c2 Star\'b0\'a1 \'bc\'d2\'c0\'af\'c7\'d1 \'b0\'cd\'b8\'b8 \'c8\'a3\'c3\'e2 \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+attack\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'cf\'b7\'c1\'b8\'e9 Star \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 attack\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'b5\'bf\'c0\'cf\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb overriding(\'c0\'e7\'c1\'a4\'c0\'c7)\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+Overriding \'b5\'c8 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'ba\'af\'bc\'f6\'b8\'a6 \'bc\'b1\'be\'f0\'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'d1 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'c7 \'b0\'cd\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'cf\'b0\'ed = \'c0\'b8\'b7\'ce \'b4\'eb\'c0\'d4\'b5\'c8 \'b0\'b4\'c3\'bc\'c0\'c7 \'b0\'cd\'c0\'bb \'c8\'a3\'c3\'e2.\
+\
+8. Star \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 attack\'c0\'cc\'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bb\'fd\'bc\'ba\
+=> Main\'bf\'a1 \'c0\'d6\'b4\'c2 s.attack()\'c0\'cc\'b6\'f3\'b4\'c2 \'c4\'da\'b5\'e5\'b0\'a1 \'b4\'eb\'c0\'d4\'b5\'c8 \'b0\'b4\'c3\'bc\'bf\'a1 \'b5\'fb\'b6\'f3 \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'bf\'ac\'b0\'e1\'c7\'d2 \'b6\'a7 \'c7\'cf\'b3\'aa\'c0\'c7 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'b8 \'c0\'d6\'c0\'b8\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+**abstract(\'c3\'df\'b0\'a1)\
+\
+	1. abstract Class : \'c0\'da\'bd\'c5\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+	=> new \'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\'c0\'da\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+	=> \'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'c0\'db\'be\'f7\'c0\'bb \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'d1 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'cf\'b0\'ed \'b4\'d9\'c7\'fc\'bc\'ba\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 \'c5\'ac\'b7\'a1\'bd\'ba\
+	=> \'bd\'c7\'c1\'a6 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba, \'bb\'f3\'bc\'d3\'c0\'bb \'c5\'eb\'c7\'d8\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+	=> \'bf\'ec\'b8\'ae\'b0\'a1 \'b8\'b8\'b5\'e7 Star \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'b0\'d4\'c0\'d3\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'be\'c6\'b4\'cf\'b0\'ed Protoss, Zerg, Terran \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6\
+	\'c7\'cf\'b3\'aa\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad(\'bb\'f3\'bc\'d3\'b0\'fc\'b0\'e8\'b8\'a6 \'b8\'b8\'b5\'e9\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad) \'bb\'fd\'bc\'ba\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b9\'c7\'b7\'ce \'c0\'da\'bd\'c5\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+	\'c0\'cc\'b7\'b1 \'b0\'e6\'bf\'ec\'bf\'a1 abstract(\'c3\'df\'bb\'f3) class\'b8\'a6 \'b8\'b8\'b5\'e9\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+	=> class \'bf\'b9\'be\'e0\'be\'ee \'be\'d5\'bf\'a1 abstract\'b8\'a6 \'ba\'d9\'c0\'cc\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+	2. Main \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 main \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'c0\'db\'bc\'ba\'c7\'d8\'bc\'ad \'c5\'d7\'bd\'ba\'c6\'ae\
+\
+	3. Abstract class\'b4\'c2 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc\'c1\'f6 \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'f8 \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'ba \'be\'c6\'b4\'d5\'b4\'cf\'b4\'d9.\
+\
+	4. Abstract method\
+	=> \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'b3\'bb\'bf\'eb\'c0\'cc \'be\'f8\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+	=> \cf8 \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'b8\'c7\'f6(Overriding)\'c0\'bb \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+	=> \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 abstract class \'b3\'aa interface\'bf\'a1\'b8\'b8 \'c1\'b8\'c0\'e7\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9. \'c0\'cf\'b9\'dd \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c1\'b8\'c0\'e7\'c7\'cf\'b8\'e9 \'bf\'a1\'b7\'af\
+	=> \'bb\'fd\'bc\'ba \'b9\'e6\'b9\'fd\
+		\'c1\'a2\'b1\'d9\'c1\'f6\'c1\'a4\'c0\'da + abstract + \'b0\'e1\'b0\'fa\'c7\'fc + \'b8\'de\'bc\'d2\'b5\'e5\'c0\'cc\'b8\'a7(\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6);\
+\
+	5. Star \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c0\'d6\'b4\'c2 attack \'c0\'cc\'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9\'c0\'bb \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e7 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'d4\'b4\'cf\'b4\'d9.\
+	=> \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'c8\'a3\'c3\'e2\'c7\'d2 \'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'b7\'ce \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+	=> Star \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c0\'d6\'b4\'c2 attack() \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'f6\'c1\'a4\
+	abstract public void attack();\
+\
+	6. \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'ba \'bd\'ac\'bf\'ee\'c0\'cf\'c0\'cc \'be\'c6\'b4\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c1\'f6\'b1\'dd\'c0\'ba abstract class\'b0\'a1 \'c0\'d6\'c0\'b8\'b8\'e9 \'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'bc\'f6 \'be\'f8\'b1\'e2 \
+	\'b6\'a7\'b9\'ae\'bf\'a1 \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'bf\'eb\'b5\'b5\'b3\'aa \'bb\'f3\'bc\'d3\'c0\'bb \'c5\'eb\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+	\'b4\'d9\'b8\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'c0\'bb \'b6\'a7 \'b1\'d7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 abstract method\'b0\'a1 \'c0\'d6\'b4\'d9\'b8\'e9 \'b9\'dd\'b5\'e5\'bd\'c3 overriding \'c7\'d8 \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0) - \'bc\'f6\'c1\'a4\
+\
+1) Protoss Class\
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Protoss \cf3 extends\cf0  Star\{\
+	\cf3 public\cf0  \cf3 void\cf0  attack() \{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c7\'c1\'b7\'ce\'c5\'e4\'bd\'ba\'c0\'c7 \'b0\'f8\'b0\'dd\\n"\cf0 );\}\}\
+2) Zerg Class\
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Zerg \cf3 extends\cf0  Star\{\
+	\cf7 //public void \ul offence\ulnone () \cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  attack()\{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c0\'fa\'b1\'d7\'c0\'c7 \'b0\'f8\'b0\'dd\\n"\cf0 );\}\}\
+3) Terran Class\
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Terran \cf3 extends\cf0  Star\{\
+	\cf7 //public void \'b0\'f8\'b0\'dd() \cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  attack()\{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c5\'d7\'b6\'f5\'c0\'c7 \'b0\'f8\'b0\'dd\\n"\cf0 );\}\}\
+4) Star Class\
+\cf3 package\cf0  abstractclass;\
+\cf7 // Star \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 abstract class \'b7\'ce \'bb\'fd\'bc\'ba\cf0 \
+\cf7 // \'bb\'f3\'bc\'d3\'c0\'bb \'c5\'eb\'c7\'d8\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9 \cf0 \
+\cf3 public\cf0  \cf3 abstract\cf0  \cf3 class\cf0  Star \{\
+	\cf3 abstract\cf0  \cf3 public\cf0  \cf3 void\cf0  attack();\
+	\cf9 /*\
+	public void attack() \{\
+	\}\}\
+	*/\cf0 \
+5) Main\
+\cf3 package\cf0  abstractclass;\
+\cf3 public\cf0  \cf3 class\cf0  Main \{\
+	\cf7 // \'c7\'f6\'c0\'e7\'b4\'c2 Star \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 abstract \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'be\'c6\'b4\'d4\cf0 \
+	\cf7 // abstract class\'b0\'a1 \'be\'c6\'b4\'d2\'b6\'a7 \'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\'c0\'cc \'b0\'a1\'b4\'c9\cf0 \
+	\cf7 // Star \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 class \'be\'d5\'bf\'a1 abstract\'b8\'a6 \'c3\'df\'b0\'a1\'c7\'cf\'b8\'e9 \'bf\'a1\'b7\'af\cf0 \
+	\cf7 //Star star = new Star();\
+\cf0 \
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf7 //\ul Protoss\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\cf0 \
+		Star \cf6 s\cf0  = \cf3 new\cf0  Protoss();\
+		\cf6 s\cf0 .attack();\
+		\
+		\cf7 //\ul Zerg\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba \cf0 \
+		\cf6 s\cf0  = \cf3 new\cf0  Zerg();\
+		\cf7 //z.offence();\cf0 \
+		\cf6 s\cf0 .attack();\
+		\
+		\cf7 //\ul Terran\ulnone  \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\cf0 \
+		\cf6 s\cf0  = \cf3 new\cf0  Terran();\
+		\cf7 //t.\'b0\'f8\'b0\'dd();\cf0 \
+		\cf6 s\cf0 .attack();\
+	\}\
+\}\
+\'b0\'e1\'b0\'fa)\
+\'c7\'c1\'b7\'ce\'c5\'e4\'bd\'ba\'c0\'c7 \'b0\'f8\'b0\'dd\
+\'c0\'fa\'b1\'d7\'c0\'c7 \'b0\'f8\'b0\'dd\
+\'c5\'d7\'b6\'f5\'c0\'c7 \'b0\'f8\'b0\'dd\
+\
+**interface\
+\
+=> \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'cd final \'bb\'f3\'bc\'f6 \'b8\'b8\'c0\'bb \'b0\'a1\'c1\'f8 \'b0\'cd\
+=> \'b8\'de\'b4\'ba\'be\'f3\'c0\'c7 \'bf\'aa\'c7\'d2\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+=> interface\'b8\'a6 implements(\'b1\'b8\'c7\'f6) \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 interface\'bf\'a1 \'c0\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b5\'e9\'c0\'bb \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df \'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 interface\'b8\'a6 implements \'c7\'cf\'b0\'d4\
+\'b5\'c7\'b8\'e9 \'be\'ee\'b6\'b2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'d6\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'bb \'ba\'b8\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+	1. Interface \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'c0\'cc\'b8\'a7 extends \'b4\'d9\'b8\'a5 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\{\
+		\'b8\'de\'bc\'d2\'b5\'e5\'bc\'b1\'be\'f0	//abstract\'b0\'a1 \'be\'d5\'bf\'a1 \'c0\'d6\'c0\'b8\'b3\'aa \'ba\'b8\'c0\'cc\'c1\'f6 \'be\'ca\'c0\'bd\
+		\'ba\'af\'bc\'f6\'b8\'a6 \'bc\'b1\'be\'f0	//final\'c0\'cc \'be\'d5\'bf\'a1 \'c0\'d6\'c0\'b8\'b3\'aa \'ba\'b8\'c0\'cc\'c1\'f6 \'be\'ca\'c0\'bd\
+		\}\
+	=> \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'b1\'be\'f0\'c7\'d2 \'b6\'a7 abstract\'b8\'a6 \'ba\'d9\'c0\'cc\'c1\'f6 \'be\'ca\'be\'c6\'b5\'b5 abstract\'b0\'a1 \'c0\'d6\'b4\'c2 \'b0\'cd\'c0\'b8\'b7\'ce \'b0\'a3\'c1\'d6\
+	=> \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 final\'c0\'bb \'ba\'d9\'c0\'cc\'c1\'f6 \'be\'ca\'be\'c6\'b5\'b5 final(\'ba\'af\'bc\'f6 \'be\'d5\'bf\'a1 final\'c0\'cc \'c0\'d6\'c0\'b8\'b8\'e9 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'ba\'af\'b0\'e6\'c7\'d2 \'bc\'f6 \'be\'f8\'c0\'bd)\'c0\'cc \'c0\'d6\'b4\'c2 \'b0\'cd\'c0\'b8\'b7\'ce \'b0\'a3\'c1\'d6\
+\
+	2. \'b4\'d9\'b8\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b0\'a1\'c1\'ae\'b4\'d9 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+	class \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 extends \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 implements \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'cc\'b8\'a71, \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'cc\'b8\'a72\'a1\'a6\{\
+		//\'c3\'df\'bb\'f3\'b8\'de\'bc\'d2\'b5\'e5 overriding\
+	\}\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 1\'b0\'b3\'b8\'b8 \'bb\'f3\'bc\'d3 \'b0\'a1\'b4\'c9(\'b4\'dc\'c0\'cf \'bb\'f3\'bc\'d3)\
+	=> \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'bf\'a9\'b7\'af \'b0\'b3 \'b1\'b8\'c7\'f6 \'b0\'a1\'b4\'c9\
+	\
+	3. \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'b8\'de\'b4\'ba\'be\'f3\'c0\'cc\'b3\'aa \'b8\'de\'b4\'ba\'c6\'c7\'c0\'c7 \'bf\'aa\'c7\'d2\'c0\'cc\'c1\'f6 \'b4\'d9\'c1\'df \'bb\'f3\'bc\'d3\'c0\'cc \'be\'c6\'b4\'d5\'b4\'cf\'b4\'d9.\
+	\'b0\'b3\'b9\'df\'c0\'da\'bf\'cd \'b1\'e2\'c8\'b9\'c0\'da \'b6\'c7\'b4\'c2 \'b0\'ed\'b0\'b4 \'b0\'fa\'c0\'c7 \'b4\'eb\'c8\'ad\'c0\'c7 \'bc\'f6\'b4\'dc\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+	4. \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b5\'b5 \'b3\'bb\'bf\'eb\'c0\'cc \'be\'f8\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\'c0\'ba \'b8\'f8\'c7\'d5\'b4\'cf\'b4\'d9.(new\'b8\'a6 \'b8\'f8\'c7\'d5\'b4\'cf\'b4\'d9.)\
+	\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'c5\'b8\'c0\'d4\'c0\'c7 \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+	\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'c5\'b8\'c0\'d4\'c0\'b8\'b7\'ce \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9\'b8\'e9 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc \'c2\'fc\'c1\'b6\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+**\'c6\'d0\'c5\'b0\'c1\'f6\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'bb\'e7\'bf\'eb\
+\
+	1. \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'f0\'c0\'d4(Create)\'c7\'cf\'b0\'ed \'c0\'d0\'b0\'ed(Read) \'bc\'f6\'c1\'a4\'c7\'cf\'b0\'ed(Update) \'bb\'e8\'c1\'a6(Delete)\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b0\'a1\'c1\'f8 Service \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+	2. Service \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'d1 Serviceimpl \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\
+	=> \'c1\'f7\'c1\'a2 implements \'c7\'d8\'b5\'b5 \'b5\'c7\'c1\'f6\'b8\'b8 Eclipse\'bf\'a1\'bc\'ad class\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7 implements \'c7\'cf\'b8\'e9 \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'fc\'ba\'ce \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fd\'b4\'cf\'b4\'d9.\
+	=> \'be\'ee\'b6\'b2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b3\'aa \'c3\'df\'bb\'f3\'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'be\'d2\'c0\'bb \'b6\'a7 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'c1\'f6 \'be\'ca\'be\'d2\'b4\'d9\'b0\'ed \'bf\'a1\'b7\'af\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7\'bf\'a1 \'c4\'bf\'bc\'ad\'b8\'a6 \'b5\'ce\'b0\'ed\
+	Add unimplemented methods\'b8\'a6 \'c5\'ac\'b8\'af\'c7\'cf\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'f0\'be\'e7\'c0\'bb \'c0\'fc\'ba\'ce \'b8\'b8\'b5\'e9\'be\'ee \'c1\'dd\'b4\'cf\'b4\'d9.\
+\
+	3. Main \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 Main \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bb\'e7\'bf\'eb\
+\
+	4. \'c0\'cc\'b7\'b1 \'c7\'fc\'c5\'c2\'b7\'ce imterface\'bf\'a1 \'c7\'ca\'bf\'e4\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'f0\'c7\'fc\'c0\'bb \'b8\'b8\'b5\'e9\'b0\'ed \'bd\'c7\'c1\'a6 \'b1\'b8\'c7\'f6\'c0\'ba class\'bf\'a1\'bc\'ad \'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\'c0\'bb Template Method Pattern\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d4.\
+	\'bb\'e7\'bf\'eb\'c0\'da\'c0\'c7 \'bf\'e4\'b1\'b8\'bb\'e7\'c7\'d7\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'d2 \'b6\'a7 \'c0\'cc\'b7\'b1 \'b9\'e6\'bd\'c4\'c0\'bb \'c1\'d6\'b7\'ce \'c0\'cc\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+**\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'b1\'e2\'c5\'b8 \'b9\'ae\'b9\'fd\
+\
+=> \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b5\'b5 \'b4\'d9\'b8\'a5 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'a1\'b0\'d4 \'bb\'f3\'bc\'d3 \'b0\'a1\'b4\'c9\
+Implements \'b4\'eb\'bd\'c5\'bf\'a1 extends\'b8\'a6 \'bb\'e7\'bf\'eb\
+=> \'c6\'af\'ba\'b0\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 implements \'c7\'cf\'b4\'c2 \'b0\'cd \'b8\'b8\'c0\'b8\'b7\'ce \'b3\'bb\'bf\'eb\'c0\'cc \'b1\'b8\'c7\'f6\'b5\'c7\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'b4\'eb\'c7\'a5\'c0\'fb\'c0\'ce \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b0\'a1 java.util.Serializable\
+=> \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'a1 \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'a1\'c1\'f8 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\'c1\'a2\'b1\'d9\'c1\'f6\'c1\'a4\'c0\'da\'b8\'a6 \'b8\'ed\'bd\'c3\'c0\'fb\'c0\'b8\'b7\'ce default\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+1. Service\
+\cf3 package\cf0  interfacesample;\
+\cf3 public\cf0  \cf3 interface\cf0  Service \{\
+	\cf7 // \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'f0\'c0\'d4\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  insert();\
+\
+	\cf7 // \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d0\'be\'ee\'bf\'c0\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  read();\
+\
+	\cf7 // \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f6\'c1\'a4\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  update();\
+\
+	\cf7 // \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e8\'c1\'a6\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  remove();\
+\}\
+2. Serviceimpl\
+\cf3 package\cf0  interfacesample;\
+\cf3 public\cf0  \cf3 class\cf0  Serviceimpl \cf3 implements\cf0  Service \{\
+\
+	\cf10 @Override\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  insert() \{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'b5\'a5\'c0\'cc\'c5\'cd \'bb\'f0\'c0\'d4\\n"\cf0 );\
+	\}\
+	\cf10 @Override\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  read() \{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'b5\'a5\'c0\'cc\'c5\'cd \'c0\'d0\'b1\'e2\\n"\cf0 );\
+	\}\
+\
+	\cf10 @Override\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  update() \{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'b5\'a5\'c0\'cc\'c5\'cd \'bc\'f6\'c1\'a4\\n"\cf0 );	\
+	\}\
+\
+	\cf10 @Override\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  remove() \{\
+		System.\cf4 out\cf0 .printf(\cf5 "\'b5\'a5\'c0\'cc\'c5\'cd \'bb\'e8\'c1\'a6\\n"\cf0 );	\
+	\}\
+\}\
+3. Main\
+\cf3 package\cf0  interfacesample;\
+\cf3 public\cf0  \cf3 class\cf0  Main \{\
+\
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf7 //SeriviceImpl \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		\cf7 //\ul Serviceimpl\ulnone  service1 = new \ul Serviceimpl\ulnone ();\cf0 \
+		\
+		\cf7 //\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7\cf0 \
+		\cf7 //\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'c0\'cc\'b8\'a7\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		Service \cf6 service2\cf0  = \cf3 new\cf0  Serviceimpl();\
+		\cf6 service2\cf0 .insert();\
+		\cf6 service2\cf0 .read();\
+		\cf6 service2\cf0 .update();\
+		\cf6 service2\cf0 .remove();\
+	\}\
+\}\
+\'b0\'e1\'b0\'fa)\
+\'b5\'a5\'c0\'cc\'c5\'cd \'bb\'f0\'c0\'d4\
+\'b5\'a5\'c0\'cc\'c5\'cd \'c0\'d0\'b1\'e2\
+\'b5\'a5\'c0\'cc\'c5\'cd \'bc\'f6\'c1\'a4\
+\'b5\'a5\'c0\'cc\'c5\'cd \'bb\'e8\'c1\'a6\
+\
+**Final\
+\
+1. Final class : class \'be\'d5\'bf\'a1 final\'c0\'bb \'b1\'e2\'c0\'e7\'c7\'cf\'b8\'e9 \'bb\'f3\'bc\'d3\'c7\'d2 \'bc\'f6 \'be\'f8\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+2. Final method : method\'c0\'c7 \'b0\'e1\'b0\'fa\'c7\'fc \'be\'d5\'bf\'a1 final\'c0\'bb \'b1\'e2\'c0\'e7\'c7\'cf\'b8\'e9 \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 overriding \'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+3. Final variable : \'ba\'af\'bc\'f6 \'be\'d5\'bf\'a1 final\'c0\'bb \'b1\'e2\'c0\'e7\'c7\'cf\'b8\'e9 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'bc\'f6\'c1\'a4\'c7\'d2 \'bc\'f6 \'be\'f8\'b4\'c2 \'c0\'d0\'b1\'e2 \'c0\'fc\'bf\'eb\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+=> final class \'b3\'aa final method\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'c0\'cc\'c0\'af\'b4\'c2 \'bd\'c3\'bd\'ba\'c5\'db\'b0\'fa \'b0\'fc\'b7\'c3\'b5\'c8 \'c5\'ac\'b7\'a1\'bd\'ba\'b3\'aa \'b8\'de\'bc\'d2\'b5\'e5\'b6\'f3\'bc\'ad \'bb\'f3\'bc\'d3\'c0\'bb \'c7\'cf\'b0\'c5\'b3\'aa \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9\'c0\'bb \'c7\'cf\'b8\'e9 \
+\'b9\'ae\'c1\'a6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+**class \'b5\'e9 \'bb\'e7\'c0\'cc\'c0\'c7 \'b0\'fc\'b0\'e8\
+\
+=> \'c7\'cf\'b3\'aa\'c0\'c7 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae \'b6\'c7\'b4\'c2 \'c6\'d0\'c5\'b0\'c1\'f6\'bf\'a1 \'b8\'f0\'c0\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'b5\'e9\'c0\'ba \'bc\'ad\'b7\'ce \'b0\'a3\'bf\'a1 \'b0\'fc\'b0\'e8\'b8\'a6 \'b0\'a1\'c1\'ae\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+	1. Is a : \'bb\'f3\'bc\'d3 \'b0\'fc\'b0\'e8\
+	2. has a : \'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b4\'d9\'b8\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'c6\'f7\'c7\'d4\'c7\'cf\'b0\'ed \'c0\'d6\'b4\'c2 \'b0\'e6\'bf\'ec\
+\
+		1) aggregation relation : \'c6\'f7\'c7\'d4\'c7\'cf\'b4\'c2 \'b0\'b4\'c3\'bc\'bf\'cd \'c6\'f7\'c7\'d4\'b5\'c7\'b4\'c2 \'b0\'b4\'c3\'bc\'c0\'c7 \'bc\'f6\'b8\'ed\'c0\'cc \'b4\'d9\'b8\'a5 \'b0\'e6\'bf\'ec\'b7\'ce \'b8\'de\'bc\'d2\'b5\'e5 \'b3\'bb\'bf\'a1\'bc\'ad \'b4\'d9\'b8\'a5 \'b0\'b4\'c3\'bc\'b0\'a1 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f6\'b4\'c2 \'b0\'e6\'bf\'ec\
+\cf3 		public\cf0  \cf3 class\cf0  Main \{\
+		\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\
+		String \cf11 \ul \ulc11 str\cf0 \ulnone ;	\cf7 // aggregation\'b0\'fc\'b0\'e8\
+		\cf12 \}\}\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+		2) composite relateion : \'c6\'f7\'c7\'d4\'c7\'cf\'b4\'c2 \'b0\'b4\'c3\'bc\'bf\'cd \'c6\'f7\'c7\'d4\'b5\'c7\'b4\'c2 \'b0\'b4\'c3\'bc\'c0\'c7 \'bc\'f6\'b8\'ed\'c0\'cc \'b0\'b0\'c0\'ba \'b0\'e6\'bf\'ec\
+		\cf3 public\cf0  \cf3 class\cf0  Main \{\
+		\cf7 // Main \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1\'bc\'ad String \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'bb\'e7\'bf\'eb\'b5\'ca - has a\cf0 \
+		\cf7 //\'c0\'cc \'b0\'e6\'bf\'ec\'b4\'c2 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'ba\'af\'bc\'f6\'b7\'ce \'bc\'b1\'be\'f0\'b5\'c7\'bc\'ad Main\'b0\'fa \'bc\'f6\'b8\'ed\'c0\'cc \'b0\'b0\'be\'c6\'bc\'ad composition\'b0\'fc\'b0\'e8\cf0 \
+		String \cf4 str\cf0 ;\
+		\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\}\}\
+\
+**inner class(\'b3\'bb\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba)\
+\
+=> java\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'b4\'d9\'b8\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'c1\'be\'b7\'f9\'b4\'c2 \'c0\'cf\'b9\'dd inner class, static inner class, local inner class, anonymous class\
+=> \'c1\'a6\'c0\'cf \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'b0\'cd\'c0\'ba anonymous class \'b1\'d7\'b8\'ae\'b0\'ed \'b1\'d7 \'b4\'d9\'c0\'bd\'c0\'ba \'c0\'cf\'b9\'dd inner class\
+\'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'b5\'e9\'c0\'bb \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'ba\'d0\'be\'df\'b4\'c2 GUI(Graphic User Interface) Programming\'bf\'a1\'bc\'ad \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae\'c7\'cf\'b4\'c2 \'ba\'ce\'ba\'d0\'c0\'d4\'b4\'cf\'b4\'d9.\
+\'b9\'dd\'b4\'eb \'b5\'c7\'b4\'c2 \'b0\'cd\'c0\'ba CLI(Command Line Interface - \'b8\'ed\'b7\'c9\'be\'ee \'c0\'d4\'b7\'c2\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4)\
+\
+	1. Inner class\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\
+	=> \'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+	public \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f6\'b8\'e9 \'bf\'dc\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'c5\'eb\'c7\'d8\'bc\'ad \'c1\'a2\'b1\'d9\'b5\'b5 \'b0\'a1\'b4\'c9\
+	\
+	2. Static inner class\
+	=> inner class \'be\'c8\'bf\'a1 static \'b8\'c9\'b9\'f6\'b0\'a1 \'c0\'d5\'c0\'b8\'b8\'e9 \'c0\'cf\'b9\'dd inner \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce \'b8\'b8\'b5\'e9\'b8\'e9 \'bf\'a1\'b7\'af\'b0\'a1 \'b9\'df\'bb\'fd\
+	\'c0\'cc\'b7\'b1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 inner class\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 class \'be\'d5\'bf\'a1 static\'c0\'bb \'ba\'d9\'bf\'a9\'c1\'d6\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+	3. Local inner class\
+	=> local \'c0\'ba \'bf\'b5\'bf\'aa \'b3\'bb\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\'c7\'d1 \'b0\'cd\'c0\'bb \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad\'b4\'c2 local \'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'bf\'b5\'bf\'aa\'c0\'ba \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'b8\'b7\'ce method, \'c1\'a6\'be\'ee\'b9\'ae, \'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae\'b1\'b8\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+	=> local\'bf\'a1 \'b8\'b8\'b5\'e7 \'b0\'cd\'c0\'ba \'c0\'da\'bd\'c5\'c0\'c7 \'bf\'b5\'bf\'aa\'c0\'cc \'bc\'d2\'b8\'ea\'b5\'c7\'b8\'e9 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'bc\'d2\'b8\'ea\'b5\'cb\'b4\'cf\'b4\'d9.\
+	=> \'c0\'cf\'b9\'dd inner class\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'e6\'bf\'ec\'b4\'c2 \'c7\'d1 \'b9\'f8 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f6\'b8\'e9 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'cc \'b3\'a1\'b3\'af\'b6\'a7\'b1\'ee\'c1\'f6 \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1\'bc\'ad \'bc\'d2\'b8\'ea\'b5\'c7\'c1\'f6 \'be\'ca\'c1\'f6\'b8\'b8 \
+	local\'bf\'a1 \'b8\'b8\'b5\'e7\'b0\'cd\'c0\'ba \'c0\'da\'bd\'c5\'c0\'c7 \'bf\'b5\'bf\'aa\'c0\'cc \'b3\'a1\'b3\'aa\'b8\'e9 \'c0\'da\'b5\'bf \'bc\'d2\'b8\'ea\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+1. Outer\
+\pard\pardeftab720\partightenfactor0
+\cf3 public\cf0  \cf3 class\cf0  Outer \{\
+	\cf7 // \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'b8\'b8\'b5\'e9\'be\'ee \'c1\'f8 \'b3\'bb\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\cf0 \
+	\cf7 // \'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 Outer \'be\'c8\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\cf0 \
+	\cf7 // \'b4\'eb\'bd\'c5\'bf\'a1 public \'c0\'cc\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 Outer \'b0\'b4\'c3\'bc\'b4\'c2 \'c1\'a2\'b1\'d9\'c0\'cc \'b0\'a1\'b4\'c9\cf0 \
+	\cf3 public\cf0  \cf3 class\cf0  Inner\{\
+	\cf7 //public static class Inner \{\cf0 \
+		\
+	\cf7 //\'b3\'bb\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 static\'c0\'cc \'c0\'d6\'b4\'c2 \'b0\'e6\'bf\'ec \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 static\'c0\'bb \'c3\'df\'b0\'a1\'c7\'d8 \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+	\cf7 //public static void innerMethod() \{\cf0 \
+		\cf3 public\cf0  \cf3 void\cf0  innerMethod() \{\
+			System.\ul out\ulnone .printf(\cf5 "\'b3\'bb\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\\n"\cf0 );\
+		\}\
+	\}\
+	\cf3 public\cf0  \cf3 void\cf0  outerMethod() \{\
+		\cf7 // Inner \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc \'b8\'b8\'b5\'e9\'b1\'e2\cf0 \
+		Inner \cf13 inner\cf0  = \cf3 new\cf0  Inner();\
+		\cf13 inner\cf0 .innerMethod();\
+	\}\
+\}\
+2. Main\
+\cf3 public\cf0  \cf3 class\cf0  Main \{\
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf13 args\cf0 ) \{\
+		\cf7 // Outer \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		Outer \cf13 outer\cf0  = \cf3 new\cf0  Outer();\
+		\cf13 outer\cf0 .outerMethod();\
+\
+		\cf7 // Inner \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'c1\'f7\'c1\'a2 \'bb\'fd\'bc\'ba \'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+		\cf7 // \'be\'c6\'b7\'a1 \'b1\'b8\'b9\'ae\'c0\'ba Inner cannot be resolved to a type\'c0\'cc\'b6\'f3\'b4\'c2 \'bf\'a1\'b7\'af\'b8\'de\'bc\'bc\'c1\'f6 \'b9\'df\'bb\'fd\cf0 \
+		\cf7 // Inner inner = new Inner();\cf0 \
+		System.\cf4 out\cf0 .printf(\cf5 "================\\n"\cf0 );\
+		\cf7 // \'b3\'bb\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 \'bf\'dc\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c5\'eb\'c7\'d8\'bc\'ad \'c1\'a2\'b1\'d9\cf0 \
+		\cf7 // \'be\'c8\'b5\'c7\'b4\'c2 \'b0\'c7 \'be\'c6\'b4\'cf\'c1\'f6\'b8\'b8 \'c0\'df \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\cf0 \
+		Outer.Inner \cf13 i\cf0  = \cf3 new\cf0  Outer().\cf3 new\cf0  Inner();\
+		\cf13 i\cf0 .innerMethod();\
+	\}\
+\}\
+\'b0\'e1\'b0\'fa)\
+\'b3\'bb\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\
+================\
+\'b3\'bb\'ba\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+\
+	4. Anonymous Class(\'c0\'cd\'b8\'ed \'b0\'b4\'c3\'bc)\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'b0\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'b9\'d9\'b7\'ce \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'b3\'aa \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'c7\'cf\'b0\'c5\'b3\'aa \'b1\'b8\'c7\'f6\'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\
+	=> \'c7\'d1 \'b9\'f8 \'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'c5\'b3\'aa \'c6\'af\'c1\'a4 \'bf\'b5\'bf\'aa\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'c0\'db\'be\'f7\'c0\'bb \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'b8\'de\'b8\'f0\'b8\'ae \'b3\'b6\'ba\'f1\'b0\'a1 \'bb\'fd\'b1\'e6 \'bc\'f6 \'c0\'d6\'be\'ee\'bc\'ad\
+	\'c0\'cd\'b8\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+	new \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 \'b6\'c7\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'cc\'b8\'a7()\{\
+		\'b8\'de\'bc\'d2\'b5\'e5 \'c0\'e7\'c1\'a4\'c0\'c7\
+	\};\
+\
+		1) Thread \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'be\'c6\'bc\'ad run \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7\
+		2) main \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed start() \'c8\'a3\'c3\'e2\
+		Thread \cf6 th\cf0  = \cf3 new\cf0  ThreadEx();\
+		\cf6 th\cf0 .start();\
+		3) main \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1\'bc\'ad \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'b0\'ed \'be\'d5\'bf\'a1 \'c7\'df\'b4\'f8 \'c0\'db\'be\'f7\'b0\'fa \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b1\'e2\
+\
+		=> \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b8\'e9 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad 2\'b0\'b3 \'c0\'cc\'bb\'f3\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\'c0\'cc \'b0\'a1\'b4\'c9[2)\'c0\'c7 \'b0\'e6\'bf\'ec]\
+		\'c0\'cd\'b8\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 2\'b0\'b3\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 2\'b9\'f8 \'c0\'db\'bc\'ba\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.[3)\'c0\'c7 \'b0\'e6\'bf\'ec]\
+		\'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'c7\'d1 \'b9\'f8 \'b8\'de\'b8\'f0\'b8\'ae \'c7\'d2\'b4\'e7\'c0\'bb \'b9\'de\'c0\'b8\'b8\'e9 \'c0\'fd\'b4\'eb\'b7\'ce \'bc\'d2\'b8\'ea\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2 static \'c7\'d1 \'c1\'b8\'c0\'e7\'c0\'cc\'b1\'e2 \'b6\'a7\'b9\'ae\
+\
+		=> \'c0\'cd\'b8\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 2\'b0\'b3\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 2\'b9\'f8 \'c0\'db\'bc\'ba\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+		\'b8\'de\'b8\'f0\'b8\'ae \'c1\'a4\'b8\'ae\'b8\'a6 \'c7\'cf\'c1\'f6 \'be\'ca\'b4\'f5\'b6\'f3\'b5\'b5 \'ba\'af\'bc\'f6\'b0\'a1 \'bc\'d2\'b8\'ea\'b5\'c7\'b8\'e9 \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1\'bc\'ad \'c0\'da\'b5\'bf \'bc\'d2\'b8\'ea\'b5\'cb\'b4\'cf\'b4\'d9.\
+		\'c7\'d1 \'b9\'f8\'b8\'b8 \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'b0\'e6\'bf\'ec \'b8\'de\'b8\'f0\'b8\'ae\'b8\'a6 \'c0\'fd\'be\'e0\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+		=> Java GUI(art, swing) \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'cc\'b3\'aa \'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5\'c0\'c7 \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae\'bf\'a1\'bc\'ad\'b4\'c2 anonymous\'b8\'a6 class\'b8\'a6 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed\
+		\'b1\'d7 \'c0\'cc\'bf\'dc\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'b9\'e6\'bd\'c4\'c0\'bb \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\
+\
+\
+	\'bd\'c7\'bd\'c0)\
+	1. ThreadEx Class\
+	\cf3 package\cf0  inner;\
+\cf3 	public\cf0  \cf3 class\cf0  ThreadEx \cf3 extends\cf0  Thread \{\
+		\cf7 // \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7 \'c7\'df\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'bb \'be\'cb\'b7\'c1\'c1\'d6\'b1\'e2 \'c0\'a7\'c7\'d1 \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7\cf0 \
+		\cf7 // \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7\'c0\'bb \'c3\'df\'b0\'a1\'c7\'df\'b4\'c2\'b5\'a5 \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'be\'f8\'c0\'b8\'b8\'e9 \'bf\'a1\'b7\'af\cf0 \
+		\cf14 @Override\cf0 \
+		\cf3 public\cf0  \cf3 void\cf0  run() \{\
+			\cf3 for\cf0 (\cf3 int\cf0  \cf13 i\cf0  = 0; \cf13 i\cf0  < 10; \cf13 i\cf0  = \cf13 i\cf0  + 1) \{\
+				System.\cf4 out\cf0 .printf(\cf5 "\'c5\'ac\'b7\'a1\'bd\'ba \'bb\'fd\'bc\'ba\\n"\cf0 );\
+			\}\
+		\}\
+	\}\
+	2. Main\
+	\cf3 package\cf0  inner;\
+\cf3 	public\cf0  \cf3 class\cf0  Main \{\
+		\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf13 args\cf0 ) \{	\
+			\cf7 //\'bb\'f3\'bc\'d3\'b9\'de\'c0\'ba \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\cf0 \
+			Thread \cf13 th\cf0  = \cf3 new\cf0  ThreadEx();\
+			\cf13 th\cf0 .start();\
+			\cf7 // \'c0\'cd\'b8\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b1\'b8\'c7\'f6\cf0 \
+			Thread \cf13 th1\cf0  = \cf3 new\cf0  Thread() \{\
+				\cf14 @Override\cf0 \
+				\cf3 public\cf0  \cf3 void\cf0  run() \{\
+					\cf3 for\cf0 (\cf3 int\cf0  \cf13 i\cf0  = 0; \cf13 i\cf0  < 10; \cf13 i\cf0  = \cf13 i\cf0  + 1) \{\
+						System.\cf4 out\cf0 .printf(\cf5 "\'c0\'cd\'b8\'ed \'b0\'b4\'c3\'bc\\n"\cf0 );\
+					\}\
+				\}\
+			\};\
+			\cf13 th1\cf0 .start();\
+		\}\
+	\}\
+	\'b0\'e1\'b0\'fa)\
+	\'c5\'ac\'b7\'a1\'bd\'ba \'bb\'fd\'bc\'ba\
+	\'a1\'a6(10\'b9\'f8)\
+	\'c0\'cd\'b8\'ed \'b0\'b4\'c3\'bc\
+	\'a1\'a6(10\'b9\'f8)\
+\
+**GgangPae1.tistory.com\'bf\'a1 9\'b9\'f8\'c0\'c7 \'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae\'bf\'a1 \'c0\'da\'b7\'e1 \'bf\'c3\'b7\'c1\'b3\'f5\'c0\'bd\
+\
+**1.8 docs\'be\'c8\'bf\'a1 \'c0\'ce\'b5\'a6\'bd\'ba\'c6\'c4\'c0\'cf \'ba\'b8\'b4\'c2 \'b9\'fd\
+**\'c1\'df\'bf\'e4 \'c6\'d0\'c5\'b0\'c1\'f6\
+\
+	1. java.lang : \'c0\'da\'b9\'d9\'c0\'c7 \'b1\'e2\'ba\'bb \'c5\'ac\'b7\'a1\'bd\'ba\'b5\'e9\'c0\'cc \'c0\'d6\'b4\'c2 \'c6\'d0\'c5\'b0\'c1\'f6\
+	import \'c7\'cf\'c1\'f6 \'be\'ca\'be\'c6\'b5\'b5 import\'b0\'a1 \'b5\'c8 \'b0\'cd\'c0\'b8\'b7\'ce \'b0\'a3\'c1\'d6\
+	=> String, System. \'a1\'a6\
+\
+	2. java.util : \'c0\'da\'b7\'e1\'b1\'b8\'c1\'b6 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd Scanner, Random \'b5\'ee\
+	\
+	3. java.text : format(\'bc\'fd\'c0\'da, \'b3\'af\'c2\'a5 \'b5\'ee)\'bf\'a1 \'b0\'fc\'b7\'c3\'b5\'c8 \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+	4. GUI \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 : java.awt, javax.swing, java.awt.event \'b5\'ee\
+	=> javax\'b4\'c2 1.2 \'b9\'f6\'c0\'fc \'c0\'cc\'c8\'c4\'bf\'a1 \'b5\'ee\'c0\'e5\'c7\'d1 \'c6\'d0\'c5\'b0\'c1\'f6\
+\
+	5. java.io, java.nio : \'c0\'d4\'c3\'e2\'b7\'c2 \'b0\'fc\'b7\'c3 \'c6\'d0\'c5\'b0\'c1\'f6(\'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\'bc\'ad \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba), \'c6\'c4\'c0\'cf \'b0\'fc\'b7\'c3 \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+	6. java.net : \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9 \'b0\'fc\'b7\'c3 \'c6\'d0\'c5\'b0\'c1\'f6\
+\
+	7. java.sql : \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba \'b0\'fc\'b7\'c3 \'c6\'d0\'c5\'b0\'c1\'f6\
+\
+** class \'be\'d5\'bf\'a1 \'ba\'d9\'b4\'c2 \'b4\'dc\'be\'ee\
+\
+	1. Abstract : \'bb\'f3\'bc\'d3\'c0\'bb \'c5\'eb\'c7\'d8\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+	2. Final : \'bb\'f3\'bc\'d3\'c0\'bb \'c7\'d2 \'bc\'f6 \'be\'f8\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+** interface\
+=> implements \'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'b0\'b3\'c3\'bc\
+\
+**class\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c8\'ae\'c0\'ce\
+\
+1. Field Summary : Static final \'bb\'f3\'bc\'f6\
+=> \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'bf\'c9\'bc\'c7\'b5\'e9\'c0\'d4\'b4\'cf\'b4\'d9.\
+=> \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7.\'bb\'f3\'bc\'f6\'c0\'cc\'b8\'a7\
+=> \'bb\'f3\'bc\'f6\'c0\'cc\'b8\'a7\'c0\'ba \'c0\'fc\'ba\'ce \'b4\'eb\'b9\'ae\'c0\'da\
+\
+2. Constructor(\'bb\'fd\'bc\'ba\'c0\'da)\
+=> \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> new \'bb\'fd\'bc\'ba\'c0\'da\'c0\'cc\'b8\'a7(\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6)\'c0\'c7 \'c7\'fc\'bd\'c4\'c0\'b8\'b7\'ce \'c8\'a3\'c3\'e2\
+=> \'bb\'fd\'bc\'ba\'c0\'da\'b0\'a1 \'be\'f8\'b4\'c2 \'b0\'e6\'bf\'ec\
+	1) interface\'b3\'aa abstract class : \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\'c0\'bb \'c7\'d2 \'bc\'f6 \'be\'f8\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'bb\'fd\'bc\'ba\'c0\'da\'b0\'a1 \'be\'f8\'c0\'bd\
+	2) \'b8\'f0\'b5\'e7 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 static \'c0\'ce \'b0\'e6\'bf\'ec : \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'bb\'fd\'bc\'ba\'c0\'da\'b8\'a6 private\'c0\'b8\'b7\'ce \'bc\'fb\'b0\'dc\'b3\'f5\'c0\'bd.\
+	3) \'bd\'cc\'b1\'db\'c5\'e6 \'c6\'d0\'c5\'cf(\'b0\'b4\'c3\'bc\'b8\'a6 1\'b0\'b3\'b8\'b8 \'bb\'fd\'bc\'ba\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba)\'b0\'fa \'b0\'b0\'c0\'ba \'b5\'f0\'c0\'da\'c0\'ce \'c6\'d0\'c5\'cf \'c0\'fb\'bf\'eb\
+		=> \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'cc\'b8\'a7\'b5\'da\'bf\'a1 Builder\'b6\'f3\'b4\'c2 \'c0\'cc\'b8\'a7\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'c5\'b3\'aa \'c0\'da\'bd\'c5\'c0\'c7 static \'b8\'de\'bc\'d2\'b5\'e5 \'c1\'df\'bf\'a1 \'c0\'da\'bd\'c5\'c0\'c7\
+		\'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+		\'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba - java.lang.Runtime\
+3. Method\
+\
+	1) static\'c0\'c7 \'c1\'b8\'c0\'e7 \'bf\'a9\'ba\'ce \'c8\'ae\'c0\'ce : static\'c0\'cc \'be\'f8\'c0\'b8\'b8\'e9 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba(\'b0\'b4\'c3\'bc)\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'c8\'a3\'c3\'e2\
+\
+	2) \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6(argument)\'b8\'a6 \'c8\'ae\'c0\'ce\
+\
+	3) \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 throws\'b8\'a6 \'c0\'d6\'b4\'c2\'c1\'f6\'b8\'a6 \'c8\'ae\'c0\'ce\
+\
+	=> throws\'b0\'a1 \'c0\'d6\'c0\'b8\'b8\'e9 \'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae\'b8\'a6 \'c7\'d8\'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+	\'bd\'c7\'c7\'e0\'c7\'cf\'b4\'d9\'b0\'a1 \'b9\'ae\'c1\'a6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 \'b8\'d8\'c3\'df\'b4\'c2 \'b0\'cd\
+	\'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae\'b8\'a6 \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'b8\'d8\'c3\'df\'c1\'f6 \'be\'ca\'b0\'ed \'b0\'e8\'bc\'d3 \'bc\'f6\'c7\'e0\'c0\'cc \'b0\'a1\'b4\'c9\
+\
+	4) return type\'c0\'bb \'c8\'ae\'c0\'ce\
+	=> \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed \'b0\'e1\'b0\'fa\'b8\'a6 \'b5\'b9\'b7\'c1\'c1\'d9 \'b6\'a7 \'b5\'b9\'b7\'c1\'c1\'d6\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\
+	void \'c0\'cc\'b8\'e9 \'be\'c6\'b9\'ab\'b0\'cd\'b5\'b5 \'b5\'b9\'b7\'c1\'c1\'d6\'c1\'f6 \'be\'ca\'c0\'bd\
+	\'b1\'d7 \'c0\'cc\'bf\'dc\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc\'b8\'e9 \'b1\'d7 \'b0\'e1\'b0\'fa\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'b4\'d9\'c0\'bd \'c0\'db\'be\'f7\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+	\cf12 \cb15 5) \'b8\'de\'bc\'d2\'b5\'e5 \'bf\'b5\'bf\'aa \'c7\'cf\'b4\'dc\'c0\'c7 \expnd0\expndtw0\kerning0
+Methods inherited from class \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7 \'ba\'ce\'ba\'d0\'c0\'bb \'c8\'ae\'c0\'ce\
+	=> \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e7 \'b8\'de\'bc\'d2\'b5\'e5 \'b1\'d7\'b4\'eb\'b7\'ce \'bb\'e7\'bf\'eb\
+	=> \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5 \'c1\'df\'bf\'a1\'bc\'ad \'bf\'a9\'b1\'e2 \'be\'f8\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 overriding\'c0\'bb \'c7\'d8\'bc\'ad \'b1\'e2\'b4\'c9\'c0\'bb \'ba\'af\'b0\'e6\'c7\'d1 \'b0\'cd\'c0\'d4\'b4\'cf\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+\cf12 \kerning1\expnd0\expndtw0 \
+**\'c8\'a8\'c6\'e4\'c0\'cc\'c1\'f6\'bf\'a1 \'c0\'d6\'b4\'c2 \'b0\'cd\'c0\'bb \'c7\'d8\'bc\'ae\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e5\'b4\'c2 \'bf\'ac\'bd\'c0\
+\
+\cf0 \cb2 \'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf17 \cb1 public\cf0  \cf17 class\cf0  Main \{\
+\
+	\cf17 public\cf0  \cf17 static\cf0  \cf17 void\cf0  main(String[] \cf18 args\cf0 ) \{\
+	\cf19 /*\'c8\'a8\'c6\'e4\'c0\'cc\'c1\'f6\'bf\'a1\'bc\'ad \'c3\'a3\'be\'c6 \'b8\'b8\'b5\'e5\'b4\'c2 \'bc\'d2\'bd\'ba*/\cf0 \
+	\cf19 //java.lang.Math \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 random \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 0.0\'bf\'a1\'bc\'ad 1.0\'bb\'e7\'c0\'cc\'c0\'c7 \'b7\'a3\'b4\'fd\'c7\'d1 \'bd\'c7\'bc\'f6\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\cf0 \
+	\cf19 //static \'b8\'de\'bc\'d2\'b5\'e5 : \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\'c7\'d2 \'c7\'ca\'bf\'e4 \'be\'f8\'c0\'bd\cf0 \
+	\cf19 //\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6 \'be\'f8\'c0\'bd\cf0 \
+	\cf19 //return type\'c0\'cc double\'c0\'d3.\cf0 \
+	\cf17 double\cf0  \cf18 d\cf0  = Math.random();\
+	System.\cf20 out\cf0 .printf(\cf21 "%f\\n"\cf0 , \cf18 d\cf0 );\
+	\
+	\cf19 //String \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 toUpperCase \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'bf\'b5\'b9\'ae\'c0\'bb \'b8\'f0\'b5\'ce \'b4\'eb\'b9\'ae\'c0\'da\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \cf0 \
+	\cf19 //toUpperCase\'b4\'c2 static \'b8\'de\'bc\'d2\'b5\'e5 \'be\'c6\'b4\'d4 : \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b0\'a1 \'c0\'d6\'be\'ee\'be\'df \'c7\'d4.\cf0 \
+	\cf19 //\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6 \'be\'f8\'c0\'bd\cf0 \
+	\cf19 //String\'c0\'b8\'b7\'ce return\cf0 \
+	String \cf18 str\cf0  = \cf21 "Hello World"\cf0 ;\
+	String \cf18 result\cf0  = \cf18 str\cf0 .toUpperCase();\
+	System.\cf20 out\cf0 .printf(\cf21 "%s\\n"\cf0 , \cf18 result\cf0 );\
+	\}\
+\}\cb2 \
+\'b0\'e1\'b0\'fa)\
+\cb1 0.056798\
+HELLO WORLD\cb2 \
+\
+**Eclipse\'bf\'a1\'bc\'ad\'c0\'c7 Git Hub \'bb\'e7\'bf\'eb\
+=> Git Hub : \'bc\'d2\'bd\'ba \'c4\'da\'b5\'e5 \'b9\'f6\'c0\'fc \'b0\'fc\'b8\'ae(\'c7\'fc\'bb\'f3 \'b0\'fc\'b8\'ae - \'ba\'af\'b0\'e6\'bb\'e7\'c7\'d7\'c0\'bb \'b0\'fc\'b8\'ae)\'b8\'a6 \'c0\'a7\'c7\'d1 \'bb\'e7\'c0\'cc\'c6\'ae\
+\'bc\'d2\'bd\'ba \'c4\'da\'b5\'e5\'b8\'a6 \'bf\'c3\'b8\'ae\'b8\'e9 google\'bf\'a1\'bc\'ad \'b0\'cb\'bb\'f6\'b5\'cb\'b4\'cf\'b4\'d9.\
+\'b0\'cb\'bb\'f6 \'be\'c8 \'b5\'c7\'b5\'b5\'b7\'cf \'c7\'cf\'b7\'c1\'b8\'e9 private\'c0\'b8\'b7\'ce \'bf\'c3\'b7\'c1\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> Eclipse\'bf\'a1\'bc\'ad \'c7\'d2 \'b6\'a7\'b4\'c2 \'bc\'b3\'c4\'a1\'b8\'a6 \'c7\'cf\'c1\'f6 \'be\'ca\'be\'c6\'b5\'b5 \'b5\'c7\'c1\'f6\'b8\'b8 Android Studio\'bf\'a1\'bc\'ad \'c7\'d2 \'b6\'a7\'b4\'c2 git\'c0\'bb \'bc\'b3\'c4\'a1\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf22 \cb15 git\'c0\'bb \'bc\'b3\'c4\'a1\'c7\'d2 \'b6\'a7\'b4\'c2 https://www.git-scm.com\'bf\'a1\'bc\'ad \'b4\'d9\'bf\'ee\'b7\'ce\'b5\'e5 \'b9\'de\'be\'c6\'bc\'ad \'bc\'b3\'c4\'a1
+\f0\b0 \cf0 \cb2 \
+X-Code\'bf\'a1\'bc\'ad\'b5\'b5 \'bc\'b3\'c4\'a1\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'b9\'d9\'b7\'ce \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\
+\
+1. Eclipse Project\'b8\'a6 git\'bf\'a1 Upload\
+\
+	1) git hub \'bb\'e7\'c0\'cc\'c6\'ae\'bf\'a1\'bc\'ad repostory\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+	2) \'bb\'fd\'bc\'ba\'c7\'d1 repository\'c0\'c7 url\'c0\'bb \'ba\'b9\'bb\'e7\
+	https://github.com/choch92/inheritance.git\
+\
+	3)eclipse\'bf\'a1\'bc\'ad git\'c0\'c7 \'b8\'de\'b4\'ba\'b8\'a6 \'ba\'b8\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad perspective\'b8\'a6 git\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6\
+	=> perspective\'b4\'c2 \'be\'ee\'b6\'b2 \'c0\'db\'be\'f7\'c0\'bb \'c7\'d2 \'b0\'cd\'c0\'ce\'c1\'f6\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c3\'a2\'c0\'b8\'b7\'ce \'b8\'de\'b4\'ba\'b0\'a1 \'ba\'af\'b0\'e6\'b5\'cb\'b4\'cf\'b4\'d9.\
+	[window] - [perspective] - [open perspective] - [other]\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'d1 \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad Git\'c0\'bb \'bc\'b1\'c5\'c3\
+\
+	4) \'ba\'b8\'c0\'cc\'b4\'c2 \'c8\'ad\'b8\'e9\'bf\'a1\'bc\'ad [Clone a Git repository]\'b8\'a6 \'bc\'b1\'c5\'c3 - \'b3\'aa\'b8\'d3\'c1\'f6 \'b8\'de\'b4\'ba\'b4\'c2 \'c7\'f6\'c0\'e7 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'b8\'de\'b4\'ba\
+\
+	5) \'ba\'b8\'c0\'cc\'b4\'c2 \'c3\'a2\'bf\'a1\'bc\'ad URI\'bf\'a1 \'c0\'da\'bd\'c5\'c0\'c7 Git Repository \'c1\'d6\'bc\'d2\'b0\'a1 \'c0\'d4\'b7\'c2\'b5\'c7\'be\'fa\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'cf\'b0\'ed \'b4\'d9\'b8\'a5 \'c1\'d6\'bc\'d2 \'c0\'cc\'b0\'c5\'b3\'aa \'ba\'f1\'be\'ee\'c0\'d6\'c0\'b8\'b8\'e9 \'ba\'d9\'bf\'a9\'b3\'d6\'b1\'e2 \'c7\'cf\'b0\'ed\
+	next\'b8\'a6 \'b4\'a9\'b8\'a3\'b8\'e9 brance\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+	next\'b8\'a6 \'b4\'a9\'b8\'a3\'b8\'e9 \'b7\'ce\'c4\'c3\'bf\'a1 \'c0\'fa\'c0\'e5\'b5\'c7\'b4\'c2 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+	\'b4\'d9\'b8\'a5 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 \'ba\'af\'b0\'e6\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+	6) \'bf\'a9\'b1\'e2\'b1\'ee\'c1\'f6 \'bc\'f6\'c7\'e0\'c7\'cf\'b8\'e9 Eclipse\'bf\'cd \'c0\'fa\'c0\'e5\'bc\'d2\'b8\'a6 \'bf\'ac\'b0\'e1\'c7\'d1 \'b0\'cd\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+	7) Upload \'c7\'d2 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'bc\'b1\'c5\'c3 - \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b0\'a1 \'be\'c8\'ba\'b8\'c0\'cc\'b8\'e9 perspective\'b8\'a6 java\'b7\'ce \'ba\'af\'b0\'e6\
+\
+	8) \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'cf\'b8\'e9 [Team] - [Share Project]\'b8\'a6 \'bc\'b1\'c5\'c3\
+	\
+	** \'b9\'d8\'c0\'b8\'b7\'ce \'be\'c8\'b3\'bb\'b7\'c1\'b0\'a1\'c1\'fa\'b6\'a7 disconnect \'c7\'cf\'b0\'ed share project \'b4\'d9\'bd\'c3\
+\
+	9) \'b4\'d9\'c0\'bd \'c8\'ad\'b8\'e9\'bf\'a1\'bc\'ad \'ba\'b8\'c0\'cc\'b4\'c2 \'c3\'a2\'bf\'a1\'bc\'ad repository\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed finish\'b8\'a6 \'c5\'ac\'b8\'af\
+	=> \'c7\'f6\'c0\'e7 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 repository\'bf\'a1 \'bf\'ac\'b0\'e1\
+	=> \'c0\'cc\'c1\'a6 \'ba\'ce\'c5\'cd\'b4\'c2 \'c4\'da\'b5\'e5\'b0\'a1 \'ba\'af\'b0\'e6\'b5\'c7\'b0\'c5\'b3\'aa \'bb\'f5\'b7\'ce\'bf\'ee \'c6\'c4\'c0\'cf\'c0\'bb \'b8\'b8\'b5\'e9\'b8\'e9 \uc0\u8212 > \'c7\'a5\'bd\'c3\'b0\'a1 \'ba\'b8\'c0\'d4\'b4\'cf\'b4\'d9. \
+\
+	10) \'c7\'d1\'b9\'f8 \'be\'f7\'b7\'ce\'b5\'e5 \'c7\'cf\'b0\'ed \'b3\'aa\'b8\'e9 \'bf\'a9\'b1\'e2\'bc\'ad \'ba\'ce\'c5\'cd \'bd\'c3\'c0\'db\'c0\'d4\'b4\'cf\'b4\'d9.\
+	\'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'c5\'ac\'b8\'af\'c7\'cf\'b0\'ed [Team] - [Commit]\'c0\'bb \'bc\'b1\'c5\'c3\
+	\
+	11) \'c7\'cf\'b4\'dc \'c3\'a2\'c0\'c7 \'b8\'f0\'be\'e7\'c0\'cc \'ba\'af\'b0\'e6\'b5\'c7\'b0\'ed 3\'b0\'b3 \'bf\'b5\'bf\'aa\'c0\'cc \'ba\'b8\'c0\'d4\'b4\'cf\'b4\'d9.\
+	\'bf\'de\'c2\'ca \'bb\'f3\'b4\'dc\'c0\'ba \'be\'f7\'b7\'ce\'b5\'e5 \'b5\'c7\'c1\'f6 \'be\'ca\'be\'d2\'b0\'c5\'b3\'aa \'ba\'af\'b0\'e6\'c0\'cc \'b5\'c8 \'c6\'c4\'c0\'cf\'c0\'cc \'ba\'b8\'c0\'cc\'b0\'ed \'bf\'de\'c2\'ca \'c7\'cf\'b4\'dc\'c0\'ba \'bc\'f6\'c1\'a4\'c7\'d2 \'c6\'c4\'c0\'cf\'c0\'bb \'bc\'b1\'c5\'c3\
+	\'bf\'c0\'b8\'a5\'c2\'ca \'c3\'a2\'c0\'ba \'b8\'de\'bd\'c3\'c1\'f6\'b8\'a6 \'c0\'fb\'b4\'c2 \'c3\'a2 \'c0\'ce\'b5\'a5 \'b8\'de\'bc\'bc\'c1\'f6\'b8\'a6 \'c0\'fb\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'be\'f7\'b7\'ce\'b5\'e5 \'be\'c8\'b5\'cb\'b4\'cf\'b4\'d9.\
+	\'b8\'de\'bc\'bc\'c1\'f6\'b4\'c2 \'b3\'af\'c2\'a5\'bf\'cd \'c0\'db\'bc\'ba\'c0\'da \'b1\'d7\'b8\'ae\'b0\'ed \'c0\'db\'be\'f7 \'b3\'bb\'bf\'eb\'c0\'bb \'b1\'e2\'c0\'e7\
+	\
+	12) \'c0\'db\'bc\'ba\'c0\'cc \'b4\'d9 \'b5\'c7\'b8\'e9 \'bf\'c0\'b8\'a5\'c2\'ca \'b8\'c7 \'c7\'cf\'b4\'dc\'bf\'a1 commit and push\'b8\'a6 \'b4\'ad\'b7\'af\'be\'df \'be\'f7\'b7\'ce\'b5\'e5 \'b5\'cb\'b4\'cf\'b4\'d9.\
+	commit\'c0\'bb \'b4\'a9\'b8\'a3\'b8\'e9 \'c7\'f6\'c0\'e7 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\'b8\'b8 \'bc\'f6\'c1\'a4\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+	13) \'c3\'a2\'c0\'cc \'ba\'b8\'c0\'cc\'b0\'ed git hub \'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 upload \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+2. Git hub\'bf\'a1\'bc\'ad \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2\
+	\
+	1) git hub\'bf\'a1\'bc\'ad \'b0\'a1\'c1\'ae\'bf\'c3 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'c0\'c7 URL\'c0\'bb \'ba\'b9\'bb\'e7\
+	2) [File] - [Import] - Git\'c0\'bb \'bc\'b1\'c5\'c3\
+	3) Clone URI\'b8\'a6 \'bc\'b1\'c5\'c3\
+	4) URI\'b8\'a6 \'c8\'ae\'c0\'ce\
+\
+\
+\
+\
+}
