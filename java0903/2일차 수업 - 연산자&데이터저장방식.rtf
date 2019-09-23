@@ -1,0 +1,557 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset129 NanumMyeongjo;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red0\green0\blue192;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20380\viewh18520\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 2\'c0\'cf\'c2\'f7(cho)\
+\
+**\'c4\'c4\'c7\'bb\'c5\'cd\'b0\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'bf\'f8\'b8\'ae\
+\
+=> Computer\'b4\'c2 2\'c1\'f8\'bc\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\
+=> int a = 10;	(int : 4byte - 32bit)\
+=> 10\'c1\'f8\'bc\'f6 \uc0\u8212 > 2\'c1\'f8\'bc\'f6 \
+	1) 10\'c1\'f8\'bc\'f6\'b8\'a6 2\'b7\'ce \'b3\'aa\'b4\'a9\'be\'ee\'bc\'ad \'b8\'f2\'b0\'fa \'b3\'aa\'b8\'d3\'c1\'f6\'b8\'a6 \'b1\'e2\'c0\'e7)\
+	2) \'b8\'f2\'c0\'cc 0 \'c0\'cc \'be\'c6\'b4\'cf\'b8\'e9 \'b8\'f2\'c0\'bb 2\'b7\'ce \'b3\'aa\'b4\'a9\'be\'ee\'bc\'ad \'b8\'f2\'b0\'fa \'b3\'ca\'b8\'d3\'c1\'f6\'b8\'a6 \'b1\'e2\'c0\'e7, \'b8\'f2\'c0\'cc 0 \'c0\'cc \'b5\'c9 \'b6\'a7\'b1\'ee\'c1\'f6 \'b9\'dd\'ba\'b9, \'b8\'f2\'c0\'cc 0\'c0\'cc \'b5\'c7\'b8\'e9 \'b3\'aa\'b8\'d3\'c1\'f6\'b8\'a6 \'bf\'aa\'bc\'f8\'c0\'b8\'b7\'ce \'b1\'e2\'c0\'e7)\
+	ex) 10(10\'c1\'f8\'bc\'f6) -> 1010(2\'c1\'f8\'bc\'f6) -> [0000 0000] [0000 0000] [0000 0000] [0000 1010] (\'c4\'c4\'c7\'bb\'c5\'cd \'c0\'fa\'c0\'e5 \'b9\'e6\'bd\'c4)\
+	ex) 23(10\'c1\'f8\'bc\'f6) -> 10111(2\'c1\'f8\'bc\'f6) -> [0000 0000] [0000 0000] [0000 0000] [0001 0111]\
+\
+=> 2\'c1\'f8\'bc\'f6 \uc0\u8212 > 10\'c1\'f8\'bc\'f6\
+	1) \'b8\'c7 \'b5\'da \'bf\'a1\'bc\'ad 2\'c0\'c7 0\'bd\'c2\'ba\'ce\'c5\'cd \'b0\'a1\'c1\'df\'c4\'a1\'b8\'a6 \'ba\'ce\'bf\'a9\'c7\'d8\'bc\'ad \'b0\'f6\'c7\'d8\'bc\'ad \'b4\'f5\'c7\'d4\
+\
+=> \'c0\'bd\'bc\'f6\'b4\'c2 \'be\'e7\'bc\'f6\'c0\'c7 2\'c0\'c7 \'ba\'b8\'bc\'f6\'b7\'ce \'c0\'fa\'c0\'e5\
+	1) 2\'c0\'c7 \'ba\'b8\'bc\'f6\'b4\'c2 1\'c0\'c7 \'ba\'b8\'bc\'f6 +1\
+	2) 1\'c0\'c7 \'ba\'b8\'bc\'f6\'b4\'c2 0\uc0\u8212 >1, 1\u8212 >0 \'ba\'af\'b0\'e6\
+	ex) a = -10\
+		\'c4\'c4\'c7\'bb\'c5\'cd \'c0\'fa\'c0\'e5 \'b9\'e6\'bd\'c4 [1111 1111] [1111 1111] [1111 1111] [1111 0101] = 1\'c0\'c7 \'ba\'b8\'bc\'f6\
+					     [1111 1111] [1111 1111] [1111 1111] [1111 0110] = 2\'c0\'c7 \'ba\'b8\'bc\'f6(1\'c0\'c7 \'ba\'b8\'bc\'f6 +1)\
+	ex) a = -23\
+		\'c4\'c4\'c7\'bb\'c5\'cd \'c0\'fa\'c0\'e5 \'b9\'e6\'bd\'c4 [1111 1111] [1111 1111] [1111 1111] [1110 1000] = 1\'c0\'c7 \'ba\'b8\'bc\'f6\
+					     [1111 1111] [1111 1111] [1111 1111] [1110 1001] = 2\'c0\'c7 \'ba\'b8\'bc\'f6\
+	ex) a = -1\
+		0000 0001 = 1\
+		1111 1111 = -1(1\'c0\'c7 \'ba\'b8\'bc\'f6, \'b0\'a1\'c0\'e5 \'c5\'ab \'bc\'f6 or \'b8\'b6\'c1\'f6\'b8\'b7 \'c0\'cc\'b6\'f3\'b4\'c2 \'c7\'a5\'bd\'c3\'b0\'a1 \'b5\'c9 \'bc\'f6\'b5\'b5 \'c0\'d6\'b4\'d9.)\
+\
+=> \'bd\'c7\'bc\'f6 : \'ba\'b8\'bc\'f6, \'b0\'a1\'bc\'f6, \'c1\'f6\'bc\'f6\'b7\'ce \'c0\'fa\'c0\'e5\
+	ex) 1.07 -> +0.107E + 001\
+=> 10\'c1\'f8 \'bc\'d2\'bc\'f6 -> 2\'c1\'f8 \'bc\'d2\'bc\'f6 : 2\'b8\'a6 \'b0\'f6\'c7\'cf\'b8\'e9\'bc\'ad \'c1\'a4\'bc\'f6 \'ba\'ce\'ba\'d0\'c0\'bb \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'c7\'a5\'b1\'e2 \'bc\'d2\'bc\'f6\'b0\'a1 0\'c0\'cc \'b5\'c9 \'b6\'a7 \'b1\'ee\'c1\'f6 \'b9\'dd\'ba\'b9\
+	ex) 0.75 x 2 = 1.5 (\'be\'d5\'c0\'c7 1\'b8\'b8 \'bb\'a9\'bc\'ad 0.1 -> \'b1\'d7 \'b4\'d9\'c0\'bd \'b3\'b2\'c0\'ba 0.5\'bf\'a1 2\'b8\'a6 \'b0\'f6\'c7\'cf\'bf\'a9 \'b3\'aa\'bf\'c2 1.0\'c0\'bb \'b5\'da\'bf\'a1 \'ba\'d9\'bf\'a9\'bc\'ad 0.11(2)\'b7\'ce \'b0\'e1\'b0\'fa\'b9\'b0\'c0\'cc \'b3\'aa\'bf\'c8)\
+\
+=> Overflow : \'c0\'da\'bd\'c5\'c0\'cc \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b3\'d1\'be\'ee\'bc\'b1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d8\'bc\'ad \'c0\'df\'b8\'f8\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'bb\'f3\'c8\'b2\
+	ex) int n = (int)(210000000 + 210000000) \'c7\'cf\'b8\'e9 \'b0\'e1\'b0\'fa\'b9\'b0\'c0\'cc n : -94967296\'c0\'ce \'c0\'bd\'bc\'f6\'b0\'a1 \'b3\'aa\'bf\'c8\
+=> Underflow : \'c0\'da\'bd\'c5\'c0\'cc \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b9\'fc\'c0\'a7\'ba\'b8\'b4\'d9 \'c0\'db\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d8\'bc\'ad \'c0\'df\'b8\'f8\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'bb\'f3\'c8\'b2\
+	ex) int n = (int)(-2100000000 - 2100000000) \'c7\'cf\'b8\'e9 \'b0\'e1\'b0\'fa\'b9\'b0\'c0\'cc n : 94967296\'c0\'ce \'be\'e7\'bc\'f6\'b0\'a1 \'b3\'aa\'bf\'c8\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  Flow \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //Overflow : \'c0\'da\'bd\'c5\'c0\'cc \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b3\'d1\'be\'ee\'bc\'b1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d8\'bc\'ad \'c0\'df\'b8\'f8\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'bb\'f3\'c8\'b2\cf0 \
+		\cf2 int\cf0  \cf3 n\cf0  = (\cf2 int\cf0 )(2100000000 + 2100000000);\
+		System.\cf5 out\cf0 .println(\cf6 "n:"\cf0  +\cf3 n\cf0 );\
+		\cf4 //Underflow : \'c0\'da\'bd\'c5\'c0\'cc \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b9\'fc\'c0\'a7\'ba\'b8\'b4\'d9 \'c0\'db\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d8\'bc\'ad \'c0\'df\'b8\'f8\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'bb\'f3\'c8\'b2\cf0 \
+		\cf3 n\cf0  = (\cf2 int\cf0 )(-2100000000 - 2100000000);\
+		System.\cf5 out\cf0 .println(\cf6 "n:"\cf0  +\cf3 n\cf0 );\
+		\
+		\cf2 double\cf0  \cf3 d\cf0  = 0.1;\
+		\cf2 double\cf0  \cf3 sum\cf0  = 0.0;\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0 =0; \cf3 i\cf0 <100; \cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			\cf3 sum\cf0  = \cf3 sum\cf0  +\cf3 d\cf0 ;\
+		\}\
+		System.\cf5 out\cf0 .println(\cf6 "sum:"\cf0  + \cf3 sum\cf0 );\
+\
+		\cf4 //\'c0\'da\'b9\'d9\'bf\'a1\'bc\'ad\'b4\'c2 \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b3\'a2\'b8\'ae \'bf\'ac\'bb\'ea\'c7\'cf\'b8\'e9 \'b1\'d7 \'b0\'e1\'b0\'fa\'b5\'b5 \'bf\'ac\'bb\'ea\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf\'b5\'cb\'b4\'cf\'b4\'d9.\cf0 \
+		System.\cf5 out\cf0 .println(5/3);	\cf4 //\'c1\'a4\'bc\'f6 \'b3\'aa\'b4\'a9\'b1\'e2 \'c1\'a4\'bc\'f6\'b4\'c2 \'c1\'a4\'bc\'f6 : 1\cf0 \
+		\cf4 //\'bc\'d2\'bc\'f6\'b1\'ee\'c1\'f6 \'b3\'aa\'bf\'c0\'b5\'b5\'b7\'cf \'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 2\'b0\'b3 \'c1\'df\'bf\'a1 \'c7\'cf\'b3\'aa\'b8\'a6 \'bd\'c7\'bc\'f6\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		System.\cf5 out\cf0 .println((\cf2 double\cf0 )5/3);	\cf4 //\'bd\'c7\'bc\'f6 \'b3\'aa\'b4\'a9\'b1\'e2 \'c1\'a4\'bc\'f6\'b4\'c2 \'bd\'c7\'bc\'f6 : 1.666...\cf0 \}\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 **\'c2\'fc\'c1\'b6\'c7\'fc(Reference Type)\
+\
+=> \'b0\'a1\'b8\'ae\'c4\'d1\'be\'df \'c7\'cf\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 0\'b0\'b3 \'c0\'cc\'bb\'f3\'c0\'ce \'b0\'e6\'bf\'ec\
+=> \'c0\'cc \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'ba\'af\'bc\'f6\'b0\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'bd\'c3\'c0\'db\'c0\'a7\'c4\'a1\'b8\'a6 \'b0\'a1\'b8\'ae\'c5\'b0\'b0\'ed \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c3 \'b6\'a7\'b4\'c2 [] \'b3\'aa .\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c1\'a2\'b1\'d9\'c7\'cf\'b0\'d4 \'b5\'cb\'b4\'cf\'b4\'d9.\
+=> \'b9\'e8\'bf\'ad\'b0\'fa \'c5\'ac\'b7\'a1\'bd\'ba(\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba, \'bf\'ad\'b0\'c5\'c7\'fc \'b5\'ee)\'b7\'ce \'ba\'ce\'c5\'cd \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b0\'a1 \'c2\'fc\'c1\'b6\'c7\'fc\
+=> \'c2\'fc\'c1\'b6\'c7\'fc\'c0\'ba \'ba\'af\'bc\'f6\'b0\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'bd\'c3\'c0\'db\'c0\'a7\'c4\'a1\'b8\'a6 \'c0\'c7\'b9\'cc\'c7\'cf\'b0\'d4 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{	\
+		\cf4 //\'c1\'a4\'bc\'f6 \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba - \'c2\'fc\'c1\'b6\'c7\'fc : 0\'b0\'b3 \'c0\'cc\'bb\'f3\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \cf0 \
+		\cf2 int\cf0  [] \cf3 ar\cf0  = \{10, 30, 20\};\
+		\cf4 //\'c2\'fc\'c1\'b6\'c7\'fc\'c0\'ba \'ba\'af\'bc\'f6 \'c0\'cc\'b8\'a7\'b8\'b8\'c0\'b8\'b7\'ce\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c3 \'bc\'f6 \'be\'f8\'b4\'d9.\cf0 \
+		System.\cf5 out\cf0 .println(\cf6 "ar:"\cf0  + \cf3 ar\cf0 );\
+		\cf4 //\'c2\'fc\'c1\'b6\'c7\'fc\'c0\'ba \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'c0\'d6\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c3 \'b6\'a7 \'c0\'cc\'b8\'a7 \'c0\'cc\'bf\'dc\'c0\'c7 \'b9\'ab\'be\'f9\'c0\'ce\'b0\'a1\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		System.\cf5 out\cf0 .println(\cf6 "ar[0]:"\cf0  + \cf3 ar\cf0 [0] + \cf6 "\\nar[1]:"\cf0  + \cf3 ar\cf0 [1] + \cf6 "\\nar[2]:"\cf0  + \cf3 ar\cf0 [2]);\
+		System.\cf5 out\cf0 .printf(\cf6 "%d: %d: %d"\cf0 , \cf3 ar\cf0 [0], \cf3 ar\cf0 [1], \cf3 ar\cf0 [2]);\}\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 **Type Casting(\'c7\'fc \'ba\'af\'c8\'af)\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'b0\'cd\
+=> \'b1\'e2\'ba\'bb\'c7\'fc\'bf\'a1\'bc\'ad boolean \'ba\'af\'bc\'f6\'bf\'a1\'b4\'c2 boolean \'b5\'a5\'c0\'cc\'c5\'cd \'c0\'cc\'bf\'dc\'bf\'a1\'b4\'c2 \'c0\'fa\'c0\'e5\'c0\'bb \'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'bc\'fd\'c0\'da \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba byte < short < char < int < long < float < double \'bc\'f8\'c0\'b8\'b7\'ce \'c5\'a9\'b1\'e2\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d5\'b4\'cf\'b4\'d9.\
+     (\'c0\'db\'c0\'ba \'c5\'a9\'b1\'e2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c5\'ab \'c5\'a9\'b1\'e2\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'b0\'a1\'b4\'c9\'c7\'cf\'c1\'f6\'b8\'b8 \'c5\'ab \'c5\'a9\'b1\'e2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'db\'c0\'ba \'c5\'a9\'b1\'e2\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.)\
+\
+	1. \'c0\'da\'b5\'bf \'c7\'fc \'ba\'af\'c8\'af\
+	=> \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'b0\'cd\
+	=> \'c0\'db\'c0\'ba \'c5\'a9\'b1\'e2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c5\'ab \'c5\'a9\'b1\'e2\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'d2 \'b6\'a7 \'b9\'df\'bb\'fd\
+	ex) double d = 10; //double d = 10.0; \'b7\'ce \'ba\'af\'b0\'e6\'b5\'c7\'bc\'ad \'bd\'c7\'c7\'e0\
+	=> \'c0\'db\'c0\'ba \'c5\'a9\'b1\'e2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'cd \'c5\'ab \'c5\'a9\'b1\'e2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bf\'ac\'bb\'ea(\'b0\'e8\'bb\'ea)\'c7\'d2 \'b6\'a7 \'c0\'db\'c0\'ba \'c5\'a9\'b1\'e2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c5\'ab \'c5\'a9\'b1\'e2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'bc\'ad \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed \'b0\'e1\'b0\'fa\'b5\'b5 \'b1\'d7 \'c5\'a9\'b1\'e2\'b7\'ce \'b8\'c2\'c3\'df\'be\'ee\'bc\'ad \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+	ex) 10 + 9.7 // 10.0 + 9.7\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'bc\'ad \'b0\'e8\'bb\'ea\
+\
+	2. \'b0\'ad\'c1\'a6 \'c7\'fc \'ba\'af\'c8\'af\
+	=> \'b0\'ad\'c1\'a6\'b7\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2 \'b0\'cd\
+	=> \'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'bf\'f8\'c7\'cf\'b4\'c2 \'b0\'e1\'b0\'fa\'b8\'a6 \'be\'f2\'be\'ee\'b3\'bb\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b0\'ad\'c1\'a6 \'c7\'fc \'ba\'af\'c8\'af\'c0\'bb \'c7\'cf\'b0\'ed \'c2\'fc\'c1\'b6\'c7\'fc\'c0\'ba \'bf\'f8\'b7\'a1\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'b8\'b7\'ce \'b5\'c7\'b5\'b9\'b8\'ae\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b0\'ad\'c1\'a6 \'c7\'fc \'ba\'af\'c8\'af\'c0\'bb \'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'b3\'a2\'b8\'ae\'b4\'c2 \'c0\'fc\'ba\'ce \'b0\'ad\'c1\'a6 \'c7\'fc \'ba\'af\'c8\'af\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'c2\'fc\'c1\'b6\'c7\'fc\'c0\'ba \'bb\'f3\'bc\'d3\'b0\'fc\'b0\'e8\'c0\'cf \'b6\'a7\'b8\'b8 \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+	=> \'b0\'ad\'c1\'a6 \'c7\'fc \'ba\'af\'c8\'af \'b9\'e6\'b9\'fd\
+	(\'ba\'af\'b0\'e6\'c7\'d2 \'c0\'da\'b7\'e1\'c7\'fc)\'b5\'a5\'c0\'cc\'c5\'cd\
+\
+		1) Java\'bf\'a1\'bc\'ad\'b4\'c2 \'b5\'bf\'c0\'cf\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4\'b3\'a2\'b8\'ae \'bf\'ac\'bb\'ea\'c0\'bb \'c7\'cf\'b8\'e9 \'b1\'d7 \'b0\'e1\'b0\'fa\'b5\'b5 \'bf\'ac\'bb\'ea\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fd\'b4\'cf\'b4\'d9.\
+		ex) 10(\'c1\'a4\'bc\'f6) / 3(\'c1\'a4\'bc\'f6) : 3(\'c1\'a4\'bc\'f6)\
+		ex) (double)10/3 : 3.3333333\'a1\'a6.\
+\
+		2) \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a1\'b0\'f8\'c7\'d8\'bc\'ad \'bf\'f8\'c7\'cf\'b4\'c2 \'b0\'e1\'b0\'fa\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+		=>\'bd\'c7\'bc\'f6\'b7\'ce \'b3\'aa\'bf\'c2 \'b0\'e1\'b0\'fa\'b8\'a6 \'c1\'a4\'bc\'f6\'b7\'ce \'ba\'af\'c8\'af\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\
+		=> \'bd\'c7\'bc\'f6\'b8\'a6 \'c1\'a4\'bc\'f6\'b7\'ce \'ba\'af\'c8\'af\'c7\'cf\'b8\'e9 \'bc\'d2\'bc\'f6\'b4\'c2 \'b9\'f6\'b7\'c1\'c1\'fd\'b4\'cf\'b4\'d9. \
+		ex) 7.8986; //(int)7.8986 -> 7\
+		ex) (int)(7.8986 + 0.5) -> 8\
+\
+**\'b9\'ae\'c0\'da\'bf\'ad \'c0\'fa\'c0\'e5\
+\
+=> \'b9\'ae\'c0\'da\'bf\'ad \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba String\
+=> \'b9\'ae\'c0\'da\'bf\'ad \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba \'c2\'fc\'c1\'b6\'c7\'fc\'c0\'ce\'b5\'a5 \'b4\'d9\'b8\'a5 \'c2\'fc\'c1\'b6\'c7\'fc\'b0\'fa \'b4\'d9\'b8\'a3\'b0\'d4 \'a1\'b0\'b9\'ae\'c0\'da\'bf\'ad\'a1\'b1\'c0\'c7 \'c7\'fc\'bd\'c4\'c0\'b8\'b7\'ce \'b4\'eb\'c0\'d4\'c0\'cc \'b0\'a1\'b4\'c9\
+=> \'c3\'e2\'b7\'c2\'c7\'d2 \'b6\'a7 \'b9\'ae\'c0\'da\'bf\'ad \'ba\'af\'bc\'f6\'c0\'cc\'b8\'a7\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'c0\'d6\'b4\'c2 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'cc \'c3\'e2\'b7\'c2\'b5\'cb\'b4\'cf\'b4\'d9.\
+=> \'b9\'ae\'c0\'da\'bf\'ad \'ba\'af\'bc\'f6\'c0\'cc\'b8\'a7\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'c7\'d4\'bc\'f6\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 toString()\'c0\'cc \'c8\'a3\'c3\'e2\'b5\'c7\'bc\'ad \'c0\'fa\'c0\'e5\'c7\'d1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'cc \'c3\'e2\'b7\'c2\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+String \'ba\'af\'bc\'f6\'b8\'ed = \'a1\'b0\'c0\'fa\'c0\'e5\'c7\'d2 \'b9\'ae\'c0\'da\'bf\'ad\'a1\'b1;\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  StringExample \{\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //\'c0\'cc\'b8\'a7, \'c1\'d6\'bc\'d2, \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3, \'b3\'aa\'c0\'cc\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\cf0 \
+		String \cf3 name\cf0  = \cf6 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 ;\
+		String \cf3 address\cf0  = \cf6 "\'bc\'ad\'bf\'ef \'b3\'eb\'bf\'f8\'b1\'b8 \'c1\'df\'b0\'e8\'b5\'bf"\cf0 ;\
+		String \cf3 number\cf0  = \cf6 "01054576063"\cf0 ;\
+		\cf2 int\cf0  \cf3 age\cf0  = 28;\
+		\
+		System.\cf5 out\cf0 .println(\cf6 "\'c0\'cc\'b8\'a7:"\cf0  + \cf3 name\cf0  + \cf6 "\\n\'c1\'d6\'bc\'d2:"\cf0  + \cf3 address\cf0  + \cf6 "\\n\'b9\'f8\'c8\'a3:"\cf0  + \cf3 number\cf0  + \cf6 "\\n\'b3\'aa\'c0\'cc:"\cf0  + \cf3 age\cf0  + \cf6 "\\n"\cf0 );\
+		\
+		System.\cf5 out\cf0 .printf(\cf6 "\'c0\'cc\'b8\'a7:%s \'c1\'d6\'bc\'d2:%s \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3:%s \'b3\'aa\'c0\'cc:%d \\n"\cf0 , \cf3 name\cf0 , \cf3 address\cf0 , \cf3 number\cf0 , \cf3 age\cf0 );\
+		System.\cf5 out\cf0 .printf(\cf6 "\'c0\'cc\'b8\'a7:%10s \'c1\'d6\'bc\'d2:%s \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3:%s \'b3\'aa\'c0\'cc:%d \\n"\cf0 , \cf3 name\cf0 , \cf3 address\cf0 , \cf3 number\cf0 , \cf3 age\cf0 );\
+		\cf4 //\'bc\'d2\'bc\'f6\'b8\'a6 6\'c2\'b0 \'c0\'da\'b8\'ae\'b1\'ee\'c1\'f6 \'c3\'e2\'b7\'c2\cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "%f\\n"\cf0 ,8.987654321);\
+		\cf4 //\'bc\'d2\'bc\'f6 2\'c2\'b0 \'c0\'da\'b8\'ae\'b1\'ee\'c1\'f6 \'c3\'e2\'b7\'c2 - 3\'c2\'b0 \'c0\'da\'b8\'ae\'bf\'a1\'bc\'ad \'b9\'dd\'bf\'c3\'b8\'b2 \cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "%.2f\\n"\cf0 ,8.987654321);\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**\'c0\'cc\'b8\'a7\'c0\'bb \'ba\'af\'bc\'f6\'bf\'a1 \'c0\'fa\'c0\'e5\
+\
+=> \'c1\'d6\'bc\'d2\'bf\'cd \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3\'b5\'b5 \'ba\'af\'bc\'f6\'bf\'a1 \'c0\'fa\'c0\'e5\
+=> \'b3\'aa\'c0\'cc\'b8\'a6 \'ba\'af\'bc\'f6\'bf\'a1 \'c0\'fa\'c0\'e5\
+=> \'c0\'fa\'c0\'e5\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'e2\'b7\'c2\
+\'c0\'cc\'b8\'a7 - \'b9\'ae\'c0\'da\'bf\'ad(String)\
+\'c1\'d6\'bc\'d2 - \'b9\'ae\'c0\'da\'bf\'ad(String)\
+\'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3 - \'c1\'a4\'bc\'f6(int) -> \'b8\'c7 \'be\'d5\'c0\'cc 0\'c0\'b8\'b7\'ce \'bd\'c3\'c0\'db\'c7\'cf\'b9\'c7\'b7\'ce \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9. (String)\
+\'b3\'aa\'c0\'cc - \'c1\'a4\'bc\'f6(int)\
+\
+**System.out.printf\
+\
+=> \'bc\'ad\'bd\'c4\'bf\'a1 \'b8\'c2\'c3\'e7\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c4\'dc\'bc\'d6\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> \'bc\'ad\'bd\'c4\'c0\'ba %\'b4\'d9\'c0\'bd\'bf\'a1 \'bc\'fd\'c0\'da\'bf\'cd \'c7\'cf\'b3\'aa\'c0\'c7 \'bf\'b5\'b9\'ae\'c0\'da\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4\
+\
+	\'bc\'fd\'c0\'da\'b4\'c2 \'bb\'fd\'b7\'ab\'c0\'cc \'b0\'a1\'b4\'c9\
+	System.out.printf(\'a1\'b0\'b8\'de\'bd\'c3\'c1\'f6 %\'bc\'ad\'bd\'c4\'b9\'ae\'c0\'da\'a1\'b1, \'b5\'a5\'c0\'cc\'c5\'cd \'b3\'aa\'bf\'ad);\
+	=> \'bc\'ad\'bd\'c4\'b0\'b9\'bc\'f6\'b8\'b8\'c5\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'aa\'bf\'ad\
+\
+	%d : \'c1\'a4\'bc\'f6\
+	%f : float\'c7\'fc \'bd\'c7\'bc\'f6 \'c3\'e2\'b7\'c2\
+	%lf : double\'c7\'fc \'bd\'c7\'bc\'f6 \'c3\'e2\'b7\'c2\
+	%c : char \'c3\'e2\'b7\'c2\
+	%s : \'b9\'ae\'c0\'da\'bf\'ad \'c3\'e2\'b7\'c2\
+	%b : boolean \'c3\'e2\'b7\'c2\
+	=> \'bc\'ad\'bd\'c4\'b9\'ae\'c0\'da \'be\'d5\'bf\'a1 \'c1\'a4\'bc\'f6\'b8\'a6 \'b1\'e2\'c0\'e7\'c7\'cf\'b8\'e9 \'c1\'a4\'bc\'f6\'b8\'b8\'c5\'ad \'c0\'da\'b8\'b4\'bc\'f6\'b8\'a6 \'c8\'ae\'ba\'b8\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2\
+	=> \'c0\'da\'b8\'b4\'bc\'f6\'b8\'a6 \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'b8\'b4\'d9 \'c0\'db\'b0\'d4 \'b1\'e2\'c0\'e7\'c7\'cf\'b8\'e9 \'bf\'f8\'b7\'a1\'c5\'a9\'b1\'e2\'b8\'b8\'c5\'ad \'c3\'e2\'b7\'c2\
+	=> \'bd\'c7\'bc\'f6\'b4\'c2 \'c0\'fc\'c3\'bc\'c0\'da\'b8\'b4\'bc\'f6.\'bc\'d2\'bc\'f6\'c0\'da\'b8\'b4\'bc\'f6\'b8\'a6 \'b1\'e2\'c0\'e7\'c7\'cf\'b8\'e9 \'bc\'d2\'bc\'f6 \'c0\'da\'b8\'b4\'bc\'f6\'b8\'b8\'c5\'ad \'bc\'d2\'bc\'f6\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2\'b5\'a5 \'c0\'cc \'b6\'a7 \'bc\'d2\'bc\'f6 \'c0\'da\'b8\'b4 \'b9\'d8\'bf\'a1\'bc\'ad \'b9\'dd\'bf\'c3\'b8\'b2\
+\pard\pardeftab720\partightenfactor0
+\cf0 	System.\cf5 out\cf0 .printf(\cf6 "%f\\n"\cf0 ,8.987654321); //8.987654\
+	System.\cf5 out\cf0 .printf(\cf6 "%.2f\\n"\cf0 ,8.987654321); //8.99\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**\'bf\'ac\'bb\'ea\'c0\'da(Operator)\
+\
+=> \'b0\'e8\'bb\'ea\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d8\'c1\'d6\'b4\'c2 \'ba\'ce\'c8\'a3\'b3\'aa \'b8\'ed\'b7\'c9\'be\'ee\
+\
+	1. \'bf\'ac\'bb\'ea\'c0\'da\'c0\'c7 \'ba\'d0\'b7\'f9\
+		1)\'c7\'c7\'bf\'ac\'bb\'ea\'c0\'da\'c0\'c7 \'b0\'b3\'bc\'f6\'bf\'a1 \'b5\'fb\'b8\'a5 \'ba\'d0\'b7\'f9\
+		=> \'b4\'dc\'c7\'d7 \'bf\'ac\'bb\'ea\'c0\'da : \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 1\'b0\'b3\'b8\'e9 \'bc\'f6\'c7\'e0\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da - unary\
+		=> \'c0\'cc\'c7\'d7 \'bf\'ac\'bb\'ea\'c0\'da : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 2\'b0\'b3 \'c1\'d6\'be\'ee\'be\'df \'bc\'f6\'c7\'e0\'b5\'c7\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da -binary\
+		=> \'bb\'ef\'c7\'d7 \'bf\'ac\'bb\'ea\'c0\'da : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 3\'b0\'b3 \'c1\'d6\'be\'ee\'be\'df \'bc\'f6\'c7\'e0\'b5\'c7\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+\
+		2)\'bf\'ac\'bb\'ea\'c0\'c7 \'b0\'e1\'b0\'fa\'bf\'a1 \'b5\'fb\'b6\'f3 \'ba\'d0\'b7\'f9\
+		=> \'bb\'ea\'bc\'fa\'bf\'ac\'bb\'ea : \'bf\'ac\'bb\'ea\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 \'bc\'fd\'c0\'da\'c0\'ce \'bf\'ac\'bb\'ea\
+		=> \'b3\'ed\'b8\'ae\'bf\'ac\'bb\'ea : \'bf\'ac\'bb\'ea\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 boolean\'c0\'ce \'bf\'ac\'bb\'ea\
+		\
+	2. \'c3\'d6\'bf\'ec\'bc\'b1 \'bf\'ac\'bb\'ea\'c0\'da\
+		1) () : \'bf\'ac\'bb\'ea\'c0\'c7 \'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'bf\'ac\'bb\'ea\'c0\'da\
+		2) [] : \'b9\'e8\'bf\'ad\'bf\'a1\'bc\'ad \'c0\'ce\'b5\'a6\'bd\'ba\'b3\'aa \'c5\'a9\'b1\'e2\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'cf\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		3) . : \'b0\'b4\'c3\'bc\'b0\'a1 \'c0\'da\'bd\'c5\'c0\'c7 \'b8\'c9\'b9\'f6\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+\
+	3. \'b4\'dc\'c7\'d7 \'bf\'ac\'bb\'ea\'c0\'da\
+	=>\'c3\'d6\'bf\'ec\'bc\'b1 \'bf\'ac\'bb\'ea\'c0\'da \'b4\'d9\'c0\'bd\'c0\'b8\'b7\'ce \'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\'b0\'a1 \'b3\'f4\'bd\'c0\'b4\'cf\'b4\'d9.\
+		1) ~\
+		=>1\'c0\'c7 \'ba\'b8\'bc\'f6\'b8\'a6 \'b1\'b8\'c7\'d8\'c1\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		ex) 0 ->1, 1->0 \'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'b0\'e1\'b0\'fa\'b8\'a6 \'c1\'a4\'bc\'f6\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		\'c1\'a4\'bc\'f6 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'b8 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\
+		\'be\'e7\'bc\'f6 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'c0\'bd\'bc\'f6\'b7\'ce \'ba\'af\'b0\'e6\'b5\'c7\'b0\'ed \'c0\'fd\'b4\'eb\'b0\'aa\'c0\'cc 1\'c1\'f5\'b0\'a1\
+		\'c0\'bd\'bc\'f6 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'be\'e7\'bc\'f6\'b7\'ce \'ba\'af\'b0\'e6\'b5\'c7\'b0\'ed \'c0\'fd\'b4\'eb\'b0\'aa\'c0\'cc 1\'b0\'a8\'bc\'d2\
+		2) ! \
+		=>boolean \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2\'b5\'a5 true -> false, false -> true\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'d8\'c1\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		3) \'ba\'ce\'c8\'a3 +, -\
+		=> \'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'ba\'ce\'c8\'a3\
+		=> -\'b4\'c2 2\'c0\'c7 \'ba\'b8\'bc\'f6\'b8\'a6 \'b1\'b8\'c7\'d8\'c1\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		=> \'c4\'c4\'c7\'bb\'c5\'cd\'b4\'c2 2\'c0\'c7 \'ba\'b8\'bc\'f6\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'bd\'bc\'f6\'b8\'a6 \'c7\'a5\'c7\'f6\
+		4) \'c1\'f5\'b0\'a8\'bf\'ac\'bb\'ea\'c0\'da\
+		++, - -\
+		=> \'c1\'a4\'bc\'f6 \'ba\'af\'bc\'f6\'bf\'a1\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		=> ++\'b4\'c2 \'c1\'a4\'bc\'f6 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb 1\'c1\'f5\'b0\'a1 \'bd\'c3\'c4\'d1\'c1\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		=> - -\'b4\'c2 \'c1\'a4\'bc\'f6 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb 1\'b0\'a8\'bc\'d2 \'bd\'c3\'c4\'d1\'c1\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		=> ++\'b3\'aa - -\'b8\'a6 \'c1\'a4\'bc\'f6 \'ba\'af\'bc\'f6 \'be\'d5\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'c1\'f5\'b0\'a8\'c0\'bb \'b8\'d5\'c0\'fa\'c7\'cf\'b0\'ed \'b8\'ed\'b7\'c9\'b9\'ae\'bf\'a1 \'bb\'e7\'bf\'eb\
+		=> ++\'b3\'aa - -\'b8\'a6 \'c1\'a4\'bc\'f6 \'ba\'af\'bc\'f6 \'b5\'da\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b8\'ed\'b7\'c9\'b9\'ae\'bf\'a1 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed \'c1\'f5\'b0\'a8\'c0\'bb \'c7\'d5\'b4\'cf\'b4\'d9.\
+		\cf2 public\cf0  \cf2 class\cf0  Unary \{\
+		\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 		\cf4 //\'c1\'a4\'bc\'f6 \'ba\'af\'bc\'f6\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'c3\'ca\'b1\'e2\'b0\'aa\'c0\'bb \'ba\'ce\'bf\'a9\cf0 \
+		\cf2 int\cf0  \cf3 i\cf0  = 99;\
+		\cf3 i\cf0 ++; \cf4 //i\'b0\'aa\'c0\'bb 1\'c1\'f5\'b0\'a1\cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "i: %d\\n"\cf0 , \cf3 i\cf0 );	\cf4 //100\'c0\'cc \'c3\'e2\'b7\'c2\cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "i: %d\\n"\cf0 , ++\cf3 i\cf0 );	\cf4 //\'be\'d5\'bf\'a1 \'ba\'d9\'c0\'b8\'b8\'e9 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'c1\'f5\'b0\'a1\'bd\'c3\'c5\'b0\'b0\'ed \'b8\'ed\'b7\'c9\'b9\'ae\'bf\'a1 \'bb\'e7\'bf\'eb, 101\'b0\'a1 \'b5\'c7\'b0\'ed \'c3\'e2\'b7\'c2\cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "i: %d\\n"\cf0 , \cf3 i\cf0 ++);	\cf4 //\'b5\'da\'bf\'a1 \'ba\'d9\'c0\'cc\'b8\'e9 \'b8\'ed\'b7\'c9\'b9\'ae\'bf\'a1 \'b0\'aa\'c0\'bb \'b8\'d5\'c0\'fa \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed \'b3\'aa\'c1\'df\'bf\'a1 \'c1\'f5\'b0\'a8, 101\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed i\'b4\'c2 102\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9. \cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "i: %d\\n"\cf0 , \cf3 i\cf0 );	\cf4 //\'be\'d5\'bf\'a1 i++ \'b6\'a7\'b9\'ae\'bf\'a1 102\'b0\'a1 \'c3\'e2\'b7\'c2\cf0 \
+		\
+		\cf3 i\cf0  = 0;\
+		\cf2 int\cf0  \cf3 result\cf0  = \cf3 i\cf0 ++ + \cf3 i\cf0 ++;	\cf4 //\'be\'d5\'bf\'a1 i++\'bf\'a1\'bc\'ad 0\'c0\'cc\'c3\'e2\'b7\'c2\'b5\'c7\'b0\'ed i\'b4\'c2 1\'c0\'cc\'b5\'ca, \'b5\'da\'bf\'a1 i++\'bf\'a1\'bc\'ad 1\'c0\'cc\'c3\'e2\'b7\'c2\'b5\'c7\'b0\'ed i\'b4\'c2 2\'b0\'a1\'b5\'ca \cf0 \
+		\
+		System.\cf5 out\cf0 .printf(\cf6 "\\nresult:%d\\n"\cf0 , \cf3 result\cf0 );\}\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	4. \'bb\'ea\'bc\'fa \'bf\'ac\'bb\'ea\'c0\'da\
+		1) +\
+		=> \'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'b3\'a2\'b8\'ae\'b4\'c2 +\'bf\'ac\'bb\'ea\
+		=> String\'b3\'a2\'b8\'ae +\'bf\'ac\'bb\'ea\'c0\'bb \'c7\'cf\'b8\'e9 \'b0\'e1\'c7\'d5\'c0\'bb \'c7\'cf\'b0\'ed String\'b0\'fa \'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 +\'bf\'ac\'bb\'ea\'c0\'bb \'c7\'cf\'b8\'e9 \'bf\'aa\'bd\'c3 \'b0\'e1\'c7\'d5\'c0\'d4\'b4\'cf\'b4\'d9.\
+		ex) \'a1\'b03 + 4 = \'a1\'b0 +3 +4 : 3+4 = 34\
+		ex) \'a1\'b03 + 4 = \'a1\'b0 + (3+4) : 3 + 4 = 7\
+		2) -\
+		3) *\
+		4) /\
+		5) % : \'c1\'a4\'bc\'f6 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\'b7\'ce \'b3\'aa\'b8\'d3\'c1\'f6\'b8\'a6 \'b1\'b8\'c7\'d8\'c1\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+		=> \'c1\'d6\'b1\'e2\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'b9\'dd\'ba\'b9\'c7\'cf\'b4\'c2 \'c0\'db\'be\'f7\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7 % \'bf\'ac\'bb\'ea\'c0\'da \'bb\'e7\'bf\'eb\
+\pard\pardeftab720\partightenfactor0
+\cf2 	public\cf0  \cf2 class\cf0  Mode \{\
+		\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+\
+\cf2 		byte\cf0  \cf3 a\cf0  = 10;\
+		\cf2 byte\cf0  \cf3 b\cf0  =7;\
+		\cf4 //byte + byte \'c0\'cc\'c1\'f6\'b8\'b8 \'c0\'da\'b9\'d9\'b4\'c2 \ul int\ulnone \'ba\'b8\'b4\'d9 \'c5\'a9\'b1\'e2\'b0\'a1 \'c0\'db\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'bf\'ac\'bb\'ea\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b8\'e9 \ul int\ulnone \'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'bc\'ad \'bf\'ac\'bb\'ea\'c0\'bb \'bc\'f6\'c7\'e0\
+		//\'bf\'ac\'bb\'ea\'c0\'c7 \'b0\'e1\'b0\'fa\'b8\'a6 byte\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 \'b0\'e1\'b0\'fa\'b8\'a6 \'c7\'fc\'ba\'af\'c8\'af\'c7\'d8\'bc\'ad \'c0\'fa\'c0\'e5\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		\cf2 byte\cf0  \cf3 \ul \ulc3 x\cf0 \ulnone  = (\cf2 byte\cf0 )(\cf3 a\cf0  + \cf3 b\cf0 ); //(O)\
+		\cf2 byte\cf0  \cf3 x\cf0  = \cf3 \ul a\cf0 \ulc0  + \cf3 \ulc3 b\cf0 \ulnone ; //(X)\
+\
+			\cf2 int\cf0  \cf3 n\cf0  = 0;\
+			\cf2 while\cf0 (\cf2 true\cf0 ) \{\
+				\cf2 try\cf0  \{\
+					\cf2 if\cf0 (\cf3 n\cf0  % 5 == 0)\
+						System.\cf5 out\cf0 .println(\cf6 "\'b9\'e8\'b0\'a1"\cf0 );\
+					\cf2 if\cf0 (\cf3 n\cf0  % 5 == 1)\
+						System.\cf5 out\cf0 .println(\cf6 "\'b0\'ed\'c6\'c4\'b5\'b5"\cf0 );\
+					\cf2 if\cf0 (\cf3 n\cf0  % 5 == 2)\
+						System.\cf5 out\cf0 .println(\cf6 "\'bd\'c5\'c0\'cc\'c1\'d6"\cf0 );\
+					\cf2 if\cf0 (\cf3 n\cf0  % 5 == 3)\
+						System.\cf5 out\cf0 .println(\cf6 "\'bc\'f8\'b4\'eb\'b1\'b9"\cf0 );\
+					\cf2 if\cf0 (\cf3 n\cf0  % 5 == 4)\
+						System.\cf5 out\cf0 .println(\cf6 "\'c0\'fd\'b4\'eb\'be\'c8\'b8\'d4\'c0\'bd"\cf0 );\
+					\cf3 n\cf0 ++;\
+					Thread.sleep(1000);\
+				\}\cf2 catch\cf0 (Exception \cf3 e\cf0 ) \{\}\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 		6) \'bb\'ea\'bc\'f8 \'bf\'ac\'bb\'ea\'bd\'c3 \'c1\'d6\'c0\'c7\'c7\'d2 \'c1\'a1\
+		=> \'bb\'ea\'bc\'fa \'bf\'ac\'bb\'ea\'c0\'ba int\'ba\'b8\'b4\'d9 \'c0\'db\'c0\'ba \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'bf\'ac\'bb\'ea\'c7\'cf\'b8\'e9 int\'b7\'ce \'ba\'af\'c8\'af\'c7\'d8\'bc\'ad \'bf\'ac\'bb\'ea\'c0\'bb \'c7\'d5\'b4\'cf\'b4\'d9.\
+		=> \'c1\'a4\'bc\'f6 / \'c1\'a4\'bc\'f6 = \'c1\'a4\'bc\'f6 \'c0\'d4\'b4\'cf\'b4\'d9.\
+		=> \'bd\'c7\'bc\'f6\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'bb\'ea\'bc\'fa\'bf\'ac\'bb\'ea\'c0\'bb \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \'c1\'a4\'c8\'ae\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'b0\'e1\'b0\'fa\'b0\'a1 \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fa \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+		=> \'c1\'a4\'bc\'f6 / 0\'c0\'ba \'bf\'b9\'bf\'dc\'b8\'a6 \'b9\'df\'bb\'fd \'bd\'c3\'c5\'b0\'c1\'f6\'b8\'b8 \'bd\'c7\'bc\'f6 / 0\'c0\'ba \'bf\'b9\'bf\'dc\'b0\'a1 \'be\'c6\'b4\'cf\'b0\'ed NaN\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+		=> \'b3\'aa\'b4\'a9\'b1\'e2\'b8\'a6 \'c7\'d2 \'b6\'a7\'b4\'c2 \'b3\'aa\'b4\'a9\'b4\'c2 \'bc\'f6\'b0\'a1 0\'c0\'ce\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'cf\'b0\'ed \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+		ex) System.\cf5 out\cf0 .println(10.0/0.0); // Infinity\'b7\'ce \'c3\'e2\'b7\'c2\'b5\'ca\
+\
+//\'b5\'a5\'c0\'cc\'c5\'cd \'b0\'b3\'bc\'f6\
+Int count = 101;\
+//\'c7\'d1 \'c6\'e4\'c0\'cc\'c1\'f6\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd \'b0\'b3\'bc\'f6\
+Int page = 10\
+//count\'b4\'c2 \'b8\'ee \'b0\'b3\'c0\'c7 \'c6\'e4\'c0\'cc\'c1\'f6\'bf\'a1 \'c3\'e2\'b7\'c2\
+\
+Count % page == 0 : count / page\
+Count % page != 0 : count / page +1\
+\
+	5. Shift \'bf\'ac\'bb\'ea\'c0\'da\
+	=> 10\'c1\'f8\'bc\'f6 23\'c0\'ba \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1 \'c0\'fa\'c0\'e5\'b5\'c9 \'b6\'a7\'b4\'c2 \'be\'c6\'b7\'a1\'c3\'b3\'b7\'b3 \'c0\'fa\'c0\'e5\'b5\'cb\'b4\'cf\'b4\'d9.\
+	=> 00000000	00000000 00000000 00010111\
+	=> \'c0\'cc \'bc\'fd\'c0\'da \'c6\'d0\'c5\'cf\'c0\'bb \'bf\'de\'c2\'ca\'c0\'b8\'b7\'ce \'c7\'d1 \'b9\'f8 \'b9\'d0\'b8\'e9 \
+	=> 00000000	00000000 00000000 00101110\
+	=> 	\'c1\'a4\'bc\'f6 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\'b7\'ce \'ba\'f1\'c6\'ae \'b4\'dc\'c0\'a7\'b7\'ce \'bf\'de\'c2\'ca\'c0\'cc\'b3\'aa \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'b8\'b7\'ce \'b9\'d0\'be\'ee\'b3\'bb\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+	0000 0011 : 3\'c0\'bb \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'b8\'b7\'ce \'b9\'d0\'b8\'e9 0000 0001 : 1\'c0\'cc \'b5\'c8\'b4\'d9. (3/2 = 1)\
+\
+		1) <<\
+		=> \'c1\'a4\'bc\'f61 << \'c1\'a4\'bc\'f62 : \'c1\'a4\'bc\'f61\'c0\'bb \'c1\'a4\'bc\'f6 2\'b8\'b8\'c5\'ad \'bf\'de\'c2\'ca\'c0\'b8\'b7\'ce shift		=> \'c0\'cc\'b6\'a7 \'ba\'ce\'c8\'a3\'b8\'a6 \'c0\'af\'c1\'f6\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c3\'b9\'b9\'f8\'c2\'b0 \'ba\'f1\'c6\'ae\'b4\'c2 \'c1\'a6\'bf\'dc\
+		ex) 10<< 1 : 20, 10<<2 : 40, 10<<3 : 80\
+		2) >>\
+		=> \'c1\'a4\'bc\'f6 1 >> \'c1\'a4\'bc\'f62 : \'c1\'a4\'bc\'f61\'c0\'bb \'c1\'a4\'bc\'f62\'b8\'b8\'c5\'ad \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'b8\'b7\'ce shift\
+		=> \'ba\'ce\'c8\'a3\'b8\'a6 \'c0\'af\'c1\'f6\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c3\'b9\'b9\'f8\'c2\'b0 \'ba\'f1\'c6\'ae\'b4\'c2 \'c1\'a6\'bf\'dc\
+		ex) 14 >> 1 : 7, 14 >> 2 : 3, 14 >> 3 : 1\
+		3) >>>\
+		=> \'c1\'a4\'bc\'f61 >>> \'c1\'a4\'bc\'f62 : \'c1\'a4\'bc\'f61\'c0\'bb \'c1\'a4\'bc\'f6 2\'b8\'b8\'c5\'ad \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'b8\'b7\'ce shift\
+		=> \'ba\'ce\'c8\'a3\'bf\'a1 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'b9\'ab\'c1\'b6\'b0\'c7 \'b9\'d0\'b0\'ed \'bf\'de\'c2\'ca\'bf\'a1 0\'c0\'bb \'bb\'f0\'c0\'d4\
+		=> \'c0\'bd\'bc\'f6\'b8\'a6 >>> \'c7\'cf\'b8\'e9 \'be\'e7\'bc\'f6\'b0\'a1 \'b5\'cb\'b4\'cf\'b4\'d9.\
+		4) \'c0\'cc \'bf\'ac\'bb\'ea\'c0\'da\'b5\'e9\'c0\'ba \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'ce \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad\'b4\'c2 \'c0\'df \'bb\'e7\'bf\'eb\'b5\'c7\'c1\'f6 \'be\'ca\'b0\'ed \'bd\'c3\'bd\'ba\'c5\'db \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\
+		=> \'c4\'c4\'c7\'bb\'c5\'cd\'b4\'c2 \'b0\'f6\'bc\'c0\'c0\'bb \'bf\'de\'c2\'ca shift\'bf\'cd \'b4\'f5\'c7\'cf\'b1\'e2\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed \'b3\'aa\'b4\'b0\'bc\'c0\'c0\'ba \'bf\'c0\'b8\'a5\'c2\'ca shift\'bf\'cd \'bb\'ac\'bc\'c0\'c0\'bb \'c0\'cc\'bf\'eb\
+\
+	6. \'b0\'fc\'b0\'e8 \'bf\'ac\'bb\'ea\'c0\'da\
+	=> \'bf\'ac\'bb\'ea\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 boolean\
+	=> >, >=, <, <=\
+	=> ==(\'b0\'b0\'b4\'d9), !=(\'b4\'d9\'b8\'a3\'b4\'d9)\
+	=> \'bd\'c7\'bc\'f6\'b8\'a6 == \'b0\'a1\'c1\'f6\'b0\'ed \'ba\'f1\'b1\'b3\'c7\'d2 \'b6\'a7\'b4\'c2 \'c1\'d6\'c0\'c7\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'bd\'c7\'bc\'f6\'b4\'c2 \'c1\'a4\'c8\'ae\'c7\'cf\'b0\'d4 \'c7\'a5\'c7\'f6\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b0\'e1\'b0\'fa\'b0\'a1 \'b4\'d9\'b8\'a3\'b0\'d4 \'b3\'aa\'bf\'c3 \'bc\'f6\'b5\'b5 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+	=> \'c2\'fc\'c1\'b6\'c7\'fc\'c0\'ba ==\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'ba\'f1\'b1\'b3\'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'b0\'a1\'b8\'ae\'c5\'b0\'b0\'ed \'c0\'d6\'b4\'c2 \'c2\'fc\'c1\'b6\'b0\'a1 \'b5\'bf\'c0\'cf\'c7\'d1 \'b0\'e6\'bf\'ec\'bf\'a1 true\
+	\cf2 public\cf0  \cf2 class\cf0  Relation \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 // >, >=, <, <=, ==, !=\'c0\'ba \'bf\'ac\'bb\'ea\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 boolean\cf0 \
+		System.\cf5 out\cf0 .println(\cf6 "10 > 3:"\cf0  + (10>3)); \cf4 //true\cf0 \
+		\cf4 // \'bd\'c7\'bc\'f6 \'bf\'ac\'bb\'ea\'c0\'c7 \'b0\'e1\'b0\'fa \'ba\'f1\'b1\'b3\'b4\'c2 \'c1\'d6\'c0\'c7 \cf0 \
+		System.\cf5 out\cf0 .println(\cf6 "(1-0.8)==0.2:"\cf0  + ((1-0.8)==0.2)); \cf4 //false\cf0 \}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+	7. \'c1\'b6\'b0\'c7 \'b3\'ed\'b8\'ae \'bf\'ac\'bb\'ea\'c0\'da\
+	=> boolean \'b5\'a5\'c0\'cc\'c5\'cd\'b3\'a2\'b8\'ae \'bf\'ac\'bb\'ea\'c0\'bb \'c7\'d8\'bc\'ad \'b0\'e1\'b0\'fa\'b8\'a6 boolean\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+	=> && : and - \'b5\'d1 \'b4\'d9 true \'c0\'ce \'b0\'e6\'bf\'ec\'bf\'a1\'b8\'b8 true, \'b1\'d7 \'c0\'cc\'bf\'dc \'b0\'e6\'bf\'ec\'b4\'c2 false\
+	=> ll : or - \'b5\'d1 \'b4\'d9 false \'c0\'ce \'b0\'e6\'bf\'ec\'bf\'a1\'b8\'b8 false \'b1\'d7 \'c0\'cc\'bf\'dc \'b0\'e6\'bf\'ec\'b4\'c2 true\
+	=> and\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'be\'d5\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 false \'c0\'cc\'b8\'e9 \'b0\'e1\'b0\'fa\'b4\'c2 \'b9\'ab\'c1\'b6\'b0\'c7 false\'b0\'a1 \'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'be\'d5\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 false\'c0\'cc\'b8\'e9 \'b5\'da\'c0\'c7 \'b0\'e1\'b0\'fa\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd.\
+	=> or\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'be\'d5\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 true\'c0\'cc\'b8\'e9 \'b0\'e1\'b0\'fa\'b4\'c2 \'b9\'ab\'c1\'b6\'b0\'c7 true\'b0\'a1 \'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'be\'d5\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 true\'c0\'cc\'b8\'e9 \'b5\'da\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 \'c8\'ae\'c0\'ce\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd.\
+\
+	\cf4 //year\'bf\'a1\'b4\'c2 \'b3\'e2\'b5\'b5\'b0\'a1 \'c0\'fa\'c0\'e5\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 int\cf0  \cf3 year\cf0  = 2019;\
+	\cf4 //4\'c0\'c7 \'b9\'e8\'bc\'f6\'c0\'cc\'b0\'ed 100\'c0\'c7 \'b9\'e8\'bc\'f6\'b0\'a1 \'be\'c6\'b4\'d1 \'b0\'e6\'bf\'ec \'b6\'c7\'b4\'c2 400\'c0\'c7 \'b9\'e8\'bc\'f6\'c0\'ce \'b0\'e6\'bf\'ec\'b4\'c2 \'c0\'b1\'b3\'e2\cf0 \
+	\cf2 boolean\cf0  \cf3 result1\cf0  = \cf3 year\cf0  % 4 == 0 && \cf3 year\cf0  % 100 != 0 || \cf3 year\cf0  % 400 == 0;	\
+	\cf2 if\cf0 (\cf3 result1\cf0  == \cf2 false\cf0 ) \{System.\cf5 out\cf0 .println(\cf6 \'a1\'b0result: \'c0\'b1\'b3\'e2\'c0\'cc \'be\'c6\'b4\'cf\'b4\'d9."\cf0 );\}\
+	\cf2 else\cf0  \{System.\cf5 out\cf0 .println(\cf6 \'a1\'b0result: \'c0\'b1\'b3\'e2\'c0\'cc\'b4\'d9."\cf0 );\}\
+	=> \'b0\'e1\'b0\'fa\'b4\'c2 result: \'c0\'b1\'b3\'e2\'c0\'cc \'be\'c6\'b4\'cf\'b4\'d9.\
+\
+	\cf4 //1\'ba\'ce\'c5\'cd 100\'b1\'ee\'c1\'f6 3\'c0\'c7 \'b9\'e8\'bc\'f6\'c0\'cc\'b0\'ed 4\'c0\'c7 \'b9\'e8\'bc\'f6\'c0\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'c6\'c4\'be\'c7\cf0 \
+	\cf4 //&& \'b3\'aa || \'b4\'c2 \'c1\'c2\'bf\'ec\'bd\'c4\'c0\'c7 \'c0\'a7\'c4\'a1\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'d8\'b5\'b5 \'b0\'e1\'b0\'fa\'b4\'c2 \'b5\'bf\'c0\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+	\cf2 int\cf0  \cf3 cnt\cf0  = 0;\
+	\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0 =1; \cf3 i\cf0  <=100; \cf3 i\cf0 ++) \{\
+		\cf2 if\cf0 (\cf3 I\cf0 %4 == 0 && \cf3 I\cf0 %3 ==0) \{\
+			\cf3 cnt\cf0  = \cf3 cnt\cf0  + 1;\
+			System.\cf5 out\cf0 .println(\cf6 "3\'c0\'c7 \'b9\'e8\'bc\'f6 && 4\'c0\'c7\'b9\'e8\'bc\'f6 :"\cf0  +\cf3 i\cf0 );\}\}\cf3 cnt\cf0  = 0;\
+	=> \'b0\'e1\'b0\'fa\'b4\'c2 3\'c0\'c7 \'b9\'e8\'bc\'f6 && 4\'c0\'c7 \'b9\'e8\'bc\'f6 : 12 24 \'a1\'a6.\
+\
+	\cf2 int\cf0  \cf3 k\cf0  = 10;\
+	\cf4 //\'be\'d5\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 false\'bf\'a9\'bc\'ad \'b5\'da\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd.\cf0 \
+	\cf4 //k\'c0\'c7 \'b0\'aa\'c0\'ba \'b1\'d7\'b4\'eb\'b7\'ce 10\cf0 \
+	\cf3 result\cf0  = \cf3 k\cf0  < 5 &&(\cf3 k\cf0 ++ > 6);\
+	System.\cf5 out\cf0 .printf(\cf6 "k:%d\\n"\cf0 , \cf3 k\cf0 );\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	=> \'b0\'e1\'b0\'fa\'b4\'c2 k : 10\
+\
+	8. \'ba\'f1\'c6\'ae \'b3\'ed\'b8\'ae \'bf\'ac\'bb\'ea\'c0\'da\
+	=> \'c1\'a4\'bc\'f6 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'ba\'f1\'c6\'ae \'b4\'dc\'c0\'a7\'b7\'ce \'bf\'ac\'bb\'ea\'c0\'bb \'c7\'d8\'bc\'ad \'b0\'e1\'b0\'fa\'b8\'a6 \'b4\'d9\'bd\'c3 \'c1\'a4\'bc\'f6\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+	=> & : \'b5\'d1 \'b4\'d9 1\'c0\'cf \'b6\'a7\'b8\'b8 1\'c0\'cc\'b0\'ed \'b3\'aa\'b8\'d3\'c1\'f6 \'b0\'e6\'bf\'ec\'b4\'c2 0\
+	ex) 20(00010100) & 17(00010001) = 16(00010000)\
+	=> | : \'b5\'d1 \'b4\'d9 0\'c0\'cf \'b6\'a7\'b8\'b8 0\'c0\'cc\'b0\'ed \'b3\'aa\'b8\'d3\'c1\'f6 \'b0\'e6\'bf\'ec\'b4\'c2 1\
+	ex) 20(00010100) | 17(00010001) = 21(00010101)\
+	=> ^ : XOR(Exclusive OR), \'b5\'ce \'b0\'b3\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'b0\'b0\'c0\'b8\'b8\'e9 0 \'b4\'d9\'b8\'a3\'b8\'e9 1\
+	ex) 20(00010100) ^ 17(00010001) = 5(00000101)\
+	=> \'bd\'c3\'bd\'ba\'c5\'db \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed \'c0\'cc\'b9\'cc\'c1\'f6 \'c3\'b3\'b8\'ae \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad\'b5\'b5 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\
+\
+	9. \'bb\'ef\'c7\'d7 \'bf\'ac\'bb\'ea\'c0\'da\
+	=> boolean \'ba\'af\'bc\'f6 \'b6\'c7\'b4\'c2 \'bf\'ac\'bb\'ea\'bd\'c4 ? true\'c0\'cf \'b6\'a7 \'b3\'bb\'bf\'eb : false \'c0\'cf \'b6\'a7 \'b3\'bb\'bf\'eb\
+	=> \'b8\'c7 \'be\'d5\'c0\'c7 \'ba\'af\'bc\'f6\'b3\'aa \'bf\'ac\'bb\'ea\'bd\'c4\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 true\'c0\'cc\'b8\'e9 \'b9\'d9\'b7\'ce \'b5\'da\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc \'b3\'b2\'b0\'ed false\'c0\'cc\'b8\'e9 \'b8\'b6\'c1\'f6\'b8\'b7 \'b3\'bb\'bf\'eb\'c0\'cc \'b3\'b2\'bd\'c0\'b4\'cf\'b4\'d9.\
+	ex) a\'bf\'cd b \'c1\'df\'bf\'a1\'bc\'ad \'c5\'ab \'b0\'aa\'c0\'bb max \'bf\'a1 \'c0\'fa\'c0\'e5\
+	max = a > b ? a : b;\
+\
+	10. \'c7\'d2\'b4\'e7 \'bf\'ac\'bb\'ea\'c0\'da\
+	=> = : \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c0\'fa\'c0\'e5\'b5\'c8 \'c0\'a7\'c4\'a1\'b8\'a6 \'bf\'de\'c2\'ca\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4\
+	=> \'b0\'a1\'c0\'e5 \'b8\'b6\'c1\'f6\'b8\'b7\'bf\'a1 \'bc\'f6\'c7\'e0\
+	=> += : \'bf\'de\'c2\'ca\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'c0\'fa\'c0\'e5\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'cd \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 +\'c7\'d8\'bc\'ad \'bf\'de\'c2\'ca\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'d9\'bd\'c3 \'b4\'eb\'c0\'d4\'c7\'cf\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\
+	ex) int n = 10; n += 7; // n = n +7\
+	=> + \'b4\'eb\'bd\'c5\'bf\'a1 \'b4\'d9\'b8\'a5 \'bf\'ac\'bb\'ea\'c0\'da\'b5\'b5 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\
+\
+\'bd\'c7\'bd\'c0\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  OpTest \{\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //\'b4\'d9\'c0\'bd 2\'b0\'b3\'c0\'c7 \'ba\'af\'bc\'f6 \'c1\'df\'bf\'a1\'bc\'ad \'c0\'db\'c0\'ba \'b0\'aa\'c0\'bb \ul min\ulnone \'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \cf0 \
+		\cf2 int\cf0  \cf3 a\cf0  = 20, \cf3 b\cf0 = 30;\
+		\cf2 int\cf0  \cf3 min\cf0  = \cf3 a\cf0  < \cf3 b\cf0  ? \cf3 a\cf0  : \cf3 b\cf0 ;\
+		System.\cf5 out\cf0 .printf(\cf6 "\'c0\'db\'c0\'ba \'b0\'aa: %d\\n"\cf0 , \cf3 min\cf0 );\
+		=> \'b0\'e1\'b0\'fa : \'c0\'db\'c0\'ba \'b0\'aa:20\
+		\cf2 int\cf0  \cf3 time\cf0  = 7700;\
+		\cf4 //time\'bf\'a1 \'c0\'fc\'c3\'bc \'bd\'c3\'b0\'a3\'c0\'cc \'c3\'ca\'b4\'dc\'c0\'a7\'b7\'ce \'c0\'fa\'c0\'e5\'b5\'c7\'be\'ee \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+		\cf4 //time\'c0\'ba \'b8\'ee \'bd\'c3\'b0\'a3 \'b8\'ee \'ba\'d0 \'b8\'ee \'c3\'ca \'c0\'ce\'c1\'f6 \'b0\'e8\'bb\'ea\cf0 \
+		\cf2 int\cf0  \cf3 hour\cf0  = (\cf3 time\cf0 /60)/60;\
+		\cf2 int\cf0  \cf3 minute\cf0  = (\cf3 time\cf0 /60)%60;\
+		\cf2 int\cf0  \cf3 second\cf0  = \cf3 time\cf0 %60;\
+		System.\cf5 out\cf0 .printf(\cf6 "7700\'c3\'ca : %d\'bd\'c3\'b0\'a3 %d\'ba\'d0 %d\'c3\'ca \'c0\'d4\'b4\'cf\'b4\'d9.\\n"\cf0 , \cf3 hour\cf0 , \cf3 minute\cf0 , \cf3 second\cf0 );\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 		=> \'b0\'e1\'b0\'fa : 7700\'c3\'ca : 2\'bd\'c3\'b0\'a3 8\'ba\'d0 20\'c3\'ca \'c0\'d4\'b4\'cf\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+\cf4 		//\'bc\'b1\'bb\'fd\'b4\'d4 \'b9\'e6\'b9\'fd\
+		//\'bd\'c3\'b0\'a3 \'b1\'b8\'c7\'cf\'b1\'e2 \cf0 \
+		\cf2 int\cf0  \cf3 thhour\cf0  = \cf3 time\cf0  / 3600;\
+		\cf4 //\'ba\'d0 \'b1\'b8\'c7\'cf\'b1\'e2 : \'c0\'fc\'c3\'bc \'bd\'c3\'b0\'a3\'bf\'a1\'bc\'ad \'bd\'c3\'b0\'a3\'c0\'cc \'b0\'a1\'c1\'ae\'b0\'a3 \'ba\'ce\'ba\'d0\'c0\'bb \'c1\'a6\'bf\'dc\'c7\'cf\'b0\'ed 60\'c0\'b8\'b7\'ce \'b3\'aa\'b4\'a9\'b1\'e2\cf0 \
+		\cf2 int\cf0  \cf3 thminute\cf0  = (\cf3 time\cf0  - \cf3 hour\cf0 *3600)/60;\
+		\cf4 //\'c3\'ca \'b1\'b8\'c7\'cf\'b1\'e2 : \'c0\'fc\'c3\'bc \'bd\'c3\'b0\'a3\'bf\'a1\'bc\'ad \'bd\'c3\'b0\'a3\'b0\'fa \'ba\'d0\'c0\'cc \'b0\'a1\'c1\'ae\'b0\'a3 \'ba\'ce\'ba\'d0\'c0\'bb \'c1\'a6\'bf\'dc \cf0 \
+		\cf2 int\cf0  \cf3 thsecond\cf0  = \cf3 time\cf0  % 60;\
+		System.\cf5 out\cf0 .printf(\cf6 "7700\'c3\'ca : %d\'bd\'c3\'b0\'a3 %d\'ba\'d0 %d\'c3\'ca \'c0\'d4\'b4\'cf\'b4\'d9.\\n"\cf0 , \cf3 thhour\cf0 , \cf3 thminute\cf0 , \cf3 thsecond\cf0 );\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 		=> \'b0\'e1\'b0\'fa : 7700\'c3\'ca : 2\'bd\'c3\'b0\'a3 8\'ba\'d0 20\'c3\'ca \'c0\'d4\'b4\'cf\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+\cf2 		int\cf0  \cf3 money\cf0  = 760000;\
+		\cf4 //\'bf\'c0\'b8\'b8\'bf\'f8 \'b8\'ee\'c0\'e5 \'b8\'b8\'bf\'f8 \'b8\'ee\'c0\'e5\'c0\'bb \'c1\'d6\'b4\'c2 \'b0\'cd\'c0\'cc \'c3\'d6\'bc\'d2\'b7\'ce \'c1\'d9 \'b0\'cd\'c0\'ce\'c1\'f6 \'b0\'e8\'bb\'ea\cf0 \
+		\cf2 int\cf0  \cf3 c\cf0  = 760000/50000;\
+		\cf2 int\cf0  \cf3 d\cf0  = (\cf3 money\cf0  - \cf3 c\cf0 *50000)/10000;\
+		System.\cf5 out\cf0 .printf(\cf6 "760000\'bf\'f8 : %d\'b0\'b3\'c0\'c7 \'bf\'c0\'b8\'b8\'bf\'f8 %d\'b0\'b3\'c0\'c7 \'b8\'b8\'bf\'f8 \'c0\'d4\'b4\'cf\'b4\'d9.\\n"\cf0 , \cf3 c\cf0 , \cf3 d\cf0 );\
+		=> \'b0\'e1\'b0\'fa : 760000\'bf\'f8 : 15\'b0\'b3\'c0\'c7 \'bf\'c0\'b8\'b8\'bf\'f8 1\'b0\'b3\'c0\'c7 \'b8\'b8\'bf\'f8 \'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+** \'c1\'a6\'be\'ee\'b9\'ae(Control Statement)\
+\
+=> \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'c7 \'bd\'c7\'c7\'e0\'c8\'e5\'b8\'a7\'c0\'bb \'ba\'af\'b0\'e6\'c7\'cf\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 => \'ba\'d0\'b1\'e2\'b9\'ae\'b0\'fa \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'b8\'b7\'ce \'b1\'b8\'ba\'d0\
+	1. \'ba\'d0\'b1\'e2\'b9\'ae(\'bc\'b1\'c5\'c3)\
+		1) \'c1\'b6\'b0\'c7\'bf\'a1 \'c0\'c7\'c7\'d1 \'ba\'d0\'b1\'e2 : if ( true, false)\
+		2) \'b0\'aa\'bf\'a1 \'c0\'c7\'c7\'d1 \'ba\'d0\'b1\'e2 : switch\
+	2. \'b9\'dd\'ba\'b9\'b9\'ae(Loop, Iteration, Enumeration)\
+		1) while : \'c1\'b6\'b0\'c7\'bf\'a1 \'c0\'c7\'c7\'d1 \'b9\'dd\'ba\'b9\
+		2) do ~ while : \'b9\'ab\'c1\'b6\'b0\'c7 1\'b9\'f8\'c0\'ba \'bc\'f6\'c7\'e0\
+		3) for : \'bd\'c3\'c0\'db\'ba\'ce\'c5\'cd ~ \'c1\'be\'b7\'e1\'b1\'ee\'c1\'f6 \'b9\'dd\'ba\'b9\
+		4) for ~ each : \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b8\'f0\'c0\'d3 \'bc\'f8\'c8\'b8\
+	3. \'b1\'e2\'c5\'b8\
+		1) break : \'c1\'df\'b4\'dc\
+		2) continue : \'b4\'d9\'c0\'bd\'c0\'b8\'b7\'ce \'b3\'d1\'be\'ee\'b0\'a1\'b1\'e2\
+		3) return : \'c8\'a3\'c3\'e2\'c7\'d1 \'b0\'f7\'c0\'b8\'b7\'ce \'b5\'b9\'be\'c6\'b0\'a1\'b1\'e2\
+\
+\
+**\'c4\'dc\'bc\'d6\'bf\'a1\'bc\'ad \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2\
+\
+=> Java.util.Scanner \'b6\'f3\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'bb\'f3\'b4\'dc\'bf\'a1 import java.util.*; \'c0\'bb \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 Scanner \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 Scanner \'b6\'f3\'b0\'ed \'bd\'e1\'bc\'ad \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\
+\
+=> \'bb\'e7\'bf\'eb\'b9\'fd\
+\'bd\'ba\'c4\'b3\'b3\'ca \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\
+Scanner \'c0\'cc\'b8\'a7 = new Scanner(System.in); // \'c5\'b0\'ba\'b8\'b5\'e5\'b7\'ce \'ba\'ce\'c5\'cd \'c0\'d4\'b7\'c2\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'b4\'c2 Scanner \'bb\'fd\'bc\'ba\
+\
+\'ba\'af\'bc\'f6\'b8\'ed = \'c0\'cc\'b8\'a7.next\'c0\'da\'b7\'e1\'c7\'fc();\
+=> \'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 nextInt();\
+=> \'bd\'c7\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 nextDouble();\
+=> \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'b9\'de\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 nextLine();\
+\pard\pardeftab720\partightenfactor0
+\cf2 import\cf0  java.util.Scanner;\
+\cf2 public\cf0  \cf2 class\cf0  Scannerinput \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //\'c5\'b0\'ba\'b8\'b5\'e5\'b7\'ce\'ba\'ce\'c5\'cd \'c0\'d4\'b7\'c2\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'b4\'c2 \'bd\'ba\'c4\'b3\'b3\'ca \'bb\'fd\'bc\'ba \cf0 \
+		Scanner \cf3 \ul sc\cf0 \ulnone  = \cf2 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		\cf4 //\'c0\'cc\'b8\'a7\'c0\'bb \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2\cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "\'c0\'cc\'b8\'a7\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		String \cf3 name\cf0  = \cf3 sc\cf0 .nextLine();\
+		System.\cf5 out\cf0 .printf(\cf6 "\'c0\'cc\'b8\'a7:%s\\n"\cf0 , \cf3 name\cf0 );\
+		\cf4 //\'b3\'aa\'c0\'cc\'b8\'a6 \'c1\'a4\'bc\'f6\'b7\'ce \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2\cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "\'b3\'aa\'c0\'cc\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		\cf2 int\cf0  \cf3 age\cf0  = \cf3 sc\cf0 .nextInt();\
+		System.\cf5 out\cf0 .printf(\cf6 "\'b3\'aa\'c0\'cc:%s\\n"\cf0 , \cf3 age\cf0 );\
+	\}\}\
+\
+**if\
+\
+	1. \'b4\'dc\'bc\'f8 if\
+	=> \'c1\'b6\'b0\'c7\'c0\'bb \'b8\'b8\'c1\'b7\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b8\'b8 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+\
+	if(boolean \'ba\'af\'bc\'f6\'b3\'aa boolean\'c0\'b8\'b7\'ce \'b3\'aa\'bf\'c0\'b4\'c2 \'bf\'ac\'bb\'ea\'bd\'c4)\{\
+	()\'be\'c8\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc true\'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+	  ex) \'c1\'a1\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'be\'c6\'bc\'ad \'c1\'a1\'bc\'f6\'b0\'a1 60\'c1\'a1\'c0\'cc \'b3\'d1\'c0\'b8\'b8\'e9 \'c7\'d5\'b0\'dd\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\
+\pard\pardeftab720\partightenfactor0
+\cf0 	System.\cf5 out\cf0 .printf(\cf6 "\'c1\'a1\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		\cf2 int\cf0  \cf3 score\cf0  = \cf3 sc\cf0 .nextInt();\
+		\cf4 //Score\'b0\'a1 60\'c0\'cc\'bb\'f3\'c0\'cc\'b8\'e9 \'c7\'d5\'b0\'dd\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2 \cf0 \
+		\cf2 if\cf0 (\cf3 score\cf0  >= 60) \{System.\cf5 out\cf0 .printf(\cf6 "\'c7\'d5\'b0\'dd\\n"\cf0 , \cf3 score\cf0 );\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+	2. If ~ else\
+	=> \'c1\'b6\'b0\'c7\'bf\'a1 \'b8\'c2\'c0\'bb \'b6\'a7\'bf\'cd \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'bb \'b6\'a7 \'bc\'ad\'b7\'ce \'b4\'d9\'b8\'a5 \'c3\'b3\'b8\'ae\'b8\'a6 \'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+\
+	if(boolean \'ba\'af\'bc\'f6\'b3\'aa boolean\'c0\'cc \'b3\'aa\'bf\'c0\'b4\'c2 \'bf\'ac\'bb\'ea\'bd\'c4\{\
+	()\'be\'c8\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc true\'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\
+	\}else\{\
+	()\'be\'c8\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc false\'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\
+	\}\
+\
+	ex) \'c1\'a1\'bc\'f6\'b0\'a1 60\'c0\'cc\'bb\'f3\'c0\'cc\'b8\'e9 \'c7\'d5\'b0\'dd \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'ba\'d2\'c7\'d5\'b0\'dd\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\
+	System.\cf5 out\cf0 .printf(\cf6 "\'c1\'a1\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+\pard\pardeftab720\partightenfactor0
+\cf0 		\cf2 int\cf0  \cf3 score\cf0  = \cf3 sc\cf0 .nextInt();\
+		\cf4 //Score\'b0\'a1 60\'c0\'cc\'bb\'f3\'c0\'cc\'b8\'e9 \'c7\'d5\'b0\'dd\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2 \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'ba\'d2\'c7\'d5\'b0\'dd\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\cf0 \
+		\cf2 if\cf0 (\cf3 score\cf0  >= 60) \{System.\cf5 out\cf0 .printf(\cf6 "\'c7\'d5\'b0\'dd\\n"\cf0 );\}\
+		\cf2 else\cf0  \{System.\cf5 out\cf0 .printf(\cf6 "\'ba\'d2\'c7\'d5\'b0\'dd\\n"\cf0 );\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+	=> \'b9\'ae\'c0\'da\'bf\'ad\'c0\'ba \'b9\'ae\'c0\'da\'bf\'ad.equals(\'b9\'ae\'c0\'da\'bf\'ad) \'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b3\'bb\'bf\'eb\'c0\'cc \'b0\'b0\'c0\'ba\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'b9\'ae\'c0\'da\'bf\'ad\'c0\'ba ==\'b7\'ce \'c8\'ae\'c0\'ce\'c7\'cf\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+	ex) String name = \'a1\'b0\'c1\'b6\'c3\'a2\'c8\'c6\'a1\'b1;\
+		//name\'c0\'cc \'c1\'b6\'c3\'a2\'c8\'c6\'c0\'ce\'c1\'f6 \'c8\'ae\'c0\'ce\
+		name.equals(\'a1\'b0\'c1\'b6\'c3\'a2\'c8\'c6\'a1\'b1); \'b7\'ce \'c8\'ae\'c0\'ce\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\cf2 public\cf0  \cf2 class\cf0  LoginTest \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //\'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'b4\'c2 \'b9\'ae\cf0 \
+		Scanner \cf3 sc\cf0  = \cf2 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		\cf4 //\'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2 \cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "\'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		String \cf3 id\cf0  = \cf3 sc\cf0 .nextLine();\
+		System.\cf5 out\cf0 .printf(\cf6 "\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		String \cf3 pw\cf0  = \cf3 sc\cf0 .nextLine();\
+		\cf4 //id\'b0\'a1 root\'c0\'cc\'b0\'ed \ul pw\ulnone \'b0\'a1 1234 \'c0\'cc\'b8\'e9 \'b7\'ce\'b1\'d7\'c0\'ce \'bc\'ba\'b0\'f8\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'b7\'ce\'b1\'d7\'c0\'ce \'bd\'c7\'c6\'d0\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\cf0 \
+		\cf2 if\cf0 (\cf3 id\cf0 .equals(\cf6 "root"\cf0 ) && \cf3 pw\cf0 .equals(\cf6 "1234"\cf0 )) \{System.\cf5 out\cf0 .printf(\cf6 "\'b7\'ce\'b1\'d7\'c0\'ce \'bc\'ba\'b0\'f8\\n"\cf0 );\}\
+		\cf2 else\cf0  \{System.\cf5 out\cf0 .printf(\cf6 "\'b7\'ce\'b1\'d7\'c0\'ce \'bd\'c7\'c6\'d0\\n"\cf0 );\}\
+		\cf3 sc\cf0 .close();\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'bd\'c7\'bd\'c0)\cf2 public\cf0  \cf2 class\cf0  LoginTest \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 		\cf4 //\'b3\'e2\'b5\'b5\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'be\'c6\'bc\'ad \'c0\'b1\'b3\'e2\'c0\'cc\'b8\'e9 2\'bf\'f9\'c0\'ba 29\'c0\'cf\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed \'c0\'b1\'b3\'e2\'c0\'cc \'be\'c6\'b4\'cf\'b8\'e9 2\'bf\'f9\'c0\'ba 28\'c0\'cf \'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 		\cf4 //\'c0\'b1\'b3\'e2\'c0\'c7 \'c1\'b6\'b0\'c7\cf0 \
+		\cf4 //4\'c0\'c7 \'b9\'e8\'bc\'f6\'c0\'cc\'b0\'ed 100\'c0\'c7 \'b9\'e8\'bc\'f6\'b4\'c2 \'be\'c6\'b4\'d1 \'b0\'e6\'bf\'ec \'b6\'c7\'b4\'c2 400\'c0\'c7 \'b9\'e8\'bc\'f6\'c0\'ce \'b0\'e6\'bf\'ec \cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "\'b3\'e2\'b5\'b5\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		\cf2 int\cf0  \cf3 year\cf0  = \cf3 sc\cf0 .nextInt();\
+		\cf2 if\cf0 ((\cf3 year\cf0 %4 == 0) && (\cf3 year\cf0 %100!=0) || (\cf3 year\cf0 %400 ==0))\{\
+			System.\cf5 out\cf0 .printf(\cf6 "\'c0\'d4\'b7\'c2\'c7\'cf\'bd\'c5 \'b3\'e2\'b5\'b5\'c0\'c7 2\'bf\'f9\'c0\'ba 29\'c0\'cf \'c0\'d4\'b4\'cf\'b4\'d9.\\n"\cf0 );\
+		\}\cf2 else\cf0  \{\
+			System.\cf5 out\cf0 .printf(\cf6 "\'c0\'d4\'b7\'c2\'c7\'cf\'bd\'c5 \'b3\'e2\'b5\'b5\'c0\'c7 2\'bf\'f9\'c0\'ba 28\'c0\'cf \'c0\'d4\'b4\'cf\'b4\'d9.\\n"\cf0 );\
+		\}\
+		\cf3 sc\cf0 .close();\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+}
