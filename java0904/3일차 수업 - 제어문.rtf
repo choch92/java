@@ -1,0 +1,544 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset129 NanumMyeongjo;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;
+\red42\green0\blue255;\red63\green127\blue95;\red0\green200\blue125;\red0\green0\blue0;\red21\green93\blue255;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c0\c78431\c49020;\cssrgb\c0\c1\c1;\cssrgb\c8872\c47049\c100000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19780\viewh15440\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 3\'c0\'cf\'c2\'f7(cho)\
+\
+	3. If - else if - else\
+	=> \'be\'d5\'c0\'c7 \'c1\'b6\'b0\'c7\'c0\'bb \'b8\'b8\'c1\'b7\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'b0\'e6\'bf\'ec\'bf\'a1 \'b4\'d9\'bd\'c3 \'c1\'b6\'b0\'c7\'c0\'bb \'ba\'f1\'b1\'b3\'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+	\
+	if(\'bf\'ac\'bb\'ea\'bd\'c4)\{\'bf\'ac\'bb\'ea\'bd\'c4\'c0\'cc true\'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\}\
+	else if(\'bf\'ac\'bb\'ea\'bd\'c4)\{\'be\'d5\'c0\'c7 \'bf\'ac\'bb\'ea\'bd\'c4\'c0\'cc false\'c0\'cc\'b0\'ed \'c0\'da\'bd\'c5\'c0\'c7 \'bf\'ac\'bb\'ea\'bd\'c4\'c0\'cc true\'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\}\
+	else if\'b4\'c2 \'bf\'a9\'b7\'af\'b9\'f8 \'b9\'dd\'ba\'b9 \'b0\'a1\'b4\'c9\{	\}\
+	else\{	\'be\'d5\'c0\'c7 \'b8\'f0\'b5\'e7 \'bf\'ac\'bb\'ea\'bd\'c4\'c0\'cc false \'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb,else\'b4\'c2 \'bb\'fd\'b7\'ab \'b0\'a1\'b4\'c9\}\
+	=> \'ba\'d0\'b1\'e2\'b9\'ae\'c0\'cc\'b3\'aa \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d1 \'b0\'e6\'bf\'ec \'b0\'e6\'b0\'e8\'b0\'aa\'c0\'bb \'c5\'d7\'bd\'ba\'c6\'ae\'c7\'d8\'ba\'b8\'b0\'ed \'b8\'f0\'b5\'e7 \'b0\'e6\'bf\'ec\'b8\'a6 \'b0\'c5\'c0\'c7 \'c0\'af\'bb\'e7\'c7\'d1 \'c8\'bd\'bc\'f6\'b7\'ce \'c5\'d7\'bd\'ba\'c6\'ae\
+\
+	\'bd\'c7\'bd\'c0)\
+	\cf2 import\cf0  java.util.Scanner;\
+\pard\pardeftab720\partightenfactor0
+\cf2 	public\cf0  \cf2 class\cf0  IfTest \{\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		Scanner \cf3 sc\cf0  = \cf2 new\cf0  Scanner(System.\cf4 in\cf0 );\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c1\'a1\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		\cf2 int\cf0  \cf3 score\cf0  = \cf3 sc\cf0 .nextInt();\
+\cf3 		sc\cf0 .nextLine();//\'b4\'d9\'c0\'bd \'bf\'b9\'c1\'a6\'b8\'a6 \'c5\'b0\'ba\'b8\'b5\'e5\'b7\'ce \'c0\'d4\'b7\'c2\'b9\'de\'c0\'bb\'b6\'a7\'bf\'a1 \'bc\'fd\'c0\'da\'b0\'a1 \'b5\'e9\'be\'ee\'b0\'a1\'b4\'c2\'b0\'cd\'c0\'bb \'b9\'e6\'c1\'f6\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2\'c0\'a7\'c7\'d8 \'bb\'e7\'bf\'eb\
+		\cf6 //\'c1\'a1\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'be\'c6\'bc\'ad 90-100 \'bb\'e7\'c0\'cc\'b8\'e9 A, 80-89\'c0\'cc\'b8\'e9 B, 70-79\'c0\'cc\'b8\'e9 C, 60-69\'c0\'cc\'b8\'e9 D, 0-59\'c0\'cc\'b8\'e9 F\cf0 \
+		\cf6 //0-100 \'bb\'e7\'c0\'cc\'b0\'a1 \'be\'c6\'b4\'cf\'b8\'e9 \'c0\'df\'b8\'f8\'b5\'c8 \'c1\'a1\'bc\'f6 \'c0\'d4\'b7\'c2\cf0 \
+		\cf2 if\cf0 (\cf3 score\cf0 >=90 && \cf3 score\cf0 <=100) \{System.\cf4 out\cf0 .printf(\cf5 "\'b4\'e7\'bd\'c5\'c0\'c7 \'b5\'ee\'b1\'de\'c0\'ba : %s\\n"\cf0 , \cf5 "A"\cf0 );\}\
+		\cf2 else\cf0  \cf2 if\cf0 (\cf3 score\cf0 >=80 && \cf3 score\cf0 <=89) \{System.\cf4 out\cf0 .printf(\cf5 "\'b4\'e7\'bd\'c5\'c0\'c7 \'b5\'ee\'b1\'de\'c0\'ba : %s\\n"\cf0 , \cf5 "B"\cf0 );\}\
+		\cf2 else\cf0  \cf2 if\cf0 (\cf3 score\cf0 >=70 && \cf3 score\cf0 <=79) \{System.\cf4 out\cf0 .printf(\cf5 "\'b4\'e7\'bd\'c5\'c0\'c7 \'b5\'ee\'b1\'de\'c0\'ba : %s\\n"\cf0 , \cf5 "C"\cf0 );\}\
+		\cf2 else\cf0  \cf2 if\cf0 (\cf3 score\cf0 >=60 && \cf3 score\cf0 <=69) \{System.\cf4 out\cf0 .printf(\cf5 "\'b4\'e7\'bd\'c5\'c0\'c7 \'b5\'ee\'b1\'de\'c0\'ba : %s\\n"\cf0 , \cf5 "D"\cf0 );\}\
+		\cf2 else\cf0  \cf2 if\cf0 (\cf3 score\cf0 >=0 && \cf3 score\cf0 <=59) \{System.\cf4 out\cf0 .printf(\cf5 "\'b4\'e7\'bd\'c5\'c0\'c7 \'b5\'ee\'b1\'de\'c0\'ba : %s\\n"\cf0 , \cf5 "F"\cf0 );\}\
+		\cf2 else\cf0  \{System.\cf4 out\cf0 .printf(\cf5 "\'c0\'df\'b8\'f8\'b5\'c8 \'c0\'d4\'b7\'c2\'c0\'d4\'b4\'cf\'b4\'d9."\cf0 );\}\
+		\
+		\cf6 /\'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'be\'c6\'bc\'ad \'be\'c6\'c0\'cc\'b5\'f0\'b0\'a1 root\'c0\'cc\'b0\'ed \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 1234\'c0\'cc\'b8\'e9 \'b7\'ce\'b1\'d7\'c0\'ce \'bc\'ba\'b0\'f8\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\cf0 \
+		\cf6 //\'be\'c6\'c0\'cc\'b5\'f0 root\'c0\'ce\'b5\'a5 \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 1234\'b0\'a1 \'be\'c6\'b4\'cf\'b8\'e9 \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 \'c6\'b2\'b7\'c8\'bd\'c0\'b4\'cf\'b4\'d9 \'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\cf0 \
+		\cf6 //\'b1\'d7\'c0\'cc\'bf\'dc\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'be\'f8\'b4\'c2 \'be\'c6\'c0\'cc\'b5\'f0\'c0\'d4\'b4\'cf\'b4\'d9 \'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\cf0 \
+		\cf6 //1.\'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3 \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2\cf0 \
+		System.\cf4 out\cf0 .printf(\cf5 "\'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		String \cf3 id\cf0  = \cf3 sc\cf0 .nextLine();\
+		System.\cf4 out\cf0 .printf(\cf5 "\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+		String \cf3 pw\cf0  = \cf3 sc\cf0 .nextLine();\
+		\cf6 //2.\'c1\'b6\'b0\'c7 \'c3\'b3\'b8\'ae\cf0 \
+		\cf2 if\cf0 (\cf3 id\cf0 .equals(\cf5 "root"\cf0 ) && \cf3 pw\cf0 .equals(\cf5 "1234"\cf0 )) \{System.\cf4 out\cf0 .printf(\cf5 "\'b7\'ce\'b1\'d7\'c0\'ce \'bc\'ba\'b0\'f8\\n"\cf0 );\}\
+		\cf2 else\cf0  \cf2 if\cf0 (\cf3 id\cf0 .equals(\cf5 "root"\cf0 ) && !\cf3 pw\cf0 .equals(\cf5 "1234"\cf0 )) \{System.\cf4 out\cf0 .printf(\cf5 "\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 \'c6\'b2\'b7\'c8\'bd\'c0\'b4\'cf\'b4\'d9\\n"\cf0 );\}\
+		\cf6 //else if(id.equals("root") && pw.equals("1234")==false) \{System.out.printf("\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 \'c6\'b2\'b7\'c8\'bd\'c0\'b4\'cf\'b4\'d9\\n");\}\cf0 \
+		\cf6 //else if(id.equals("root")) \{System.out.printf("\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 \'c6\'b2\'b7\'c8\'bd\'c0\'b4\'cf\'b4\'d9\\n");\}\cf0 \
+		\cf2 else\cf0  \{System.\cf4 out\cf0 .printf(\cf5 "\'b1\'d7 \'c0\'cc\'bf\'dc\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'be\'f8\'b4\'c2 \'be\'c6\'c0\'cc\'b5\'f0\'c0\'d4\'b4\'cf\'b4\'d9."\cf0 );\}\
+\
+	\cf3 sc\cf0 .close();\}\}\
+\
+	=> id \'bf\'cd pw\'b8\'a6 \'b5\'bf\'bd\'c3\'bf\'a1 \'c8\'ae\'c0\'ce\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'c0\'a7\'c7\'e8\'c7\'d1 \'b9\'df\'bb\'f3\'c0\'d4\'b4\'cf\'b4\'d9.\
+	=> id == ? && pw ==? (x)\
+	=> pw \'b8\'a6 \'be\'c6\'b9\'ab\'b0\'c5\'b3\'aa or 5 == 5 \'b7\'ce \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 \'b9\'ab\'c1\'b6\'b0\'c7 \'b7\'ce\'b1\'d7\'c0\'ce \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+	\'b0\'e1\'b0\'fa) \
+	\'c1\'a1\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:\cf7 20\cf0 \
+	\'b4\'e7\'bd\'c5\'c0\'c7 \'b5\'ee\'b1\'de\'c0\'ba : F\
+	\'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:root\
+	\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:\cf7 1234\cf0 \
+	\'b7\'ce\'b1\'d7\'c0\'ce \'bc\'ba\'b0\'f8\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**Switch\
+	\
+=> \'b0\'aa\'bf\'a1 \'c0\'c7\'c7\'d1 \'ba\'d0\'b1\'e2\
+\
+switch(\'c1\'a4\'bc\'f6 \'b6\'c7\'b4\'c2 \'b9\'ae\'c0\'da\'bf\'ad \'ba\'af\'bc\'f6 \'be\'c6\'b4\'cf\'b8\'e9 \'bf\'ac\'bb\'ea\'bd\'c4\'c0\'cc\'b3\'aa \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2)\{\
+	case \'b0\'aa1:\
+		()\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc \'b0\'aa1\'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\
+		break;\
+	case \'b0\'aa2:\
+		()\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc \'b0\'aa2\'c0\'cf \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\
+	case \'bf\'a9\'b7\'af \'b0\'b3 \'bb\'fd\'bc\'ba \'b0\'a1\'b4\'c9\
+	default:\
+		\'c0\'a7\'c0\'c7 \'b8\'f0\'b5\'e7 \'b0\'aa\'c0\'cc \'be\'c6\'b4\'d2 \'b6\'a7 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\
+		break;\
+\}\
+\
+=> \'c0\'d4\'b7\'c2\'c0\'bb \'b3\'d6\'b1\'e2\'bf\'a1\'b4\'c2 int menu\'b7\'ce \'c7\'cf\'b4\'c2 \'b0\'cd\'ba\'b8\'b4\'d9\'b4\'c2, String menu\'b7\'ce \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'b4\'f5 \'c1\'c1\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf2 import\cf0  java.util.Scanner;\
+\cf2 public\cf0  \cf2 class\cf0  SwitchTest \{\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		Scanner \cf3 sc\cf0  = \cf2 new\cf0  Scanner(System.\cf4 in\cf0 );\
+		System.\cf4 out\cf0 .printf(\cf5 "\'b8\'de\'b4\'ba \'bc\'b1\'c5\'c3(1.\'c1\'df\'b1\'b9\'c1\'fd 2.\'ba\'d0\'bd\'c4\'c1\'fd 3.\'c7\'d1\'bd\'c4\'c1\'fd) :"\cf0 );\
+		String \cf3 place\cf0  = \cf3 sc\cf0 .nextLine();\
+		\cf6 //\'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'b9\'de\'be\'c6\'bc\'ad \'bd\'c4\'b4\'e7\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 - switch \'bb\'e7\'bf\'eb\cf0 \
+		\cf6 //1.\'c1\'df\'b1\'b9\'c1\'fd 2.\'ba\'d0\'bd\'c4\'c1\'fd 3.\'c7\'d1\'bd\'c4\'c1\'fd \'b3\'aa\'b8\'d3\'c1\'f6\'b4\'c2 \'c0\'df\'b8\'f8\'b5\'c8 \'bc\'b1\'c5\'c3\
+		//final String \'c1\'df\'b1\'b9\'c1\'fd = "1";\cf0 \
+		\cf6 //final String \'ba\'d0\'bd\'c4\'c1\'fd = "2";\cf0 \
+		\cf6 //final String \'c7\'d1\'bd\'c4\'c1\'fd = "3";\cf0 \
+		\cf2 switch\cf0 (\cf3 place\cf0 ) \{\
+		\cf2 case\cf0  \cf5 "1"\cf0 : System.\cf4 out\cf0 .printf(\cf5 "\'c1\'df\'b1\'b9\'c1\'fd\\n"\cf0 ); \cf2 break\cf0 ;		\cf6 //case \'c1\'df\'b1\'b9\'c1\'fd : System.out.printf("\'c1\'df\'b1\'b9\'c1\'fd\\n"); break;\cf0 \
+		\cf2 case\cf0  \cf5 "2"\cf0 : System.\cf4 out\cf0 .printf(\cf5 "\'ba\'d0\'bd\'c4\'c1\'fd\\n"\cf0 ); \cf2 break\cf0 ;		\cf6 //case \'ba\'d0\'bd\'c4\'c1\'fd : System.out.printf("\'ba\'d0\'bd\'c4\'c1\'fd\\n"); break;\cf0 \
+		\cf2 case\cf0  \cf5 "3"\cf0 : System.\cf4 out\cf0 .printf(\cf5 "\'c7\'d1\'bd\'c4\'c1\'fd\\n"\cf0 ); \cf2 break\cf0 ;		\cf6 //case \'c7\'d1\'bd\'c4\'c1\'fd : System.out.printf("\'c7\'d1\'bd\'c4\'c1\'fd\\n"); break;\cf0 		\
+\cf2 		default\cf0  : System.\cf4 out\cf0 .printf(\cf5 "\'c0\'df\'b8\'f8\'b5\'c8 \'bc\'b1\'c5\'c3\'c0\'d4\'b4\'cf\'b4\'d9.\\n"\cf0 ); \cf2 break\cf0 ;\
+		\}\
+		\cf3 sc\cf0 .close();\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+	\'b0\'e1\'b0\'fa)\
+	\'b8\'de\'b4\'ba \'bc\'b1\'c5\'c3(1.\'c1\'df\'b1\'b9\'c1\'fd 2.\'ba\'d0\'bd\'c4\'c1\'fd 3.\'c7\'d1\'bd\'c4\'c1\'fd) :\cf7 3\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 	\'c7\'d1\'bd\'c4\'c1\'fd\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'c7\'d2 \'b6\'a7 \'b1\'dd\'b1\'e2\'bd\'c3 \'b5\'c7\'b4\'c2 \'c4\'da\'b5\'e5\
+\
+=> \'b5\'bf\'c0\'cf\'c7\'d1 \'c4\'da\'b5\'e5\'b0\'a1 \'b9\'dd\'ba\'b9\'b5\'c7\'b4\'c2 \'b0\'cd(\'c1\'df\'ba\'b9) - \'c0\'af\'c1\'f6\'ba\'b8\'bd\'ba\'b0\'a1 \'be\'ee\'b7\'c1\'bf\'f6\'c1\'fd\'b4\'cf\'b4\'d9.\
+=> \'b5\'bf\'c0\'cf\'c7\'d1 \'c4\'da\'b5\'e5\'b0\'a1 \'bf\'a9\'b7\'af \'b0\'f7\'bf\'a1\'bc\'ad \'b5\'ee\'c0\'e5\'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'c4\'da\'b5\'e5\'b8\'a6 \'bc\'f6\'c1\'a4\'c7\'d2 \'b6\'a7 \'c0\'fc\'ba\'ce \'c3\'a3\'be\'c6\'bc\'ad \'bc\'f6\'c1\'a4\'c0\'bb \'c7\'d8\'be\'df \'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'bd\'c7\'bc\'f6\'b8\'a6 \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'c0\'cc \'b9\'ae\'c1\'a6\'b8\'a6 \'c7\'d8\'b0\'e1\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b9\'dd\'ba\'b9\'b9\'ae, \'c7\'d4\'bc\'f6(\'b8\'de\'bc\'d2\'b5\'e5), \'c5\'ac\'b7\'a1\'bd\'ba \'b5\'ee\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=> \'c7\'cf\'b3\'aa\'c0\'c7 \'c4\'da\'b5\'e5 \'ba\'ed\'b7\'b0\'c0\'cc \'b4\'d9\'b8\'a5 \'c4\'da\'b5\'e5 \'ba\'ed\'b7\'b0\'bf\'a1 \'bf\'b5\'c7\'e2\'c0\'bb \'c1\'d6\'b4\'c2 \'b0\'cd(\'c1\'be\'bc\'d3) - \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'b8\'a6 \'be\'ee\'b7\'c6\'b0\'d4 \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'b5\'f0\'c0\'da\'c0\'ce \'c6\'d0\'c5\'cf\'c0\'cc\'b3\'aa \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'b9\'e6\'b9\'fd\'b7\'d0\'c0\'b8\'b7\'ce \'c7\'d8\'b0\'e1\
+\
+**\'b9\'dd\'ba\'b9\'b9\'ae\
+\
+=> \'b5\'bf\'c0\'cf\'c7\'d1 \'c4\'da\'b5\'e5\'b3\'aa \'b5\'bf\'c0\'cf\'c7\'d1 \'c6\'d0\'c5\'cf\'c0\'bb \'b0\'ae\'b4\'c2 \'c4\'da\'b5\'e5\'b0\'a1 \'bf\'ac\'bc\'d3\'c0\'fb\'c0\'b8\'b7\'ce \'b5\'ee\'c0\'e5\'c7\'d2 \'b6\'a7 \'c0\'cc\'b8\'a6 \'b0\'a3\'b7\'ab\'c7\'cf\'b0\'d4 \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b8\'ed\'b7\'c9\'be\'ee\
+=> java\'b4\'c2 while. do~while, for 3\'b0\'a1\'c1\'f6\'b0\'a1 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+**while\
+\
+while (boolean \'ba\'af\'bc\'f6 \'b6\'c7\'b4\'c2 \'c7\'a5\'c7\'f6\'bd\'c4 \'b6\'c7\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2)\{\
+	()\'be\'c8\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc false\'b0\'a1 \'be\'c6\'b4\'cf\'b6\'f3\'b8\'e9 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\}\
+\
+	\'bd\'c7\'bd\'c0)\
+	\cf2 public\cf0  \cf2 class\cf0  WhileTest \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf6 //Hello Java\'b6\'f3\'b4\'c2 \'b9\'ae\'c0\'e5\'c0\'bb 3\'b9\'f8 \'c3\'e2\'b7\'c2\cf0 \
+		\cf6 //\'b5\'bf\'c0\'cf\'c7\'d1 \'b9\'ae\'c0\'e5\'c0\'bb \'bf\'ac\'bc\'d3\'c7\'d8\'bc\'ad \'c0\'db\'bc\'ba\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'b0\'a1 \'be\'ee\'b7\'c1\'bf\'f6\'c1\'fd\'b4\'cf\'b4\'d9.\cf0 \
+		\cf6 //5\'b9\'f8 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6 - 2\'b9\'f8 \'b4\'f5 \'c0\'db\'bc\'ba\cf0 \
+		\cf6 //Hello 601\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6 - 3\'b9\'f8 \'ba\'af\'b0\'e6\cf0 \
+		System.\cf4 out\cf0 .printf(\cf5 "Hello Java\\n"\cf0 );\
+		System.\cf4 out\cf0 .printf(\cf5 "Hello Java\\n"\cf0 );\
+		System.\cf4 out\cf0 .printf(\cf5 "Hello Java\\n"\cf0 );\
+		\
+		System.\cf4 out\cf0 .printf(\cf5 "==============\\n"\cf0 );\
+		\cf6 //\'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'bc\'f6\'c1\'a4\'c0\'bb \'c7\'d2 \'b6\'a7 \'c0\'cc\'c0\'fc\'ba\'b8\'b4\'d9 \'c0\'fb\'c0\'ba \'bc\'f6\'c1\'a4\'c0\'bb \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+		\cf6 //\'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad 3\'b9\'f8 \'c3\'e2\'b7\'c2\cf0 \
+		\cf6 //\'b9\'dd\'ba\'b9 \'c8\'bd\'bc\'f6\'b8\'a6 \'c6\'c4\'be\'c7\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'ba\'af\'bc\'f6\cf0 \
+		\cf2 int\cf0  \cf3 i\cf0  = 0;\
+		\cf6 //i\'b0\'a1 3\'ba\'b8\'b4\'d9 \'c0\'db\'c0\'b8\'b8\'e9 \'b9\'dd\'ba\'b9 \'bc\'f6\'c7\'e0 \cf0 \
+		\cf2 while\cf0 (\cf3 i\cf0 <3) \{\
+			System.\cf4 out\cf0 .printf(\cf5 "i: %d\\t\'a1\'b1\cf0 , \cf3 i\cf0 );\
+			System.\cf4 out\cf0 .printf(\cf5 "Hello Java\\n"\cf0 );\
+			\cf3 i\cf0 ++;	\cf6 //i=i+1;, i +=1\'b7\'ce \'c0\'db\'bc\'ba\'c7\'d8\'b5\'b5 \'b5\'cb\'b4\'cf\'b4\'d9.\cf0 \
+		\}\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+	\'b0\'e1\'b0\'fa)\
+	Hello Java\
+	Hello Java\
+	Hello Java\
+	==========\
+	i: 0	Hello Java\
+	i: 1	Hello Java\
+	i: 2	Hello Java\
+\
+=> \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c0\'fb\'c0\'fd\'c8\'f7 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'bf\'c0\'cf\'c7\'d1 \'c6\'d0\'c5\'cf\'c0\'bb \'b0\'ae\'b4\'c2 \'b9\'ae\'c0\'e5\'b5\'b5 \'c7\'cf\'b3\'aa\'b7\'ce \'c0\'db\'bc\'ba\'c0\'cc \'b0\'a1\'b4\'c9\
+\
+	\'bd\'c7\'bd\'c0)\
+	//0,2,4 \'b8\'a6 \'c3\'e2\'b7\'c2\
+	\cf2 int\cf0  \cf3 i\cf0  = 0;\
+	\cf2 while\cf0 (\cf3 i\cf0 <5) \{\
+		System.\cf4 out\cf0 .printf(\cf5 "i: %d\\n\'a1\'b1\cf0 , \cf3 i\cf0 );\
+		\cf3 i\cf0 =i+2;\
+	\}\
+\
+	\cf2 int\cf0  \cf3 i\cf0  = 0;\
+	\cf2 while\cf0 (\cf3 i\cf0 <3) \{\
+		System.\cf4 out\cf0 .printf(\cf5 "i: %d\\n\'a1\'b1\cf0 , \cf3 i*2\cf0 );\
+		\cf3 i\cf0 =i+1;\
+	\}\
+\
+=> while\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b9\'ab\'c7\'d1 \'b9\'dd\'ba\'b9 \'b8\'b8\'b5\'e9\'b1\'e2\
+=> while(true)\{\} or while(5==5)\{\}	// 5==5\'b4\'c2 \'c7\'d7\'bb\'f3 true\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+**do~while\
+\
+=> \'b9\'ab\'c1\'b6\'b0\'c7 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c7\'d1 \'b9\'f8\'c0\'ba \'bc\'f6\'c7\'e0\'c7\'cf\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee\
+do\{\
+	\'b9\'dd\'ba\'b9\'b3\'bb\'bf\'eb\
+\}while(boolean \'ba\'af\'bc\'f6 \'b6\'c7\'b4\'c2 \'bf\'ac\'bb\'ea\'bd\'c4 \'b6\'c7\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2);\
+\
+\'c0\'cf\'b4\'dc \'b9\'dd\'ba\'b9\'b3\'bb\'bf\'eb\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed \'c1\'b6\'b0\'c7\'c0\'bb \'c8\'ae\'c0\'ce\'c7\'d8\'bc\'ad \'c1\'b6\'b0\'c7\'c0\'cc false\'c0\'cc\'b8\'e9 \'b1\'d7\'b8\'b8\'c7\'cf\'b0\'ed \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \{\}\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'b9\'dd\'ba\'b9 \'bc\'f6\'c7\'e0\
+\
+	\'bd\'c7\'bd\'c0)\
+	\cf2 public\cf0  \cf2 class\cf0  DoWhileTest \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 arg\cf0 ) \{\
+		\cf6 //601\'c0\'bb 3\'b9\'f8 \'c3\'e2\'b7\'c2 - do~while \'c0\'cc\'bf\'eb\cf0 \
+		\cf2 int\cf0  \cf3 i\cf0  = 0;\
+		\cf2 do\cf0  \{\
+			System.\cf4 out\cf0 .printf(\cf5 "601\\n"\cf0 );\
+			\cf3 i\cf0  = \cf3 i\cf0  + 1;\
+		\}\cf2 while\cf0 (\cf3 i\cf0 <3);\
+		\
+		\cf6 //1~10 \'b1\'ee\'c1\'f6\'c0\'c7 \'c7\'d5\'b0\'e8 \cf0 \
+		\cf6 //1+2+3+4+ ... + 10\cf0 \
+		\cf2 int\cf0  \cf3 a\cf0  = 1;\
+		\cf6 //\'c7\'d5\'b0\'e8\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'ba\'af\'bc\'f6\cf0 \
+		\cf2 int\cf0  \cf3 sum\cf0  = 0;\
+		\cf2 do\cf0  \{\
+			\cf6 //\'c7\'d5\'c0\'bb \'b1\'b8\'c7\'d2 \'b3\'bb\'bf\'eb\'c0\'bb \'b1\'e2\'c1\'b8\'c0\'c7 \'c7\'d5\'b0\'e8\'bf\'a1 \'c3\'df\'b0\'a1\cf0 \
+			\cf3 sum\cf0  = \cf3 sum\cf0  + \cf3 a\cf0 ;\
+			\cf3 a\cf0  = \cf3 a\cf0 +1;			\
+		\}\cf2 while\cf0 (\cf3 a\cf0 <=10);\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c7\'d5\'b0\'e8 : %d\\n"\cf0  , \cf3 sum\cf0 );	\}\}\
+\
+		\cf6 //image1.\ul \ulc6 png\ulnone , image2.\ul png\ulnone , image3.\ul png\ulnone \'b8\'a6 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2\cf0 \
+		\cf6 //1,2,3\'c0\'bb \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2 -> image\'b8\'a6 \'c3\'df\'b0\'a1\'c7\'cf\'b0\'ed .\ul png\ulnone \'c0\'bb \'b5\'da\'bf\'a1 \'c3\'df\cf0 \
+		\cf2 int\cf0  \cf3 b\cf0  = 0;\
+		\cf2 do\cf0  \{\
+			\cf3 b\cf0 ++;\
+			System.\cf4 out\cf0 .printf(\cf5 "image%d.png\\t"\cf0 , \cf3 b\cf0 );\
+		\}\cf2 while\cf0 (\cf3 b\cf0 <=2);\
+		System.\cf4 out\cf0 .printf(\cf5 "\\n"\cf0 );\
+		\cf3 b\cf0  = 1;\
+		\cf2 while\cf0 (\cf3 b\cf0 <4) \{\
+			System.\cf4 out\cf0 .printf(\cf5 "image%d.png\\t"\cf0 , \cf3 b\cf0 );\
+			\cf3 b\cf0  = \cf3 b\cf0 +1;\}\}\}\
+\
+	\'b0\'e1\'b0\'fa)\
+	601\
+	601\
+	601\
+	\'c7\'d5\'b0\'e8 : 55\
+	image1.png		image2.png		image3.png\
+	image1.png		image2.png		image3.png\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**for\
+\
+=> for(\'c3\'b3\'c0\'bd \'c7\'d1\'b9\'f8\'b8\'b8 \'bc\'f6\'c7\'e0\'b5\'c7\'b4\'c2 \'b3\'bb\'bf\'eb; false\'b0\'a1 \'b5\'c7\'b8\'e9 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c1\'be\'b7\'e1\'c7\'d2 \'bd\'c4; \'b5\'ce\'b9\'f8 \'c2\'b0 \'b9\'dd\'ba\'b9\'c0\'bb \'bd\'c3\'c0\'db\'c7\'cf\'b1\'e2 \'c0\'fc\'bf\'a1 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb)\{\
+	\'b9\'dd\'ba\'b9 \'bc\'f6\'c7\'e0\'c7\'d2 \'b3\'bb\'bf\'eb\}\
+=> \cf8 \'b5\'ce\'b9\'f8\'c2\'b0 \'ba\'ce\'ba\'d0\'c0\'cc false\'b0\'a1 \'b5\'c9 \'b6\'a7 \'b1\'ee\'c1\'f6 \'bc\'f6\'c7\'e0\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b5\'ce\'b9\'f8\'c2\'b0 \'ba\'ce\'ba\'d0\'c0\'cc \'bb\'fd\'b7\'ab\'b5\'c7\'b8\'e9 \'b9\'ab\'c7\'d1 \'b9\'dd\'ba\'b9 \cf0 \
+	\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0  = 1; ; \cf3 i\cf0 =\cf3 i\cf0 +1) \{System.\cf4 out\cf0 .printf(\cf5 "Hi\\n"\cf0 );\}	\
+\
+	\'bd\'c7\'bd\'c0)\
+	\cf2 public\cf0  \cf2 class\cf0  ForTest \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 arg\cf0 ) \{\
+		\cf6 //Hello Java\'b8\'a6 3\'b9\'f8 \'c3\'e2\'b7\'c2 - for \'c0\'cc\'bf\'eb\cf0 \
+		\cf6 //for(\'c3\'b3\'c0\'bd\'bc\'f6\'c7\'e0\'b5\'c7\'b4\'c2\'bd\'c4; \ul false\ulnone \'b0\'a1 \'b3\'aa\'bf\'c0\'b8\'e9 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c1\'df\'b4\'dc\'c7\'cf\'b4\'c2 \'bd\'c4; \'b5\'ce \'b9\'f8\'c2\'b0\'ba\'ce\'c5\'cd \'bc\'f6\'c7\'e0\'b5\'c7\'b4\'c2 )\{\'b9\'dd\'ba\'b9\'c7\'d2 \'b3\'bb\'bf\'eb\}\cf0 \
+		\cf6 //while\'c0\'ba \'b9\'dd\'ba\'b9\'c1\'b6\'b0\'c7\'c0\'bb \'c7\'cf\'b3\'aa\'be\'bf \'bc\'bc\'b7\'ce\'b7\'ce \'c0\'db\'bc\'ba\'c7\'cf\'c1\'f6\'b8\'b8, for\'b4\'c2 \'b0\'a1\'b7\'ce\'b7\'ce \'c7\'cf\'b3\'aa\'c0\'c7 \'c7\'e0\'bf\'a1 \'c0\'db\'bc\'ba\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0 =0; \cf3 i\cf0 <3; \cf3 i\cf0  = \cf3 i\cf0  + 1)\
+		\{System.\cf4 out\cf0 .printf(\cf5 "Hello Java \\n"\cf0 );\}\
+		\cf6 //1\'ba\'ce\'c5\'cd 10\'b1\'ee\'c1\'f6\'c0\'c7 \'c2\'a6\'bc\'f6 \'c7\'d5\'b0\'e8 - for \'c0\'cc\'bf\'eb\cf0 \
+		\cf2 int\cf0  \cf3 sum\cf0  = 0;\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 a\cf0 =2; \cf3 a\cf0 <=10; \cf3 a\cf0 =\cf3 a\cf0 +2) \{\cf3 sum\cf0  = \cf3 sum\cf0  + \cf3 a\cf0 ;\}\
+		System.\cf4 out\cf0 .printf(\cf5 "\'c7\'d5\'b0\'e8 : %d\\n"\cf0 , \cf3 sum\cf0 );\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	\'b0\'e1\'b0\'fa)\
+	Hello Java\
+	Hello Java\
+	Hello Java\
+	\'c7\'d5\'b0\'e8 : 30\
+\
+=> \'c1\'a6\'be\'ee\'b9\'ae\'c0\'bb \'b8\'b8\'b5\'e9\'b8\'e9 \'c7\'cf\'b3\'aa\'c0\'c7 \'ba\'ed\'b7\'cf\'c0\'cc \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fd\'b4\'cf\'b4\'d9.\
+=> \'c1\'a6\'be\'ee\'b9\'ae \'be\'c8\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e7 \'ba\'af\'bc\'f6\'b4\'c2 \'c1\'a6\'be\'ee\'b9\'ae \'be\'c8\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+Int sum = 0;\
+for(int I=0; ;)\{\}\
+=> sum\'c0\'ba \'c1\'a6\'be\'ee\'b9\'ae \'b9\'d9\'b1\'f9\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e9\'be\'fa\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c1\'a6\'be\'ee\'b9\'ae \'be\'c8\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'ed, \'c1\'a6\'be\'ee\'b9\'ae \'b9\'d9\'b1\'f9\'bf\'a1\'bc\'ad\'b5\'b5 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> i\'b4\'c2 for\'be\'c8\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e9\'be\'ee\'c1\'b3\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 for\'be\'c8\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'ed, for \'b9\'d9\'b1\'f9\'bf\'a1\'bc\'ad\'b4\'c2 i\'b4\'c2 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+=> \'c1\'a6\'be\'ee\'b9\'ae\'c0\'c7 \'bd\'c7\'c7\'e0 \'b9\'ae\'c0\'e5\'c0\'cc \'c7\'d1 \'c1\'d9 \'c0\'cc\'b6\'f3\'b8\'e9 \{\}\'c0\'bb \'bb\'fd\'b7\'ab\'c7\'d8\'b5\'b5 \'b5\'cb\'b4\'cf\'b4\'d9. \'c4\'da\'b5\'e5\'c0\'c7 \'b0\'a1\'b5\'b6\'bc\'ba\'c0\'bb \'b3\'f4\'c0\'cc\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \{\}\'c0\'bb \'bb\'fd\'b7\'ab\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf9 ## \'c4\'da\'b5\'e5 \'c1\'a4\'b8\'ae : \'bd\'c3\'c0\'db(command) + a\'b8\'a6 \'c4\'da\'b5\'e5 \'c0\'fc\'c3\'bc \'bc\'b1\'c5\'c3\'c0\'cc \'b5\'c7\'b0\'ed \'bd\'c3\'c0\'db(command) + shift + f\'b8\'a6 \'b4\'a9\'b8\'a3\'b8\'e9 \'c4\'da\'b5\'e5 \'b5\'e9\'bf\'a9\'be\'b2\'b1\'e2 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'bc\'b3\'c1\'a4\cf0 \
+\
+**\'b1\'e2\'c5\'b8 \'c1\'a6\'be\'ee\'b9\'ae\
+	\
+	1. break\
+	=> switch\'bf\'a1\'bc\'ad break\'b4\'c2 \'be\'c6\'b7\'a1 \'c2\'ca\'c0\'b8\'b7\'ce \'b4\'f5 \'c0\'cc\'bb\'f3 \'c1\'f8\'c7\'e0\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed switch\'b8\'a6 \'ba\'fc\'c1\'ae \'b3\'aa\'b0\'a1\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee\
+	=> switch\'bf\'a1\'bc\'ad break\'b8\'a6 \'bb\'fd\'b7\'ab\'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 break\'b8\'a6 \'b8\'b8\'b3\'af\'b6\'a7 \'b1\'ee\'c1\'f6 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> while, do~while, for\'bf\'a1\'bc\'ad if\'bf\'cd \'c7\'d4\'b2\'b2 \'bb\'e7\'bf\'eb\'c7\'d8\'bc\'ad \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c1\'df\'b4\'dc\'c7\'cf\'b4\'c2 \'bf\'aa\'c7\'d2\
+	=> \'c6\'af\'ba\'b0\'c7\'d1 \'b0\'e6\'bf\'ec\'b0\'a1 \'be\'c6\'b4\'cf\'b8\'e9 if \'bf\'cd \'b0\'b0\'c0\'cc \'bb\'e7\'bf\'eb\
+\
+	2. continue\
+	=> while, do~while, for\'bf\'cd \'b0\'b0\'c0\'ba \'b9\'dd\'ba\'b9\'b9\'ae\'bf\'a1\'bc\'ad if \'bf\'cd \'c7\'d4\'b2\'b2 \'bb\'e7\'bf\'eb\'b5\'c7\'bc\'ad \'b4\'f5 \'c0\'cc\'bb\'f3 \'be\'c6\'b7\'a1\'b7\'ce \'c1\'f8\'c7\'e0\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'b4\'d9\'c0\'bd \'b9\'dd\'ba\'b9\'c0\'b8\'b7\'ce \'b3\'d1\'be\'ee\'b0\'a1\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee\
+\
+	\'bd\'c7\'bd\'c0)\
+	\cf2 public\cf0  \cf2 class\cf0  Etc \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf6 // 1\'ba\'ce\'c5\'cd 10\'b1\'ee\'c1\'f6 \'c3\'e2\'b7\'c2\cf0 \
+		\cf2 for\cf0  (\cf2 int\cf0  \cf3 i\cf0  = 1; \cf3 i\cf0  <= 10; \cf3 i\cf0  = \cf3 i\cf0  + 1) \{\
+			\cf6 // i\'b0\'a1 3\'c0\'c7 \'b9\'e8\'bc\'f6\'b6\'f3\'b8\'e9\cf0 \
+			\cf6 // break\'c0\'cc\'b8\'e9 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c1\'df\'b4\'dc\'c7\'cf\'b9\'c7\'b7\'ce 1, 2\'b8\'b8 \'b3\'aa\'bf\'c8\cf0 \
+			\cf6 // continue\'b4\'c2 \'b4\'d9\'c0\'bd \'b9\'dd\'ba\'b9\'c0\'b8\'b7\'ce \'b3\'d1\'be\'ee\'b0\'a9\'b4\'cf\'b4\'d9.\cf0 \
+			\cf2 if\cf0  (\cf3 i\cf0  % 3 == 0) \{\
+				//\cf2 break;\cf0 \
+				\cf2 continue\cf0 ;\
+			\}\
+			System.\cf4 out\cf0 .printf(\cf5 "i : %d\\n"\cf0 , \cf3 i\cf0 );\}	\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+	\'b0\'e1\'b0\'fa)\
+	break\'c0\'cf\'b6\'a7\
+	i = 1\
+	i = 2\
+	continue \'c0\'cf\'b6\'a7\
+	i : 1\
+\pard\pardeftab720\partightenfactor0
+\cf0 	i : 2\
+	i : 4\
+	i : 5\
+	i : 7\
+	i : 8\
+	i : 10	\
+\
+	3. \'b9\'dd\'ba\'b9\'b9\'ae\'b0\'fa break\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'c0\'fb\'c0\'fd\'c7\'d1 \'c1\'b6\'b0\'c7\'c0\'bb \'b8\'b8\'c1\'b7\'c7\'d2 \'b6\'a7 \'b1\'ee\'c1\'f6 \'b9\'dd\'ba\'b9\'bd\'c3\'c5\'b3 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+	=>\'b9\'ab\'c7\'d1 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'b8\'b8\'b5\'e9\'b0\'ed \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c1\'df\'b4\'dc\'c7\'d2 \'c1\'b6\'b0\'c7\'c0\'bb \'b8\'b8\'b3\'aa\'b8\'e9 break \'bd\'c3\'c4\'d1\'c1\'dd\'b4\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	\
+	\'bd\'c7\'bd\'c0)\
+	\cf2 public\cf0  \cf2 class\cf0  ValidationCheck \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf6 // 1,2,3 \'c0\'cc\'bf\'dc\'c0\'c7 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 \'b4\'d9\'bd\'c3 \'c0\'d4\'b7\'c2\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b0\'ed\cf0 \
+		\cf6 // 1,2,3 \'c0\'bb \'c0\'d4\'b7\'c2\'c7\'cf\'b8\'e9 \'c1\'a4\'bb\'f3 \'c0\'d4\'b7\'c2\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed \'c1\'be\'b7\'e1\cf0 \
+		Scanner \cf3 sc\cf0  = \cf2 new\cf0  Scanner(System.\cf4 in\cf0 );\
+		\
+		\cf2 while\cf0  (\cf2 true\cf0 ) \{	\
+			System.\cf4 out\cf0 .printf(\cf5 "\'b8\'de\'b4\'ba\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+			String \cf3 menu\cf0  = \cf3 sc\cf0 .nextLine();\
+			\cf2 if\cf0  (!\cf3 menu\cf0 .equals(\cf5 "1"\cf0 ) && !\cf3 menu\cf0 .equals(\cf5 "2"\cf0 ) && !\cf3 menu\cf0 .equals(\cf5 "3"\cf0 )) \{\
+				System.\cf4 out\cf0 .printf(\cf5 "\'b8\'de\'b4\'ba\'b4\'c2 1 \'b6\'c7\'b4\'c2 2 \'b6\'c7\'b4\'c2 3\'c0\'b8\'b7\'ce \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4.\\n"\cf0 );\
+			\} \cf2 else\cf0  \{\
+				System.\cf4 out\cf0 .printf(\cf5 "\'c1\'a4\'bb\'f3\'c0\'d4\'b7\'c2 \\n"\cf0 );\
+				\cf2 break\cf0 ;\
+			\}\
+		\}	\
+		\cf6 //Scanner\'b4\'c2 \'b4\'dd\'c8\'f7\'b8\'e9 \'b4\'d9\'bd\'c3 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'b0\'ed \'bb\'f5\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		\cf6 //0-100\'b1\'ee\'c1\'f6\'c0\'c7 \'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d2 \'b6\'a7 \'b1\'ee\'c1\'f6 \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2\cf0 \
+		\cf2 while\cf0 (\cf2 true\cf0 ) \{\
+			System.\cf4 out\cf0 .printf(\cf5 "\'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:"\cf0 );\
+			\cf2 int\cf0  \cf3 number\cf0  = \cf3 sc\cf0 .nextInt();\
+			\cf2 if\cf0 (\cf3 number\cf0  >= 0 || \cf3 number\cf0  <= 100) \{\
+				System.\cf4 out\cf0 .printf(\cf5 "%d\'b4\'c2 \'bf\'c3\'b9\'d9\'b8\'a5 \'c1\'a1\'bc\'f6\'c0\'d4\'b4\'cf\'b4\'d9.\\n"\cf0 , \cf3 number\cf0 );\
+				\cf2 break\cf0 ;\
+			\}\cf2 else\cf0  \{\
+				System.\cf4 out\cf0 .printf(\cf5 "0\'ba\'ce\'c5\'cd 100\'b1\'ee\'c1\'f6\'c0\'c7 \'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4.\\n"\cf0 );\
+			\}			\
+		\}\
+		\cf3 sc\cf0 .close();\}\}	\
+\
+	\'b0\'e1\'b0\'fa)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	\'b8\'de\'b4\'ba\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:3\
+	\'c1\'a4\'bb\'f3\'c0\'d4\'b7\'c2 \
+	\'b8\'de\'b4\'ba\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4:4\
+	\'b8\'de\'b4\'ba\'b4\'c2 1 \'b6\'c7\'b4\'c2 2 \'b6\'c7\'b4\'c2 3\'c0\'b8\'b7\'ce \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4.\
+\
+**\'c1\'a6\'be\'ee\'b9\'ae \'be\'c8\'bf\'a1 \'c1\'a6\'be\'ee\'b9\'ae \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\
+\
+=> \'c3\'e2\'b9\'df\'c0\'ba \'b9\'d9\'b1\'f9\'c2\'ca \'c1\'a6\'be\'ee\'b9\'ae\'bf\'a1\'bc\'ad \'bd\'c3\'c0\'db\'c7\'cf\'c1\'f6\'b8\'b8 \'c1\'be\'b7\'e1\'b4\'c2 \'be\'c8\'c2\'ca\'c0\'c7 \'c1\'a6\'be\'ee\'b9\'ae\'c0\'cc \'b8\'d5\'c0\'fa \'b3\'a1\'b3\'b3\'b4\'cf\'b4\'d9.\
+\
+	1. \'b1\'b3\'b9\'f8 \'c3\'b3\'b8\'ae\
+	=>\'b9\'f8\'b0\'a5\'be\'c6\'b0\'a1\'b8\'e9\'bc\'ad \'c3\'b3\'b8\'ae\'c7\'cf\'b1\'e2\
+	\'bd\'c7\'bd\'c0)\
+	\cf2 public\cf0  \cf2 class\cf0  Toogle \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf6 //ON \'b0\'fa OFF\'b8\'a6 \'b1\'b3\'b4\'eb\'b7\'ce 10\'b9\'f8 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \cf0 \
+		\cf2 int\cf0  \cf3 i\cf0  = 0;\
+		\cf6 //1.\ul int\ulnone  sign = 1;\cf0 \
+		\cf6 //2.boolean flag = true;\cf0 \
+		\cf2 while\cf0 (\cf3 i\cf0 <10) \{\
+			\cf6 //1. if(sign)\{\cf0 \
+			\cf6 //2. if(flag)\{\cf0 \
+			\cf2 if\cf0 (\cf3 i\cf0 %2==0) \{\
+				System.\cf4 out\cf0 .printf(\cf5 "ON\\n"\cf0 );\
+			\}\cf2 else\cf0  \{\
+				System.\cf4 out\cf0 .printf(\cf5 "OFF\\n"\cf0 );\
+			\}\
+			\cf3 i\cf0 =\cf3 i\cf0 +1;\
+			\cf6 //1. sign = -sign;\cf0 \
+			\cf6 //2. flag = !flag;\cf0 \
+		\}\}\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	\'b0\'e1\'b0\'fa)\
+	ON\
+	OFF \'a1\'a6 10\'b9\'f8\'b3\'aa\'bf\'c8\
+\
+	2. \'bb\'f3\'c5\'c2 \'c7\'a5\'bd\'c3\
+	=> \'b9\'dd\'ba\'b9\'b9\'ae \'b3\'bb\'bf\'a1\'bc\'ad \'be\'ee\'b6\'b2 \'bb\'f3\'c5\'c2 \'ba\'af\'c8\'ad\'b0\'a1 \'bb\'fd\'b0\'dc\'bc\'ad \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c1\'df\'b0\'a3\'bf\'a1 \'c1\'df\'b4\'dc\'c7\'d1 \'b0\'cd\'c0\'ce\'c1\'f6 \'be\'c6\'b4\'cf\'b8\'e9 \'b3\'a1\'b1\'ee\'c1\'f6 \'c1\'f8\'c7\'e0\'c7\'d1 \'b0\'cd\'c0\'ce\'c1\'f6 \'c6\'c7\'b4\'dc\
+	=> \'c6\'c7\'b4\'dc\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'ba\'af\'bc\'f6\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'c3\'ca\'b1\'e2\'b0\'aa\'c0\'bb \'ba\'ce\'bf\'a9\'c7\'cf\'b0\'ed \'bb\'f3\'c5\'c2\'ba\'af\'c8\'ad\'b0\'a1 \'bb\'fd\'b0\'e5\'c0\'bb \'b6\'a7 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'ba\'af\'b0\'e6\'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'b9\'d9\'b1\'f9\'bf\'a1\'bc\'ad \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'c8\'ae\'c0\'ce\'c7\'d8\'bc\'ad \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'cc \'ba\'af\'b0\'e6\'b5\'c7\'be\'ee \'c0\'d6\'c0\'b8\'b8\'e9 \'bb\'f3\'c5\'c2\'ba\'af\'c8\'ad\'b0\'a1 \'bb\'fd\'b1\'e4\'b0\'cd\'c0\'cc\'b0\'ed \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'bb\'f3\'c5\'c2\'ba\'af\'c8\'ad\'b0\'a1 \'bb\'fd\'b1\'e4\'b0\'cd\'c0\'cc \'be\'c6\'b4\'d4\
+\
+	\'bc\'d2\'bc\'f6(prime)\
+	=> 1\'b0\'fa \'c0\'da\'b1\'e2 \'c0\'da\'bd\'c5\'c0\'b8\'b7\'ce\'b8\'b8 \'b3\'aa\'b4\'a9\'be\'ee\'c1\'f6\'b4\'c2 \'bc\'f6\
+	=> \'bc\'d2\'bc\'f6\'b8\'a6 \'c6\'c7\'ba\'b0\'c7\'cf\'b4\'c2 \'be\'cb\'b0\'ed\'b8\'ae\'c1\'f2 : 2\'ba\'ce\'c5\'cd \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'fd\'b9\'dd\'c0\'cc \'b5\'c7\'b4\'c2 \'bc\'fd\'c0\'da\'b1\'ee\'c1\'f6 \'b3\'aa\'b4\'a9\'be\'ee\'bc\'ad \'c7\'d1\'b9\'f8\'b5\'b5 \'b3\'aa\'b4\'a9\'be\'ee \'b6\'b3\'be\'ee\'c1\'f6\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'bc\'d2\'bc\'f6\
+\
+	\'bd\'c7\'bd\'c0)	\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 	//\'c1\'a4\'bc\'f6\'b8\'a6 \'c0\'d4\'b7\'c2\'b9\'de\'be\'c6\'bc\'ad \'bc\'d2\'bc\'f6\'c0\'ce\'c1\'f6 \'c6\'c7\'ba\'b0\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf6 	//\'bc\'d2\'bc\'f6\'b4\'c2 2\'ba\'ce\'c5\'cd \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'fd\'b9\'dd\'b1\'ee\'c1\'f6 \'b3\'aa\'b4\'a9\'be\'ee\'bc\'ad \'c7\'d1\'b9\'f8\'b5\'b5 \'b3\'aa\'b4\'a9\'be\'ee \'b6\'b3\'be\'ee\'c1\'f6\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'bc\'d2\'bc\'f6\cf0 \
+	Scanner \cf3 sc\cf0  = \cf2 new\cf0  Scanner(System.\cf4 in\cf0 );\
+	System.\cf4 out\cf0 .printf(\cf5 "\'bc\'d2\'bc\'f6\'c0\'ce\'c1\'f6 \'c6\'c7\'ba\'b0\'c7\'d2 \'bc\'fd\'c0\'da \'c0\'d4\'b7\'c2 (1\'ba\'b8\'b4\'d9 \'c5\'ab \'bc\'fd\'c0\'da):"\cf0 );\
+	\cf2 int\cf0  \cf3 su\cf0  = \cf3 sc\cf0 .nextInt();\
+	\cf6 //\'c1\'df\'b0\'a3\'bf\'a1 \'b3\'aa\'b4\'a9\'be\'ee \'b6\'b3\'be\'ee\'c1\'b3\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'d2 \'ba\'af\'bc\'f6\cf0 \
+	\cf2 int\cf0  \cf3 f\cf0  = 0;\
+	\cf6 //i\'b8\'a6 2\'ba\'ce\'c5\'cd \'c0\'da\'bd\'c5\'c0\'c7 \'c0\'fd\'b9\'dd\'b1\'ee\'c1\'f6 \'c7\'cf\'b3\'aa\'be\'bf \'c1\'f5\'b0\'a1\'bd\'c3\'c5\'b0\'b8\'e9\'bc\'ad \cf0 \
+	\cf2 for\cf0 (\cf2 int\cf0  \cf3 a\cf0 =2; \cf3 a\cf0 <\cf3 su\cf0 /2; \cf3 a\cf0 =\cf3 a\cf0 +1) \{\
+		\cf6 //\'b3\'aa\'b4\'a9\'be\'ee \'b6\'b3\'be\'ee\'c1\'f6\'b8\'e9 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'c1\'be\'b7\'e1 \cf0 \
+		\cf2 if\cf0 (\cf3 su\cf0 %\cf3 a\cf0  == 0) \{\
+			\cf6 //\'b3\'aa\'b4\'a9\'be\'ee \'b6\'b3\'be\'ee\'c1\'b3\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'bb \'c7\'a5\'bd\'c3\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'ba\'af\'b0\'e6\cf0 \
+			\cf3 f\cf0  = 1;\
+			\cf2 break\cf0 ;\
+			\}\
+		\}\
+	\cf6 //break\'b8\'a6 \'b8\'b8\'b3\'aa\'bc\'ad \'c1\'be\'b7\'e1\'b5\'c8 \'b0\'cd\'c0\'ce\'c1\'f6 \'be\'c6\'b4\'cf\'b8\'e9 \'b9\'dd\'ba\'b9\'b9\'ae\'c0\'bb \'b3\'a1\'b1\'ee\'c1\'f6 \'bc\'f6\'c7\'e0\'c7\'d1 \'b0\'cd\'c0\'ce\'c1\'f6 \'c6\'c7\'ba\'b0 \cf0 \
+	\cf2 if\cf0 (\cf3 f\cf0  == 0) \{\
+		System.\cf4 out\cf0 .printf(\cf5 "%d\'b4\'c2 \'bc\'d2\'bc\'f6\\n"\cf0 , \cf3 su\cf0 );\
+	\}\cf2 else\cf0  \{\
+		System.\cf4 out\cf0 .printf(\cf5 "%d\'b4\'c2 \'bc\'d2\'bc\'f6 \'be\'c6\'b4\'d4\\n"\cf0 , \cf3 su\cf0 );\
+	\}\
+	\cf3 sc\cf0 .close();\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	\'b0\'e1\'b0\'fa)\
+	\'bc\'d2\'bc\'f6\'c0\'ce\'c1\'f6 \'c6\'c7\'ba\'b0\'c7\'d2 \'bc\'fd\'c0\'da \'c0\'d4\'b7\'c2 (1\'ba\'b8\'b4\'d9 \'c5\'ab \'bc\'fd\'c0\'da):7\
+	7\'b4\'c2 \'bc\'d2\'bc\'f6\
+\
+\'b9\'dd\'ba\'b9\'b9\'ae \'bd\'c7\'bd\'c0)\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  Star \{\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+	\cf6 /*\cf0 \
+\cf6 		 0***** 0-4\cf0 \
+\cf6 		 1***** 0-4\cf0 \
+\cf6 		 2***** 0-4\cf0 \
+\cf6 		 3***** 0-4\cf0 \
+\cf6 		 4***** 0-4\cf0 \
+\cf6 	*/\cf0 \
+		\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0 =0; \cf3 i\cf0 <5; \cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			\cf2 for\cf0 (\cf2 int\cf0  \cf3 j\cf0 =0; \cf3 j\cf0 <5; \cf3 j\cf0 =\cf3 j\cf0 +1) \{\
+				System.\cf4 out\cf0 .printf(\cf5 "*"\cf0 );\
+			\}\
+			System.\cf4 out\cf0 .printf(\cf5 "\\n"\cf0 );\
+		\}\
+		System.\cf4 out\cf0 .printf(\cf5 "==============\\n"\cf0 );\
+	\
+	\cf6 /*\cf0 \
+\cf6 	 0*		0-0 \'b3\'a1\'b3\'aa\'b4\'c2 \'bc\'fd\'c0\'da\'b0\'a1 \'ba\'af\'c8\'ad(1\'be\'bf \'c1\'f5\'b0\'a1) : 1*i\cf0 \
+\cf6 	 1**		0-1\cf0 \
+\cf6 	 2***	0-2\cf0 \
+\cf6 	 3****	0-3\cf0 \
+\cf6 	 4*****	0-4\cf0 \
+\cf6 	 */\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 a\cf0 =0; \cf3 a\cf0 <5; \cf3 a\cf0 =\cf3 a\cf0 +1) \{\
+			\cf2 for\cf0 (\cf2 int\cf0  \cf3 b\cf0 =0; \cf3 b\cf0 <\cf3 a\cf0 +1; \cf3 b\cf0 =\cf3 b\cf0 +1) \{\
+				System.\cf4 out\cf0 .printf(\cf5 "*"\cf0 );\
+			\}\
+			System.\cf4 out\cf0 .printf(\cf5 "\\n"\cf0 );\
+		\}\
+		System.\cf4 out\cf0 .printf(\cf5 "==============\\n"\cf0 );\
+		\
+	\cf6 /*\cf0 \
+\cf6 		0*****	0-4 \'b3\'a1\'b3\'aa\'b4\'c2 \'bc\'fd\'c0\'da\'b0\'a1 \'ba\'af\'c8\'ad(-1\'be\'bf \'b0\'a8\'bc\'d2) : -1 * i + 4 : 4 - i \cf0 \
+\cf6 		1**** 	0-3\cf0 \
+\cf6 		2*** 	0-2\cf0 \
+\cf6 		3** 		0-1\cf0 \
+\cf6 		4* 		0-0\cf0 \
+\cf6 	*/\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 c\cf0 =0; \cf3 c\cf0 <5; \cf3 c\cf0 =\cf3 c\cf0 +1) \{\
+			\cf2 for\cf0 (\cf2 int\cf0  \cf3 d\cf0 =0; \cf3 d\cf0 <5-\cf3 c\cf0 ; \cf3 d\cf0 =\cf3 d\cf0 +1) \{\
+				System.\cf4 out\cf0 .printf(\cf5 "*"\cf0 );\
+			\}\
+			System.\cf4 out\cf0 .printf(\cf5 "\\n"\cf0 );\
+		\}\
+		System.\cf4 out\cf0 .printf(\cf5 "==============\\n"\cf0 );\
+\
+	\cf6 /*\cf0 \
+\cf6 		0*		0-1  \cf0 \
+\cf6 		1** 		0-2\cf0 \
+\cf6 		2*** 	0-3\cf0 \
+\cf6 		3** 		0-2\cf0 \
+\cf6 		4* 		0-1\cf0 \
+\cf6 	*/\cf0 \
+		\cf6 //\'c0\'cf\'c1\'a4\'c7\'d1 \'c6\'d0\'c5\'cf\'c0\'cc \'b3\'aa\'bf\'c0\'b4\'d9\'b0\'a1 \'b4\'d9\'b8\'a5 \'c6\'d0\'c5\'cf\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'ba\'af\'b0\'e6\'b5\'c7\'b4\'c2 \'bd\'c3\'c1\'a1\'bf\'a1\'bc\'ad \'c4\'da\'b5\'e5\'b8\'a6 \'ba\'d0\'c7\'d2\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 x\cf0 =0; \cf3 x\cf0 <5; \cf3 x\cf0 =\cf3 x\cf0 +1) \{\
+			\cf6 //3\'b9\'f8\'c2\'b0 \'c1\'d9 \'b1\'ee\'c1\'f6\'c0\'c7 \'b1\'d4\'c4\'a2 \cf0 \
+			\cf2 if\cf0 (\cf3 x\cf0 <=2) \{\
+				\cf2 for\cf0 (\cf2 int\cf0  \cf3 y\cf0 =0; \cf3 y\cf0 <\cf3 x\cf0 +1; \cf3 y\cf0 =\cf3 y\cf0 +1) \{\
+					System.\cf4 out\cf0 .printf(\cf5 "*"\cf0 );\
+				\}\
+			\cf6 //4\'b9\'f8\'c2\'b0 \'c1\'d9 \'ba\'ce\'c5\'cd\'c0\'c7 \'b1\'d4\'c4\'a2 \cf0 \
+			\}\cf2 else\cf0  \{\
+				\cf2 for\cf0 (\cf2 int\cf0  \cf3 z\cf0 =0; \cf3 z\cf0 <5-\cf3 x\cf0 ; \cf3 z\cf0 =\cf3 z\cf0 +1) \{\
+					System.\cf4 out\cf0 .printf(\cf5 "*"\cf0 );\
+				\}\
+			\}\
+			System.\cf4 out\cf0 .printf(\cf5 "\\n"\cf0 );\
+		\}\
+		System.\cf4 out\cf0 .printf(\cf5 "==============\\n"\cf0 );\
+		\cf6 /*\cf0 \
+\cf6 		      *	\'b0\'f8\'b9\'e94\'b0\'b3* \cf0 \
+\cf6 		     * 	\'b0\'f8\'b9\'e93\'b0\'b3*\cf0 \
+\cf6 		    * 	\'b0\'f8\'b9\'e92\'b0\'b3*\cf0 \
+\cf6 		   * 	\'b0\'f8\'b9\'e91\'b0\'b3*\cf0 \
+\cf6 		  * 	\'b0\'f8\'b9\'e9\'be\'f8\'c0\'bd*\cf0 \
+\cf6 		 */\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 m\cf0 =0; \cf3 m\cf0 <5; \cf3 m\cf0 =\cf3 m\cf0 +1) \{\
+			\cf6 //\'b0\'f8\'b9\'e9 \'c3\'e2\'b7\'c2 \cf0 \
+			\cf2 for\cf0 (\cf2 int\cf0  \cf3 n\cf0 =0; \cf3 n\cf0 <4-\cf3 m\cf0 ; \cf3 n\cf0 =\cf3 n\cf0 +1) \{\
+				System.\cf4 out\cf0 .printf(\cf5 " "\cf0 );\
+			\}\
+			System.\cf4 out\cf0 .printf(\cf5 "*"\cf0 );\
+			System.\cf4 out\cf0 .printf(\cf5 "\\n"\cf0 );\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+		\
+\
+\
+\
+\
+\
+\
+\
+}
