@@ -1,0 +1,938 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset129 NanumMyeongjo;}
+{\colortbl;\red255\green255\blue255;\red251\green0\blue7;\red127\green0\blue85;\red63\green127\blue95;
+\red0\green0\blue192;\red106\green62\blue62;\red42\green0\blue255;\red25\green61\blue255;\red127\green0\blue85;
+\red106\green62\blue62;\red42\green0\blue255;\red63\green127\blue95;\red0\green0\blue192;\red100\green100\blue100;
+\red251\green0\blue7;\red25\green61\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c99893\c12008\c0;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c16471\c0\c100000;\cssrgb\c13005\c35866\c100000;\csgenericrgb\c49804\c0\c33333;
+\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c39216\c39216\c39216;
+\cssrgb\c99893\c12008\c0;\cssrgb\c13005\c35866\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13340\viewh17060\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 10\'c0\'cf\'c2\'f7(cho)\
+\
+** Interface\
+\
+=> \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'cd final \'bb\'f3\'bc\'f6\'b8\'b8\'c0\'bb \'b0\'a1\'c1\'f8 \'b0\'b3\'c3\'bc\
+=> \'c1\'f7\'c1\'a2 \'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\'c0\'bb \'b8\'f8\'c7\'cf\'b0\'ed \'b4\'d9\'b8\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 implements \'c7\'cf\'b0\'c5\'b3\'aa \'b4\'d9\'b8\'a5 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'a1 extends\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\
+=> interface\'b0\'a1 implements \'b5\'c7\'be\'ee \'c0\'d6\'c0\'b8\'b8\'e9 \'b1\'d7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'b4\'c2 interface\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'b8\'c7\'f6\'b5\'c7\'be\'ee \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> interface\'b0\'a1 implements \'b5\'c7\'be\'ee \'c0\'d6\'c0\'b8\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'b1\'b8\'c7\'f6\'b5\'c7\'be\'ee \'c0\'d6\'b4\'d9\'b4\'c2 \'ba\'b8\'c0\'e5\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+protocol(\'b1\'d4\'c4\'a2, \'b1\'d4\'be\'e0, \'be\'e0\'bc\'d3)\'c0\'cc\'b6\'f3\'b0\'ed\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> interface\'b4\'c2 \'bd\'c4\'b4\'e7\'c0\'c7 \'b8\'de\'b4\'ba\'c6\'c7\'c0\'bb \'bb\'fd\'b0\'a2\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+=> \'b4\'d9\'c1\'df \'bb\'f3\'bc\'d3\'c0\'cc\'b6\'f3\'b4\'c2 \'b4\'dc\'be\'ee\'bf\'cd\'b4\'c2 \'bb\'f3\'b0\'fc\'c0\'cc \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+cloneable : Object clone()\'c0\'bb \'bc\'d2\'c0\'af\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba, clone\'c0\'ba \'b3\'bb\'bf\'eb\'c0\'bb \'ba\'b9\'c1\'a6\'c7\'d8\'bc\'ad \'bb\'f5\'b7\'ce\'bf\'ee \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d6\'b4\'c2 \'b5\'bf\'c0\'db\
+comparable : int compareTo(T other)\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba, compareTo\'b4\'c2 \'c5\'a9\'b1\'e2 \'ba\'f1\'b1\'b3\'b8\'a6 \'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+	=> \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2 \'b4\'eb\'bb\'f3\'c0\'cc \'b4\'f5 \'c5\'a9\'b8\'e9 \'be\'e7\'bc\'f6(1) \'b0\'b0\'c0\'b8\'b8\'e9 0 \'b4\'f5 \'c0\'db\'c0\'b8\'b8\'e9 \'c0\'bd\'bc\'f6(-1)\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'b8\'f0\'b5\'e7 \'be\'f0\'be\'ee\'b0\'a1 \'b5\'bf\'c0\'cf\'c7\'d1 \'b9\'e6\'b9\'fd\'c0\'b8\'b7\'ce \'b0\'e1\'b0\'fa\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=> \'be\'ee\'b6\'b2 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'df\'b4\'c2\'c1\'f6\'b4\'c2 \'b5\'b5\'c5\'a5\'b8\'d5\'c6\'ae\'c0\'c7 \'b0\'a1\'c0\'e5 \'bb\'f3\'b4\'dc \'ba\'ce\'ba\'d0\'c0\'c7 All Implemented Interfaces \'ba\'ce\'ba\'d0\'c0\'bb \'c8\'ae\'c0\'ce\'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+=> String \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 Serializable, CharSequence, Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+** Fast Enumerator(\'ba\'fc\'b8\'a5 \'bf\'ad\'b0\'c5)\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b8\'f0\'c0\'d3\'c0\'bb \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'ba\'fc\'b8\'a3\'b0\'d4 \'c1\'a2\'b1\'d9\'c7\'cf\'b4\'c2 \'b0\'cd\
+=> \'ba\'fc\'b8\'a5 \'bf\'ad\'b0\'c5\'b8\'a6 \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b4\'eb\'c7\'a5\'c0\'fb\'c0\'ce \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'b9\'e8\'bf\'ad, List, Set \'c0\'cc \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+for(\'c0\'d3\'bd\'c3\'ba\'af\'bc\'f6 : \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7\'b8\'f0\'c0\'d3)\{\
+\
+\}\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b8\'f0\'c0\'d3\'bf\'a1\'bc\'ad \'b0\'a2\'b0\'a2\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'d3\'bd\'c3\'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'dd\'b4\'cf\'b4\'d9.\
+=> \'c0\'d3\'bd\'c3\'ba\'af\'bc\'f6\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba \'b9\'dd\'b5\'e5\'bd\'c3 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b8\'f0\'c0\'d3\'bf\'a1\'bc\'ad 1\'b0\'b3\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+** Generics\
+\
+=> Object \'c5\'ac\'b7\'a1\'bd\'ba : \'c0\'da\'b9\'d9\'c0\'c7 \'c3\'d6\'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba, \'c0\'da\'b9\'d9\'c0\'c7 \'b8\'f0\'b5\'e7 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 Object \'c5\'ac\'b7\'a1\'bd\'ba \'c5\'b8\'c0\'d4\'c0\'c7 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+Object ? = \'b5\'a5\'c0\'cc\'c5\'cd;\
+\'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba \'c5\'b8\'c0\'d4\'c0\'c7 \'c2\'fc\'c1\'b6\'c7\'fc \'ba\'af\'bc\'f6\'bf\'a1\'b4\'c2 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba \'c5\'b8\'c0\'d4\'c0\'c7 \'b0\'b4\'c3\'bc \'c2\'fc\'c1\'b6\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\'c0\'cc \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7\'b4\'c2 \'bf\'f8\'b7\'a1\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'b8\'b7\'ce \'b0\'ad\'c1\'a6 \'c7\'fc \'ba\'af\'c8\'af\'c0\'bb \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=> \'c0\'cf\'b9\'dd\'c8\'ad \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6(\'c5\'db\'c7\'c3\'b8\'b4 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6)\
+\'c4\'c4\'c6\'c4\'c0\'cf(\'bc\'d2\'bd\'ba\'c4\'da\'b5\'e5\'b8\'a6 \'b1\'e2\'b0\'e8 \'b6\'c7\'b4\'c2 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b0\'a1 \'c0\'ce\'bd\'c4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c4\'da\'b5\'e5\'b7\'ce \'ba\'af\'c8\'af\'c7\'cf\'b4\'c2 \'c0\'db\'be\'f7)\'c0\'bb \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'c8\'ae\'c0\'ce\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed\
+\'bd\'c7\'c7\'e0 \'c7\'d2\'b6\'a7 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'cf\'b4\'c2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'b9\'e6\'bd\'c4\
+\
+\'b5\'bf\'c0\'cf\'c7\'d1 \'be\'cb\'b0\'ed\'b8\'ae\'c1\'f2\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c7\'d4\'bc\'f6\'b8\'a6 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc \'b6\'a7\'b9\'ae\'bf\'a1 \'bf\'a9\'b7\'af \'b0\'b3\'b8\'a6 \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'b0\'d4 \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e9\'be\'ee \'b3\'bd \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'b9\'e6\'bd\'c4\
+\
+\'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'c0\'d3\'bd\'c3 \'c0\'da\'b7\'e1\'c7\'fc(\'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc)\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6\
+\'b0\'a1\'c1\'f6\'b0\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'cf\'b4\'c2 \'b9\'e6\'bd\'c4\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'bf\'a1 \'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b4\'eb\'c0\'d4\'c7\'d2 \'b6\'a7 \'b1\'e2\'ba\'bb\'c7\'fc\
+(\'b5\'a5\'c0\'cc\'c5\'cd 1\'b0\'b3\'b8\'b8 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'c0\'da\'b7\'e1\'c7\'fc - boolean,byte,short,char,int,long,float,double)\'c0\'ba \'be\'c8\'b5\'cb\'b4\'cf\'b4\'d9.\
+\'b1\'e2\'ba\'bb\'c7\'fc\'c0\'bb \'b4\'eb\'c0\'d4\'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7\'b4\'c2 Wrapper Class(Boolean, Byte, Short, Character, Integer, Long, Float, Double)\'b8\'a6 \'c0\'cc\'bf\'eb\
+\
+1. \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+class \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7<\'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc\'b8\'a7\'c0\'bb \'b3\'aa\'bf\'ad>\{\
+	\'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'bb\'e7\'bf\'eb\
+\}\
+\
+2. \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba - \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'c1\'f6\'c1\'a4\'c7\'d8 \'c1\'d6\'be\'ee\'be\'df\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7 <\'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc \'b3\'aa\'bf\'ad> \'b0\'b4\'c3\'bc\'c0\'cc\'b8\'a7 = new \'bb\'fd\'bc\'ba\'c0\'da<\'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc \'b3\'aa\'bf\'ad>();\
+=> jdk1.7	\'ba\'ce\'c5\'cd\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da \'b5\'da\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'bb\'fd\'b7\'ab\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9. <>\'c0\'b8\'b7\'ce \'b0\'a1\'b4\'c9\
+\'b4\'d9\'b8\'a5 \'b0\'f7\'bf\'a1\'bc\'ad \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 import \'c7\'d2 \'b6\'a7 1.6\'b9\'f6\'c0\'fc\'c0\'b8\'b7\'ce \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c0\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'c0\'d6\'c0\'b8\'b9\'c7\'b7\'ce \'c8\'ae\'c0\'ce\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba Object \'c5\'b8\'c0\'d4\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+\'bb\'e7\'bf\'eb\'c0\'bb \'c7\'d2 \'b6\'a7 \'b0\'ad\'c1\'a6 \'c7\'fc \'ba\'af\'c8\'af\'c0\'bb \'c7\'cf\'b8\'e9\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+3. \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'ba\'bc \'b6\'a7 < > \'b0\'a1 \'c0\'d6\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'d8\'ba\'c1\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+< > \'b0\'a1 \'c0\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7\'b4\'c2 \'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \ul \ulc2 \'c0\'da\'b9\'d9\'bf\'a1\'bc\'ad \'c1\'a6\'b3\'ca\'b8\'af\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'b4\'eb\'ba\'ce\'ba\'d0 \'c0\'da\'b7\'e1\'b1\'b8\'c1\'b6 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'d4\'b4\'cf\'b4\'d9.\cf0 \ulnone \
+\
+Data Structure : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'be\'ee\'b6\'bb\'b0\'d4 \'c0\'fa\'c0\'e5\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d2 \'b0\'cd\'c0\'ce\'b0\'a1 \'c7\'cf\'b4\'c2 \'b0\'cd\
+Algorithm : \'be\'ee\'b6\'b2 \'b9\'ae\'c1\'a6\'b8\'a6 \'be\'ee\'b6\'b2 \'b9\'e6\'b9\'fd\'c0\'b8\'b7\'ce \'c7\'d8\'b0\'e1\'c7\'d8 \'b3\'aa\'b0\'a5 \'b0\'cd\'c0\'ce\'b0\'a1 \'c7\'cf\'b4\'c2 \'b0\'cd\
+\
+4. \'b0\'b3\'b9\'df\'c0\'da\'b0\'a1 \'c1\'f7\'c1\'a2 \'c0\'da\'b7\'e1\'b1\'b8\'c1\'b6\'b8\'a6 \'bc\'b3\'b0\'e8\'c7\'cf\'b0\'c5\'b3\'aa \'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'c0\'cc\'bb\'f3 \'c1\'f7\'c1\'a2 \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'e6\'bf\'ec\'b4\'c2 \'b5\'e5\'b9\'b4\'b4\'cf\'b4\'d9.\
+\'bf\'ec\'b8\'ae\'b0\'a1 \'b8\'b8\'b5\'e5\'b4\'c2 \'c0\'cc\'c0\'af\'b4\'c2 \'be\'c6\'c1\'f7 Generics\'b0\'a1 \'c0\'fb\'bf\'eb\'b5\'c8 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b9\'e8\'bf\'ec\'c1\'f6 \'be\'ca\'be\'c6\'bc\'ad \'bb\'e7\'bf\'eb\'b9\'fd\'c0\'bb \'c0\'cd\'c8\'f7\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c0\'d4\'b4\'cf\'b4\'d9.\
+\'c5\'ac\'b7\'a1\'bd\'ba \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'bb \'ba\'b8\'c1\'f6 \'b8\'bb\'b0\'ed \'c0\'fa\'b7\'b1 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'c1\'d6\'be\'ee\'c1\'b3\'c0\'bb \'b6\'a7 \'be\'ee\'b6\'bb\'b0\'d4 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2\'c1\'f6\'b0\'a1 \'c1\'df\'bf\'e4\
+\
+5. \'b0\'fc\'bd\'c0\'c0\'fb\'c0\'b8\'b7\'ce \'c7\'cf\'b3\'aa\'c0\'c7 \'b4\'eb\'b9\'ae\'c0\'da\'b8\'a6 \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc \'c0\'cc\'b8\'a7\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\
+E : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'c7\'b9\'cc\
+K : key(\'c0\'cc\'b8\'a7)\
+V : value(\'c0\'cc\'b8\'a7\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'b0\'aa)\
+K\'bf\'cd V\'b4\'c2 \'bd\'d6\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\
+\
+\
+\'bd\'c7\'bd\'c0)\
+1. Class\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf0  java0917;\
+\cf4 // T\'b6\'f3\'b4\'c2 \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+\cf3 public\cf0  \cf3 class\cf0  Generic<T> \{\
+	\cf4 // \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'c7 \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+	\cf3 private\cf0  T [] \cf5 data\cf0 ;\
+	\cf4 // \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b4\'eb\'c0\'d4\'b9\'de\'be\'c6\'bc\'ad \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bc\'d3\'bc\'ba\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'cf\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da\cf0 \
+	\cf4 // \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'bf\'a1 ...\'c0\'cc \'c0\'d6\'c0\'b8\'b8\'e9 \ul varargs\ulnone  \'b6\'f3\'b0\'ed \'c7\'cf\'b4\'c2\'b5\'a5 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b0\'b3\'bc\'f6\'bf\'a1 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'b4\'eb\'c0\'d4\'b0\'a1\'b4\'c9\cf0 \
+	\cf4 // \'b8\'de\'bc\'d2\'b5\'e5 \'b3\'bb\'bf\'a1\'bc\'ad\'b4\'c2 \'b9\'e8\'bf\'ad\'b7\'ce \'b0\'a3\'c1\'d6\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+	\cf4 // n\'c0\'cc \'bb\'fd\'bc\'ba\'c0\'da\'c0\'cc\'b0\'ed n\'c0\'ba \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c7\'d1\'c5\'d7 \'b4\'eb\'c0\'d4\'b9\'de\'b4\'c2\'b4\'d9.\cf0 \
+	\cf3 public\cf0  Generic(T...\cf6 \ul \ulc6 n\cf0 \ulnone ) \{\
+		\cf5 data\cf0  = \cf6 n\cf0 ;\
+	\}\
+	\cf4 // data\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf3 public\cf0  \cf3 void\cf0  display() \{\
+		\cf4 // \'ba\'fc\'b8\'a5 \'bf\'ad\'b0\'c5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d1 \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'c1\'a2\'b1\'d9\cf0 \
+		\cf3 for\cf0 (T \cf6 temp\cf0  : \cf5 data\cf0 ) \{\
+			System.\cf5 out\cf0 .println(\cf6 temp\cf0 );\
+		\}\
+	\}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 2. Main\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf0  java0917;\
+\cf3 public\cf0  \cf3 class\cf0  GenericMain \{\
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf4 // \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb String\'c0\'b8\'b7\'ce \'b0\'e1\'c1\'a4\'c7\'d8\'bc\'ad \'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\
+		// \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7 <\'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc \'b3\'aa\'bf\'ad> \'b0\'b4\'c3\'bc\'c0\'cc\'b8\'a7 = new \'bb\'fd\'bc\'ba\'c0\'da<\'bd\'c7\'c1\'a6 \'c0\'da\'b7\'e1\'c7\'fc \'b3\'aa\'bf\'ad>();\cf0 \
+		Generic<String> \cf6 ob1\cf0  = \cf3 new\cf0  Generic<String>(\cf7 "Java"\cf0 , \cf7 "Kotlin"\cf0 , \cf7 "Swift"\cf0 );\
+		\cf6 ob1\cf0 .display();\
+		\cf4 // \'b9\'cc\'c1\'f6\'c1\'a4 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'d2 \'b6\'a7 \'b1\'e2\'ba\'bb\'c7\'fc\'c0\'ba \'be\'c8\'b5\'ca\cf0 \
+		\cf4 // Generic\ul <int>\ulnone  ob2 = new Generic\ul <int>\ulnone (100,200);\cf0 \
+		\cf4 // 1.7 \'b9\'f6\'c0\'fc \'c0\'cc\'bb\'f3\'bf\'a1\'bc\'ad\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da \'b5\'da\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba \'bb\'fd\'b7\'ab \'b0\'a1\'b4\'c9 \cf0 \
+		Generic<Integer> \cf6 ob2\cf0  = \cf3 new\cf0  Generic<>(100,200);\
+		\cf6 ob2\cf0 .display();\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 Java\
+Kotlin\
+Swift\
+100\
+200\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** enum(\'bf\'ad\'b0\'c5\'c7\'fc \'bb\'f3\'bc\'f6)\
+\
+=> \'bb\'f3\'bc\'f6\'c0\'c7 \'b8\'f0\'c0\'d3\
+=> \'bf\'c9\'bc\'c7\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'cf\'b4\'c2 \'bf\'eb\'b5\'b5\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+=> \'c0\'da\'b9\'d9\'bf\'a1\'bc\'ad\'b4\'c2 \'bf\'c9\'bc\'c7\'c0\'bb \'be\'cb\'be\'c6\'ba\'b8\'b1\'e2 \'bd\'b1\'b0\'d4 \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c0\'cc\'c0\'fc\'bf\'a1\'b4\'c2 static(\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7) final(\'c0\'d0\'b1\'e2 \'c0\'fc\'bf\'eb)\'c0\'bb \'c1\'d6\'b7\'ce \'c0\'cc\'bf\'eb\'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\'bc\'ba\'ba\'b0\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'bd\'cd\'c0\'ba \'b0\'e6\'bf\'ec\
+boolean gender; gender=true; gender=false;\
+final boolean MAN = true;\
+final boolean WOMAN = false;\
+gender = MAN;\
+gender = WOMAN;\
+\
+int gender;\
+final int MAN = 0;\
+final int WOMAN = 1;\
+gender = MAN;\
+gender = WOMAN;\
+\
+=> java\'b4\'c2 \'c0\'cc\'b7\'b1 \'c7\'fc\'c5\'c2\'b7\'ce \'bf\'c9\'bc\'c7\'c0\'bb \'b8\'b8\'b5\'e9\'be\'fa\'bd\'c0\'b4\'cf\'b4\'d9.\
+static final field \'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\'c3\'d6\'b1\'d9\'bf\'a1\'b4\'c2 \'c0\'cc \'b9\'e6\'b9\'fd\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed enum\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'b1\'c5\'c3\'c0\'bb \'c1\'a6\'c7\'d1\'c7\'d5\'b4\'cf\'b4\'d9.\
+enum \'c0\'cc\'b8\'a7\{\
+	\'bf\'ad\'b0\'c5\'c7\'fc\'bb\'f3\'bc\'f6 \'bc\'d3\'bc\'ba,\
+	\'bf\'ad\'b0\'c5\'c7\'fc\'bb\'f3\'bc\'f6 \'bc\'d3\'bc\'ba\'a1\'a6\
+\}\
+\'c0\'cc\'b8\'a7 \'ba\'af\'bc\'f6\'b8\'ed = ?\
+? \'c0\'da\'b8\'ae\'bf\'a1\'b4\'c2 \'bf\'ad\'b0\'c5\'c7\'fc \'bb\'f3\'bc\'f6 \'bc\'d3\'bc\'ba\'b8\'b8 \'b4\'eb\'c0\'d4\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'bc\'d3\'bc\'ba\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7 \'b0\'aa\'c0\'bb \'b4\'eb\'c0\'d4\'c7\'cf\'b4\'c2 \'b0\'cd\'b5\'b5 \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+enum Gender\{\
+	MAN, WOMAN\
+\}\
+Gender s = Gender.MAN \'b6\'c7\'b4\'c2 Gender.WOMAN \'b8\'b8 \'b0\'a1\'b4\'c9\
+GUI \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad Radio Button \'b0\'fa \'b0\'b0\'c0\'ba \'bf\'aa\'c7\'d2\'c0\'bb \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad enum\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b0\'aa\'c0\'bb \'b4\'eb\'c0\'d4\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce 0\'ba\'ce\'c5\'cd \'bd\'c3\'c0\'db\'c7\'cf\'b4\'c2 \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d5\'b4\'cf\'b4\'d9.\
+ordinal()\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf3 package\cf0  java0917;\
+\cf4 // Sports \'b6\'f3\'b4\'c2 \'bf\'ad\'b0\'c5\'c7\'fc \'bb\'f3\'bc\'f6\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+\cf3 enum\cf0  Sports\{\
+	\cf5 Baseball\cf0 , \cf5 Soccer\cf0 , \cf5 Volleyball\cf0 , \cf5 Basketball\cf0 \
+\}\
+\cf3 public\cf0  \cf3 class\cf0  EnumMain \{\
+	\cf3 public\cf0  \cf3 static\cf0  \cf3 void\cf0  main(String[] \cf6 args\cf0 ) \{\
+		\cf4 // \'bf\'ad\'b0\'c5\'c7\'fc \'bb\'f3\'bc\'f6 \'ba\'af\'bc\'f6\'bf\'a1\'b4\'c2 \'bf\'ad\'b0\'c5\'c7\'fc \'bb\'f3\'bc\'f6 \'c1\'df\'c0\'c7 \'c7\'cf\'b3\'aa\'b8\'b8 \'b4\'eb\'c0\'d4\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		Sports \cf6 v\cf0  = Sports.\cf5 Baseball\cf0 ;\
+		System.\cf5 out\cf0 .println(\cf6 v\cf0 );	\cf4 // \'bf\'ad\'b0\'c5\'c7\'fc \'bb\'f3\'bc\'f6 \'c0\'cc\'b8\'a7\'c0\'cc \'b3\'aa\'bf\'c8\cf0 \
+		System.\cf5 out\cf0 .println(\cf6 v\cf0 .ordinal());	\cf4 // \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'c3\'e2\'b7\'c2\cf0 \
+		\cf4 // final static\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bf\'c9\'bc\'c7\'c0\'bb \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd \'ba\'b8\'b4\'d9\'b4\'c2 \cf0 \
+		\cf4 // \ul enum\ulnone \'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'b0\'ed\'b1\'de \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'b1\'e2\'b9\'fd\'c0\'b8\'b7\'ce \'c3\'eb\'b1\'de\cf0 \
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 Baseball\
+0\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** annotation\
+\
+=> @\'b7\'ce \'bd\'c3\'c0\'db\'c7\'cf\'b4\'c2 \'b9\'ae\'c0\'da\'bf\'ad\
+=> \'c1\'d6\'bc\'ae\'c0\'bb \'b8\'b8\'b5\'e9\'b0\'c5\'b3\'aa \'c0\'da\'b9\'d9\'c0\'c7 \'b1\'e2\'b4\'c9\'c0\'bb \'b4\'eb\'bd\'c5\'c7\'cf\'b4\'c2 \'bf\'eb\'b5\'b5\'b7\'ce \'bb\'e7\'bf\'eb\
+=> \'c0\'da\'b9\'d9\'bf\'a1\'bc\'ad\'b4\'c2 @Override, @Deprecate, @SupressWarning, @SafeVarags, @FunctionalInterface\'b8\'a6 \'c1\'a6\'b0\'f8\
+\
+	1) @Override : \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9 \'b5\'c8 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b6\'f3\'b4\'c2 \'b0\'cd\'c0\'bb \'b8\'ed\'bd\'c3\'c7\'cf\'b4\'c2 \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7\
+	\'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9 \'b5\'c8 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'be\'c6\'b4\'cf\'b8\'e9 \'bf\'a1\'b7\'af \'c7\'a5\'bd\'c3\
+\
+	2) @Deprecate : \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'b1\'c7\'c0\'e5\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9\'b4\'c2 \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7\
+	\'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'be\'d5\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\'c0\'bb \'b8\'f8\'c7\'cf\'b0\'d4 \'b5\'c9 \'bc\'f6 \'c0\'d6\'b4\'d9\'b6\'f3\'b4\'c2 \'b0\'e6\'b0\'ed\'c0\'c7 \'c0\'c7\'b9\'cc\
+\
+	3) @SupressWarning : \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1\'bc\'ad \'b9\'df\'bb\'fd\'c7\'cf\'b4\'c2 \'b0\'e6\'b0\'ed\'b4\'c2 \'c3\'e2\'b7\'c2\'c7\'cf\'c1\'f6 \'b8\'bb\'b6\'f3\'b4\'c2 \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7\
+\
+	4) @SafeVarargs : Varargs\'bf\'a1 Generic\'c0\'cc \'c0\'fb\'bf\'eb\'b5\'c7\'be\'fa\'b4\'d9\'b4\'c2 \'c7\'a5\'bd\'c3\
+\
+	5) @FunctionalInterface : \'c0\'cc \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 1\'b0\'b3 \'b9\'db\'bf\'a1 \'be\'f8\'be\'ee\'bc\'ad \'b6\'f7\'b4\'d9 \'c7\'fc\'c5\'c2\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9\'b6\'f3\'b4\'c2 \'c7\'a5\'bd\'c3\
+	\'b6\'f7\'b4\'d9\'b4\'c2 \'c0\'da\'b9\'d9\'bf\'a1\'bc\'ad \'c7\'d4\'bc\'f6\'c7\'fc \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'bb \'c1\'f6\'bf\'f8\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b5\'b5\'c0\'d4\'c7\'d1 \'b0\'b3\'b3\'e4(1.8\'ba\'ce\'c5\'cd \'c1\'f6\'bf\'f8)\
+	\'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5\'b4\'c2 \'c0\'cc\'b7\'af\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'b6\'f7\'b4\'d9 \'c7\'fc\'c5\'c2\'b7\'ce \'c4\'da\'b5\'e5\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'d8 \'b9\'f6\'b8\'b3\'b4\'cf\'b4\'d9.\
+	=> String\'bf\'a1\'bc\'ad\'b4\'c2 \'b8\'b9\'c0\'ba \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7\'c0\'bb \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'b0\'a2 \'be\'ee\'b3\'eb\'c5\'d7\'c0\'cc\'bc\'c7\'c0\'cc \'c0\'da\'b9\'d9\'c0\'c7 \'b1\'e2\'b4\'c9\'c0\'bb \'b4\'eb\'bd\'c5\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9. \
+\
+**********************java.lang END**********************\
+\
+** API - SDK\
+\
+=> API(Application Programming Interface) : \'c0\'c0\'bf\'eb \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e9\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c1\'a6\'b0\'f8\'b5\'c7\'b4\'c2 \'b5\'b5\'b1\'b8\'b5\'e9(\'c7\'d4\'bc\'f6, \'c5\'ac\'b7\'a1\'bd\'ba, \'b5\'a5\'c0\'cc\'c5\'cd\'a1\'a6)\
+=> SDK(Software Development Kit) : \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b0\'b3\'b9\'df\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b5\'b5\'b1\'b8\'b5\'e9\
+\
+JDK(Java Development Kit) : \'c0\'da\'b9\'d9\'b7\'ce \'c0\'c0\'bf\'eb\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b0\'b3\'b9\'df\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'b5\'b5\'b1\'b8 - Java SDK\
+\'c0\'a9\'b5\'b5\'bf\'ec \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'bb \'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b8\'e9 Windows API \'b3\'aa Windows SDK\'b8\'a6 \'bc\'b3\'c4\'a1\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'c4\'ab\'c4\'ab\'bf\'c0 \'b7\'ce\'b1\'d7\'c0\'ce\'c0\'bb \'b8\'b8\'b5\'e9\'b0\'ed\'c0\'da \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c1\'a6\'c0\'cf \'b8\'d5\'c0\'fa \'b0\'cb\'bb\'f6\'c7\'d8\'be\'df \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba Kakao \'b7\'ce\'b1\'d7\'c0\'ce API\'b8\'a6 \'c3\'a3\'be\'c6\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+** java.util \'c6\'d0\'c5\'b0\'c1\'f6\
+\
+=> \'c0\'da\'b7\'e1\'b1\'b8\'c1\'b6 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'b3\'af\'c2\'a5 \'b1\'d7\'b8\'ae\'b0\'ed Random \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c6\'d0\'c5\'b0\'c1\'f6\
+=> \'c0\'d4\'c3\'e2\'b7\'c2\'b0\'fa \'b0\'fc\'b7\'c3\'b5\'c8 Scanner \'c5\'ac\'b7\'a1\'bd\'ba\'b5\'b5 \'c1\'b8\'c0\'e7\
+=> java.lang \'b4\'d9\'c0\'bd\'c0\'b8\'b7\'ce \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'c6\'d0\'c5\'b0\'c1\'f6\
+=> \'c0\'cc \'c6\'d0\'c5\'b0\'c1\'f6\'b4\'c2 import \'b5\'c7\'be\'ee \'c0\'d6\'c1\'f6 \'be\'ca\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c0\'cc \'c6\'d0\'c5\'b0\'c1\'f6\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b5\'e9\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7\'b4\'c2 \'c6\'d0\'c5\'b0\'c1\'f6 \'c0\'cc\'b8\'a7\'b1\'ee\'c1\'f6 \'b1\'e2\'c0\'e7\'c7\'cf\'b4\'f8\'c1\'f6\
+\'be\'c6\'b4\'cf\'b8\'e9 import\'b8\'a6 \'c7\'d8\'bc\'ad \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7\'b8\'b8\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+## \'b5\'a5\'c0\'cc\'c5\'cd \'b0\'cb\'bb\'f6 \'be\'cb\'b0\'ed\'b8\'ae\'c1\'f2 ##\
+\
+* \'bc\'f8\'c2\'f7\'b0\'cb\'bb\'f6\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c1\'a4\'b7\'c4\'b5\'c7\'c1\'f6 \'be\'ca\'c0\'ba \'b0\'e6\'bf\'ec, \'be\'d5\'bf\'a1\'bc\'ad \'ba\'ce\'c5\'cd \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'b0\'cb\'bb\'f6\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+\
+* \'c1\'a6\'be\'ee\'b0\'cb\'bb\'f6\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c1\'a4\'b7\'c4\'b5\'c8 \'b0\'e6\'bf\'ec \'bb\'e7\'bf\'eb\
+\
+	1) binary search(\'c0\'cc\'ba\'d0 \'b0\'cb\'bb\'f6)\
+	=> \'c1\'df\'be\'d3\'b0\'aa\'b0\'fa \'ba\'f1\'b1\'b3\'c7\'d8\'bc\'ad \'c0\'db\'c0\'b8\'b8\'e9 \'bf\'de\'c2\'ca \'c5\'a9\'b8\'e9 \'bf\'c0\'b8\'a5\'c2\'ca \'ba\'ce\'ba\'d0\'bf\'a1\'bc\'ad \'b0\'cb\'bb\'f6\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+\
+	2) fibonacci serach\
+	=> \'c7\'c7\'ba\'b8\'b3\'aa\'c4\'a1 \'bc\'f6\'bf\'ad\'c0\'bb \'c0\'cc\'bf\'eb(1, 1, 2, 3, 5, 8, 13, 21, 34, 55\'a1\'a6)\
+\
+	3) \'ba\'b8\'b0\'a3 \'b0\'cb\'bb\'f6\
+	=> \'b0\'cb\'bb\'f6\'c7\'d2 \'c0\'a7\'c4\'a1 \'b0\'e8\'bb\'ea\
+	((\'b0\'cb\'bb\'f6 \'b0\'aa - \'c3\'d6\'bc\'d2\'b0\'aa) / (\'c3\'d6\'b4\'eb\'b0\'aa - \'c3\'d6\'bc\'d2\'b0\'aa)) * \'b5\'a5\'c0\'cc\'c5\'cd \'b0\'b3\'bc\'f6\
+	=> \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'ba\'d0\'c6\'f7\'b0\'a1 \'b0\'ed\'b8\'a3\'b8\'e9 \'c1\'a6\'c0\'cf \'c1\'c1\'c1\'f6\'b8\'b8, \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'ba\'d0\'c6\'f7\'b0\'a1 \'b0\'ed\'b8\'a3\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'c4\'a1\'b8\'ed\'c0\'fb\'c0\'ce \'be\'e0\'c1\'a1\'c0\'cc \'c0\'d6\'c0\'bd\
+	ex) 1,2,3,4,5,6,100 \'c0\'ce\'b0\'e6\'bf\'ec 100\'c0\'bb \'b0\'cb\'bb\'f6 \'b0\'aa\'c0\'b8\'b7\'ce \'b0\'a1\'c1\'f6\'b8\'e9 1\'c0\'cc \'c3\'e2\'b7\'c2\'b5\'ca\
+\
+	4) binary tree \'b0\'cb\'bb\'f6\
+	=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'b6\'a7 tree \'c0\'cc\'bf\'eb\
+\
+* \'ba\'ed\'b7\'cf \'b0\'cb\'bb\'f6\
+\
+=> \'ba\'ed\'b7\'cf \'b3\'a2\'b8\'ae\'b4\'c2 \'c1\'a4\'b7\'c4\'c0\'bb \'c7\'cf\'b0\'ed \'ba\'ed\'b7\'cf \'b3\'bb\'ba\'ce\'b4\'c2 \'c1\'a4\'b7\'c4\'c0\'bb \'be\'c8\'c7\'d4\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf8 \ul \ulc8 *** Hashing***\cf0 \ulnone \
+\
+=> \'b0\'a1\'c0\'e5 \'ba\'fc\'b8\'a7\
+=> \'c7\'d4\'bc\'f6\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'fa\'c0\'e5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+1. Arrays \'c5\'ac\'b7\'a1\'bd\'ba\
+\
+=> \'b9\'e8\'bf\'ad\'b0\'fa \'b0\'fc\'b7\'c3\'b5\'c8 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d8\'c1\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\
+=> static \'b8\'de\'bc\'d2\'b5\'e5\'b8\'b8 \'bc\'d2\'c0\'af\'c7\'cf\'b0\'ed \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'b9\'e8\'bf\'ad\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'cc \'b0\'b0\'c0\'ba\'c1\'f6 \'ba\'f1\'b1\'b3\'c7\'d8\'c1\'d6\'b4\'c2 equals\
+=> \'ba\'b9\'bb\'e7\'b8\'a6 \'c7\'d8\'c1\'d6\'b4\'c2 copy\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a4\'b7\'c4\'c7\'d8\'c1\'d6\'b4\'c2 sort() - \'b1\'e2\'ba\'bb\'c0\'fb\'c0\'b8\'b7\'ce\'b4\'c2 Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b0\'a1 \'b1\'b8\'c7\'f6\'b5\'c8 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'b8 \'c1\'a4\'b7\'c4\'c0\'cc \'b0\'a1\'b4\'c9\
+Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'c5\'a9\'b1\'e2 \'ba\'f1\'b1\'b3\'b8\'a6 \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 compareTo\'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\
+\'c1\'a4\'b7\'c4\'c0\'ba \'c5\'a9\'b1\'e2\'ba\'f1\'b1\'b3\'b8\'a6 \'c7\'d2\'bc\'f6 \'c0\'d6\'c0\'bb \'b6\'a7\'b8\'b8 \'b0\'a1\'b4\'c9\
+\
+Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'b9\'e8\'bf\'ad\'b0\'fa \'c5\'a9\'b1\'e2 \'ba\'f1\'b1\'b3\'b8\'a6 \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6\
+\'b1\'b8\'c7\'f6 \'c7\'d1 \'b0\'b4\'c3\'bc\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'c1\'a4\'b7\'c4\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=> \'c0\'cc\'ba\'d0 \'b0\'cb\'bb\'f6\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d8\'bc\'ad \'b0\'e1\'b0\'fa\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 binarySearch : \'c0\'cc\'ba\'d0 \'b0\'cb\'bb\'f6\'c0\'ba \'c1\'a4\'b7\'c4\'c0\'cc \'b5\'c8 \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad\'b8\'b8 \'bf\'c3\'b9\'d9\'b8\'a5 \'b0\'e1\'b0\'fa\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c9\'b4\'cf\'b4\'d9.\
+\'c1\'a4\'b7\'c4\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'a7\'c4\'a1\'b8\'a6 \'c3\'a3\'be\'c6\'c1\'d6\'b4\'c2\'b5\'a5 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'c0\'bd\'bc\'f6\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a4\'b7\'c4\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'c1\'df\'bf\'e4\
+\'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 2\'b0\'b3 \'c0\'cc\'bb\'f3\'c0\'cc\'b8\'e9 \'c1\'a4\'b7\'c4\'c0\'bb \'c7\'d8\'c1\'d6\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\cf9 import\cf0  java.util.Arrays;\
+\cf9 public\cf0  \cf9 class\cf0  ArraysMain1 \{\
+	\cf9 public\cf0  \cf9 static\cf0  \cf9 void\cf0  main(String[] \cf10 args\cf0 ) \{\
+		String [] \cf10 names\cf0  = \{\cf11 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 , \cf11 "\'b7\'f9\'c7\'fd\'b8\'b2"\cf0 , \cf11 "\'c1\'b6\'bc\'ba\'bf\'ec"\cf0 , \cf11 "\'c3\'d6\'c1\'f8\'bf\'eb"\cf0 , \cf11 "\'bf\'ac\'c1\'a6\'b9\'ce"\cf0 , \cf11 "\'b1\'e8\'c1\'d6\'be\'c8"\cf0 , \cf11 "\'b1\'e8\'bc\'f6\'c0\'b1"\cf0 \};\
+		\cf12 // \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a4\'b7\'c4\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+		\cf12 // Arrays.sort - String \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 Comparable\'c0\'bb implements \'c7\'df\'c0\'b8\'b9\'c7\'b7\'ce \'c1\'a4\'b7\'c4 \'b0\'a1\'b4\'c9 \cf0 \
+		Arrays.sort(\cf10 names\cf0 );\
+		\cf12 // \'c1\'a4\'b7\'c4\'c0\'cc \'b5\'c7\'be\'fa\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce\cf0 \
+		\cf9 for\cf0 (String \cf10 name\cf0  : \cf10 names\cf0 ) \{\
+			System.\cf13 out\cf0 .printf(\cf11 "%s\\t"\cf0 , \cf10 name\cf0 );\
+		\}\
+		\cf12 // \'c1\'a4\'bc\'f6 \'b9\'e8\'bf\'ad\'b5\'b5 \'c1\'a4\'b7\'c4\'c0\'cc \'b0\'a1\'b4\'c9\cf0 \
+		\cf12 // \'c1\'a4\'bc\'f6\'b4\'c2 \ul int\ulnone  \'c0\'cc\'c1\'f6\'b8\'b8 \ul Arryas\ulnone \'b0\'a1 \'ba\'bc \'b6\'a7\'b4\'c2 Integer \'c0\'d4\'b4\'cf\'b4\'d9.\cf0 \
+		\cf9 int\cf0  [] \cf10 ar\cf0  = \{100, 200, 78, 76, 12, 18, 28\};\
+		\cf12 // \'c1\'a4\'b7\'c4\'c0\'bb \'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad binary search \'bc\'f6\'c7\'e0\cf0 \
+		\cf12 // binary search\'b4\'c2 \'c1\'a4\'b7\'c4\'c0\'cc \'be\'c8\'b5\'c8 \'bb\'f3\'c5\'c2\'bf\'a1\'bc\'ad \'c7\'cf\'b8\'e9 \'bf\'c3\'b9\'d9\'b8\'a5 \'b0\'e1\'b0\'fa\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c0\'c1\'f6 \'b8\'f8\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		\cf9 int\cf0  \cf10 result\cf0  = Arrays.binarySearch(\cf10 ar\cf0 , 18);\
+		System.\cf13 out\cf0 .printf(\cf11 "\\nresult : %d\\n"\cf0 , \cf10 result\cf0 );\
+		\cf12 // \'b8\'d5\'c0\'fa \'c1\'a4\'b7\'c4\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed binary search\'b8\'a6 \'bc\'f6\'c7\'e0 \cf0 \
+		\cf12 // 12, 18, 28, 76, 78, 100, 200\cf0 \
+		Arrays.sort(\cf10 ar\cf0 );\
+		\cf10 result\cf0  = Arrays.binarySearch(\cf10 ar\cf0 , 18);\
+		System.\cf13 out\cf0 .printf(\cf11 "result : %d\\n"\cf0 , \cf10 result\cf0 );	\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'b1\'e8\'bc\'f6\'c0\'b1	\'b1\'e8\'c1\'d6\'be\'c8	\'b7\'f9\'c7\'fd\'b8\'b2	\'bf\'ac\'c1\'a6\'b9\'ce	\'c1\'b6\'bc\'ba\'bf\'ec	\'c1\'b6\'c3\'a2\'c8\'c6	\'c3\'d6\'c1\'f8\'bf\'eb	\
+result : -1\
+result : 1\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+=> \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'c1\'f7\'c1\'a2 implements \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'c7\'cf\'b3\'aa\'c0\'c7 \'b9\'e6\'b9\'fd\'c0\'b8\'b7\'ce\'b8\'b8 \'c1\'a4\'b7\'c4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> Arrays.sort(\'b9\'e8\'bf\'ad, Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'b0\'b4\'c3\'bc)\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'bf\'c0\'fb\'c0\'b8\'b7\'ce \'c1\'a4\'b7\'c4\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+1. Class\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\cf12 // \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b9\'ad\'be\'ee\'c1\'d6\'b1\'e2 \'c0\'a7\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba - DTO(VO)\'c5\'ac\'b7\'a1\'bd\'ba \cf0 \
+\cf12 // Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\cf0 \
+\cf9 public\cf0  \cf9 class\cf0  FileName \cf9 implements\cf0  \ul Comparable\ulnone \{\
+	\cf12 // \'bc\'d3\'bc\'ba(\'ba\'af\'bc\'f6)\'c0\'ba private\cf0 \
+	\cf9 private\cf0  String \cf13 name\cf0 ;\
+	\cf9 private\cf0  \cf9 int\cf0  \cf13 size\cf0 ;\
+	\cf9 private\cf0  String \cf13 type\cf0 ;\
+	\cf9 private\cf0  \cf9 boolean\cf0  \cf13 save\cf0 ;\
+	\
+	\cf12 // \'ba\'af\'bc\'f6\'bf\'a1 \'c1\'a2\'b1\'d9\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'c1\'a2\'b1\'d9\'c0\'da \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf9 public\cf0  String getName() \{\
+		\cf9 return\cf0  \cf13 name\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setName(String \cf10 name\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 name\cf0  = \cf10 name\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 int\cf0  getSize() \{\
+		\cf9 return\cf0  \cf13 size\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setSize(\cf9 int\cf0  \cf10 size\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 size\cf0  = \cf10 size\cf0 ;\
+	\}\
+	\cf9 public\cf0  String getType() \{\
+		\cf9 return\cf0  \cf13 type\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setType(String \cf10 type\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 type\cf0  = \cf10 type\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 boolean\cf0  isSave() \{\
+		\cf9 return\cf0  \cf13 save\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setSave(\cf9 boolean\cf0  \cf10 save\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 save\cf0  = \cf10 save\cf0 ;\
+		\
+	\}\
+	\cf12 // \'b5\'f0\'b9\'f6\'b1\'eb\'c0\'bb \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf12 // \'b0\'a2 \'bc\'d3\'bc\'ba\'c0\'c7 \'b0\'aa\'c0\'bb \'ba\'fc\'b8\'a3\'b0\'d4 \'c8\'ae\'c0\'ce\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf14 @Override\cf0 \
+	\cf9 public\cf0  String toString() \{\
+		\cf9 return\cf0  \cf11 "FileName [name="\cf0  + \cf13 name\cf0  + \cf11 ", size="\cf0  + \cf13 size\cf0  + \cf11 ", type="\cf0  + \cf13 type\cf0  + \cf11 ", save="\cf0  + \cf13 save\cf0  + \cf11 "]"\cf0 ;\
+	\}\
+	\cf14 @Override\cf0 \
+	\cf9 public\cf0  \cf9 int\cf0  compareTo(Object \cf10 o\cf0 ) \{\
+		\cf12 // \'bc\'fd\'c0\'da \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 \'bb\'ac\'bc\'c0\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c5\'a9\'b1\'e2 \'ba\'f1\'b1\'b3 \'b0\'a1\'b4\'c9\cf0 \
+		\cf12 /*\cf0 \
+\cf12 		\cf15 \ul \ulc15 FileName other = (FileName)o;	// \'c1\'df\'bf\'e4!!!!!!\cf0 \ulnone \
+\cf12 		return this.size - other.size;\cf0 \
+\cf12 		*/\cf0 \
+		\
+		\cf12 //\'b9\'ae\'c0\'da\'bf\'ad\'c0\'ba \'bb\'ac\'bc\'c0\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+		FileName \cf10 other\cf0  = (FileName)\cf10 o\cf0 ;\
+		\cf9 return\cf0  \cf9 this\cf0 .\cf13 name\cf0 .compareTo(\cf10 other\cf0 .\cf13 name\cf0 );\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 2. Main\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\cf9 import\cf0  java.util.Arrays;\
+\cf9 public\cf0  \cf9 class\cf0  ArrayMain2 \{\
+\
+	\cf9 public\cf0  \cf9 static\cf0  \cf9 void\cf0  main(String[] \cf10 args\cf0 ) \{\
+		\cf12 // FileName \'c0\'c7 \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+		FileName \cf10 f1\cf0  = \cf9 new\cf0  FileName();\
+		\cf10 f1\cf0 .setName(\cf11 "\'c0\'da\'b9\'d9"\cf0 );\
+		\cf10 f1\cf0 .setSize(80);\
+		\cf10 f1\cf0 .setType(\cf11 "\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae"\cf0 );\
+		\cf10 f1\cf0 .setSave(\cf9 true\cf0 );\
+		\
+		FileName \cf10 f2\cf0  = \cf9 new\cf0  FileName();\
+		\cf10 f2\cf0 .setName(\cf11 "\'bd\'ba\'c0\'a7\'c7\'c1\'c6\'ae"\cf0 );\
+		\cf10 f2\cf0 .setSize(170);\
+		\cf10 f2\cf0 .setType(\cf11 "\'c5\'b0\'b3\'eb\'c6\'ae"\cf0 );\
+		\cf10 f2\cf0 .setSave(\cf9 true\cf0 );\
+		\
+		FileName \cf10 f3\cf0  = \cf9 new\cf0  FileName();\
+		\cf10 f3\cf0 .setName(\cf11 "\'c4\'da\'c6\'b2\'b8\'b0"\cf0 );\
+		\cf10 f3\cf0 .setSize(50);\
+		\cf10 f3\cf0 .setType(\cf11 "\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae"\cf0 );\
+		\cf10 f3\cf0 .setSave(\cf9 false\cf0 );\
+\
+		\cf12 // \'c0\'a7\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e7 FileName \'b0\'b4\'c3\'bc 3\'b0\'b3\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+		FileName [] \cf10 ar\cf0  = \{\cf10 f1\cf0 , \cf10 f2\cf0 , \cf10 f3\cf0 \};\
+		\
+		\cf12 // \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c8\'ae\'c0\'ce\cf0 \
+		\cf9 for\cf0 (FileName \cf10 temp\cf0  : \cf10 ar\cf0 ) \{\
+			\cf12 // \'b0\'b4\'c3\'bc \'c0\'cc\'b8\'a7\'c0\'bb %s\'bf\'a1 \'b8\'c5\'c7\'ce \'bd\'c3\'c4\'d1\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\'b8\'e9 toString\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 \'c3\'e2\'b7\'c2 \'b5\'cb\'b4\'cf\'b4\'d9.\cf0 \
+			System.\cf13 out\cf0 .printf(\cf11 "%s\\n"\cf0 , \cf10 temp\cf0 );\
+		\}\
+		\
+		\cf12 // \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'c1\'a4\'b7\'c4\cf0 \
+		\cf12 // \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a4\'b7\'c4\'c7\'cf\'b7\'c1\'b8\'e9 \'c5\'a9\'b1\'e2 \'ba\'f1\'b1\'b3\'b8\'a6 \'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'b1\'b8\'c7\'f6\'b5\'c7\'be\'ee \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		\cf12 // class \'b9\'ae\'bf\'a1\'bc\'ad implements Comparable\'b8\'a6 \'c0\'db\'bc\'ba \'c8\'c4 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'db\'bc\'ba\'c7\'d8\'be\'df\'c7\'d4.\cf0 \
+		\cf12 // \ul Compararble\ulnone  \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'c7 compareTo \'b8\'de\'bc\'d2\'b5\'e5\'c0\'d4\'b4\'cf\'b4\'d9.\cf0 \
+		\cf12 // \'be\'c6\'b4\'cf\'b8\'e9 Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'b0\'b4\'c3\'bc\'b8\'a6 \'b4\'eb\'c0\'d4 \'c7\'d8\'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		Arrays.sort(\cf10 ar\cf0 );\
+		System.\cf13 out\cf0 .printf(\cf11 "==========================\\n"\cf0 );\
+		\cf12 // \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c8\'ae\'c0\'ce\cf0 \
+		\cf9 for\cf0 (FileName \cf10 temp\cf0  : \cf10 ar\cf0 ) \{\
+			\cf12 // \'b0\'b4\'c3\'bc \'c0\'cc\'b8\'a7\'c0\'bb %s\'bf\'a1 \'b8\'c5\'c7\'ce \'bd\'c3\'c4\'d1\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\'b8\'e9 toString\'c0\'c7 \'b0\'e1\'b0\'fa\'b0\'a1 \'c3\'e2\'b7\'c2 \'b5\'cb\'b4\'cf\'b4\'d9.\cf0 \
+			System.\cf13 out\cf0 .printf(\cf11 "%s\\n"\cf0 , \cf10 temp\cf0 );\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 FileName [name=\'c0\'da\'b9\'d9, size=80, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=true]\
+FileName [name=\'bd\'ba\'c0\'a7\'c7\'c1\'c6\'ae, size=170, type=\'c5\'b0\'b3\'eb\'c6\'ae, save=true]\
+FileName [name=\'c4\'da\'c6\'b2\'b8\'b0, size=50, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=false]\
+==========================(\'bc\'fd\'c0\'da \'c5\'a9\'b1\'e2\'b7\'ce \'c1\'a4\'b7\'c4)\
+FileName [name=\'c4\'da\'c6\'b2\'b8\'b0, size=50, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=false]\
+FileName [name=\'c0\'da\'b9\'d9, size=80, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=true]\
+FileName [name=\'bd\'ba\'c0\'a7\'c7\'c1\'c6\'ae, size=170, type=\'c5\'b0\'b3\'eb\'c6\'ae, save=true]\
+==========================(\'c0\'cc\'b8\'a7 \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'c1\'a4\'b7\'c4)\
+FileName [name=\'bd\'ba\'c0\'a7\'c7\'c1\'c6\'ae, size=170, type=\'c5\'b0\'b3\'eb\'c6\'ae, save=true]\
+FileName [name=\'c0\'da\'b9\'d9, size=80, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=true]\
+FileName [name=\'c4\'da\'c6\'b2\'b8\'b0, size=50, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=false]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+2. \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b3\'aa \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'be\'c6\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+\
+	1) \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 implements \'c7\'cf\'b0\'c5\'b3\'aa \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 extends \'c7\'d8\'bc\'ad \'bb\'f5\'b7\'ce\'bf\'ee \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'b9\'e6\'b9\'fd\
+	class ? implements Comparator\{\
+		\'c7\'ca\'bf\'e4\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5 \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9\
+	\}\
+	? \'ba\'af\'bc\'f6\'b8\'ed = new ?();\
+\
+	2) annonymous class \'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'b0\'ed \'b9\'d9\'b7\'ce \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\
+	Comparable \'ba\'af\'bc\'f6\'b8\'ed = new Comparable()\{\
+		\'c7\'ca\'bf\'e4\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5 \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9\
+	\};	\
+\
+3. Java \'bf\'a1\'bc\'ad \'b0\'b4\'c3\'bc\'c0\'c7 \'c5\'a9\'b1\'e2 \'ba\'f1\'b1\'b3\'b8\'a6 \'c0\'a7\'c7\'d8 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+\
+	1) Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+	2) Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+	=> \'c0\'a7 2\'b0\'b3 \'c1\'df \'c7\'cf\'b3\'aa\'c0\'c7 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df\'b8\'b8 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'ba\'f1\'b1\'b3\'c7\'d8\'bc\'ad \'c1\'a4\'b7\'c4\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\
+\cf9 import\cf0  java.util.Arrays;\
+\cf9 import\cf0  java.util.Comparator;\
+\cf9 import\cf0  java.util.Scanner;\
+\
+\cf9 public\cf0  \cf9 class\cf0  ArraysMain3 \{\
+\
+	\cf9 public\cf0  \cf9 static\cf0  \cf9 void\cf0  main(String[] \cf10 args\cf0 ) \{\
+		\cf12 // FileName \'c0\'c7 \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+		FileName \cf10 f1\cf0  = \cf9 new\cf0  FileName();\
+		\cf10 f1\cf0 .setName(\cf11 "\'c0\'da\'b9\'d9"\cf0 );\
+		\cf10 f1\cf0 .setSize(80);\
+		\cf10 f1\cf0 .setType(\cf11 "\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae"\cf0 );\
+		\cf10 f1\cf0 .setSave(\cf9 true\cf0 );\
+				\
+		FileName \cf10 f2\cf0  = \cf9 new\cf0  FileName();\
+		\cf10 f2\cf0 .setName(\cf11 "\'bd\'ba\'c0\'a7\'c7\'c1\'c6\'ae"\cf0 );\
+		\cf10 f2\cf0 .setSize(170);\
+		\cf10 f2\cf0 .setType(\cf11 "\'c5\'b0\'b3\'eb\'c6\'ae"\cf0 );\
+		\cf10 f2\cf0 .setSave(\cf9 true\cf0 );\
+		\
+		FileName \cf10 f3\cf0  = \cf9 new\cf0  FileName();\
+		\cf10 f3\cf0 .setName(\cf11 "\'c4\'da\'c6\'b2\'b8\'b0"\cf0 );\
+		\cf10 f3\cf0 .setSize(50);\
+		\cf10 f3\cf0 .setType(\cf11 "\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae"\cf0 );\
+		\cf10 f3\cf0 .setSave(\cf9 false\cf0 );\
+		\cf12 // \'c0\'a7\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e7 FileName \'b0\'b4\'c3\'bc 3\'b0\'b3\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+		FileName [] \cf10 ar\cf0  = \{\cf10 f1\cf0 , \cf10 f2\cf0 , \cf10 f3\cf0 \};\
+		\
+		\cf12 // \'c5\'b0\'ba\'b8\'b5\'e5\'b7\'ce\'ba\'ce\'c5\'cd \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2 \'c0\'a7\'c7\'d1 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		Scanner \cf10 sc\cf0  = \cf9 new\cf0  Scanner(System.\cf13 in\cf0 );\
+		System.\cf13 out\cf0 .printf(\cf11 "\'c1\'a4\'b7\'c4 \'b1\'e2\'c1\'d8\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'cf\'bc\'bc\'bf\'e4(1.\'c0\'cc\'b8\'a7 2.\'c5\'a9\'b1\'e2 3.\'c1\'be\'b7\'f9) : "\cf0 );\
+		\cf9 int\cf0  \cf10 menu\cf0  = \cf10 sc\cf0 .nextInt();\
+		\
+		\cf12 // Comparator\'b4\'c2 \'c1\'a6\'b3\'ca\'b8\'af\'c0\'cc \'c0\'fb\'bf\'eb\'b5\'c8 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b6\'f3\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'d8 \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		\cf9 if\cf0 (\cf10 menu\cf0  == 1) \{\
+			Arrays.sort(\cf10 ar\cf0 , \cf9 new\cf0  Comparator<FileName>() \{\
+				\cf14 @Override\cf0 \
+				\cf9 public\cf0  \cf9 int\cf0  compare(FileName \cf10 o1\cf0 , FileName \cf10 o2\cf0 ) \{\
+					\cf12 // o1\'b0\'fa o2\'c0\'c7 name\'c0\'bb \'ba\'f1\'b1\'b3\cf0 \
+					\cf9 return\cf0  \cf10 o1\cf0 .getName().compareTo(\cf10 o2\cf0 .getName());\
+				\}\
+			\});\
+		\}\
+		\cf9 else\cf0  \cf9 if\cf0 (\cf10 menu\cf0  == 2)\{\
+			Arrays.sort(\cf10 ar\cf0 , \cf9 new\cf0  Comparator<FileName>() \{\
+				\cf14 @Override\cf0 \
+				\cf9 public\cf0  \cf9 int\cf0  compare(FileName \cf10 o1\cf0 , FileName \cf10 o2\cf0 ) \{\
+					\cf9 return\cf0  \cf10 o1\cf0 .getSize() - \cf10 o2\cf0 .getSize();\
+				\}\
+			\});\
+		\}\
+		\cf9 else\cf0  \cf9 if\cf0 (\cf10 menu\cf0  == 3) \{\
+			Arrays.sort(\cf10 ar\cf0 , \cf9 new\cf0  Comparator<FileName>() \{\
+				\cf14 @Override\cf0 \
+				\cf9 public\cf0  \cf9 int\cf0  compare(FileName \cf10 o1\cf0 , FileName \cf10 o2\cf0 ) \{\
+					\cf9 return\cf0  \cf10 o1\cf0 .getType().compareTo(\cf10 o2\cf0 .getType());\
+				\}\
+			\});\
+		\}\cf9 else\cf0  \{\
+			System.\cf13 out\cf0 .printf(\cf11 "\'b8\'de\'b4\'ba\'b4\'c2 1\'b9\'f8\'b0\'fa 2\'b9\'f8\'b0\'fa 3\'b9\'f8\'b8\'b8 \'bc\'b1\'c5\'c3\'c7\'cf\'bc\'bc\'bf\'e4!!!\\n"\cf0 );\
+			\cf12 //\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'c1\'be\'b7\'e1\cf0 \
+			System.exit(0);\
+		\}\
+		\cf12 // \ul ar\ulnone  \'b9\'e8\'bf\'ad\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'c3\'e2\'b7\'c2\cf0 \
+		\cf9 for\cf0 (FileName \cf10 temp\cf0  : \cf10 ar\cf0 ) \{\
+			System.\cf13 out\cf0 .printf(\cf11 "%s\\n"\cf0 , \cf10 temp\cf0 );\
+		\}\
+		\
+		\cf12 // \'c0\'d4\'b7\'c2\'b9\'de\'b4\'c2 \'b0\'b4\'c3\'bc \'b4\'dd\'b1\'e2\cf0 \
+		\cf10 sc\cf0 .close();\
+		\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'c1\'a4\'b7\'c4 \'b1\'e2\'c1\'d8\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'cf\'bc\'bc\'bf\'e4(1.\'c0\'cc\'b8\'a7 2.\'c5\'a9\'b1\'e2 3.\'c1\'be\'b7\'f9) : 3\
+FileName [name=\'bd\'ba\'c0\'a7\'c7\'c1\'c6\'ae, size=170, type=\'c5\'b0\'b3\'eb\'c6\'ae, save=true]\
+FileName [name=\'c0\'da\'b9\'d9, size=80, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=true]\
+FileName [name=\'c4\'da\'c6\'b2\'b8\'b0, size=50, type=\'c6\'c4\'bf\'f6\'c6\'f7\'c0\'ce\'c6\'ae, save=false]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** java.util.Collection \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b8\'f0\'c0\'d3\'c0\'bb Collection \'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> Collection \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'c0\'ba 2\'b0\'b3\'c0\'c7 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b0\'a1 \'c0\'d6\'b4\'c2\'b5\'a5 List(\'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'b3\'aa\'bf\'ad, \'c1\'df\'ba\'b9\'c7\'e3\'bf\'eb)\'bf\'cd\
+set(\'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f8\'bc\'ad\'bf\'cd \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'b3\'aa\'bf\'ad, \'c1\'df\'ba\'b9\'c7\'e3\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd) \'c0\'d4\'b4\'cf\'b4\'d9.\
+=> \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'a1 List \'bf\'cd Set\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d2 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'c0\'cc\'b8\'a7\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee \'b3\'f5\'be\'d2\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> add : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'df\'b0\'a1\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> remove : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c1\'a6\'b0\'c5\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> clear : \'c0\'fc\'c3\'bc \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e8\'c1\'a6\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> size : \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b0\'b3\'bc\'f6\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+** Enumeration & Iterator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+\
+Enumeration -> Iterator \'b7\'ce \'be\'f7\'b1\'d7\'b7\'b9\'c0\'cc\'b5\'e5 \
+\'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b8\'f0\'c0\'d3\'c0\'bb \'bc\'f8\'c8\'b8\'c7\'d2 \'b6\'a7 \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'c0\'d0\'c0\'ba \'b0\'f7\'bf\'a1 \'b4\'eb\'b1\'e2 \'c7\'cf\'b0\'ed \'c0\'d6\'b4\'d9\'b0\'a1 \'b4\'d9\'c0\'bd \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'ba\'fc\'b8\'a3\'b0\'d4 \'c1\'a2\'b1\'d9\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1\
+\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+\
+1. Enumeration\
+=> boolean hasMoreElements() : \'b4\'d9\'c0\'bd \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c0\'d6\'c0\'b8\'b8\'e9 true \'c0\'d6\'c0\'b8\'b8\'e9 false\'b8\'a6 \'b8\'ae\'c5\'cf\
+=> E nextElement() : \'b4\'d9\'c0\'bd \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'ae\'c5\'cf, E\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'d1 Generic \'c0\'da\'b7\'e1\'c7\'fc\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+2. Iterator\
+=> boolean hasNext()\
+=> E next()\
+\
+\cf15 \ul \ulc15 ** List \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\cf0 \ulnone \
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'c0\'da\'b7\'e1\'b1\'b8\'c1\'b6 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+\
+\cf15 \ul \ulc15 1. Vector -> ArrayList\cf0 \ulnone \
+=> 2\'b0\'b3\'c0\'c7 \'b1\'b8\'c1\'b6\'b4\'c2 \'b0\'b0\'b0\'ed Vector\'b4\'c2 \'b8\'d6\'c6\'bc \'bd\'ba\'b7\'b9\'b5\'e5\'bf\'a1 \'be\'c8\'c0\'fc\'c7\'cf\'b0\'ed ArrayList\'b4\'c2 \'be\'c8\'c0\'fc\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd\
+=> Vector\'b0\'a1 Legacy Class \'c0\'d4\'b4\'cf\'b4\'d9.\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b9\'b0\'b8\'ae\'c0\'fb\'c0\'b8\'b7\'ce \'bf\'ac\'bc\'d3\'c7\'d8\'bc\'ad \'b9\'e8\'c4\'a1\'c7\'cf\'b4\'c2 \'b1\'b8\'c1\'b6\
+=> \'c5\'a9\'b1\'e2\'b0\'a1 \'ba\'af\'b0\'e6\'c0\'cc \'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c3\'df\'b0\'a1 \'b9\'d7 \'bb\'e8\'c1\'a6\'b0\'a1 \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'b9\'b0\'b8\'ae\'c0\'fb\'c0\'b8\'b7\'ce \'bf\'ac\'bc\'d3\'c0\'cc\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 LinkedList\'bf\'a1 \'ba\'f1\'c7\'d8\'bc\'ad \'c1\'a2\'b1\'d9\'bc\'d3\'b5\'b5\'b4\'c2 \'ba\'fc\'b8\'a3\'c1\'f6\'b8\'b8 \
+\'c1\'df\'b0\'a3\'bf\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'f0\'c0\'d4\'c7\'cf\'b0\'c5\'b3\'aa \'bb\'e8\'c1\'a6\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'b4\'c0\'b8\'ae\'b0\'d4 \'b5\'bf\'c0\'db\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b9\'b0\'b8\'ae\'c0\'fb\'c0\'b8\'b7\'ce \'bf\'ac\'bc\'d3\'c7\'d8\'be\'df \'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c1\'df\'b0\'a3\'bf\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e8\'c1\'a6\'c7\'cf\'b0\'c5\'b3\'aa \'bb\'f0\'c0\'d4\'c7\'cf\'b8\'e9 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'cc\'b5\'bf\'c0\'cc \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\cf15 \ul \ulc15 2. Linked List\cf0 \ulnone \
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'ed\'b8\'ae\'c0\'fb\'c0\'b8\'b7\'ce \'bf\'ac\'bc\'d3\'c7\'d8\'bc\'ad \'b9\'e8\'c4\'a1\'c7\'cf\'b4\'c2 \'b1\'b8\'c1\'b6\
+=> \'bd\'c7\'c1\'a6 \'bf\'ac\'bc\'d3\'c0\'cc \'be\'c6\'b4\'cf\'b0\'ed \'b4\'d9\'c0\'bd \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'a7\'c4\'a1\'b8\'a6 \'b1\'e2\'be\'ef\'c7\'cf\'b4\'c2 \'b1\'b8\'c1\'b6\
+=> \'c5\'a9\'b1\'e2 \'ba\'af\'b0\'e6\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d8\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'df\'b0\'a1 \'b9\'d7 \'bb\'e8\'c1\'a6\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'bb\'f0\'c0\'d4\'b0\'fa \'bb\'e8\'c1\'a6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 \'bd\'c7\'c1\'a6 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'cc\'b5\'bf\'c0\'ba \'be\'f8\'b0\'ed \'b8\'b5\'c5\'a9\'b8\'b8 \'bc\'f6\'c1\'a4\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'bb\'f0\'c0\'d4\'b0\'fa \'bb\'e8\'c1\'a6 \'b5\'bf\'c0\'db\'c0\'cc \'ba\'fc\'b8\'a8\'b4\'cf\'b4\'d9.\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'bf\'ac\'bc\'d3\'c0\'fb\'c0\'b8\'b7\'ce \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'be\'c6\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c1\'a2\'b1\'d9 \'bc\'d3\'b5\'b5\'b4\'c2 \'b4\'c0\'b8\'b3\'b4\'cf\'b4\'d9.\
+\
+\cf16 \ul \ulc16 => \'c0\'d0\'b1\'e2\'b8\'a6 \'b8\'b9\'c0\'cc \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 ArrayList, \'c6\'ed\'c1\'fd\'c0\'bb \'b8\'b9\'c0\'cc \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 Linked List\
+=> \'c0\'a5 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'ba \'bb\'f0\'c0\'d4\'b0\'fa \'bb\'e8\'c1\'a6\'ba\'b8\'b4\'d9\'b4\'c2 \'c0\'d0\'b1\'e2\'b8\'a6 \'b8\'b9\'c0\'cc \'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 ArrayList\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed \
+\'c0\'c0\'bf\'eb\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'ba \'bb\'f0\'c0\'d4\'b0\'fa \'bb\'e8\'c1\'a6\'b8\'a6 \'b8\'b9\'c0\'cc \'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 Linked List\'b8\'a6 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \ulnone \
+\
+3. \'bb\'fd\'bc\'ba\'b0\'fa \'c1\'a2\'b1\'d9\
+\
+=> \'c1\'a6\'b3\'ca\'b8\'af\'c0\'cc \'c0\'fb\'bf\'eb\'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b0\'e1\'c1\'a4\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'b0\'e6\'b0\'ed\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'c0\'fc\'c3\'bc \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'f8\'c8\'b8\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'ba\'fc\'b8\'a5 \'bf\'ad\'b0\'c5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+4. System.currentTimeMillis() : 1970\'b3\'e2 1\'bf\'f9 1\'c0\'cf \'c0\'da\'c1\'a4 \'c0\'cc\'c8\'c4\'bf\'a1 \'c1\'f6\'b3\'aa\'bf\'c2 \'bd\'c3\'b0\'a3\'c0\'bb 1/1000\'c3\'ca \'b4\'dc\'c0\'a7\'b7\'ce \'b0\'e8\'bb\'ea\'c7\'d8\'bc\'ad \
+long\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\cf9 import\cf0  java.util.ArrayList;\
+\cf9 import\cf0  java.util.LinkedList;\
+\cf9 import\cf0  java.util.List;\
+\cf9 public\cf0  \cf9 class\cf0  ListMain1 \{\
+	\cf9 public\cf0  \cf9 static\cf0  \cf9 void\cf0  main(String[] \cf10 args\cf0 ) \{\
+		\cf12 // \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 ArrayList\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		List<String> \cf10 al\cf0  = \cf9 new\cf0  ArrayList<>();\
+		\cf12 // \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 LinkedList\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		List<String> \cf10 li\cf0  = \cf9 new\cf0  LinkedList<>();\
+		\
+		\cf10 al\cf0 .add(\cf11 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 );\
+		\cf10 li\cf0 .add(\cf11 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 );\
+		\
+		\cf10 al\cf0 .add(\cf11 "\'c1\'b6\'bc\'ba\'bf\'ec"\cf0 );\
+		\cf10 li\cf0 .add(\cf11 "\'c1\'b6\'bc\'ba\'bf\'ec"\cf0 );\
+		\
+		\cf12 // \'c7\'f6\'c0\'e7 \'bd\'c3\'b0\'a3\'c0\'bb \'b1\'e2\'b7\'cf \cf0 \
+		\cf9 long\cf0  \cf10 start\cf0  = System.currentTimeMillis();\
+		\cf12 // \'c3\'b9\'b9\'f8\'c2\'b0 \'c0\'da\'b8\'ae\'bf\'a1 100000\'b0\'b3\'b8\'a6 \'bb\'f0\'c0\'d4\cf0 \
+		\cf9 for\cf0 (\cf9 int\cf0  \cf10 i\cf0 =0; \cf10 i\cf0 <100000; \cf10 i\cf0 =\cf10 i\cf0 +1) \{\
+			\cf10 li\cf0 .add(1, \cf11 "\'b1\'a4\'b0\'b3\'c5\'e4\'b4\'eb\'bf\'d5"\cf0 );\
+		\}\
+		\cf12 // \'c7\'f6\'c0\'e7 \'bd\'c3\'b0\'a3\'c0\'bb \'b1\'e2\'b7\'cf\cf0 \
+		\cf9 long\cf0  \cf10 end\cf0  = System.currentTimeMillis();\
+		\cf9 long\cf0  \cf10 result\cf0  = (\cf9 long\cf0 )(\cf10 end\cf0  - \cf10 start\cf0 );\
+		System.\cf13 out\cf0 .printf(\cf11 "LinkedList \'c0\'db\'be\'f7\'bd\'c3\'b0\'a3 : %d\\n"\cf0 , \cf10 result\cf0 );\
+		\
+		\cf12 // \'c7\'f6\'c0\'e7 \'bd\'c3\'b0\'a3\'c0\'bb \'b1\'e2\'b7\'cf \cf0 \
+		\cf10 start\cf0  = System.currentTimeMillis();\
+		\cf12 // \'c3\'b9\'b9\'f8\'c2\'b0 \'c0\'da\'b8\'ae\'bf\'a1 100000\'b0\'b3\'b8\'a6 \'bb\'f0\'c0\'d4\cf0 \
+		\cf9 for\cf0 (\cf9 int\cf0  \cf10 i\cf0 =0; \cf10 i\cf0 <100000; \cf10 i\cf0 =\cf10 i\cf0 +1) \{\
+			\cf10 al\cf0 .add(1, \cf11 "\'b1\'a4\'b0\'b3\'c5\'e4\'b4\'eb\'bf\'d5"\cf0 );\
+		\}\
+		\cf12 // \'c7\'f6\'c0\'e7 \'bd\'c3\'b0\'a3\'c0\'bb \'b1\'e2\'b7\'cf\cf0 \
+		\cf10 end\cf0  = System.currentTimeMillis();\
+		\cf10 result\cf0  = (\cf9 long\cf0 )(\cf10 end\cf0  - \cf10 start\cf0 );\
+		System.\cf13 out\cf0 .printf(\cf11 "ArrayList \'c0\'db\'be\'f7\'bd\'c3\'b0\'a3 : %d\\n"\cf0 , \cf10 result\cf0 );\
+\
+		\cf10 start\cf0  = System.currentTimeMillis();\
+		\cf9 int\cf0  \cf10 size\cf0  = \cf10 al\cf0 .size();\
+		\cf9 for\cf0 (\cf9 int\cf0  \cf10 i\cf0 =0; \cf10 i\cf0 <\cf10 size\cf0 ; \cf10 i\cf0 =\cf10 i\cf0 +1) \{\
+			String \cf10 data\cf0  = \cf10 al\cf0 .get(\cf10 i\cf0 );\
+			System.\cf13 out\cf0 .printf(\cf11 "%s\\n"\cf0 , \cf10 data\cf0 );\
+		\}\
+		\cf10 end\cf0  = System.currentTimeMillis();\
+		System.\cf13 out\cf0 .printf(\cf11 "ArrayList \'c0\'db\'be\'f7\'bd\'c3\'b0\'a3 : %d\\n"\cf0 , \cf10 end-start\cf0 );\
+\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+(\'b5\'a5\'c0\'cc\'c5\'cd \'bb\'fd\'bc\'ba \'b9\'d7 \'c3\'df\'b0\'a1 \'c0\'cf\'b6\'a7)\
+\pard\pardeftab720\partightenfactor0
+\cf0 LinkedList \'c0\'db\'be\'f7\'bd\'c3\'b0\'a3 : 5\
+ArrayList \'c0\'db\'be\'f7\'bd\'c3\'b0\'a3 : 979\
+(\'b5\'a5\'c0\'cc\'c5\'cd \'c0\'d0\'b1\'e2)\
+ArrayList \'c0\'db\'be\'f7\'bd\'c3\'b0\'a3 : 475\
+LinkedList \'c0\'db\'be\'f7\'bd\'c3\'b0\'a3 : 4892\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+5. \'bf\'a2\'bc\'bf\'c0\'c7 \'c7\'a5\'bf\'cd \'c0\'af\'bb\'e7\'c7\'d1 \'c5\'d7\'c0\'cc\'ba\'ed \'b1\'b8\'c1\'b6\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'b8\'b8\'b5\'e9\'b1\'e2\
+\
+=> \'c7\'cf\'b3\'aa\'c0\'c7 \'c7\'e0\'c0\'ba class \'b3\'aa Map\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'ec\'b4\'cf\'b4\'d9.\
+=> \'c7\'e0\'b5\'e9\'c0\'c7 \'c1\'fd\'c7\'d5\'c0\'ba \'b9\'e8\'bf\'ad\'c0\'cc\'b3\'aa List\'b7\'ce \'bb\'fd\'bc\'ba\
+\
+** \'bf\'ac\'b6\'f4\'c3\'b3\'bf\'cd \'b0\'b0\'c0\'ba \'b1\'b8\'c1\'b6\'c0\'c7 \'c5\'d7\'c0\'cc\'ba\'ed \'b1\'b8\'c1\'b6\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+1. \'bf\'ac\'b6\'f4\'c3\'b3 1\'b0\'b3\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+=> \'bf\'ac\'b6\'f4\'c3\'b3\'bf\'a1\'b4\'c2 \'c0\'cc\'b8\'a7(\'b9\'ae\'c0\'da\'bf\'ad), \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3(\'b9\'ae\'c0\'da\'bf\'ad), \'c1\'d6\'bc\'d2(\'b9\'ae\'c0\'da\'bf\'ad), \'b3\'aa\'c0\'cc(\'c1\'a4\'bc\'f6)\'b8\'a6 \'c0\'fa\'c0\'e5\
+\
+\'bd\'c7\'bd\'c0)\
+1. Class\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\
+\cf9 public\cf0  \cf9 class\cf0  Person \{\
+	\cf12 // \'b0\'a2\'b0\'a2\'c0\'c7 \'bc\'d3\'bc\'ba\'c0\'bb private \'ba\'af\'bc\'f6\'b7\'ce \'bb\'fd\'bc\'ba\cf0 \
+	\cf9 private\cf0  String \cf13 name\cf0 ;\
+	\cf9 private\cf0  String \cf13 phone\cf0 ;\
+	\cf9 private\cf0  \ul String\ulnone  \cf13 address\cf0 ;\
+	\cf9 private\cf0  \cf9 int\cf0  \cf13 age\cf0 ;\
+	\
+	\cf12 // \'c1\'a2\'b1\'d9\'c0\'da \'b8\'de\'bc\'d2\'b5\'e5 \'bb\'fd\'bc\'ba \cf0 \
+	\cf9 public\cf0  String getName() \{\
+		\cf9 return\cf0  \cf13 name\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setName(String \cf10 name\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 name\cf0  = \cf10 name\cf0 ;\
+	\}\
+	\cf9 public\cf0  String getPhone() \{\
+		\cf9 return\cf0  \cf13 phone\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setPhone(String \cf10 phone\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 phone\cf0  = \cf10 phone\cf0 ;\
+	\}\
+	\cf9 public\cf0  String getAddress() \{\
+		\cf9 return\cf0  \cf13 address\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setAddress(String \cf10 address\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 address\cf0  = \cf10 address\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 int\cf0  getAge() \{\
+		\cf9 return\cf0  \cf13 age\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setAge(\cf9 int\cf0  \cf10 age\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 age\cf0  = \cf10 age\cf0 ;\
+	\}\
+	\cf12 // \'b5\'f0\'b9\'f6\'b1\'eb\'c0\'bb \'c0\'a7\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5 \cf0 \
+	\cf14 @Override\cf0 \
+	\cf9 public\cf0  String toString() \{\
+		\cf9 return\cf0  \cf11 "Person [name="\cf0  + \cf13 name\cf0  + \cf11 ", phone="\cf0  + \cf13 phone\cf0  + \cf11 ", address="\cf0  + \cf13 address\cf0  + \cf11 ", age="\cf0  + \cf13 age\cf0  + \cf11 "]"\cf0 ;\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+2. Main\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\
+\cf9 import\cf0  java.util.ArrayList;\
+\cf9 import\cf0  java.util.Comparator;\
+\cf9 import\cf0  java.util.List;\
+\
+\cf9 public\cf0  \cf9 class\cf0  PersonListMain \{\
+\
+	\cf9 public\cf0  \cf9 static\cf0  \cf9 void\cf0  main(String[] \cf10 args\cf0 ) \{\
+		\cf12 // \'c5\'d7\'c0\'cc\'ba\'ed \'b1\'b8\'c1\'b6 \'b8\'b8\'b5\'e9\'b1\'e2\cf0 \
+		List<Person> \cf10 list\cf0  = \cf9 new\cf0  ArrayList<>();\
+		\cf12 // \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'bb\'f0\'c0\'d4\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		Person \cf10 person\cf0  = \cf9 new\cf0  Person();\
+		\cf10 person\cf0 .setName(\cf11 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 );\
+		\cf10 person\cf0 .setPhone(\cf11 "01054576063"\cf0 );\
+		\cf10 person\cf0 .setAddress(\cf11 "\'bc\'ad\'bf\'ef\'bd\'c3 \'b3\'eb\'bf\'f8\'b1\'b8 \'c1\'df\'b0\'e8\'b5\'bf"\cf0 );\
+		\cf10 person\cf0 .setAge(28);\
+		\
+		\cf12 // \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'f0\'c0\'d4\'c7\'cf\'b1\'e2\cf0 \
+		\cf10 list\cf0 .add(\cf10 person\cf0 );\
+		\
+		\cf12 // \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'bb\'f0\'c0\'d4\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		\cf10 person\cf0  = \cf9 new\cf0  Person();\
+		\cf10 person\cf0 .setName(\cf11 "\'c1\'b6\'bc\'ba\'bf\'ec"\cf0 );\
+		\cf10 person\cf0 .setPhone(\cf11 "01020656063"\cf0 );\
+		\cf10 person\cf0 .setAddress(\cf11 "\'bc\'ad\'bf\'ef\'bd\'c3 \'b3\'eb\'bf\'f8\'b1\'b8 \'c1\'df\'b0\'e8\'b5\'bf"\cf0 );\
+		\cf10 person\cf0 .setAge(27);\
+\
+		\cf12 // \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'f0\'c0\'d4\'c7\'cf\'b1\'e2\cf0 \
+		\cf10 list\cf0 .add(\cf10 person\cf0 );\
+		\
+		\cf12 // \'b5\'a5\'c0\'cc\'c5\'cd \'c1\'a4\'b7\'c4(sort)\cf0 \
+		\cf10 list\cf0 .sort(\cf9 new\cf0  Comparator<Person>() \{\
+			\cf12 // \'b3\'aa\'c0\'cc\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'ba\'f1\'b1\'b3 \cf0 \
+			\cf14 @Override\cf0 \
+			\cf9 public\cf0  \cf9 int\cf0  compare(Person \cf10 o1\cf0 , Person \cf10 o2\cf0 ) \{\
+				\cf9 return\cf0  \cf10 o1\cf0 .getAge() - \cf10 o2\cf0 .getAge();\
+			\}		\
+		\});	\
+		\cf12 // \'c5\'b8\'c0\'cc\'c6\'b2\'c0\'bb \'c3\'e2\'b7\'c2\cf0 \
+		System.\cf13 out\cf0 .printf(\cf11 "%-10s%-15s%-20s%-3s\\n"\cf0 , \cf11 "\'c0\'cc\'b8\'a7"\cf0 , \cf11 "\'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3"\cf0 , \cf11 "\'c1\'d6\'bc\'d2"\cf0 , \cf11 "\'b3\'aa\'c0\'cc"\cf0 );\
+		\cf12 // Fast Enumeration\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d1 List \'c1\'a2\'b1\'d9\cf0 \
+		\cf9 for\cf0 (Person \cf10 p\cf0  : \cf10 list\cf0 ) \{\
+			System.\cf13 out\cf0 .printf(\cf11 "%-9.5s%-17s%-18s%-3d\\n"\cf0 , \
+					\cf10 p\cf0 .getName(), \cf10 p\cf0 .getPhone(), \cf10 p\cf0 .getAddress(), \cf10 p\cf0 .getAge());\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'c0\'cc\'b8\'a7        \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3           \'c1\'d6\'bc\'d2                  \'b3\'aa\'c0\'cc \
+\'c1\'b6\'bc\'ba\'bf\'ec      01020656063      \'bc\'ad\'bf\'ef\'bd\'c3 \'b3\'eb\'bf\'f8\'b1\'b8 \'c1\'df\'b0\'e8\'b5\'bf       27 \
+\'c1\'b6\'c3\'a2\'c8\'c6      01054576063      \'bc\'ad\'bf\'ef\'bd\'c3 \'b3\'eb\'bf\'f8\'b1\'b8 \'c1\'df\'b0\'e8\'b5\'bf       28 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** \'b0\'d4\'bd\'c3\'c6\'c7 \'b1\'b8\'c1\'b6\'c0\'c7 \'c5\'d7\'c0\'cc\'ba\'ed \'b1\'b8\'c1\'b6\'b8\'a6 \'bb\'fd\'bc\'ba\
+\
+1. \'b0\'d4\'bd\'c3\'c6\'c7 1\'b0\'b3\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\
+\'b1\'db \'b9\'f8\'c8\'a3, \'b1\'db\'c1\'a6\'b8\'f1, \'b1\'db\'c0\'db\'bc\'ba\'c0\'da, \'b1\'db\'be\'b4\'b3\'af\'c2\'a5(\'bb\'ea\'bc\'fa \'bf\'ac\'bb\'ea\'c0\'ba \'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bb \'b0\'cd\'c0\'d3)\
+=> \'bc\'fd\'c0\'da\'b8\'a6 \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'ba \'b0\'c5\'c0\'c7 \'b9\'ae\'c1\'a6\'b0\'a1 \'b5\'c7\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'be\'df \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'bc\'fd\'c0\'da\'b7\'ce \'b8\'b8\'b5\'e9\'b8\'e9 \'b9\'ae\'c1\'a6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d2 \'bc\'d2\'c1\'f6\'b0\'a1 \'b8\'b9\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c7\'a5\'c7\'f6\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7\'b4\'c2 \'b0\'a2\'b0\'a2\'c0\'c7 \'c6\'af\'bc\'ba\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'c2 \'bc\'d3\'bc\'ba\'c0\'bb private \'ba\'af\'bc\'f6\'b7\'ce \'b8\'b8\'b5\'e9\'b0\'ed getter&setter(\'c1\'a2\'b1\'d9\'c0\'da\'b8\'de\'bc\'d2\'b5\'e5)\
+\'b8\'a6 \'b8\'b8\'b5\'e9\'b0\'ed \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'ba\'fc\'b8\'a3\'b0\'d4 \'c8\'ae\'c0\'ce \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 toString()\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee \'c1\'d6\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'bd\'c7\'bd\'c0)\
+1. Class\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\
+\cf9 public\cf0  \cf9 class\cf0  Board \{\
+	\cf9 private\cf0  \cf9 int\cf0  \cf13 num\cf0 ;\
+	\cf9 private\cf0  String \cf13 title\cf0 ;\
+	\cf9 private\cf0  String \cf13 writer\cf0 ;\
+	\cf9 private\cf0  String \cf13 regdate\cf0 ;\
+	\cf9 public\cf0  \cf9 int\cf0  getNum() \{\
+		\cf9 return\cf0  \cf13 num\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setNum(\cf9 int\cf0  \cf10 num\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 num\cf0  = \cf10 num\cf0 ;\
+	\}\
+	\cf9 public\cf0  String getTitle() \{\
+		\cf9 return\cf0  \cf13 title\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setTitle(String \cf10 title\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 title\cf0  = \cf10 title\cf0 ;\
+	\}\
+	\cf9 public\cf0  String getWriter() \{\
+		\cf9 return\cf0  \cf13 writer\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setWriter(String \cf10 writer\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 writer\cf0  = \cf10 writer\cf0 ;\
+	\}\
+	\cf9 public\cf0  String getRegdate() \{\
+		\cf9 return\cf0  \cf13 regdate\cf0 ;\
+	\}\
+	\cf9 public\cf0  \cf9 void\cf0  setRegdate(String \cf10 regdate\cf0 ) \{\
+		\cf9 this\cf0 .\cf13 regdate\cf0  = \cf10 regdate\cf0 ;\
+	\}\
+	\cf14 @Override\cf0 \
+	\cf9 public\cf0  String toString() \{\
+		\cf9 return\cf0  \cf11 "Board [num="\cf0  + \cf13 num\cf0  + \cf11 ", title="\cf0  + \cf13 title\cf0  + \cf11 ", writer="\cf0  + \cf13 writer\cf0  + \cf11 ", regdate="\cf0  + \cf13 regdate\cf0  + \cf11 "]"\cf0 ;\
+	\}\
+\
+	\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+2. Main\
+\pard\pardeftab720\partightenfactor0
+\cf9 package\cf0  java0917;\
+\
+\cf9 import\cf0  java.util.Comparator;\
+\cf9 import\cf0  java.util.LinkedList;\
+\cf9 import\cf0  java.util.List;\
+\
+\cf9 public\cf0  \cf9 class\cf0  BoardMain \{\
+\
+	\cf9 public\cf0  \cf9 static\cf0  \cf9 void\cf0  main(String[] \cf10 args\cf0 ) \{\
+		\cf12 // Board \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc \'bf\'a9\'b7\'af\'b0\'b3\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c0\'da\'b7\'e1\'b1\'b8\'c1\'b6\'b8\'a6 \'bb\'fd\'bc\'ba\cf0 \
+		\cf12 // \'b9\'e8\'bf\'ad(\'c5\'a9\'b1\'e2\'ba\'af\'b0\'e6\'c0\'cc \'be\'c8\'b5\'ca), ArrayList(\'c0\'d0\'b4\'c2 \'bc\'d3\'b5\'b5\'b4\'c2 \'ba\'fc\'b8\'a7), LinkedList(\'bb\'f0\'c0\'d4\'bb\'e8\'c1\'a6\'b0\'a1 \'ba\'fc\'b8\'a7)\cf0 \
+		\cf12 // \'c5\'d7\'c0\'cc\'ba\'ed \'b8\'b8\'b5\'e9\'b1\'e2\cf0 \
+		List<Board> \cf10 list\cf0  = \cf9 new\cf0  LinkedList<>();\
+		\cf12 // Board \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'b3\'c1\'a4\'c7\'d1 \'c8\'c4 list\'bf\'a1 \'bb\'f0\'c0\'d4\'c7\'cf\'b1\'e2\cf0 \
+		\cf12 // \'c0\'cc \'ba\'ce\'ba\'d0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'bf\'a1\'bc\'ad \'c0\'d0\'be\'ee\'bf\'c0\'b4\'f8\'b0\'a1 \'c6\'c4\'c0\'cf\'bf\'a1\'bc\'ad \'c0\'d0\'be\'ee\'bf\'c0\'b4\'c2 \'c7\'fc\'c5\'c2\'b7\'ce \'ba\'af\'b0\'e6\cf0 \
+		Board \cf10 board\cf0  = \cf9 new\cf0  Board();\
+		\cf10 board\cf0 .setNum(1);\
+		\cf10 board\cf0 .setTitle(\cf11 "\'b0\'f8\'c1\'f6"\cf0 );\
+		\cf10 board\cf0 .setWriter(\cf11 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 );\
+		\cf10 board\cf0 .setRegdate(\cf11 "2019.09.17"\cf0 );\
+		\cf10 list\cf0 .add(\cf10 board\cf0 );\
+		\
+		\cf10 board\cf0  = \cf9 new\cf0  Board();\
+		\cf10 board\cf0 .setNum(0);\
+		\cf10 board\cf0 .setTitle(\cf11 "\'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae"\cf0 );\
+		\cf10 board\cf0 .setWriter(\cf11 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 );\
+		\cf10 board\cf0 .setRegdate(\cf11 "2019.09.16"\cf0 );\
+		\cf10 list\cf0 .add(\cf10 board\cf0 );\
+		\
+		\cf10 board\cf0  = \cf9 new\cf0  Board();\
+		\cf10 board\cf0 .setNum(2);\
+		\cf10 board\cf0 .setTitle(\cf11 "\'bf\'c0\'b7\'f9"\cf0 );\
+		\cf10 board\cf0 .setWriter(\cf11 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 );\
+		\cf10 board\cf0 .setRegdate(\cf11 "2019.09.18"\cf0 );\
+		\cf10 list\cf0 .add(\cf10 board\cf0 );\
+		\
+		\cf12 // \'c1\'a4\'b7\'c4\cf0 \
+		\cf10 list\cf0 .sort(\cf9 new\cf0  Comparator<Board>() \{\
+\
+			\cf14 @Override\cf0 \
+			\cf9 public\cf0  \cf9 int\cf0  compare(Board \ul o1\ulnone , Board \cf10 o2\cf0 ) \{\
+				\cf9 return\cf0  \cf10 o1\cf0 .getRegdate().compareTo(\cf10 o2\cf0 .getRegdate());\
+				\cf12 //return o1.getNum() - o2.getNum();\cf0 \
+			\}\
+		\});\
+		\cf12 // \'c3\'e2\'b7\'c2\cf0 \
+		System.\cf13 out\cf0 .printf(\cf11 "%-10s%-15s%-20s%-10s\\n"\cf0 , \cf11 "\'b1\'db \'b9\'f8\'c8\'a3"\cf0 , \cf11 "\'b1\'db \'c1\'a6\'b8\'f1"\cf0 , \cf11 "\'b1\'db \'c0\'db\'bc\'ba\'c0\'da"\cf0 , \cf11 "\'b1\'db\'be\'b4 \'b3\'af\'c2\'a5"\cf0 );\
+		\cf9 for\cf0 (Board \cf10 b\cf0  : \cf10 list\cf0 ) \{\
+			System.\cf13 out\cf0 .printf(\cf11 "%-10s%-15s%-20s%-10s\\n"\cf0 , \
+					\cf10 b\cf0 .getNum(), \cf10 b\cf0 .getTitle(), \cf10 b\cf0 .getWriter(), \cf10 b\cf0 .getRegdate());\
+		\}\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'b1\'db \'b9\'f8\'c8\'a3      \'b1\'db \'c1\'a6\'b8\'f1           \'b1\'db \'c0\'db\'bc\'ba\'c0\'da               \'b1\'db\'be\'b4 \'b3\'af\'c2\'a5     \
+0         \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae           \'c1\'b6\'c3\'a2\'c8\'c6                 2019.09.16\
+1         \'b0\'f8\'c1\'f6             \'c1\'b6\'c3\'a2\'c8\'c6                 2019.09.17\
+2         \'bf\'c0\'b7\'f9             \'c1\'b6\'c3\'a2\'c8\'c6                 2019.09.18\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+}
