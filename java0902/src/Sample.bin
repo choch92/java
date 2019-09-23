@@ -1,0 +1,5 @@
+Compiled from "Sample.java"
+public class Sample {
+  public Sample();
+  public static void main(java.lang.String[]);
+}
