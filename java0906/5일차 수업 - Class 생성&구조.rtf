@@ -1,0 +1,706 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset129 NanumMyeongjo;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red0\green0\blue192;\red42\green0\blue255;\red0\green200\blue125;\red38\green255\blue255;\red0\green0\blue0;
+\red38\green255\blue255;\red0\green0\blue0;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red0\green0\blue192;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c0\c78431\c49020;\cssrgb\c8302\c100000\c100000;\cssrgb\c0\c1\c1;
+\cssrgb\c8302\c100000\c100000;\cssrgb\c0\c1\c1;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15880\viewh18160\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 5\'c0\'cf\'c2\'f7(cho)\
+\
+**Lotto \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\
+\
+0 - \'ba\'f1\'b1\'b3 \'c7\'ca\'bf\'e4\'be\'f8\'c0\'bd\
+1 - 0\
+2 - 0.1\
+3 - 0.1.2\
+4 - 0.1.2.3\
+5 - 0.1.2.3.4\
+\
+0 - I-1\'b9\'f8\'c2\'b0 \'b1\'ee\'c1\'f6 \'ba\'f1\'b1\'b3\
+\'c7\'f6\'c0\'e7 \'c0\'d4\'b7\'c2\'c7\'d1 \'bc\'fd\'c0\'da\'bf\'cd \'c0\'cc\'c0\'fc\'bf\'a1 \'c0\'d4\'b7\'c2\'c7\'d1 \'bc\'fd\'c0\'da\'b0\'a1 \'b5\'bf\'c0\'cf\'c7\'cf\'b8\'e9 \'b4\'d9\'bd\'c3 \'c0\'d4\'b7\'c2\'c0\'bb \'b9\'de\'be\'c6\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf2 package\cf0  java0906;\
+\cf2 import\cf0  java.util.Scanner;\
+\cf2 public\cf0  \cf2 class\cf0  Lotto \{\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //\'c1\'a4\'bc\'f6 6\'b0\'b3\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad\cf0 \
+		\cf4 //1-45\'b1\'ee\'c1\'f6\'c0\'c7 \'bc\'fd\'c0\'da\'b8\'a6 \'c1\'df\'ba\'b9\'b5\'c7\'c1\'f6 \'be\'ca\'b0\'d4 \'c0\'d4\'b7\'c2\'c7\'cf\'b4\'c2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'c0\'db\'bc\'ba\cf0 \
+		Scanner \cf3 sc\cf0  = \cf2 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		\
+		\cf4 //\'c1\'a4\'bc\'f6 6\'b0\'b3\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b9\'e8\'bf\'ad \'b8\'b8\'b5\'e9\'b1\'e2 \cf0 \
+		\cf2 int\cf0  [] \cf3 lotto\cf0  = \cf2 new\cf0  \cf2 int\cf0 [6];\
+		\cf4 //\'c0\'cf\'b9\'dd\'c0\'fb\'c0\'ce for \'b1\'b8\'b9\'ae\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \ul lotto\ulnone  \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'bc\'f8\'c8\'b8\'c7\'cf\'b1\'e2 \cf0 \
+		\cf2 int\cf0  \cf3 len\cf0  = \cf3 lotto\cf0 .\cf5 length\cf0 ;\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0 =0; \cf3 i\cf0 <\cf3 len\cf0 ; \cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			System.\cf5 out\cf0 .printf(\cf6 "\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):"\cf0 );\
+			\cf3 lotto\cf0 [\cf3 i\cf0 ] = \cf3 sc\cf0 .nextInt();\
+			\
+			\cf4 //1\'ba\'ce\'c5\'cd 45 \'bb\'e7\'c0\'cc\'c0\'c7 \'bc\'fd\'c0\'da\'b0\'a1 \'be\'c6\'b4\'cf\'b8\'e9 \'b4\'d9\'bd\'c3 \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2\cf0 \
+			\cf2 if\cf0 (\cf3 lotto\cf0 [\cf3 i\cf0 ] <1 || \cf3 lotto\cf0 [\cf3 i\cf0 ]>45) \{\
+				System.\cf5 out\cf0 .printf(\cf6 "1-45\'bb\'e7\'c0\'cc\'c0\'c7 \'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4!!!\\n"\cf0 );\
+				\cf3 i\cf0 =\cf3 i\cf0 -1;\cf4 //\'b9\'ab\'c8\'bf\'c8\'ad \'c7\'cf\'b0\'ed \'b4\'d9\'bd\'c3 1\'ba\'ce\'c5\'cd 45 \'bb\'e7\'c0\'cc\'c0\'c7 \'bc\'fd\'c0\'da \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2 \cf0 \
+				\cf2 continue\cf0 ;\
+			\}\
+			\cf4 //\'c0\'cc\'c0\'fc\'bf\'a1 \'c0\'d4\'b7\'c2\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'cd \'c1\'df\'ba\'b9 \'b0\'cb\'bb\'e7\cf0 \
+			\cf4 //\'c1\'df\'ba\'b9\'b0\'cb\'bb\'e7 \'c5\'eb\'b0\'fa \'bf\'a9\'ba\'ce\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'d2 \'ba\'af\'bc\'f6 \cf0 \
+			\cf2 int\cf0  \cf3 flag\cf0  = 0;\
+			\cf4 //\'b5\'a5\'c0\'cc\'c5\'cd \'c1\'df\'ba\'b9 \'b0\'cb\'bb\'e7\'b8\'a6 \'bc\'f6\'c7\'e0\'c7\'d8\'bc\'ad \'b5\'bf\'c0\'cf\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c0\'d6\'c0\'b8\'b8\'e9 flag = 1\cf0 \
+			\cf2 for\cf0 (\cf2 int\cf0  \cf3 j\cf0 =0; \cf3 j\cf0 <\cf3 i\cf0 ; \cf3 j\cf0 =\cf3 j\cf0 +1) \{\
+				\cf2 if\cf0 (\cf3 lotto\cf0 [\cf3 i\cf0 ] == \cf3 lotto\cf0 [\cf3 j\cf0 ]) \{\
+					\cf3 flag\cf0  = 1;\
+				\}\
+			\}\
+			\cf2 if\cf0 (\cf3 flag\cf0  == 1)\
+			\{\
+				System.\cf5 out\cf0 .printf(\cf6 "\'c1\'df\'ba\'b9\'b5\'c8 \'bc\'fd\'c0\'da\'c0\'d4\'b4\'cf\'b4\'d9.!!!\\n"\cf0 );\
+				\cf3 i\cf0  = \cf3 i\cf0  - 1; \cf4 //\'b9\'ab\'c8\'bf\'c8\'ad \'c7\'cf\'b0\'ed \'b4\'d9\'bd\'c3 1\'ba\'ce\'c5\'cd 45 \'bb\'e7\'c0\'cc\'c0\'c7 \'bc\'fd\'c0\'da \'c0\'d4\'b7\'c2\'b9\'de\'b1\'e2 \cf0 \
+			\}\
+		\}\
+		\cf4 //\'b5\'a5\'c0\'cc\'c5\'cd \'c1\'a4\'b7\'c4 - \'bc\'b1\'c5\'c3 \'c1\'a4\'b7\'c4 \cf0 \
+		\cf4 //n-1 \'c8\'b8\'c0\'fc \'b5\'bf\'be\'c8 \'c0\'da\'bd\'c5\'c0\'c7 \'b5\'da\'bf\'a1 \'c0\'d6\'b4\'c2 \'b8\'f0\'b5\'e7 \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'cd \'ba\'f1\'b1\'b3\'c7\'d8\'bc\'ad \'c1\'a4\'b7\'c4\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0  =0; \cf3 i\cf0 <\cf3 len\cf0 -1; \cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			\cf2 for\cf0 (\cf2 int\cf0  \cf3 j\cf0 =\cf3 i\cf0 +1; \cf3 j\cf0 <\cf3 len\cf0 ; \cf3 j\cf0 =\cf3 j\cf0 +1) \{\
+				\cf4 //\'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'ba\'f1\'b1\'b3\'c7\'d8\'bc\'ad \'be\'d5\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'b4\'f5 \'c5\'a9\'b4\'d9\'b8\'e9 swap\cf0 \
+				\cf2 if\cf0 (\cf3 lotto\cf0 [\cf3 i\cf0 ] > \cf3 lotto\cf0 [\cf3 j\cf0 ]) \{\
+					\cf2 int\cf0  \cf3 temp\cf0  = \cf3 lotto\cf0 [\cf3 i\cf0 ];\
+					\cf3 lotto\cf0 [\cf3 i\cf0 ] = \cf3 lotto\cf0 [\cf3 j\cf0 ];\
+					\cf3 lotto\cf0 [\cf3 j\cf0 ] = \cf3 temp\cf0 ;\
+				\}\
+			\}\
+		\}\
+		\cf4 //\'b5\'a5\'c0\'cc\'c5\'cd \'c3\'e2\'b7\'c2\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 temp\cf0  : \cf3 lotto\cf0 ) \{\
+			System.\cf5 out\cf0 .printf(\cf6 "%d\\t"\cf0 , \cf3 temp\cf0 );\
+		\}\
+		\cf3 sc\cf0 .close();\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):\cf7 24\cf0 \
+\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):\cf7 12\cf0 \
+\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):\cf7 24\cf0 \
+\'c1\'df\'ba\'b9\'b5\'c8 \'bc\'fd\'c0\'da\'c0\'d4\'b4\'cf\'b4\'d9.!!!\
+\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):36\
+\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):\cf7 18\cf0 \
+\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):\cf7 44\cf0 \
+\'bc\'fd\'c0\'da\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d8\'c1\'d6\'bc\'bc\'bf\'e4(1-45 \'bb\'e7\'c0\'cc):\cf7 11\cf0 \
+11	12	18	24	36	44	\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**\'b0\'b4\'c3\'bc \'c1\'f6\'c7\'e2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\
+\
+=> java\'b4\'c2 \'bf\'cf\'c0\'fc\'c7\'d1 \'b0\'b4\'c3\'bc \'c1\'f6\'c7\'e2 \'be\'f0\'be\'ee\
+=> java\'bf\'a1\'bc\'ad\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'b0\'ed \'c4\'da\'b5\'f9\'c0\'bb \'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+	1. \'b0\'b4\'c3\'bc \'c1\'f6\'c7\'e2\'c0\'c7 3\'b4\'eb \'c6\'af\'c2\'a1\
+		1)Encapsulation(\'c4\'b8\'bd\'b6\'c8\'ad) - \'ba\'af\'bc\'f6\'bf\'cd \'c7\'d4\'bc\'f6\'b8\'a6 \'c7\'cf\'b3\'aa\'b7\'ce \'b9\'ad\'be\'ee\'bc\'ad \'ba\'d2\'c7\'ca\'bf\'e4\'c7\'d1 \'ba\'ce\'ba\'d0\'c0\'bb \'bf\'dc\'ba\'ce\'b7\'ce \'b3\'eb\'c3\'e2\'bd\'c3\'c5\'b0\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'cd\
+		=> \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e5\'b4\'c2 \'b9\'e6\'b9\'fd\
+\
+		2)Inheritance(\'bb\'f3\'bc\'d3\'bc\'ba) - \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'f0\'b5\'e7\'b0\'cd\'c0\'bb \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b9\'b0\'b7\'c1 \'b9\'de\'b4\'c2 \'b0\'cd\
+\
+		\cf8 3)Polymorphism(\'b4\'d9\'c7\'fc\'bc\'ba) - \'b5\'bf\'c0\'cf\'c7\'d1 \'b8\'de\'bd\'c3\'c1\'f6\'bf\'a1 \'b4\'eb\'c7\'cf\'bf\'a9 \'b4\'d9\'b8\'a3\'b0\'d4 \'b9\'dd\'c0\'c0\'c7\'cf\'b4\'c2 \'b0\'cd\cf0 \
+		=> \'b5\'bf\'c0\'cf\'c7\'d1 \'c4\'da\'b5\'e5\'b0\'a1 \'bb\'f3\'c8\'b2\'bf\'a1 \'b5\'fb\'b6\'f3 \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2 \'b0\'cd\
+		=> \'bb\'f3\'bc\'d3\'b0\'fa \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'e7\'c1\'a4\'c0\'c7(Overriding)\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b1\'b8\'c7\'f6[\'c1\'df\'ba\'b9\'c1\'a4\'c0\'c7]\
+		=> call by value \'bf\'cd call by reference\'c2\'f7\'c0\'cc\
+		=> \'b8\'e9\'c1\'a2\'bf\'a1\'bc\'ad \'b4\'d9\'c7\'fc\'bc\'ba\'c0\'bb \'b8\'b9\'c0\'cc \'c1\'fa\'b9\'ae \
+\
+	2. \'b0\'b4\'c3\'bc \'c1\'f6\'c7\'e2 \'be\'f0\'be\'ee\'c0\'c7 \'c0\'e5\'c1\'a1\'b0\'fa \'b4\'dc\'c1\'a1\
+	=> \'c4\'da\'b5\'e5\'c0\'c7 \'c0\'e7\'bb\'e7\'bf\'eb\'bc\'ba\'c0\'cc \'c1\'f5\'b0\'a1\'c7\'cf\'b0\'ed \'c1\'df\'ba\'b9\'c0\'cc \'c1\'a6\'b0\'c5\'b5\'c7\'bc\'ad \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'b0\'a1 \'c6\'ed\'b8\'ae\
+	=> \'c0\'db\'be\'f7\'c0\'c7 \'b4\'dc\'c0\'a7\'b0\'a1 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'be\'c6\'b4\'cf\'b6\'f3 \'b0\'b4\'c3\'bc\'c0\'cc\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'ba\'d2\'c7\'ca\'bf\'e4\'c7\'d1 \'ba\'ce\'ba\'d0\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'b4\'d9\'b4\'d2 \'b0\'a1\'b4\'c9\'bc\'ba\'c0\'cc \'c0\'d6\'c0\'bd\
+\
+	3. Class\'bf\'cd object(\'c3\'d6\'b1\'d9\'bf\'a1\'b4\'c2 object \'ba\'b8\'b4\'d9\'b4\'c2 instance\'b6\'f3\'b4\'c2 \'b4\'dc\'be\'ee\'b8\'a6 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb)\
+	=> class\'b4\'c2 \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 \'b8\'b8\'b5\'e7 \'c0\'da\'b7\'e1\'c7\'fc \'c0\'cc\'b0\'ed object\'b4\'c2 class\'b8\'a6 \'b1\'e2\'b9\'dd\'c0\'b8\'b7\'ce \'c7\'d8\'bc\'ad \'b8\'de\'b8\'f0\'b8\'ae\'b8\'a6 \'c7\'d2\'b4\'e7\'b9\'de\'c0\'ba \'bd\'c7\'c1\'a6 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\
+	=> int a = 10;\
+	int\'b4\'c2 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc\'b0\'ed a\'b4\'c2 10\'c0\'cc\'b6\'f3\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'ba\'af\'bc\'f6\
+	int\'b0\'a1 class\'c0\'cc\'b0\'ed a\'b0\'a1 object\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+	=> int b; //\'c0\'cc \'b6\'a7 b\'b8\'a6 object\'b6\'f3\'b0\'ed \'c7\'cf\'c1\'f6\'b4\'c2 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+	=> class\'b0\'a1 \'c0\'cf\'b9\'dd \'c0\'da\'b7\'e1\'c7\'fc\'b0\'fa \'b4\'d9\'b8\'a5 \'c1\'a1\'c0\'ba class\'b4\'c2 \'c1\'a4\'c7\'d8\'c1\'f8 \'c6\'b2\'c0\'cc \'be\'f8\'be\'ee\'bc\'ad \'b0\'b3\'b9\'df\'c0\'da\'b0\'a1 \'b8\'b6\'c0\'bd\'b4\'eb\'b7\'ce \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'b0\'ed \
+	\'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba \'b5\'b6\'c0\'da\'c0\'fb\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'c1\'f6\'b8\'b8 class\'b4\'c2 class\'c0\'da\'c3\'bc\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6\'b5\'b5 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	=> class\'b4\'c2 object\'b5\'e9\'c0\'c7 \'c6\'af\'c2\'a1\'c0\'bb \'b8\'f0\'be\'c6\'b3\'f5\'c0\'ba \'c1\'a4\'c0\'fb(\'c7\'d1 \'b9\'f8 \'b8\'b8\'b5\'e9\'b8\'e9 \'bc\'f6\'c1\'a4\'c0\'bb \'b8\'f8\'c7\'cf\'b4\'c2 \'b0\'cd - static)\'c0\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'cc\'b0\'ed\
+	=> object\'b4\'c2 class\'b8\'a6 \'b1\'e2\'b9\'dd\'c0\'b8\'b7\'ce \'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'c6\'af\'c2\'a1\'c0\'bb \'ba\'af\'b0\'e6\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b5\'bf\'c0\'fb(\'b8\'b8\'b5\'e9\'b0\'ed \'b3\'ad \'c8\'c4 \'bc\'f6\'c1\'a4\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d1 \'b0\'cd - Dynamic)\'c0\'ce \'b5\'a5\'c0\'cc\'c5\'cd\
+	=> \'c3\'d6\'b1\'d9\'bf\'a1\'b4\'c2 class\'b8\'a6 \'b1\'e2\'b9\'dd\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 object\'b8\'a6 instance\'b6\'f3\'b0\'ed \'ba\'ce\'b8\'a3\'b1\'e2\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+	ex) \'c0\'da\'b5\'bf\'c2\'f7\'b6\'f3\'b4\'c2 \'b4\'dc\'be\'ee\'b4\'c2 class => \'c0\'da\'b5\'bf\'c2\'f7\'b0\'a1 \'b9\'d9\'c4\'fb\'b0\'a1 4\'b0\'b3\'c0\'ce\'b5\'a5 3\'b0\'b3\'b7\'ce \'b9\'d9\'b2\'d9\'b0\'c5\'b3\'aa \'c7\'cf\'b4\'c3\'c0\'bb \'b3\'af\'be\'c6\'b4\'d9\'b4\'d1\'b4\'d9\'b0\'ed \'b9\'d9\'b2\'dc \'bc\'f6 \'be\'f8\'c0\'bd\
+	ex) \'bc\'d2\'b3\'aa\'c5\'b8\'b6\'f3\'b4\'c2 \'b4\'dc\'be\'ee\'b4\'c2 object => \'c0\'da\'b5\'bf\'c2\'f7(class)\'bf\'a1\'bc\'ad \'b1\'e2\'b9\'dd\'b5\'c8 \'bc\'d2\'b3\'aa\'c5\'b8\'b4\'c2 \'be\'f0\'c1\'a6\'b5\'e7\'c1\'f6 \'b4\'d9\'b8\'a5 \'b1\'e2\'c1\'be\'c0\'b8\'b7\'ce \'b9\'d9\'b2\'dc \'bc\'f6 \'c0\'d6\'c0\'bd\
+\
+	=> class\'b8\'a6 \'b1\'e2\'b9\'dd\'c0\'b8\'b7\'ce instance\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 : new \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7(\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6);\
+\
+**\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'bb\'fd\'bc\'ba\
+\
+=> [\'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da] + [\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c1\'be\'b7\'f9 ]+ class + \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 + [extends \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7] + [implements \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'cc\'b8\'a7]\{ \}\
+=> [ ]\'b7\'ce \'b5\'c7\'be\'ee\'c0\'d6\'b4\'c2 \'b0\'cd\'c0\'ba \'bb\'fd\'b7\'ab\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d4.\
+=> \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da : private, protected, default(package), public \'c1\'df \'c7\'cf\'b3\'aa\'b8\'a6 \'b1\'e2\'c0\'e7\'c7\'cf\'b4\'c2\'b5\'a5 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'bb\'e7\'bf\'eb\'b9\'fc\'c0\'a7\'b8\'a6 \'b3\'aa\'c5\'b8\'b3\'bb\'b4\'c2 \'b0\'cd\'c0\'d4\'b4\'cf\'b4\'d9.\
+=> \'c5\'ac\'b7\'a1\'bd\'ba \'c1\'be\'b7\'f9 : abstract, final, static \'c1\'df \'c7\'cf\'b3\'aa\'b8\'a6 \'b1\'e2\'c0\'e7\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2\'b5\'a5 \'bb\'f3\'bc\'d3\'b0\'a1\'b4\'c9\'bf\'a9\'ba\'ce\'b3\'aa \'b0\'b4\'c3\'bc\'bb\'fd\'bc\'ba\'b0\'a1\'b4\'c9\'bf\'a9\'ba\'ce \'b5\'ee\'c0\'bb \'c1\'f6\'c1\'a4\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\
+=> extends\'b4\'c2 \'bb\'f3\'bc\'d3\'c0\'bb \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+=> implements : \'b1\'b8\'c7\'f6\'c0\'bb \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+\
+**\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b1\'b8\'bc\'ba\'bf\'e4\'bc\'d2\
+\
+	1. \'bc\'d3\'bc\'ba(attribute) - field, member variable, property\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'b3\'aa \'b0\'b4\'c3\'bc\'c0\'c7 \'c6\'af\'bc\'ba\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'ba\'af\'bc\'f6\
+\
+	2. \'b8\'de\'bc\'d2\'b5\'e5(method)\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'b3\'aa \'b0\'b4\'c3\'bc\'b0\'a1 \'c0\'cf\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'b8\'b8\'b5\'e9\'be\'ee\'b3\'f5\'c0\'ba \'b1\'e2\'b4\'c9\
+	=> method\'b0\'a1 \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'ae\'c0\'d6\'c1\'f6 \'be\'ca\'b0\'ed \'c5\'ac\'b7\'a1\'bd\'ba \'bf\'dc\'ba\'ce\'bf\'a1 \'c0\'d6\'c0\'b8\'b8\'e9 function\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> function\'c0\'bb \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'c0\'b8\'b8\'e9 \'c7\'d4\'bc\'f6\'c7\'fc \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'be\'f0\'be\'ee\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.(java\'b4\'c2 \'be\'c8\'b5\'ca, Kotlin Scala, Python\'c0\'ba \'b5\'ca)\
+	=> Java\'b4\'c2 function\'c0\'bb \'b8\'b8\'b5\'e9 \'bc\'f6 \'be\'f8\'c1\'f6\'b8\'b8, \'c7\'d4\'bc\'f6\'c7\'fc \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6 \'be\'f0\'be\'ee\'bf\'cd \'c0\'af\'bb\'e7\'c7\'d1 \'c7\'fc\'c5\'c2\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b6\'f7\'b4\'d9\'b6\'f3\'b4\'c2 \'b1\'e2\'b4\'c9\'c0\'bb \'c1\'a6\'b0\'f8\'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'be\'c8\'b5\'e5\'b7\'ce\'c0\'cc\'b5\'e5\'bf\'a1\'bc\'ad\'b4\'c2 \'bf\'ec\'b8\'ae\'b0\'a1 \'c0\'db\'bc\'ba\'c7\'d1 \'c4\'da\'b5\'e5\'b8\'a6 \'b6\'f7\'b4\'d9 \'bd\'c4\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6\'c7\'d8\'b9\'f6\'b8\'ae\'b1\'e2\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+	3. \'bb\'fd\'bc\'ba\'c0\'da(Constructor)\
+	=> \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'c3\'ca\'b1\'e2\'c8\'ad \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'d8\'c1\'d6\'b4\'c2 \'c6\'af\'ba\'b0\'c7\'d1 \'bf\'eb\'b5\'b5\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\
+\
+	4. Inner class\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+	5. \'c5\'ac\'b7\'a1\'bd\'ba\'b3\'aa \'b0\'b4\'c3\'bc\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'da\'bd\'c5\'c0\'c7 \'b3\'bb\'ba\'ce\'bf\'a1 \'c0\'d6\'b4\'c2 \'bc\'d3\'bc\'ba\'c0\'cc\'b3\'aa \'b8\'de\'bc\'d2\'b5\'e5 \'b6\'c7\'b4\'c2 inner class\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d2 \'b6\'a7\'b4\'c2 .(\'c1\'a1)\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c1\'a2\'b1\'d9\
+	construction\'b4\'c2 new \'b4\'d9\'c0\'bd\'bf\'a1 \'c8\'a3\'c3\'e2\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+**Eclipse\'bf\'a1\'bc\'ad\'b4\'c2 class \'b8\'b8\'b5\'e9 \'b6\'a7 src\'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'c0\'a7\'bf\'a1\'bc\'ad \'b8\'b6\'bf\'ec\'bd\'ba \'bf\'c0\'b8\'a5\'c2\'ca\'c0\'bb \'b4\'a9\'b8\'a3\'b0\'ed [New] - [class] \'b8\'de\'b4\'ba\'b8\'a6 \'bd\'c7\'c7\'e0\'c7\'cf\'b0\'ed \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7\'b0\'fa \'bf\'c9\'bc\'c7\'b5\'e9\'c0\'bb \'bc\'b1\'c5\'c3\'c7\'d8\'c1\'d6\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+Src \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'bf\'a1 \'b8\'b8\'b5\'e9\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'b9\'f8\'bf\'aa(compile)\'c0\'bb \'c7\'d8\'c1\'d6\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+class\'b4\'c2 \'b9\'f8\'bf\'aa\'b5\'c7\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+**main \'b8\'de\'bc\'d2\'b5\'e5\
+=> \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\'bc\'ad \'b9\'d9\'b7\'ce \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> \'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'bd\'c7\'c7\'e0 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'d4\'b4\'cf\'b4\'d9.\
+=> \'bd\'c7\'c7\'e0 \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9 \'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'b0\'ed \'bd\'c7\'c7\'e0 \'bd\'c3\'c4\'d1 \'b4\'de\'b6\'f3\'b0\'ed \'b8\'ed\'b7\'c9\'c0\'bb \'c1\'d6\'b8\'e9(java \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7) \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b0\'a1 \'be\'cb\'be\'c6\'bc\'ad \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'bd\'c7\'c7\'e0\'c0\'bb \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+**\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\
+=> new \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7() - \'c0\'cc \'b9\'ae\'c0\'e5\'c0\'cc \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'b0\'b4\'c3\'bc\'c0\'c7 \'c1\'d6\'bc\'d2\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'b1\'d7 \'c1\'d6\'bc\'d2\'b8\'a6 \'b1\'e2\'be\'ef\'c7\'d8\'bc\'ad \'c0\'e7\'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 \'ba\'af\'bc\'f6\'c0\'cc\'b8\'a7 = new \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7();\
+\
+**Variable(\'ba\'af\'bc\'f6)\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'e7\'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'bf\'a1 \'c0\'cc\'b8\'a7\'c0\'bb \'bc\'b3\'c1\'a4\'c7\'d1 \'b0\'cd\
+=> \'c0\'cc\'b8\'a7\'c0\'ba \'c0\'da\'bd\'c5\'c0\'c7 \'bf\'b5\'bf\'aa\'bf\'a1\'bc\'ad \'c0\'af\'c0\'cf\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+	1. \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6(Local Variable)\
+	=> \'b8\'de\'bc\'d2\'b5\'e5, \'c1\'a6\'be\'ee\'b9\'ae, \'bf\'b9\'bf\'dc\'c3\'b3\'b8\'ae \'b1\'b8\'b9\'ae \'be\'c8\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f6\'b4\'c2 \'ba\'af\'bc\'f6\'b7\'ce \'c0\'da\'bd\'c5\'c0\'cc \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 \'bf\'b5\'bf\'aa\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'ba\'af\'bc\'f6\
+	=> \'c0\'da\'b5\'bf \'c3\'ca\'b1\'e2\'c8\'ad\'b0\'a1 \'b5\'c7\'c1\'f6 \'be\'ca\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b0\'aa\'c0\'bb \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'be\'d5\'bf\'a1 final\'c0\'bb \'ba\'d9\'c0\'cc\'b8\'e9 \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'ba\'af\'b0\'e6\'c7\'d2 \'bc\'f6 \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+		=> \'c0\'d0\'b1\'e2 \'c0\'fc\'bf\'eb\'c0\'c7 \'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 final\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'bb\'fd\'bc\'ba \'b9\'e6\'b9\'fd\
+		=> [final] + \'c0\'da\'b7\'e1\'b8\'ed + \'ba\'af\'bc\'f6\'b8\'ed;\
+\
+	2. Instance Variable(Member Variable)\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'bc\'b1\'be\'f0\'c7\'d8\'bc\'ad \'b0\'b4\'c3\'bc\'b0\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'ba\'af\'bc\'f6\
+	=> \'b0\'b4\'c3\'bc\'b0\'a1 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'fa \'b6\'a7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'ba\'af\'bc\'f6\'b5\'e9\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b0\'f8\'b0\'a3\'c0\'bb \'bb\'fd\'bc\'ba\
+	=> \'c0\'da\'b5\'bf\'c3\'ca\'b1\'e2\'c8\'ad\'b0\'a1 \'b5\'cb\'b4\'cf\'b4\'d9.\
+		=> \'bc\'fd\'c0\'da \'c0\'da\'b7\'e1\'c7\'fc\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 0\'c0\'b8\'b7\'ce boolean\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 false\'b7\'ce \'b1\'d7 \'c0\'cc\'bf\'dc\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba null\'b7\'ce \'c3\'ca\'b1\'e2\'c8\'ad\'b0\'a1 \'b5\'cb\'b4\'cf\'b4\'d9.\
+	=> \'bb\'fd\'bc\'ba \'b9\'e6\'b9\'fd\
+		=> \'c1\'a2\'b1\'d9\'c1\'f6\'c1\'a4\'c0\'da + [final] + \'c0\'da\'b7\'e1\'c7\'fc + \'ba\'af\'bc\'f6\'b8\'ed;\
+\
+	3. Class Variable(static Variable)\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1\'bc\'ad \'bc\'b1\'be\'f0\'c7\'d8\'bc\'ad \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'ba\'af\'bc\'f6\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fa \'b6\'a7 \'c5\'ac\'b7\'a1\'bd\'ba \'ba\'af\'bc\'f6\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b0\'f8\'b0\'a3\'c0\'bb \'bb\'fd\'bc\'ba\
+	=> \'c0\'da\'b5\'bf \'c3\'ca\'b1\'e2\'c8\'ad\'b0\'a1 \'b5\'cb\'b4\'cf\'b4\'d9.\
+	=> \'bb\'fd\'bc\'ba \'b9\'e6\'b9\'fd\
+		=> \'c1\'a2\'b1\'d9\'c1\'f6\'c1\'a4\'c0\'da + static + [final] + \'c0\'da\'b7\'e1\'c7\'fc + \'ba\'af\'bc\'f6\'b8\'ed;\
+		=> instance variable\'b0\'fa \'c0\'af\'bb\'e7\'c7\'cf\'b0\'d4 \'b8\'b8\'b5\'e5\'b4\'c2\'b5\'a5 \'be\'d5\'bf\'a1 static\'c0\'bb \'ba\'d9\'c0\'cc\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+	4. Class Variable \'b0\'fa Instance Variable\'c0\'c7 \'c2\'f7\'c0\'cc\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 	=> Class Variable\'c0\'ba Instance\'b0\'a1 \'b0\'f8\'c0\'af\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'b8\'b7\'ce 1\'b0\'b3\'b8\'b8 \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fd\'b4\'cf\'b4\'d9.\
+	=> Instance Variable\'c0\'ba Instance\'c0\'c7 \'bb\'f3\'c5\'c2\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b0\'cd\'c0\'b8\'b7\'ce Instance \'b8\'b6\'b4\'d9 \'b0\'a2\'b0\'a2 \'bb\'fd\'bc\'ba\
+\
+**\'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\
+	1. Private : \'c0\'da\'bd\'c5\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da, \'bf\'dc\'ba\'ce\'b7\'ce \'b3\'eb\'c3\'e2\'c7\'cf\'c1\'f6 \'be\'ca\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\
+	2. default(package) : \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\'b8\'a6 \'ba\'d9\'c0\'cc\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'cd\'c0\'b8\'b7\'ce \'c6\'d0\'c5\'b0\'c1\'f6 \'b3\'bb\'bf\'a1\'bc\'ad\'b4\'c2 public\'c0\'cc \'b5\'c7\'b0\'ed \'c6\'d0\'c5\'b0\'c1\'f6 \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad\'b4\'c2  private\'b0\'a1 \'b5\'ca.\
+	3. Protected : \'c0\'da\'bd\'c5\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'bb\'f3\'bc\'d3\'b9\'de\'c0\'ba \'c5\'ac\'b7\'a1\'bd\'ba \'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'b0\'a1\'b4\'c9 \'c7\'cf\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da, \'c5\'ac\'b7\'a1\'bd\'ba \'bf\'dc\'ba\'ce(\'b0\'b4\'c3\'bc)\'bf\'a1\'bc\'ad\'b4\'c2 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'be\'f8\'c0\'bd\
+	4. Public : \'c5\'ac\'b7\'a1\'bd\'ba \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'c5\'ac\'b7\'a1\'bd\'ba\'b3\'aa \'b0\'b4\'c3\'bc\'b0\'a1 \'c8\'a3\'c3\'e2\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da, \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'ba\'d9\'c0\'cc\'b4\'c2 \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\
+\
+	=> public > protected > default > private \'bc\'f8\'c0\'b8\'b7\'ce \'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\'b0\'a1 \'b0\'ad\'c7\'cf\'b4\'d9\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+	=> \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'b8\'b7\'ce\'b4\'c2 \'ba\'af\'bc\'f6\'b4\'c2 private\'c0\'b8\'b7\'ce \'c7\'cf\'b0\'ed \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 public\'c0\'b8\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'b1\'c7\'c0\'e5\
+		=> \'ba\'af\'bc\'f6\'b4\'c2 \'b5\'bf\'bd\'c3\'bc\'ba \'c1\'a6\'be\'ee\'b0\'a1 \'be\'ee\'b7\'c6\'c1\'f6\'b8\'b8, \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'b5\'bf\'bd\'c3\'bc\'ba \'c1\'a6\'be\'ee\'b0\'a1 \'bd\'b1\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+1. \'bd\'c7\'c7\'e0 \'b9\'ae(Main)\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  Main \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //Student \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc \'b8\'b8\'b5\'e9\'b1\'e2 \cf0 \
+		\cf4 //Student \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'b1\'d7 \'c1\'d6\'bc\'d2\'b8\'a6 student1\'c0\'cc\'b6\'f3\'b4\'c2 \'ba\'af\'bc\'f6\'bf\'a1 \'b4\'eb\'c0\'d4 \cf0 \
+		Student \cf3 student1\cf0  = \cf2 new\cf0  Student();\
+		Student \cf3 student2\cf0  = \cf2 new\cf0  Student();\
+		\
+		\cf4 //studentName\'c0\'cc\'b6\'f3\'b4\'c2 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'ba\'af\'bc\'f6\'bf\'a1 \'b0\'aa\'c0\'bb \'b4\'eb\'c0\'d4 \cf0 \
+		\cf3 student1\cf0 .\cf5 studentName\cf0  = \cf6 "\'bf\'ac\'c1\'a6\'b9\'ce"\cf0 ;\
+		\cf3 student2\cf0 .\cf5 studentName\cf0  = \cf6 "\'c1\'b6\'c3\'a2\'c8\'c6"\cf0 ;\
+		\
+		\cf3 student1\cf0 .\cf5 num\cf0  = \cf6 "10"\cf0 ;\
+		\cf4 //student1.phone = "010";//private\'b4\'c2 \'c0\'da\'bd\'c5\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\cf0 \
+		\
+		\cf3 student1\cf0 .\cf5 \ul \ulc5 schoolName\cf0 \ulnone  = \cf6 "\'c1\'df\'c6\'f2\'c3\'ca\'b5\'ee\'c7\'d0\'b1\'b3"\cf0 ;\
+		\cf3 student2\cf0 .\cf5 \ul \ulc5 schoolName\cf0 \ulnone  = \cf6 "\'c1\'df\'bf\'f8\'c3\'ca\'b5\'ee\'c7\'d0\'b1\'b3"\cf0 ;\
+		\
+		System.\cf5 out\cf0 .printf(\cf6 "%s\\n"\cf0 , \cf3 student1\cf0 .\cf5 studentName\cf0 );\
+		System.\cf5 out\cf0 .printf(\cf6 "%s\\n"\cf0 , \cf3 student2\cf0 .\cf5 studentName\cf0 );\
+		System.\cf5 out\cf0 .printf(\cf6 "%s\\n"\cf0 , \cf3 student1\cf0 .\cf5 \ul \ulc5 schoolName\cf0 \ulnone );\
+		System.\cf5 out\cf0 .printf(\cf6 "%s\\n"\cf0 , \cf3 student2\cf0 .\cf5 \ul \ulc5 schoolName\cf0 \ulnone );\
+		\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 2. Class \'b9\'ae\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  Student \{\
+	\cf4 // \'c7\'d0\'b1\'b3\'c0\'cc\'b8\'a7, \'c7\'d0\'bb\'fd\'c0\'cc\'b8\'a7, \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3, \'c7\'d0\'b9\'f8\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'ba\'af\'bc\'f6 \cf0 \
+	\
+	\cf4 // \'b8\'f0\'b5\'e7 \'c7\'d0\'bb\'fd\'c0\'c7 \'c7\'d0\'b1\'b3 \'c0\'cc\'b8\'a7\'c0\'ba \'b5\'bf\'c0\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+	\cf4 // \'c0\'cc\'b7\'b1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 static\'c0\'b8\'b7\'ce \'bc\'b1\'be\'f0\'c7\'d8\'bc\'ad 1\'b0\'b3\'b8\'b8 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'b0\'f8\'c0\'af\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+	\cf2 static\cf0  String \cf5 schoolName\cf0 ;\
+	String \cf5 studentName\cf0 ;\
+	\cf4 //\'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\'b8\'a6 private\'c0\'b8\'b7\'ce \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 \'c5\'ac\'b7\'a1\'bd\'ba \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c0\'cc \'ba\'d2\'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+	\cf2 private\cf0  String \cf5 \ul \ulc5 phone\cf0 \ulnone ;\
+	\cf4 //\'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\'b8\'a6 public\'c0\'b8\'b7\'ce \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 \'c5\'ac\'b7\'a1\'bd\'ba \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'b0\'b4\'c3\'bc\'b0\'a1 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+	\cf2 public\cf0  String \cf5 num\cf0 ;\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'bf\'ac\'c1\'a6\'b9\'ce\
+\'c1\'b6\'c3\'a2\'c8\'c6\
+\'c1\'df\'bf\'f8\'c3\'ca\'b5\'ee\'c7\'d0\'b1\'b3\
+\'c1\'df\'bf\'f8\'c3\'ca\'b5\'ee\'c7\'d0\'b1\'b3\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**Static \'c3\'ca\'b1\'e2\'c8\'ad\
+=> static\{ \'b3\'bb\'bf\'eb \}\
+	=> class\'b0\'a1 \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1 load\'b5\'c9 \'b6\'a7 \'b0\'a1\'c0\'e5 \'c3\'b3\'c0\'bd \'bc\'f6\'c7\'e0\'c7\'d2 \'c4\'da\'b5\'e5\'b8\'a6 \'c0\'db\'bc\'ba\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'ba\'ed\'b7\'cf\
+	=> static \'ba\'af\'bc\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'b0\'a1\'b4\'c9\'c7\'cf\'c1\'f6\'b8\'b8 instance \'ba\'af\'bc\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'ba \'be\'c8\'b5\'cb\'b4\'cf\'b4\'d9.\
+	=> instance \'ba\'af\'bc\'f6\'b4\'c2 \'b0\'b4\'c3\'bc\'b0\'a1 \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fa\'b6\'a7 \'bb\'fd\'bc\'ba\'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+		=> \'bf\'a9\'b7\'af\'b9\'f8 \'c0\'db\'bc\'ba\'c0\'cc \'b0\'a1\'b4\'c9\
+ex)\
+\cf2 public\cf0  \cf2 class\cf0  Student \{\
+\cf4 //\'c0\'cc \'c4\'da\'b5\'e5 \'ba\'ed\'b7\'cf\'c0\'ba \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c3\'b3\'c0\'bd \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1 \'b7\'ce\'b5\'e5\'b5\'c9 \'b6\'a7 \'b9\'d9\'b7\'ce \'bd\'c7\'c7\'e0\'b5\'cb\'b4\'cf\'b4\'d9.\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 static\cf0  \{\
+	System.\cf5 out\cf0 .printf(\cf6 "\'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'bb\'fd\'bc\'ba\'b5\'c7\'be\'ee \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1 \'b7\'ce\'b5\'e5\'b5\'cb\'b4\'cf\'b4\'d9.\\n"\cf0 );\
+\}\
+\
+\cf4 // \'c7\'d0\'b1\'b3\'c0\'cc\'b8\'a7, \'c7\'d0\'bb\'fd\'c0\'cc\'b8\'a7, \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3, \'c7\'d0\'b9\'f8\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'ba\'af\'bc\'f6 \cf0 \
+\
+\cf4 // \'b8\'f0\'b5\'e7 \'c7\'d0\'bb\'fd\'c0\'c7 \'c7\'d0\'b1\'b3 \'c0\'cc\'b8\'a7\'c0\'ba \'b5\'bf\'c0\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+\cf4 // \'c0\'cc\'b7\'b1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 static\'c0\'b8\'b7\'ce \'bc\'b1\'be\'f0\'c7\'d8\'bc\'ad 1\'b0\'b3\'b8\'b8 \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'b0\'f8\'c0\'af\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+\cf2 static\cf0  String \cf5 schoolName\cf0 ;\
+String \cf5 studentName\cf0 ;\
+\cf4 //\'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\'b8\'a6 private\'c0\'b8\'b7\'ce \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 \'c5\'ac\'b7\'a1\'bd\'ba \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c0\'cc \'ba\'d2\'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+\cf2 private\cf0  String \cf5 \ul \ulc5 phone\cf0 \ulnone ;\
+\cf4 //\'c1\'a2\'b1\'d9 \'c1\'f6\'c1\'a4\'c0\'da\'b8\'a6 public\'c0\'b8\'b7\'ce \'bc\'b3\'c1\'a4\'c7\'cf\'b8\'e9 \'c5\'ac\'b7\'a1\'bd\'ba \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'b0\'b4\'c3\'bc\'b0\'a1 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+\cf2 public\cf0  String \cf5 num\cf0 ;\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+\'c0\'a7\'bf\'a1 \'b8\'de\'c0\'ce\'b1\'b8\'b9\'ae\'c0\'ba \'b5\'bf\'c0\'cf\
+\'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'bb\'fd\'bc\'ba\'b5\'c7\'be\'ee \'b8\'de\'b8\'f0\'b8\'ae\'bf\'a1 \'b7\'ce\'b5\'e5\'b5\'cb\'b4\'cf\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'bf\'ac\'c1\'a6\'b9\'ce\
+\'c1\'b6\'c3\'a2\'c8\'c6\
+\'c1\'df\'bf\'f8\'c3\'ca\'b5\'ee\'c7\'d0\'b1\'b3\
+\'c1\'df\'bf\'f8\'c3\'ca\'b5\'ee\'c7\'d0\'b1\'b3\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**Method\
+=> \'c4\'da\'b5\'e5\'b8\'a6 \'ba\'ed\'b7\'cf\'c0\'b8\'b7\'ce \'b9\'ad\'b0\'ed \'c0\'cc\'b8\'a7\'c0\'bb \'ba\'ce\'bf\'a9\'c7\'d8\'bc\'ad \'c0\'cc\'b8\'a7\'b8\'b8\'c0\'b8\'b7\'ce \'c4\'da\'b5\'e5 \'ba\'ed\'b7\'cf\'c0\'bb \'bd\'c7\'c7\'e0 \'bd\'c3\'c5\'b3 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'b0\'cd\
+=> class \'be\'c8\'bf\'a1 \'b8\'b8\'b5\'e9\'b8\'e9 method\'b6\'f3\'b0\'ed \'c7\'cf\'b0\'ed class \'bf\'dc\'ba\'ce\'bf\'a1 \'b8\'b8\'b5\'e9\'b8\'e9 fuction(\'c7\'d4\'bc\'f6)\'c0\'cc\'b6\'f3\'b0\'ed \'c7\'d5\'b4\'cf\'b4\'d9.\
+	1. \'bb\'fd\'bc\'ba \'c0\'cc\'c0\'af\
+		1) \'c0\'da\'c1\'d6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c4\'da\'b5\'e5\'b8\'a6 \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'b8\'a6 \'c0\'df \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c7\'d1\'b9\'f8\'b8\'b8 \'b1\'e2\'b7\'cf\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad\
+		2) \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'ba \'c0\'db\'be\'f7\'c0\'bb \'c7\'d4\'bc\'f6 \'b4\'dc\'c0\'a7\'b7\'ce \'c7\'cf\'b4\'c2\'b5\'a5 \'c7\'cf\'b3\'aa\'c0\'c7 \'c7\'d4\'bc\'f6\'b4\'c2 1MB\'c0\'c7 \'b0\'f8\'b0\'a3\'c0\'bb \'c7\'d2\'b4\'e7\'b9\'de\'bd\'c0\'b4\'cf\'b4\'d9.\
+			=> 1MB\'b8\'a6 \'b3\'d1\'b0\'d4 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c0\'db\'be\'f7\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 Stack Overflow\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d5\'b4\'cf\'b4\'d9.\
+			=> \'c0\'cc\'b9\'ae\'c1\'a6\'b8\'a6 \'c7\'d8\'b0\'e1\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8\'bc\'ad \'c7\'d4\'bc\'f6 \'b4\'dc\'c0\'a7\'b7\'ce \'ba\'d0\'c7\'d2\'c0\'bb \'c7\'d8\'bc\'ad 1MB \'c0\'cc\'c7\'cf\'c0\'c7 \'c0\'db\'be\'f7\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+	2. \'bb\'fd\'bc\'ba\
+	=> \'c1\'a2\'b1\'d9\'c1\'f6\'c1\'a4\'c0\'da + \'c6\'af\'bc\'ba + \'b8\'ae\'c5\'cf\'c5\'b8\'c0\'d4 + \'b8\'de\'bc\'d2\'b5\'e5\'c0\'cc\'b8\'a7(\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6 \'b3\'aa\'bf\'ad)\{ \'b3\'bb\'bf\'eb \};\
+\
+	3. \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2\
+	=> \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 \'b6\'c7\'b4\'c2 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'c0\'cc\'b8\'a7.\'b8\'de\'bc\'d2\'b5\'e5\'c0\'cc\'b8\'a7(\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6 \'b0\'aa \'b3\'aa\'bf\'ad);\
+		=> \'c0\'da\'bd\'c5\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1\'bc\'ad \'c8\'a3\'c3\'e2\'c7\'d2 \'b6\'a7\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b8\'a7 \'c0\'cc\'b3\'aa \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'c0\'cc\'b8\'a7\'c0\'bb \'bb\'fd\'b7\'ab\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+	4.argument(\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6)\
+	=> \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d2 \'b6\'a7 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1\'b0\'d4 \'b3\'d1\'b0\'dc\'c1\'d6\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\
+	=> \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'c0\'d6\'c0\'b8\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d2 \'b6\'a7 \'b9\'dd\'b5\'e5\'bd\'c3 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b0\'b0\'c0\'cc \'b3\'d1\'b0\'dc\'c1\'e0\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+	=> \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b3\'bb\'bf\'a1\'bc\'ad\'b8\'b8 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d1 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\
+	=> \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6 \'b0\'b3\'bc\'f6\'bf\'a1\'b4\'c2 \'c1\'a6\'c7\'d1\'c0\'cc \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+		1) \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6 \'c0\'fc\'b4\'de \'b9\'e6\'bd\'c4\
+		=> call by value : \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'b1\'e2\'ba\'bb\'c7\'fc\
+		(\'b5\'a5\'c0\'cc\'c5\'cd 1\'b0\'b3 \'c0\'fa\'c0\'e5 : boolean, byte, short, char, int, long, float, double)\'c0\'ce \'b0\'e6\'bf\'ec\'b7\'ce \'c0\'cc \'b6\'a7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'cf\'b8\'e9 \'b5\'a5\'c0\'cc\'c5\'cd \'c0\'da\'c3\'bc(value)\'b0\'a1 \'c0\'fc\'b4\'de\'b5\'cb\'b4\'cf\'b4\'d9.\
+			=> \'b0\'aa\'c0\'cc \'c0\'fc\'b4\'de\'b5\'c7\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5 \'b3\'bb\'bf\'a1\'bc\'ad \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'ba\'af\'b0\'e6\'c7\'cf\'b4\'f5\'b6\'f3\'b5\'b5 \'bf\'f8\'ba\'bb\'bf\'a1\'b4\'c2 \'be\'c6\'b9\'ab\'b7\'b1 \'bf\'b5\'c7\'e2\'c0\'cc \'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+		\
+		=> call by reference : \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'b1\'e2\'ba\'bb\'c7\'fc\'c0\'cc \'be\'c6\'b4\'d1 \'b0\'e6\'bf\'ec\
+		(\'b9\'e8\'bf\'ad, \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba)\'b7\'ce \'c0\'cc \'b6\'a7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'cf\'b8\'e9 \'c2\'fc\'c1\'b6\'b0\'a1 \'c0\'fc\'b4\'de\'b5\'cb\'b4\'cf\'b4\'d9.\
+			=> \'c2\'fc\'c1\'b6\'b0\'a1 \'c0\'fc\'b4\'de\'b5\'c7\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5 \'b3\'bb\'bf\'a1\'bc\'ad \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6 \'b3\'bb\'ba\'ce\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'cf\'b8\'e9 \'bf\'f8\'ba\'bb\'b5\'b5 \'ba\'af\'b0\'e6\'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+	\cf9 	2) Method Overloading\
+		=> \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'cc\'b8\'a7\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'b0\'fa \'b0\'b3\'bc\'f6\'b8\'a6 \'b4\'d9\'b8\'a3\'b0\'d4 \'c7\'d8\'bc\'ad 2\'b0\'b3 \'c0\'cc\'bb\'f3 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \
+\
+		3) variable args(varargs)\
+		=> \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'b0\'b3\'bc\'f6\'bf\'a1 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'cf\'b4\'c2 \'b9\'ae\'b9\'fd\
+		=> \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7 \'c0\'da\'b7\'e1\'c7\'fc \'b5\'da\'bf\'a1 .(\'c1\'a1)\'c0\'bb 3\'b0\'b3 \'b1\'e2\'c0\'e7\'c7\'cf\'b0\'ed \'ba\'af\'bc\'f6\'b8\'ed\'c0\'bb \'b8\'b8\'b5\'e9\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d2 \'b6\'a7 \'b8\'ee\'b0\'b3\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'d1\'b0\'dc\'c1\'d6\'b4\'f8\'c1\'f6 \'b0\'fc\'b0\'e8\'be\'f8\'bd\'c0\'b4\'cf\'b4\'d9.\
+		=> \'b8\'de\'bc\'d2\'b5\'e5 \'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad\'b4\'c2 \'b9\'e8\'bf\'ad\'b7\'ce \'c3\'b3\'b8\'ae\'c7\'d5\'b4\'cf\'b4\'d9.\
+		=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b9\'de\'be\'c6\'bc\'ad \'b1\'e2\'bc\'fa \'c5\'eb\'b0\'e8 \'b0\'aa\'c0\'bb \'b0\'e8\'bb\'ea\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b5\'e9\'c0\'cc \'c0\'cc \'c7\'fc\'bd\'c4\'c0\'bb \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+		=> \'b5\'a5\'c0\'cc\'c5\'cd \'b0\'b3\'bc\'f6\'bf\'a1 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'be\'cb\'b0\'ed\'b8\'ae\'c1\'f2\'c0\'cc \'b5\'bf\'c0\'cf\'c7\'d1 \'b0\'e6\'bf\'ec\'bf\'a1 \'c0\'cc\'bf\'eb\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf10 **Polymorphism(\'b4\'d9\'c7\'fc\'bc\'ba) - \'b5\'bf\'c0\'cf\'c7\'d1 \'b8\'de\'bd\'c3\'c1\'f6\'bf\'a1 \'b4\'eb\'c7\'cf\'bf\'a9 \'b4\'d9\'b8\'a3\'b0\'d4 \'b9\'dd\'c0\'c0\'c7\'cf\'b4\'c2 \'b0\'cd\cf0 \
+\
+	=> call by value \'bf\'cd call by reference\'c2\'f7\'c0\'cc\
+	=> method overloading(\'c1\'df\'ba\'b9 \'c1\'a4\'c0\'c7)\
+	=> \'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'c0\'cc\'b8\'a7\'c0\'ba \'b0\'b0\'c0\'ba\'b5\'a5 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'b0\'b3\'bc\'f6\'b3\'aa \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\
+		=> \'be\'cb\'b0\'ed\'b8\'ae\'c1\'f2\'c0\'ba \'b0\'b0\'c0\'ba\'b5\'a5 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'c7\'fc\'c5\'c2\'b0\'a1 \'b4\'de\'b6\'f3\'bc\'ad \'c0\'cc\'b8\'a7\'c0\'bb \'b4\'d9\'b8\'a3\'b0\'d4 \'b8\'b8\'b5\'e9\'b8\'e9 \'c0\'cc\'b8\'a7\'c0\'cc \'b3\'ca\'b9\'ab \'b8\'b9\'c0\'cc \'c7\'ca\'bf\'e4\
+	=> \'b8\'e9\'c1\'a2\'bf\'a1\'bc\'ad \'b4\'d9\'c7\'fc\'bc\'ba\'c0\'bb \'b8\'b9\'c0\'cc \'c1\'fa\'b9\'ae \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf11 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 **return\
+=> \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'bc\'f6\'c7\'e0\'c0\'bb \'c1\'df\'c1\'f6\'c7\'cf\'b0\'ed \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d1 \'b0\'f7\'c0\'b8\'b7\'ce \'c1\'a6\'be\'ee\'b1\'c7\'c0\'bb \'b3\'d1\'b0\'dc\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'f6\'c7\'e0\'c7\'cf\'b0\'ed \'b1\'d7 \'b0\'e1\'b0\'fa\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d1 \'b0\'f7\'c0\'b8\'b7\'ce \'c0\'fc\'b4\'de\'c7\'cf\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7\'b4\'c2 return \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c7\'cf\'b8\'e9 \'b5\'c7\'b4\'c2\'b5\'a5 \
+	\'c0\'cc \'b6\'a7 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'bb \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'b8\'a7 \'be\'d5\'bf\'a1 \'b1\'e2\'c0\'e7\'c7\'d8 \'c1\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> void\'b4\'c2 return\'c7\'cf\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'be\'f8\'c0\'bb \'b6\'a7 \'bb\'e7\'bf\'eb\'c7\'d5\'b4\'cf\'b4\'d9.\
+=> return \'c7\'cf\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'c0\'d6\'c0\'b8\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5 \'bc\'f6\'c7\'e0 \'b0\'e1\'b0\'fa\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b4\'d9\'b8\'a5 \'c0\'db\'be\'f7\'bf\'a1 \'c0\'cc\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 return\'c0\'bb \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'bc\'f6\'c7\'e0\'b0\'e1\'b0\'fa\'b8\'a6 \'ba\'af\'bc\'f6\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'d1 \'c8\'c4 \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'bd\'c0\'b4\'cf\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \'bd\'c7\'bd\'c0)\
+1. Main\'b9\'ae\
+\pard\pardeftab720\partightenfactor0
+\cf12 public\cf0  \cf12 class\cf0  Main \{\
+\
+	\cf12 public\cf0  \cf12 static\cf0  \cf12 void\cf0  main(String[] \cf13 args\cf0 ) \{\
+	\
+	\cf14 //Method \'c8\'a3\'c3\'e2 \'ba\'d2\'b7\'af\'bf\'c0\'b1\'e2 \cf0 \
+		\cf14 //MethodClass\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba \cf0 \
+		MethodClass \cf13 instance\cf0  = \cf12 new\cf0  MethodClass();\
+		\cf14 //Method\'b8\'a6 \'c8\'a3\'c3\'e2\cf0 \
+		\cf13 instance\cf0 .func();\
+		System.\cf15 out\cf0 .printf(\cf16 "=============\\n"\cf0 );\
+		\cf14 //\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'be\'f8\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2 \cf0 \
+		\cf13 instance\cf0 .noArg();\
+		System.\cf15 out\cf0 .printf(\cf16 "=============\\n"\cf0 );\
+		\cf14 //\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'c0\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2\cf0 \
+		\cf13 instance\cf0 .oneArg(2);\
+		System.\cf15 out\cf0 .printf(\cf16 "=============\\n"\cf0 );\
+		\
+		\cf12 int\cf0  \cf13 k\cf0  = 0;\
+		\cf14 //\'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b1\'e2\'ba\'bb\'c7\'fc \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'d1\'b0\'dc\'c1\'d6\'b4\'c2 \'b0\'e6\'bf\'ec \cf0 \
+		\cf14 //\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'b5\'b5 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 \'ba\'af\'b0\'e6\'b5\'c7\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+		\cf13 instance\cf0 .value(\cf13 k\cf0 );\
+		System.\cf15 out\cf0 .printf(\cf16 "k:%d\\n"\cf0 ,\cf13 k\cf0 );\
+		System.\cf15 out\cf0 .printf(\cf16 "=============\\n"\cf0 );\
+		\cf14 //\'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b1\'e2\'ba\'bb\'c7\'fc\'c0\'cc \'be\'c6\'b4\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'d1\'b0\'dc\'c1\'d6\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b0\'ed \'b3\'ad \'c8\'c4 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'ba\'af\'b0\'e6\'b5\'c9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+		\cf12 int\cf0  [] \cf13 br\cf0  = \{30, 40\};\
+		\cf13 instance\cf0 .reference(\cf13 br\cf0 );\
+		System.\cf15 out\cf0 .printf(\cf16 "br[0] : %d\\n"\cf0 , \cf13 br\cf0 [0]);\
+		\cf14 //\'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'cc\'b8\'a7\'c0\'cc\'c1\'f6\'b8\'b8 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'b8\'f0\'be\'e7\'c0\'cc \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2\cf0 \
+		\cf13 instance\cf0 .add(10,20);\
+		\cf13 instance\cf0 .add(20.8, 29.1);\
+		System.\cf15 out\cf0 .printf(\cf16 "=============\\n"\cf0 );\
+		\cf13 instance\cf0 .sum(100, 300);\
+		\cf13 instance\cf0 .sum(100, 500, 300);\
+		\cf13 instance\cf0 .sum(100, 500, 300, 400);\
+		System.\cf15 out\cf0 .printf(\cf16 "=============\\n"\cf0 );\
+\
+		\cf12 int\cf0  \cf13 result\cf0  = \cf13 instance\cf0 .returnadd(300, 500);\
+		\cf13 result\cf0  = \cf13 instance\cf0 .returnadd(\cf13 result\cf0 ,  800);\
+		System.\cf15 out\cf0 .printf(\cf16 "\'b0\'e1\'b0\'fa:%d\\n"\cf0 , \cf13 result\cf0 );\
+\cf14 		//\'b0\'e1\'b0\'fa\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'b5\'c9 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+		//\'c1\'c1\'c0\'ba \'b9\'e6\'b9\'fd\'c0\'ba \'be\'c6\'b4\'cf\'b4\'d9.\cf0 \
+		System.\cf15 out\cf0 .printf(\cf16 "\'b0\'e1\'b0\'fa:%d\\n"\cf0 , \cf13 instance\cf0 .returnadd(\cf13 instance\cf0 .returnadd(300,200),400));\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+2. Class\'b9\'ae\
+\pard\pardeftab720\partightenfactor0
+\cf12 public\cf0  \cf12 class\cf0  MethodClass \{\
+\
+\cf14 	//method \'c7\'d4\'bc\'f6 \'b8\'b8\'b5\'e9\'b1\'e2 \cf0 \
+	\cf12 public\cf0  \cf12 void\cf0  func() \{\
+		\cf12 for\cf0 (\cf12 int\cf0  \cf13 i\cf0 =0; \cf13 i\cf0 <2; \cf13 i\cf0 =\cf13 i\cf0 +1) \{\
+			System.\cf15 out\cf0 .printf(\cf16 "\'c3\'b3\'c0\'bd \'b8\'b8\'b5\'e9\'be\'ee \'ba\'bb \'b8\'de\'bc\'d2\'b5\'e5\\n"\cf0 );\
+			\cf14 //\'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2\cf0 \
+			method();\
+		\}\
+	\}\
+	\cf12 public\cf0  \cf12 void\cf0  method() \{\
+		System.\cf15 out\cf0 .printf(\cf16 "\'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad \'c8\'a3\'c3\'e2\'c7\'d2 \'b8\'de\'bc\'d2\'b5\'e5\\n"\cf0 );\
+	\}\
+	\cf12 public\cf0  \cf12 void\cf0  noArg() \{\
+		\cf14 //Hello Java\'b8\'a6 3\'b9\'f8 \'c3\'e2\'b7\'c2 \cf0 \
+		\cf12 for\cf0 (\cf12 int\cf0  \cf13 i\cf0 =0; \cf13 i\cf0 <3; \cf13 i\cf0 =\cf13 i\cf0 +1) \{\
+			System.\cf15 out\cf0 .printf(\cf16 "Hello Java\\n"\cf0 );\
+		\}\
+	\}\
+	\cf12 public\cf0  \cf12 void\cf0  oneArg(\cf12 int\cf0  \cf13 n\cf0 ) \{\
+		\cf12 for\cf0 (\cf12 int\cf0  \cf13 i\cf0 =0; \cf13 i\cf0 <\cf13 n\cf0 ; \cf13 i\cf0 =\cf13 i\cf0 +1) \{\
+			System.\cf15 out\cf0 .printf(\cf16 "Hello Java\\n"\cf0 );\
+		\}\
+	\}\
+	\cf14 //\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'b1\'e2\'ba\'bb\'c7\'fc\'c0\'ce \'b0\'e6\'bf\'ec\cf0 \
+	\cf12 public\cf0  \cf12 void\cf0  value(\cf12 int\cf0  \cf13 n\cf0 ) \{\
+		\cf13 n\cf0  = \cf13 n\cf0 +1; \cf14 //n\'c0\'c7 \'b0\'aa\'c0\'bb 1 \'c1\'f5\'b0\'a1 \cf0 \
+		System.\cf15 out\cf0 .printf(\cf16 "n:%d\\n"\cf0 , \cf13 n\cf0 );\
+	\}\
+	\cf14 //\'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc \'b1\'e2\'ba\'bb\'c7\'fc\'c0\'cc \'be\'c6\'b4\'d1 \'b0\'e6\'bf\'ec\cf0 \
+	\cf12 public\cf0  \cf12 void\cf0  reference(\cf12 int\cf0  [] \cf13 ar\cf0 ) \{\
+		\cf13 ar\cf0 [0] = \cf13 ar\cf0 [0] +1;\
+		System.\cf15 out\cf0 .printf(\cf16 "ar[0] : %d\\n"\cf0 , \cf13 ar\cf0 [0]);\
+	\}\
+		\
+	\cf14 //Method Overloading\cf0 \
+	\cf14 //\'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'cc\'b8\'a7\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'c0\'c7 \'c0\'da\'b7\'e1\'c7\'fc\'b0\'fa \'b0\'b3\'bc\'f6\'b8\'a6 \'b4\'d9\'b8\'a3\'b0\'d4 \'c7\'d8\'bc\'ad 2\'b0\'b3 \'c0\'cc\'bb\'f3 \'c1\'b8\'c0\'e7\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec \cf0 \
+	\cf12 public\cf0  \cf12 void\cf0  add(\cf12 int\cf0  \cf13 a\cf0 , \cf12 int\cf0  \cf13 b\cf0 ) \{\
+		System.\cf15 out\cf0 .printf(\cf16 "a+b : %d\\n"\cf0 , \cf13 a\cf0 +\cf13 b\cf0 );\
+	\}\
+	\cf12 public\cf0  \cf12 void\cf0  add(\cf12 double\cf0  \cf13 a\cf0 , \cf12 double\cf0  \cf13 b\cf0 ) \{\
+		System.\cf15 out\cf0 .printf(\cf16 "a+b : %f\\n"\cf0 , \cf13 a\cf0 +\cf13 b\cf0 );\
+	\}\
+	\cf14 //\'c1\'a4\'bc\'f6 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b0\'b3\'bc\'f6\'bf\'a1 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'b4\'eb\'c0\'d4\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c7\'d4\'bc\'f6 \cf0 \
+	\cf12 public\cf0  \cf12 void\cf0  sum(\cf12 int\cf0  ... \cf13 ar\cf0 ) \{\
+		\cf14 //... \'b4\'d9\'c0\'bd\'bf\'a1 \'b3\'aa\'bf\'c2 \'ba\'af\'bc\'f6\'b4\'c2 \'b9\'e8\'bf\'ad\'b7\'ce \'b0\'a3\'c1\'d6 \cf0 \
+		\cf14 //\ul \ulc14 ar\ulnone  \'b9\'e8\'bf\'ad\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'c7\'d5\'b0\'e8 \cf0 \
+		\cf12 int\cf0  \cf13 sum\cf0  = 0;\
+		\cf12 for\cf0 (\cf12 int\cf0  \cf13 temp\cf0  : \cf13 ar\cf0 ) \{\
+			\cf13 sum\cf0  = \cf13 sum\cf0  + \cf13 temp\cf0 ;\
+		\}\
+		System.\cf15 out\cf0 .printf(\cf16 "ar \'b9\'e8\'bf\'ad\'c0\'c7 \'c7\'d5\'b0\'e8 : %d\\n"\cf0 , \cf13 sum\cf0 );\
+	\}\
+\pard\pardeftab720\partightenfactor0
+\cf14 	//\'c1\'a4\'bc\'f6 2\'b0\'b3\'b8\'a6 \'b4\'f5\'c7\'d8\'bc\'ad \'b0\'e1\'b0\'fa\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf14 //return \'c0\'cc \'c0\'d6\'c0\'b8\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5 \'bc\'f6\'c7\'e0 \'b0\'e1\'b0\'fa\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+	\cf12 public\cf0  \cf12 int\cf0  returnadd(\cf12 int\cf0  \cf13 n1\cf0 , \cf12 int\cf0  \cf13 n2\cf0 ) \{\
+		\cf12 return\cf0  \cf13 n1\cf0  + \cf13 n2\cf0 ;\
+	\}	\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'c3\'b3\'c0\'bd \'b8\'b8\'b5\'e9\'be\'ee \'ba\'bb \'b8\'de\'bc\'d2\'b5\'e5\
+\'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad \'c8\'a3\'c3\'e2\'c7\'d2 \'b8\'de\'bc\'d2\'b5\'e5\
+\'c3\'b3\'c0\'bd \'b8\'b8\'b5\'e9\'be\'ee \'ba\'bb \'b8\'de\'bc\'d2\'b5\'e5\
+\'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad \'c8\'a3\'c3\'e2\'c7\'d2 \'b8\'de\'bc\'d2\'b5\'e5\
+=============\
+Hello Java\
+Hello Java\
+Hello Java\
+=============\
+Hello Java\
+Hello Java\
+=============\
+n:1\
+k:0\
+=============\
+ar[0] : 31\
+br[0] : 31\
+a+b : 30\
+a+b : 49.900000\
+=============\
+ar \'b9\'e8\'bf\'ad\'c0\'c7 \'c7\'d5\'b0\'e8 : 400\
+ar \'b9\'e8\'bf\'ad\'c0\'c7 \'c7\'d5\'b0\'e8 : 900\
+ar \'b9\'e8\'bf\'ad\'c0\'c7 \'c7\'d5\'b0\'e8 : 1300\
+=============\
+\'b0\'e1\'b0\'fa:1600\
+\'b0\'e1\'b0\'fa:900\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+**recursion - recursive call(\'c0\'e7\'b1\'cd \'c8\'a3\'c3\'e2)\
+=> \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'da\'b1\'e2 \'c0\'da\'bd\'c5\'c0\'bb \'b4\'d9\'bd\'c3 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\
+=> \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'b4\'d9\'b8\'a5 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'b4\'d9\'bd\'c3 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'b8\'de\'b8\'f0\'b8\'ae \'bb\'e7\'bf\'eb\'b7\'ae\'c0\'cc \'b4\'c3\'be\'ee\'b3\'aa\'b0\'ed \'bc\'d3\'b5\'b5\'b4\'c2 \'b4\'c0\'b7\'c1\'c1\'fd\'b4\'cf\'b4\'d9.\
+=> \'c0\'e7\'b1\'cd \'c8\'a3\'c3\'e2\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b4\'c2 \'c0\'cc\'c0\'af\'b4\'c2 \'c4\'da\'b5\'e5\'b8\'a6 \'b0\'a3\'b0\'e1\'c7\'cf\'b0\'ed \'c0\'cc\'c7\'d8\'c7\'cf\'b1\'e2 \'bd\'b1\'b0\'d4 \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'d4\'b4\'cf\'b4\'d9.\
+=> \'c0\'e7\'b1\'cd \'c8\'a3\'c3\'e2\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7 \'c1\'d6\'c0\'c7\'c7\'d2 \'c1\'a1\'c0\'ba \'c1\'be\'b7\'e1 \'c1\'b6\'b0\'c7\'c0\'cc \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+Ex) 1\'ba\'ce\'c5\'cd n\'b1\'ee\'c1\'f6\'c0\'c7 \'c7\'d5\'b0\'e8\'b8\'a6 \'b1\'b8\'c7\'d8\'bc\'ad \'b8\'ae\'c5\'cf\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+Public int sum(int n)\{\
+	int s = 0;\
+	for(int I=0; I<=n; I= I+1)\{\
+		s = s + I;\
+	\}\
+	return s;\
+\}\
+\
+Public int sum(int n)\{\
+	if(n==1)\{\
+		return 1;\
+	\}else\{\
+		return n + sum(n-1)\
+	\}\
+\}\
+sum(5) -> 5 + sum(4) -> 5+4+sum(3) -> 5+4+3+sum(2) -> 5+4+3+2+sum(1) -> 5+4+3+2+1\
+\
+Ex) \'c7\'c7\'ba\'b8\'b3\'aa\'c4\'a1 \'bc\'f6\'bf\'ad - \'b3\'aa\'c1\'df\'bf\'a1 \'b9\'dd\'b5\'e5\'bd\'c3 \'c1\'f7\'c1\'a2 \'b1\'b8\'c7\'f6\
+1,1,2,3,5,8,13,21,34,55,89,144 \'a1\'a6.\
+=> \'c3\'b9\'b9\'f8\'c2\'b0\'bf\'cd \'b5\'ce\'b9\'f8\'c2\'b0\'b4\'c2 \'b9\'ab\'c1\'b6\'b0\'c7 1, \'bc\'bc\'b9\'f8\'c2\'b0\'ba\'ce\'c5\'cd\'b4\'c2 \'c0\'cc\'c0\'fc 2\'b0\'b3\'c0\'c7 \'c7\'d5\
+\
+\'bd\'c7\'bd\'c0)\
+1. Main\'b9\'ae\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  Main \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+\
+		Fibonacci \cf3 obj\cf0  = \cf2 new\cf0  Fibonacci();\
+		System.\cf5 out\cf0 .printf(\cf6 "%d\\n"\cf0 , \cf3 obj\cf0 .fibo1(10));\
+		System.\cf5 out\cf0 .printf(\cf6 "%d\\n"\cf0 , \cf3 obj\cf0 .fibo1(15));\
+		System.\cf5 out\cf0 .printf(\cf6 "=============\\n"\cf0 );\
+		System.\cf5 out\cf0 .printf(\cf6 "%d\\n"\cf0 , \cf3 obj\cf0 .fibo2(10));\
+		System.\cf5 out\cf0 .printf(\cf6 "%d\\n"\cf0 , \cf3 obj\cf0 .fibo2(15));\
+		\}\
+	\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+2. Class \'b9\'ae\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  Fibonacci \{\
+	\cf4 //\'c0\'e7\'b1\'cd\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'c7\'c7\'ba\'b8\'b3\'aa\'c4\'a1 \'bc\'f6\'bf\'ad\'c0\'c7 \'b0\'aa\'c0\'bb \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf2 public\cf0  \cf2 int\cf0  fibo1(\cf2 int\cf0  \cf3 n\cf0 ) \{\
+		\cf4 //\'b5\'ce\'b9\'f8\'c2\'b0 \'c0\'cc\'c0\'fc\'c0\'c7 \'c7\'d7\'c0\'c7 \'b0\'aa\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'d2 \'ba\'af\'bc\'f6\cf0 \
+		\cf2 int\cf0  \cf3 n1\cf0  = 1;\
+		\cf4 //\'c3\'b9\'b9\'f8\'c2\'b0 \'c0\'cc\'c0\'fc\'c0\'c7 \'c7\'d7\'c0\'c7 \'b0\'aa\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'d2 \'ba\'af\'bc\'f6\cf0 \
+		\cf2 int\cf0  \cf3 n2\cf0  = 1;\
+		\cf4 //\'c7\'c7\'ba\'b8\'b3\'aa\'c4\'a1 \'bc\'f6\'bf\'ad\'c0\'c7 \'b0\'aa\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'d2 \'ba\'af\'bc\'f6\cf0 \
+		\cf2 int\cf0  \cf3 result\cf0  = 1;\
+		\cf4 //3\'b9\'f8\'c2\'b0 \'ba\'ce\'c5\'cd n\'b9\'f8\'c2\'b0 \'b1\'ee\'c1\'f6\'b4\'c2 n1\'b0\'fa n2 \'b0\'aa\'c0\'bb \'ba\'af\'b0\'e6\'c7\'cf\'b8\'e9\'bc\'ad \'b4\'f5\'c7\'d1\'b4\'d9.\cf0 \
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0 =3; \cf3 i\cf0 <=\cf3 n\cf0 ;\cf3 i\cf0 =\cf3 i\cf0 +1) \{\
+			\cf4 //\'c0\'cc\'c0\'fc \'b5\'ce\'b0\'b3\'c0\'c7 \'c7\'d7\'c0\'c7 \'b0\'aa\'c0\'bb \'b4\'f5\'c7\'cf\'b1\'e2 \cf0 \
+			\cf3 result\cf0  = \cf3 n1\cf0  + \cf3 n2\cf0 ;\
+			\cf4 //\'b4\'d9\'c0\'bd \'b5\'a5\'c0\'cc\'c5\'cd\'b7\'ce \'ba\'af\'b0\'e6 \cf0 \
+			\cf3 n1\cf0  = \cf3 n2\cf0 ;\
+			\cf3 n2\cf0  = \cf3 result\cf0 ;\
+		\}\
+		\cf2 return\cf0  \cf3 result\cf0 ;\
+	\}\
+	\cf4 //\'c0\'e7\'b1\'cd\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d1 \'c7\'c7\'ba\'b8\'b3\'aa\'c4\'a1 \'bc\'f6\'bf\'ad \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf2 public\cf0  \cf2 int\cf0  fibo2(\cf2 int\cf0  \cf3 n\cf0 ) \{\
+		\cf4 //\'c3\'b9\'b9\'f8\'c2\'b0 \'c0\'cc\'b0\'c5\'b3\'aa \'b5\'ce\'b9\'f8\'c2\'b0\'c0\'cc\'b8\'e9 1\cf0 \
+		\cf4 //\'b1\'d7 \'c0\'cc\'bf\'dc\'c0\'c7 \'b0\'e6\'bf\'ec\'b4\'c2 \'c0\'cc\'c0\'fc 2\'b0\'b3\'c0\'c7 \'c7\'d7\'c0\'c7 \'c7\'d5 \cf0 \
+		\cf2 if\cf0 (\cf3 n\cf0 ==1 || \cf3 n\cf0 ==2) \{\
+			\cf2 return\cf0  1;\
+		\}\cf2 else\cf0  \{\
+			\cf2 return\cf0  fibo2(\cf3 n\cf0 -1) + fibo2(\cf3 n\cf0 -2);\
+		\}\
+	\}\
+\}\
+\
+\'b0\'e1\'b0\'fa)\
+=============\
+55\
+610\
+=============\
+55\
+610\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 **this\
+=> \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'bc\'fb\'b0\'dc\'c1\'f8 \'c3\'b9\'b9\'f8\'c2\'b0 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\
+=> \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c4\'da\'b5\'e5\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee \'c1\'fa\'b6\'a7 \'c0\'da\'b5\'bf\'c3\'df\'b0\'a1\
+=> \'c0\'da\'b7\'e1\'c7\'fc\'c0\'ba \'c0\'da\'bd\'c5\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba \'c5\'b8\'c0\'d4\'c0\'cc\'b0\'ed \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d2 \'b6\'a7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'c0\'c7 \'c2\'fc\'c1\'b6\'b0\'a1 \'c0\'da\'b5\'bf\'b4\'eb\'c0\'d4\
+=> \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'b8\'de\'bc\'d2\'b5\'e5 \'be\'c8\'bf\'a1 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'ba\'af\'bc\'f6\'bf\'cd \'b5\'bf\'c0\'cf\'c7\'d1 \'c0\'cc\'b8\'a7\'c0\'c7 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'b0\'a1 \'c0\'d6\'b4\'c2 \'b0\'e6\'bf\'ec\
+## \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'bc\'d2\'c0\'af\
+\
+\'bd\'c7\'bd\'c0)\
+1. Main\
+\pard\pardeftab720\partightenfactor0
+\cf12 public\cf0  \cf12 class\cf0  Main \{\
+\
+	\cf12 public\cf0  \cf12 static\cf0  \cf12 void\cf0  main(String[] \cf13 args\cf0 ) \{\
+\pard\pardeftab720\partightenfactor0
+\cf0 		ThisMethod \cf3 thisM\cf0  = \cf2 new\cf0  ThisMethod();\
+		\cf3 thisM\cf0 .thisMethod();\
+	\}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 2. Class\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  ThisMethod \{\
+	\cf2 public\cf0  \cf2 int\cf0  \cf5 temp\cf0  = 20;\
+	\
+	\cf2 public\cf0  \cf2 void\cf0  thisMethod() \{\
+		\cf2 int\cf0  \cf3 temp\cf0  = 30;\
+		System.\cf5 out\cf0 .printf(\cf6 "temp : %d\\n"\cf0 , \cf3 temp\cf0 );	\cf4 //30\'c0\'cc \'c3\'e2\'b7\'c2\'b5\'cb\'b4\'cf\'b4\'d9. \cf0 \
+		\cf4 //\'ba\'af\'bc\'f6\'b4\'c2 \'b0\'a1\'b1\'ee\'c0\'cc\'bf\'a1\'bc\'ad \'b8\'b8\'b5\'e7 \'b0\'cd\'c0\'bb \'c3\'a3\'be\'c6\'bc\'ad \'bb\'e7\'bf\'eb \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		\cf4 //\'b8\'de\'bc\'d2\'b5\'e5 \'be\'c8\'bf\'a1\'bc\'ad \'c3\'a3\'c1\'f6 \'b8\'bb\'b0\'ed \'b8\'de\'bc\'d2\'b5\'e5 \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'c3\'a3\'b5\'b5\'b7\'cf \'c7\'d2\'b7\'c1\'b8\'e9 \'ba\'af\'bc\'f6\'b8\'ed \'be\'d5\'bf\'a1 this.(\'c1\'a1)\'c0\'bb \'c3\'df\'b0\'a1 \cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "temp : %d\\n"\cf0 , \cf2 this\cf0 .\cf5 temp\cf0 );\
+	\}\
+\}\
+\
+\'b0\'e1\'b0\'fa)\
+temp : 30\
+temp : 20\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 ** static\
+=> \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 return type\'be\'d5\'bf\'a1 static \'c3\'df\'b0\'a1, \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7 \'c8\'a3\'c3\'e2 \'b0\'a1\'b4\'c9\
+=> \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'ba\'af\'bc\'f6 \'bb\'e7\'bf\'eb \'b8\'f8\'c7\'d4(this\'b0\'a1 \'be\'f8\'c0\'bd)\
+\
+\'bd\'c7\'bd\'c0)\
+1. Main\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  SampleMain \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+		\cf4 //static \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2\cf0 \
+		Sample.staticDisplay();\
+		\
+		\cf4 //instance \'b8\'de\'bc\'d2\'b5\'e5 \'c8\'a3\'c3\'e2\cf0 \
+		Sample \cf3 sample\cf0  = \cf2 new\cf0  Sample();\
+		\cf3 sample\cf0 .instanceDisplay();\
+\cf4 		//System \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'b4\'c2 public static long currentTimeMills() \'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c1\'b8\'c0\'e7 \cf0 \
+		\cf4 //\'c0\'cc \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 1970\'b3\'e2 1\'bf\'f9 1\'c0\'cf \'c0\'da\'c1\'a4 \'c0\'cc\'c8\'c4\'bf\'a1 \'c1\'f6\'b3\'aa\'bf\'c2 \'bd\'c3\'b0\'a3\'c0\'bb 1/1000\'c3\'ca \'b4\'dc\'c0\'a7\'c0\'c7 \'c1\'a4\'bc\'f6\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+		\cf4 //\'c0\'fa \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d8\'bc\'ad \'b0\'e1\'b0\'fa\'b8\'a6 \'c3\'e2\'b7\'c2\cf0 \
+		\cf4 //\'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b0\'ed\'c0\'da \'c7\'cf\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'c0\'cc\'b8\'a7\'c0\'bb \'b8\'d5\'c0\'fa \'c8\'ae\'c0\'ce\'c7\'cf\'b0\'ed static \'c1\'b8\'c0\'e7 \'bf\'a9\'ba\'ce\'b8\'a6 \'c8\'ae\'c0\'ce \cf0 \
+		\cf4 //static\'c0\'cc \'be\'f8\'c0\'b8\'b8\'e9 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'bb\'fd\'bc\'ba\'c0\'bb \'b8\'d5\'c0\'fa \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+		\cf4 //\'b1\'d7 \'b4\'d9\'c0\'bd \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'d8\'bc\'ad \'be\'ee\'b6\'b2 \'c1\'be\'b7\'f9\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'d1\'b0\'dc\'c1\'d6\'be\'ee\'be\'df \'c7\'cf\'b4\'c2\'c1\'f6 \'c8\'ae\'c0\'ce \cf0 \
+		\cf4 //\'b8\'b6\'c1\'f6\'b8\'b7\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf \'c5\'b8\'c0\'d4\'c0\'bb \'c8\'ae\'c0\'ce\'c7\'d8\'bc\'ad \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'ae\'c5\'cf \'c5\'b8\'c0\'d4\'c0\'cc void\'b0\'a1 \'be\'c6\'b4\'cf\'b8\'e9 \'b0\'e1\'b0\'fa\'b8\'a6 \'ba\'af\'bc\'f6\'bf\'a1 \'c0\'fa\'c0\'e5\'c7\'cf\'b4\'f8\'c1\'f6 \'c3\'e2\'b7\'c2\'c0\'bb \'c7\'cf\'b8\'e9 \'b5\'ca.\cf0 \
+		\cf2 long\cf0  \cf3 time\cf0  = System.currentTimeMillis();\
+		System.\cf5 out\cf0 .printf(\cf6 "time:%d\\n"\cf0 , \cf3 time\cf0 );\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+2. Class\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 public\cf0  \cf2 class\cf0  Sample \{\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  staticDisplay() \{\
+	\cf4 //static \'b8\'de\'bc\'d2\'b5\'e5 - \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7 \'b8\'b8\'c0\'b8\'b7\'ce \'c8\'a3\'c3\'e2 \'b0\'a1\'b4\'c9\cf0 \
+	\cf4 //\'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'ba\'af\'bc\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'d4\cf0 \
+		System.\cf5 out\cf0 .printf(\cf6 "Hello Java \\n"\cf0 );\
+	\}\
+	\cf4 //instance \'b8\'de\'bc\'d2\'b5\'e5 - \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c8\'a3\'c3\'e2\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9. \cf0 \
+	\cf4 //\'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'ba\'af\'bc\'f6 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  instanceDisplay() \{\
+		System.\cf5 out\cf0 .printf(\cf6 "Hello Java \\n"\cf0 );\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 Hello Java \
+Hello Java \
+time:1567761427535\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+}
