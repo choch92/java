@@ -1,0 +1,885 @@
+{\rtf1\ansi\ansicpg949\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset129 NanumMyeongjo;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red0\green0\blue192;\red63\green95\blue191;
+\red100\green100\blue100;\red106\green62\blue62;\red63\green127\blue95;\red42\green0\blue255;\red0\green0\blue0;
+\red251\green0\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c24706\c37255\c74902;
+\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c16471\c0\c100000;\csgray\c0;
+\cssrgb\c100000\c7248\c100000;\cssrgb\c0\c1\c1;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14160\viewh14000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 15\'c0\'cf\'c2\'f7(cho)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** Mouse Event\
+\
+=> \'b8\'b6\'bf\'ec\'bd\'ba\'b8\'a6 \'b4\'a9\'b8\'a3\'b0\'c5\'b3\'aa \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae \'be\'c8\'bf\'a1 \'c1\'f8\'c0\'d4\'c7\'cf\'b0\'c5\'b3\'aa \'b9\'fe\'be\'ee\'b3\'af \'b6\'a7 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\
+=> MouseListener \'b0\'a1 \'c3\'b3\'b8\'ae\
+=> mouseClicked, mouseEntered, mouseExited, mousePressed, mouseRelease \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c1\'b8\'c0\'e7\
+=> \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b4\'c2 MouseEvent \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\
+MouseEvent \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'b4\'c2 getX(), getY() \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'d6\'be\'ee\'bc\'ad \'b8\'b6\'bf\'ec\'bd\'ba \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1 \'c1\'c2\'c7\'a5\'b8\'a6 \'b8\'ae\'c5\'cf\
+getClickCount()\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c5\'ac\'b8\'af\'c7\'d1 \'c8\'bd\'bc\'f6\'b8\'a6 \'b8\'ae\'c5\'cf\
+getPoint()\'b5\'b5 \'c1\'c2\'c7\'a5\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'cf\'b4\'c2\'b5\'a5 x\'bf\'cd y\'b0\'aa\'c0\'bb \'b0\'ae\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'b7\'ce \'b8\'ae\'c5\'cf\
+=> Entered \'b4\'eb\'bd\'c5\'bf\'a1 Hover\'b6\'f3\'b0\'ed \'c7\'cf\'b1\'e2\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'a5\'bf\'a1\'bc\'ad Hover \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b8\'de\'b4\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2\'b5\'b5 \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 ** MouseMotionEvent\
+\
+=> \'b8\'b6\'bf\'ec\'bd\'ba\'b0\'a1 \'bf\'f2\'c1\'f7\'c0\'cf \'b6\'a7 \'b9\'df\'bb\'fd\'c7\'cf\'b4\'c2 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\
+=> MouseMotionListener\'b0\'a1 \'c3\'b3\'b8\'ae\
+=> \'b8\'b6\'bf\'ec\'bd\'ba\'b8\'a6 \'b5\'e5\'b7\'a1\'b1\'d7 \'c7\'d2 \'b6\'a7 \'c3\'b3\'b8\'ae\'b8\'a6 \'c0\'a7\'c7\'d1 mouseDragged \'b8\'de\'bc\'d2\'b5\'e5\'bf\'cd \'b8\'b6\'bf\'ec\'bd\'ba\'b8\'a6 \'bf\'f2\'c1\'f7\'c0\'cf \'b6\'a7 \'c3\'b3\'b8\'ae\'b8\'a6 \'c0\'a7\'c7\'d1 mouseMoved \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c1\'b8\'c0\'e7\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 => \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b4\'c2 MouseEvent\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 ** \'c5\'b0\'ba\'b8\'b5\'e5 \'c0\'cc\'ba\'a5\'c6\'ae\
+\
+=> keyListener\'b0\'a1 \'c3\'b3\'b8\'ae\
+=> keyPressed -> keyTyped -> keyReleased \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\
+\'c5\'b0\'ba\'b8\'b5\'e5\'b8\'a6 \'b4\'a9\'b8\'a3\'b8\'e9 keyPressed\'b0\'a1 \'c8\'a3\'c3\'e2\'b5\'c7\'b0\'ed \'c5\'b0\'ba\'b8\'b5\'e5\'bf\'a1\'bc\'ad \'bc\'d5\'c0\'bb \'b6\'bc\'b8\'e9 keyReleased\'b0\'a1 \'c8\'a3\'c3\'e2\
+keyTyped\'b4\'c2 \'c5\'b0\'ba\'b8\'b5\'e5 \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b0\'ed \'b4\'a9\'b8\'a5 \'c5\'b0\'b0\'a1 \'b9\'ae\'c0\'da\'c0\'cc\'b8\'e9 \'c8\'a3\'c3\'e2\'b5\'c7\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\
+=> \'b8\'de\'bc\'d2\'b5\'e5\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b4\'c2 KeyEvent \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'c0\'cc\'b0\'ed getKeyChar() \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bc\'d2\'c0\'af\'c7\'cf\'b0\'ed \'c0\'d6\'b4\'c2\'b5\'a5 \'b4\'a9\'b8\'a5 \'b9\'ae\'c0\'da\'b0\'aa\'c0\'bb \'b0\'a1\'c1\'ae\'bf\'c0\'b0\'ed\
+getKeyCode() \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'b4\'a9\'b8\'a5 \'c5\'b0\'c0\'c7 \'bc\'fd\'c0\'da\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'b9\'ae\'c0\'da \'c5\'b0\'b8\'a6 \'b4\'ad\'b7\'b6\'c0\'bb \'b6\'a7\'b4\'c2 2\'b0\'b3\'c0\'c7 \'b8\'de\'bc\'d2\'b5\'e5 \'b8\'f0\'b5\'ce \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'cf\'c1\'f6\'b8\'b8 \'b9\'ae\'c0\'da \'c0\'cc\'bf\'dc\'c0\'c7 \'c5\'b0\'b8\'a6 \'b4\'ad\'b7\'b6\'c0\'bb \'b6\'a7\'b4\'c2 getKeyCode()\'b8\'b8 \'bb\'e7\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\
+\'c5\'b0 \'b0\'aa\'c0\'ba KeyEvent \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'bb\'f3\'bc\'f6\'b7\'ce \'c1\'a4\'c0\'c7 \'b5\'c7\'be\'ee \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+KeyEvent.\'bb\'f3\'bc\'f6 \'c7\'fc\'c5\'c2\'b7\'ce \'c0\'cc\'bf\'eb\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+=> \'b9\'f6\'c6\'b0 \'c0\'a7\'bf\'a1 \'b8\'b6\'bf\'ec\'bd\'ba\'b0\'a1 \'bf\'c3\'b6\'f3\'b0\'a1\'b8\'e9 \'b9\'f6\'c6\'b0\'c0\'c7 \'b9\'e8\'b0\'e6\'bb\'f6\'c0\'bb \'c6\'c4\'b6\'f5\'bb\'f6\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6\'c7\'cf\'b0\'ed \'b8\'b6\'bf\'ec\'bd\'ba\'b0\'a1 \'ba\'fc\'c1\'ae\'b3\'aa\'bf\'c0\'b8\'e9 \'b3\'ec\'bb\'f6\'c0\'b8\'b7\'ce \'ba\'af\'b0\'e6\'c7\'cf\'b1\'e2\
+\'c0\'a9\'b5\'b5\'bf\'ec \'bb\'fd\'bc\'ba -> \'c8\'ad\'b8\'e9 \'b1\'b8\'bc\'ba -> \'c7\'ca\'bf\'e4\'c7\'d1 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\
+Frame\'c0\'ba BorderLayout : Frame\'c0\'c7 Layout\'c0\'bb \'ba\'af\'b0\'e6\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'b9\'d9\'b7\'ce \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b8\'a6 \'b9\'e8\'c4\'a1\'c7\'cf\'b8\'e9 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'b0\'a1 \'c8\'ad\'b8\'e9 \'c0\'fc\'c3\'bc\'b8\'a6 \'c2\'f7\'c1\'f6\'c7\'cf\'b0\'d4 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\'c7\'f6\'c0\'e7 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'a1 \'b8\'b6\'bf\'ec\'bd\'ba \'b8\'f0\'bc\'c7 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\
+\'b8\'b6\'bf\'ec\'bd\'ba\'b8\'a6 \'b5\'e5\'b7\'a1\'b1\'d7 \'c7\'d2 \'b6\'a7 \'b9\'f6\'c6\'b0\'c0\'cc \'b5\'fb\'b6\'f3\'bf\'c0\'b5\'b5\'b7\'cf \'c3\'b3\'b8\'ae\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 package\cf0  eventhandling;\
+\
+\cf2 import\cf0  java.awt.Button;\
+\cf2 import\cf0  java.awt.Color;\
+\cf2 import\cf0  java.awt.Frame;\
+\cf2 import\cf0  java.awt.event.KeyEvent;\
+\cf2 import\cf0  java.awt.event.KeyListener;\
+\cf2 import\cf0  java.awt.event.MouseEvent;\
+\cf2 import\cf0  java.awt.event.MouseListener;\
+\cf2 import\cf0  java.awt.event.MouseMotionListener;\
+\
+\cf2 public\cf0  \cf2 class\cf0  \ul EventWindow\ulnone  \cf2 extends\cf0  Frame \{\
+	Button \cf3 btn\cf0 ;\
+	\cf2 public\cf0  EventWindow() \{\
+\
+		\cf4 /** MouseEvent **/\cf0 \
+		\cf2 this\cf0 .addMouseMotionListener(\cf2 new\cf0  MouseMotionListener() \{\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  mouseDragged(MouseEvent \cf6 e\cf0 ) \{\
+				\cf3 btn\cf0 .setLocation(\cf6 e\cf0 .getX(), \cf6 e\cf0 .getY());\
+			\}\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  mouseMoved(MouseEvent \cf6 e\cf0 ) \{\
+				\cf7 //btn.setLocation(e.getX(), e.getY());\cf0 \
+			\}\
+			\
+		\});\
+		setLayout(\cf2 null\cf0 );\
+		\cf3 btn\cf0  = \cf2 new\cf0  Button(\cf8 "\'b9\'f6\'c6\'b0"\cf0 );\
+		\cf3 btn\cf0 .setBounds(30, 30, 50, 50);\
+		add(\cf3 btn\cf0 );\
+		\
+		\cf4 /** KeyboardEvent **/\cf0 \
+		\cf4 /** \'c0\'cc\'ba\'a5\'c6\'ae\'c3\'b3\'b8\'ae\'b0\'a1 \'b3\'ca\'b9\'ab \'b8\'b9\'be\'c6\'bc\'ad \'bf\'a9\'b1\'e2 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'a1\'bc\'ad\'b4\'c2 \'b5\'bf\'c0\'db\'c0\'cc \'be\'c8\'b5\'ca **/\cf0 \
+		\cf7 // \'c7\'f6\'c0\'e7 \'c7\'c1\'b7\'b9\'c0\'d3\'c0\'c7 \'c5\'b0\'ba\'b8\'b5\'e5 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\cf0 \
+		\cf2 this\cf0 .addKeyListener(\cf2 new\cf0  KeyListener() \{\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  keyTyped(KeyEvent \cf6 e\cf0 ) \{\
+			\}\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  keyPressed(KeyEvent \cf6 e\cf0 ) \{\
+				\cf7 // \'b9\'ae\'c0\'da \'c5\'b0\'b8\'a6 \'b4\'ad\'b7\'b6\'c0\'bb \'b6\'a7\'b8\'b8 \'b5\'bf\'c0\'db\cf0 \
+				\cf7 // getKeyChar\'b4\'c2 \'b4\'eb\'bc\'d2\'b9\'ae\'c0\'da \'b1\'b8\'ba\'d0\'c0\'bb \'c7\'d5\'b4\'cf\'b4\'d9.\cf0 \
+				System.\cf3 out\cf0 .printf(\cf8 "\'b9\'ae\'c0\'da:%c\\n"\cf0 , \cf6 e\cf0 .getKeyChar());\
+				\cf7 // \'c5\'b0\'ba\'b8\'b5\'e5\'b8\'a6 \'b4\'a9\'b8\'a3\'b8\'e9 \'b9\'ab\'c1\'b6\'b0\'c7 \'b5\'bf\'c0\'db\cf0 \
+				\cf7 // getKeyCode\'b4\'c2 \'b4\'eb\'bc\'d2\'b9\'ae\'c0\'da \'b1\'b8\'ba\'d0\'c0\'bb \'c7\'cf\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\cf0 \
+				System.\cf3 out\cf0 .printf(\cf8 "\'c4\'da\'b5\'e5:%c\\n"\cf0 , \cf6 e\cf0 .getKeyCode());\
+			\}\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  keyReleased(KeyEvent \cf6 e\cf0 ) \{\
+			\}\
+		\});\
+		\
+		\cf4 /** MouseEvent **/\cf0 \
+		\cf7 // AWT \'b3\'aa SWING\'c0\'ba \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae\'b8\'a6 Delegate \'c6\'d0\'c5\'cf\'c0\'b8\'b7\'ce \'c3\'b3\'b8\'ae\cf0 \
+		\cf7 // Delegate \'c6\'d0\'c5\'cf : \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1 \'b0\'b4\'c3\'bc\'b0\'a1 \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'ed \'ba\'b0\'b5\'b5\'c0\'c7 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad\cf0 \
+		\cf7 // \'c3\'b3\'b8\'ae\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'cf\'b4\'c2 \'c6\'d0\'c5\'cf - \'c0\'a7\'c0\'d3\cf0 \
+		\cf3 btn\cf0 .addMouseListener(\cf2 new\cf0  MouseListener() \{\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  mouseClicked(MouseEvent \cf6 e\cf0 ) \{	\
+			\}\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  mousePressed(MouseEvent \cf6 e\cf0 ) \{\
+			\}\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  mouseReleased(MouseEvent \cf6 e\cf0 ) \{\
+			\}\
+			\cf7 // \'b8\'b6\'bf\'ec\'bd\'ba\'b0\'a1 \'b9\'f6\'c6\'b0\'c0\'a7\'bf\'a1 \'bf\'c3\'b6\'f3 \'b0\'ac\'c0\'bb \'b6\'a7\cf0 \
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  mouseEntered(MouseEvent \cf6 e\cf0 ) \{\
+				\cf3 btn\cf0 .setBackground(Color.\cf3 BLUE\cf0 );\
+				\cf3 btn\cf0 .setForeground(Color.\cf3 BLUE\cf0 );\
+				\cf7 // \'b8\'b6\'bf\'ec\'bd\'ba \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1 \'c1\'c2\'c7\'a5\'b8\'a6 \'b8\'ae\'c5\'cf\cf0 \
+				System.\cf3 out\cf0 .printf(\cf8 "x:%d y:%d\\n"\cf0 , \cf6 e\cf0 .getX(), \cf6 e\cf0 .getY());\
+			\}\
+			\cf7 // \'b8\'b6\'bf\'ec\'bd\'ba\'b0\'a1 \'b9\'f6\'c6\'b0\'c0\'a7\'bf\'a1\'bc\'ad \'b9\'fe\'be\'ee \'b3\'b5\'c0\'bb \'b6\'a7\cf0 \
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  mouseExited(MouseEvent \cf6 e\cf0 ) \{\
+				\cf3 btn\cf0 .setBackground(Color.\cf3 GREEN\cf0 );\
+				\cf3 btn\cf0 .setForeground(Color.\cf3 GREEN\cf0 );\
+			\}\
+		\});\
+		setBounds(400,400,400,400);\
+		setTitle(\cf8 "\'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae"\cf0 );\
+		setBackground(Color.\cf3 orange\cf0 );\
+		setVisible(\cf2 true\cf0 );\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 x:68 y:27\
+x:1 y:17\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 ** \'c0\'a9\'b5\'b5\'bf\'ec \'c0\'cc\'ba\'a5\'c6\'ae\
+\
+=> \'c0\'a9\'b5\'b5\'bf\'ec\'bf\'a1 \'ba\'af\'c8\'ad\'b0\'a1 \'bb\'fd\'b1\'e2\'b4\'c2 \'c0\'cc\'ba\'a5\'c6\'ae\
+=> WindowListener\'b0\'a1 \'c3\'b3\'b8\'ae\
+=> \'be\'c6\'c0\'cc\'c4\'dc\'c8\'ad\'b8\'a6 \'c3\'b3\'b8\'ae\'c7\'d8\'c1\'d6\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5, \'c3\'a2 \'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'ad\'b7\'b6\'c0\'bb \'b6\'a7 \'c3\'b3\'b8\'ae\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5 \'b5\'ee\'c0\'bb \'bc\'d2\'c0\'af\
+=> \'c0\'cc\'ba\'a5\'c6\'ae\'b8\'a6 \'c3\'b3\'b8\'ae\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b0\'b4\'c3\'bc\'b4\'c2 Frame \'c0\'d4\'b4\'cf\'b4\'d9.\
+=> \'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a3\'b8\'e9 windowClosing \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c8\'a3\'c3\'e2\
+\'bf\'a9\'b1\'e2\'bc\'ad \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'c1\'be\'b7\'e1(System.exit())\'b8\'a6 \'c7\'d8\'c1\'d6\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\'bd\'c7\'c1\'a6 \'be\'d6\'c7\'c3\'b8\'ae\'c4\'c9\'c0\'cc\'bc\'c7\'bf\'a1\'bc\'ad \'b1\'b8\'c7\'f6\'c7\'d2 \'b6\'a7\'b4\'c2 \'b8\'b6\'c1\'f6\'b8\'b7 \'c0\'fa\'c0\'e5 \'bf\'a9\'ba\'ce\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'d8\'bc\'ad \'b4\'eb\'c8\'ad\'bb\'f3\'c0\'da\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'c4\'da\'b5\'e5\'b8\'a6 \'c3\'df\'b0\'a1\
+\
+** Adapter Class\
+\
+=> Listener \'c1\'df\'bf\'a1\'bc\'ad \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 2\'b0\'b3 \'c0\'cc\'bb\'f3 \'b0\'a1\'c1\'f8 \'b0\'cd\'b5\'e9\'c0\'bb \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee \'b3\'f5\'c0\'ba \'b0\'cd\
+=> \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'fc\'ba\'ce \'b3\'bb\'bf\'eb\'c0\'cc \'be\'f8\'b4\'c2 \'bb\'f3\'c5\'c2\'b7\'ce \'b1\'b8\'c7\'f6\'c7\'d8 \'b5\'d0 \'c5\'ac\'b7\'a1\'bd\'ba\
+=> \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'cd final \'bb\'f3\'bc\'f6 \'b8\'b8\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'b4\'c2 \'b9\'dd\'b5\'e5\'bd\'c3 \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9\'c0\'bb \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae\'b8\'a6 \'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'f5\'b6\'f3\'b5\'b5 \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'b8\'c7\'f6\'c0\'bb \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+Adapter Class\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'c7\'ca\'bf\'e4\'c7\'d1 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'b8 \'bf\'c0\'b9\'f6\'b6\'f3\'c0\'cc\'b5\'f9 \'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+\'bd\'c7\'bd\'c0)\
+=> \'c8\'ad\'b8\'e9 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'b1\'b8\'c7\'f6\
+\'bf\'aa\'c7\'d2 \'ba\'b0\'b7\'ce \'ba\'d0\'b8\'ae\'c7\'d8\'bc\'ad \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'bb \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'bf\'a1 \'c0\'af\'b8\'ae\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c8\'ad\'b8\'e9\'bf\'a1\'b4\'c2 \'b7\'b9\'c0\'cc\'ba\'ed\'b8\'b8 \'b9\'e8\'c4\'a1\
+Frame\'bf\'a1 \'c5\'b0\'ba\'b8\'b5\'e5 \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 \'b7\'b9\'c0\'cc\'ba\'ed\'c0\'bb \'c0\'cc\'b5\'bf(\'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'c0\'c7 \'c5\'a9\'b1\'e2 \'ba\'af\'c8\'ad\'b3\'aa \'c1\'c2\'c7\'a5 \'ba\'af\'c8\'ad\'b8\'a6 \'c1\'d9\'b7\'c1\'b8\'e9 \'b7\'b9\'c0\'cc\'be\'c6\'bf\'f4\'c0\'cc null \'c0\'cc\'be\'ee\'be\'df\'c7\'d5\'b4\'cf\'b4\'d9.\
+\'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a3\'b8\'e9 \'c0\'a9\'b5\'b5\'bf\'ec\'b0\'a1 \'c1\'be\'b7\'e1\'b5\'c7\'b5\'b5\'b7\'cf \'c4\'da\'b5\'e5\'b8\'a6 \'c0\'db\'bc\'ba\
+\
+1. KeyFrame\
+\pard\pardeftab720\partightenfactor0
+\cf2 package\cf0  eventhandling;\
+\
+\cf2 import\cf0  java.awt.Color;\
+\cf2 import\cf0  java.awt.Frame;\
+\cf2 import\cf0  java.awt.Label;\
+\
+\cf2 public\cf0  \cf2 class\cf0  \ul KeyFrame\ulnone  \cf2 extends\cf0  Frame \{\
+	Label \cf3 lbl\cf0 ;\
+	\cf2 public\cf0  KeyFrame() \{\
+		\
+		setLayout(\cf2 null\cf0 );\
+		\
+		\cf7 //\'b7\'b9\'c0\'cc\'ba\'ed\'c0\'bb \'bb\'fd\'bc\'ba\'c7\'d8\'bc\'ad \'b9\'e8\'c4\'a1\cf0 \
+		\cf3 lbl\cf0  = \cf2 new\cf0  Label(\cf8 "@"\cf0 );\
+		\cf3 lbl\cf0 .setBounds(10, 30, 20, 20);\
+		add(\cf3 lbl\cf0 );\
+		\
+		\cf7 // Frame\'bf\'a1 \'c0\'a9\'b5\'b5\'bf\'ec \'c0\'cc\'ba\'a5\'c6\'ae\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 EventHandler \'b0\'b4\'c3\'bc\'bf\'a1\'b0\'d4 \'c3\'b3\'b8\'ae\'c7\'d8\'b4\'de\'b6\'f3\'b0\'ed \'bf\'e4\'c3\'bb\cf0 \
+		EventHandler \cf6 eventHandler\cf0  = \cf2 new\cf0  EventHandler(\cf3 lbl\cf0 );\
+		\cf2 this\cf0 .addWindowListener(\cf6 eventHandler\cf0 );\
+		\cf2 this\cf0 .addKeyListener(\cf6 eventHandler\cf0 );\
+		\
+		setBounds(400,400,500,500);\
+		setTitle(\cf8 "\'c5\'b0\'ba\'b8\'b5\'e5\'bf\'cd \'c0\'a9\'b5\'b5\'bf\'ec \'c0\'cc\'ba\'a5\'c6\'ae \'c3\'b3\'b8\'ae"\cf0 );\
+		setBackground(Color.\cf3 orange\cf0 );\
+		setVisible(\cf2 true\cf0 );\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+2. WindowLister\
+\pard\pardeftab720\partightenfactor0
+\cf2 package\cf0  eventhandling;\
+\
+\cf2 import\cf0  java.awt.Label;\
+\cf2 import\cf0  java.awt.event.KeyEvent;\
+\cf2 import\cf0  java.awt.event.KeyListener;\
+\cf2 import\cf0  java.awt.event.WindowAdapter;\
+\cf2 import\cf0  java.awt.event.WindowEvent;\
+\
+\cf7 // \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'bf\'a9\'b7\'af \'b0\'b3 \'b1\'b8\'c7\'f6\'c0\'cc \'b0\'a1\'b4\'c9\cf0 \
+\cf7 // public class EventHandler implements WindowListener, KeyListener \{\cf0 \
+\cf7 // \'be\'c6\'b7\'a1 \'c3\'b3\'b7\'b3 WindowListener\'b8\'a6 WindowAdapter\'b7\'ce \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'f3\'bc\'d3\'bd\'c3\'c5\'b0\'b8\'e9 \'be\'c8\'be\'b2\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c1\'f6\'bf\'ef\'bc\'f6 \'c0\'d6\'b4\'d9.\cf0 \
+\cf2 public\cf0  \cf2 class\cf0  EventHandler \cf2 extends\cf0  WindowAdapter \cf2 implements\cf0  KeyListener \{\
+	\
+	\cf7 // KeyFrame\'c0\'c7 Label\'bf\'a1 \'b4\'eb\'c7\'d1 \'c2\'fc\'c1\'b6\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'ba\'af\'bc\'f6\cf0 \
+	Label \cf3 lbl\cf0 ;\
+	\cf7 // \'b7\'b9\'c0\'cc\'ba\'ed\'c0\'bb \'c1\'d6\'c0\'d4\'b9\'de\'b1\'e2 \'c0\'a7\'c7\'d1 \'bb\'fd\'bc\'ba\'c0\'da\cf0 \
+	\cf2 public\cf0  EventHandler(Label \cf6 lbl\cf0 ) \{\
+		\cf7 // \'c0\'d4\'b7\'c2\'c7\'cf\'c1\'f6 \'be\'ca\'be\'c6\'b5\'b5 \'c3\'b9\'b9\'f8\'c2\'b0 \'c1\'d9\'c0\'ba super()\cf0 \
+		\cf7 // \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 \'be\'f8\'b4\'c2 \'bb\'fd\'bc\'ba\'c0\'da\'b0\'a1 \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2 \'b1\'b8\'b9\'ae\cf0 \
+		\cf7 // super();\cf0 \
+		\cf2 this\cf0 .\cf3 lbl\cf0  = \cf6 lbl\cf0 ;\
+	\}\
+	\
+	\cf4 /** WindowListener **/\cf0 \
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  windowOpened(WindowEvent \cf6 e\cf0 ) \{\
+	\}\
+	\cf7 // \'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a6 \'b6\'a7 \'c8\'a3\'c3\'e2\'b5\'c7\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\cf0 \
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  windowClosing(WindowEvent \cf6 e\cf0 ) \{\
+		\cf7 // \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'c1\'be\'b7\'e1\cf0 \
+		System.exit(0);\
+	\}\
+	\cf7 // \'c1\'be\'b7\'e1\'b0\'a1 \'b5\'c9 \'b6\'a7\cf0 \
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  windowClosed(WindowEvent \cf6 e\cf0 ) \{\
+	\}\
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  windowIconified(WindowEvent \cf6 e\cf0 ) \{\
+	\}\
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  windowDeiconified(WindowEvent \cf6 e\cf0 ) \{\
+	\}\
+	\cf7 // \'c8\'b0\'bc\'ba\'c8\'ad\'b0\'a1 \'b5\'c8 \'c3\'a2\cf0 \
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  windowActivated(WindowEvent \cf6 e\cf0 ) \{\
+	\}\
+	\cf7 // \'ba\'f1\'c8\'b0\'bc\'ba\'c8\'ad\'b0\'a1 \'b5\'c8 \'c3\'a2\cf0 \
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  windowDeactivated(WindowEvent \cf6 e\cf0 ) \{\
+	\}\
+	\cf4 /** KeyListener **/\cf0 \
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  keyTyped(KeyEvent \cf6 e\cf0 ) \{\
+	\}\
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  keyPressed(KeyEvent \cf6 e\cf0 ) \{\
+		\cf7 // \cf7 \ul \ulc7 lbl\cf7 \ulnone \'c0\'c7 \'c1\'c2\'c7\'a5\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2\cf0 \
+		\cf2 int\cf0  \cf6 x\cf0  = \cf3 lbl\cf0 .getX(), \cf6 y\cf0  = \cf3 lbl\cf0 .getY();\
+		\cf7 // \'b9\'e6\'c7\'e2\'c5\'b0\'b8\'a6 \'b4\'a9\'b8\'a3\'b8\'e9 \cf0 \
+		\cf2 if\cf0 (\cf6 e\cf0 .getKeyCode() == KeyEvent.\cf3 VK_LEFT\cf0 ) \{\
+			\cf6 x\cf0  = \cf6 x\cf0  - 5;\
+		\}\cf2 else\cf0  \cf2 if\cf0 (\cf6 e\cf0 .getKeyCode() == KeyEvent.\cf3 VK_RIGHT\cf0 ) \{\
+			\cf6 x\cf0  = \cf6 x\cf0  + 5;\
+		\}\cf2 else\cf0  \cf2 if\cf0 (\cf6 e\cf0 .getKeyCode() == KeyEvent.\cf3 VK_UP\cf0 ) \{\
+			\cf6 y\cf0  = \cf6 y\cf0  - 5;\
+		\}\cf2 else\cf0  \cf2 if\cf0 (\cf6 e\cf0 .getKeyCode() == KeyEvent.\cf3 VK_DOWN\cf0 ) \{\
+			\cf6 y\cf0  = \cf6 y\cf0  + 5;\
+		\}\
+		\cf7 // CTRL + X \'b8\'a6 \'b4\'a9\'b8\'a3\'b8\'e9 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'c1\'be\'b7\'e1(CTRL = 2, X = 88)\cf0 \
+		\cf2 if\cf0 (\cf6 e\cf0 .getModifiers()==2&&\cf6 e\cf0 .getKeyCode()==88) \{\
+			System.exit(0);\
+		\}\
+		System.\cf3 out\cf0 .printf(\cf8 "\'c1\'b6\'c7\'d5\'c5\'b0:%d\\n"\cf0 , \cf6 e\cf0 .getModifiers());\
+		System.\cf3 out\cf0 .printf(\cf8 "\'b4\'a9\'b8\'a5 \'b9\'ae\'c0\'da:%c\\n"\cf0 , \cf6 e\cf0 .getKeyChar());\
+		System.\cf3 out\cf0 .printf(\cf8 "\'b4\'a9\'b8\'a5 \'c5\'b0\'ba\'b8\'b5\'e5 \'c4\'da\'b5\'e5:%d\\n"\cf0 , \cf6 e\cf0 .getKeyCode());\
+		\cf3 lbl\cf0 .setLocation(\cf6 x\cf0 , \cf6 y\cf0 );\
+	\}\
+	\cf5 @Override\cf0 \
+	\cf2 public\cf0  \cf2 void\cf0  keyReleased(KeyEvent \cf6 e\cf0 ) \{\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** Swing\
+\
+=> JDK\'b0\'a1 \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'c0\'da\'bf\'f8\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad GUI \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\
+=> \'b4\'eb\'ba\'ce\'ba\'d0\'c0\'ba AWT \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce\'ba\'ce\'c5\'cd \'bb\'f3\'bc\'d3\'c0\'bb \'b9\'de\'b0\'ed \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'cc\'b8\'a7\'c0\'c7 \'bd\'c3\'c0\'db\'c0\'ba \'b4\'eb\'b9\'ae\'c0\'da J\
+=> \'c0\'a9\'b5\'b5\'bf\'ec\'b3\'aa \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\'bf\'a1 \'ba\'b8\'b4\'f5(\'b0\'e6\'b0\'e8\'bc\'b1)\'b8\'a6 \'bc\'b3\'c1\'a4 \'b0\'a1\'b4\'c9\
+=> Container\'bf\'a1 pack\'c0\'cc\'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'d6\'be\'ee\'bc\'ad \'b9\'e8\'c4\'a1\'b5\'c8 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae \'c5\'a9\'b1\'e2\'bf\'a1 \'b8\'c2\'c3\'e7\'bc\'ad Container \'c5\'a9\'b1\'e2\'b8\'a6 \'c1\'b6\'c0\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> JFrame(Frame), JPanel(Panel), JScrollPane(ScrollPane)\
+=> setTooltipText(\'c5\'d8\'bd\'ba\'c6\'ae\'b3\'aa html)\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b8\'b6\'bf\'ec\'bd\'ba\'b0\'a1 \'bf\'c3\'b6\'f3\'bf\'d4\'c0\'bb \'b6\'a7 \'c5\'f8\'c6\'c1\'c0\'bb \'c3\'e2\'b7\'c2\
+\
+** JLabel\
+\
+=> \'c5\'d8\'bd\'ba\'c6\'ae\'b3\'aa \'c0\'cc\'b9\'cc\'c1\'f6\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'d8\'c1\'d6\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=> \'b7\'b9\'c0\'cc\'ba\'ed\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7 Icon \'b0\'b4\'c3\'bc\'b8\'a6 \'c1\'d6\'b8\'e9 \'c0\'cc\'b9\'cc\'c1\'f6\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b0\'ed String\'c0\'bb \'c1\'d6\'b8\'e9 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c3\'e2\'b7\'c2\
+\
+1. \'c6\'c4\'c0\'cf \'b0\'e6\'b7\'ce \'bc\'b3\'c1\'a4\
+\
+	1) \'c0\'fd\'b4\'eb \'b0\'e6\'b7\'ce : \'b7\'e7\'c6\'ae\'b7\'ce\'ba\'ce\'c5\'cd\'c0\'c7 \'c0\'fc\'c3\'bc \'b0\'e6\'b7\'ce : \cf9 \CocoaLigature0 /Users/503a2/Downloads/boyung4.jpeg\cf0 \CocoaLigature1 \
+\
+	2) \'bb\'f3\'b4\'eb \'b0\'e6\'b7\'ce : \'c7\'f6\'c0\'e7 \'c0\'a7\'c4\'a1\'b7\'ce\'ba\'ce\'c5\'cd\'c0\'c7 \'b0\'e6\'b7\'ce\
+	./ : \'c7\'f6\'c0\'e7 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+	../ : \'bb\'f3\'c0\'a7 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+\
+2. Icon \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc \'bb\'fd\'bc\'ba\
+\
+3. \'b9\'f6\'c6\'b0 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bd\'c3\'c0\'db\'b0\'fa \'c1\'df\'c1\'f6\'b8\'a6 \'c7\'d8\'ba\'b8\'b4\'c2\'b5\'a5 \'c7\'cf\'b3\'aa\'c0\'c7 \'b9\'f6\'c6\'b0\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'bd\'c3\'c0\'db\'b0\'fa \'c1\'df\'c1\'f6 \'b1\'e2\'b4\'c9\'c0\'bb \'bb\'fd\'bc\'ba\
+boolean flag = false;\
+\
+btn.addActionListener(new ActionListener()\{\
+	public void actionPerformed(ActionEvent e)\{\
+		if(flag == flase)\{\'bd\'c3\'c0\'db\}\
+		else\{\'c1\'df\'c1\'f6\}\
+		flag = !flag;\
+	\}\
+\});\
+\
+=> \'c0\'cc\'b9\'cc\'c1\'f6 \'c6\'c4\'c0\'cf\'c0\'bb \'c0\'fa\'c0\'e5\'c7\'cf\'b0\'ed \'c0\'cc\'b9\'cc\'c1\'f6 \'c6\'c4\'c0\'cf\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b7\'b9\'c0\'cc\'ba\'ed\'bf\'a1 \'c3\'e2\'b7\'c2 : \'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'b7\'ce\'b8\'a6 \'c1\'a4\'c8\'ae\'c7\'cf\'b0\'d4 \'bc\'b3\'c1\'a4 \'c8\'ae\'c0\'ce\
+=> \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'cc\'b9\'cc\'c1\'f6\'b8\'a6 \'b1\'b3\'c3\'bc : \'bd\'ba\'b7\'b9\'b5\'e5\'b4\'c2 \'b9\'dd\'b5\'e5\'bd\'c3 \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+=> \'b9\'f6\'c6\'b0 1\'b0\'b3\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bd\'c3\'c0\'db\'bd\'c3\'c5\'b0\'b0\'ed \'c1\'be\'b7\'e1\'bd\'c3\'c5\'b0\'b4\'c2 \'c0\'db\'be\'f7\'c0\'bb \'bb\'fd\'bc\'ba : \'c5\'e4\'b1\'db\'c0\'bb \'b8\'b8\'b5\'e9\'bc\'f6 \'c0\'d6\'be\'ee\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+new ImageIcon(\'a1\'b0\'b1\'d7\'b8\'b2 \'c6\'c4\'c0\'cf \'b0\'e6\'b7\'ce\'a1\'b1)\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf2 package\cf0  swing;\
+\
+\cf2 import\cf0  java.awt.FlowLayout;\
+\cf2 import\cf0  java.awt.event.ActionEvent;\
+\cf2 import\cf0  java.awt.event.ActionListener;\
+\cf2 import\cf0  java.util.Random;\
+\
+\cf2 import\cf0  javax.swing.ImageIcon;\
+\cf2 import\cf0  javax.swing.JButton;\
+\cf2 import\cf0  javax.swing.JFrame;\
+\cf2 import\cf0  javax.swing.JLabel;\
+\
+\cf2 public\cf0  \cf2 class\cf0  \ul LabelFrame\ulnone  \cf2 extends\cf0  JFrame \{\
+	JLabel \cf3 lbl\cf0 ;\
+	ImageIcon [] \cf3 images\cf0 ;\
+	Thread \cf3 th1\cf0 ;\
+	ImageIcon [] \cf3 su\cf0 ;\
+	\cf2 int\cf0  \cf3 x\cf0  = 0;\
+	\
+	\cf2 public\cf0  LabelFrame() \{\
+		setLayout(\cf2 new\cf0  FlowLayout());\
+		\cf7 // ImageIcon \'b9\'e8\'bf\'ad \'b8\'b8\'b5\'e9\'b1\'e2\cf0 \
+		\cf3 images\cf0  = \cf2 new\cf0  ImageIcon[5];\
+		\cf3 images\cf0 [0] = \cf2 new\cf0  ImageIcon(\cf8 "./boyung1.jpg"\cf0 );\
+		\cf3 images\cf0 [1] = \cf2 new\cf0  ImageIcon(\cf8 "./boyung2.jpg"\cf0 );\
+		\cf3 images\cf0 [2] = \cf2 new\cf0  ImageIcon(\cf8 "./boyung3.jpg"\cf0 );\
+		\cf3 images\cf0 [3] = \cf2 new\cf0  ImageIcon(\cf8 "./boyung4.jpeg"\cf0 );\
+		\cf3 images\cf0 [4] = \cf2 new\cf0  ImageIcon(\cf8 "./boyung5.jpg"\cf0 );\
+		\
+		\cf7 // \'c7\'f6\'c0\'e7 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'b0\'e6\'b7\'ce\'b8\'a6 \'c8\'ae\'c0\'ce\cf0 \
+		String \cf6 curDir\cf0  = System.getProperty(\cf8 "user.dir"\cf0 );\
+		System.\cf3 out\cf0 .printf(\cf8 "%s\\n"\cf0 , \cf6 curDir\cf0 );\
+		\
+		\cf7 // \'c0\'fd\'b4\'eb \'b0\'e6\'b7\'ce\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad ImageIcon\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+		\cf7 // Windows\'c0\'c7 \'c0\'fd\'b4\'eb \'b0\'e6\'b7\'ce\'b4\'c2 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b1\'e2\'c8\'a3\'b0\'a1 \\\\\cf0 \
+		\cf4 /** \'c0\'fd\'b4\'eb \'b0\'e6\'b7\'ce\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf4 		ImageIcon icon = new ImageIcon("/Users/503a2/Downloads/boyung4.\cf4 \ul \ulc4 jpeg\cf4 \ulnone ");\cf0 \
+\cf4 		// \'c0\'cc\'b9\'cc\'c1\'f6 \'be\'c6\'c0\'cc\'c4\'dc\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b7\'b9\'c0\'cc\'ba\'ed\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+\cf4 		\cf4 \ul \ulc4 lbl\cf4 \ulnone  = new JLabel(icon);\cf0 \
+\cf4 		add(\cf4 \ul \ulc4 lbl\cf4 \ulnone );\cf0 \
+\cf4 		**/\cf0 \
+		\
+		\cf4 /** \'bb\'f3\'b4\'eb\'b0\'e6\'b7\'ce \'c0\'cc\'bf\'eb\cf0 \
+\cf4 		ImageIcon icon = new ImageIcon("./boyung3.\cf4 \ul \ulc4 jpg\cf4 \ulnone ");\cf0 \
+\cf4 		// \'c0\'cc\'b9\'cc\'c1\'f6 \'be\'c6\'c0\'cc\'c4\'dc\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b7\'b9\'c0\'cc\'ba\'ed\'c0\'bb \'bb\'fd\'bc\'ba\cf0 \
+\cf4 		\cf4 \ul \ulc4 lbl\cf4 \ulnone  = new JLabel(icon);\cf0 \
+\cf4 		add(\cf4 \ul \ulc4 lbl\cf4 \ulnone );\cf0 \
+\cf4 		**/\cf0 \
+	\
+		\cf3 lbl\cf0  = \cf2 new\cf0  JLabel(\cf3 images\cf0 [0]);\
+		add(\cf3 lbl\cf0 );\
+		Thread \cf6 th\cf0  = \cf2 new\cf0  Thread() \{\
+			\cf2 int\cf0  \cf3 idx\cf0  = 0;\
+			\cf2 public\cf0  \cf2 void\cf0  run() \{\
+				\cf2 while\cf0 (\cf2 true\cf0 ) \{\
+					\cf2 try\cf0  \{\
+						\cf3 idx\cf0  = \cf3 idx\cf0  + 1;\
+						Thread.sleep(500);\
+						\cf3 lbl\cf0 .setIcon(\cf3 images\cf0 [\cf3 idx\cf0 %\cf3 images\cf0 .\cf3 length\cf0 ]);\
+					\}\cf2 catch\cf0 (Exception \cf6 e\cf0 ) \{\}\
+				\}\
+			\}\
+		\};\
+		\cf6 th\cf0 .start();\
+		\cf7 //\'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a6 \'b6\'a7 \'c1\'be\'b7\'e1 \'b1\'e2\'b4\'c9\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b5\'b5\'b7\'cf \'bc\'b3\'c1\'a4\cf0 \
+		\cf2 this\cf0 .setDefaultCloseOperation(JFrame.\cf3 EXIT_ON_CLOSE\cf0 );\
+		JButton \cf6 start\cf0  = \cf2 new\cf0  JButton(\cf8 "\'bd\'c3\'c0\'db"\cf0 );\
+		add(\cf6 start\cf0 );\
+		\
+		JButton \cf6 end\cf0  = \cf2 new\cf0  JButton(\cf8 "\'b8\'d8\'c3\'e3"\cf0 );\
+		add(\cf6 end\cf0 );\
+		\
+		\cf6 end\cf0 .addActionListener(\cf2 new\cf0  ActionListener() \{\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  actionPerformed(ActionEvent \cf6 e\cf0 ) \{\
+				\cf3 th1\cf0 .interrupt();\
+				System.\cf3 out\cf0 .println(\cf3 x\cf0 );	\
+			\}			\
+		\});\
+		\cf7 // \'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a6 \'b6\'a7 \'c1\'be\'b7\'e1 \'b1\'e2\'b4\'c9\'c0\'bb \'bc\'f6\'c7\'e0\'c7\'cf\'b5\'b5\'b7\'cf \'bc\'b3\'c1\'a4\cf0 \
+		\cf2 this\cf0 .setDefaultCloseOperation(JFrame.\cf3 EXIT_ON_CLOSE\cf0 );\
+		\
+		setBounds(400,400,1000,1000);\
+		setTitle(\cf8 "\'b9\'da\'ba\'b8\'bf\'b5 \'be\'d6\'b4\'cf\'b8\'de\'c0\'cc\'bc\'c7"\cf0 );\
+		setVisible(\cf2 true\cf0 );\
+		\
+		\cf3 su\cf0  = \cf2 new\cf0  ImageIcon[10];\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf6 i\cf0 =0; \cf6 i\cf0 <10; \cf6 i\cf0 =\cf6 i\cf0 +1) \{\
+			\cf3 su\cf0 [\cf6 i\cf0 ] = \
+				\cf2 new\cf0  ImageIcon(\cf8 "./"\cf0  + \cf6 i\cf0  + \cf8 ".png"\cf0 );\
+		\}\
+		\cf6 start\cf0 .addActionListener(\cf2 new\cf0  ActionListener() \{\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  actionPerformed(ActionEvent \cf6 e\cf0 ) \{\
+				\cf3 th1\cf0  = \cf2 new\cf0  Thread() \{\
+					\cf2 public\cf0  \cf2 void\cf0  run() \{\
+						\cf2 while\cf0 (\cf2 true\cf0 ) \{\
+							\cf2 try\cf0  \{\
+								Thread.sleep(10);\
+								Random \cf6 r\cf0  = \cf2 new\cf0  Random();\
+								\cf3 x\cf0  = \cf6 r\cf0 .nextInt(10);\
+								\cf3 lbl\cf0 .setIcon(\cf3 su\cf0 [\cf3 x\cf0 ]);\
+							\}\cf2 catch\cf0 (Exception \cf6 e1\cf0 ) \{\
+								\cf2 return\cf0 ;\
+							\}\
+						\}\
+					\}\
+				\};\
+				\cf3 th1\cf0 .start();\
+			\}\
+		\});\
+	\}\
+\}\
+\
+** Button\
+\
+=> JButton, JToggleButton, JCheckBox, JRadioButton\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 => JRadioButton\'c0\'ba ButtonGroup\'c0\'cc\'b6\'f3\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b0\'b4\'c3\'bc\'bf\'a1\'b0\'d4 add\'b8\'a6 \'c7\'d8\'bc\'ad \'b1\'d7\'b7\'ec\'c8\'ad\'b8\'a6 \'c7\'d5\'b4\'cf\'b4\'d9.\
+\'c7\'cf\'b3\'aa\'c0\'c7 \'b1\'d7\'b7\'ec\'c0\'bb \'b8\'b8\'b5\'e9\'b0\'ed\'c0\'da \'c7\'d2 \'b6\'a7\'b4\'c2 \'b5\'bf\'c0\'cf\'c7\'d1 ButtonGroup\'bf\'a1 add\'b8\'a6 \'c7\'cf\'b8\'e9 \'b5\'cb\'b4\'cf\'b4\'d9.\
+\
+** JTextField\
+\
+=> \'c7\'d1 \'c1\'d9\'c0\'c7 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c0\'d4\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=> caret \'c0\'cc \'c0\'d4\'b7\'c2\'c7\'d2 \'b6\'a7 \'b9\'dd\'c2\'a6\'c0\'cc\'b4\'c2 \'c4\'bf\'bc\'ad\
+\
+** JPasswordField\
+\
+=> \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3 \'c0\'d4\'b7\'c2\'c0\'bb \'c0\'a7\'c7\'d1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=> EchoChar : \'c0\'d4\'b7\'c2\'c7\'d2 \'b6\'a7 \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2 \'b1\'db\'c0\'da\
+\
+** JTextArea\
+\
+=> \'bf\'a9\'b7\'af \'c1\'d9 \'c0\'d4\'b7\'c2\'c0\'bb \'c0\'a7\'c7\'d1 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf2 package\cf0  swing;\
+\
+\cf2 import\cf0  java.awt.Color;\
+\cf2 import\cf0  java.awt.event.ActionEvent;\
+\cf2 import\cf0  java.awt.event.ActionListener;\
+\
+\cf2 import\cf0  javax.swing.JButton;\
+\cf2 import\cf0  javax.swing.JFrame;\
+\cf2 import\cf0  javax.swing.JLabel;\
+\cf2 import\cf0  javax.swing.JPanel;\
+\cf2 import\cf0  javax.swing.JPasswordField;\
+\cf2 import\cf0  javax.swing.JTextField;\
+\cf2 import\cf0  javax.swing.border.EtchedBorder;\
+\
+\cf2 public\cf0  \cf2 class\cf0  \ul LoginFrame\ulnone  \cf2 extends\cf0  JFrame \{\
+	\cf7 // \'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b6\'f3\'b4\'c2 \'b1\'db\'c0\'da\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'d2 \'b7\'b9\'c0\'cc\'ba\'ed\cf0 \
+	JLabel \cf3 lblId\cf0 , \cf3 lblPw\cf0 ;\
+	\cf7 // \'bb\'f3\'b4\'dc\'bf\'a1 \'b9\'ae\'c0\'da\'bf\'ad\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d2 \'b7\'b9\'c0\'cc\'ba\'ed\cf0 \
+	JLabel \cf3 lblTitle\cf0 ;\
+	\cf7 // \'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3 \'c0\'d4\'b7\'c2\'c7\'d2 \'c5\'d8\'bd\'ba\'c6\'ae \'c7\'ca\'b5\'e5\cf0 \
+	JTextField \cf3 tfId\cf0 ;\
+	JPasswordField \cf3 tfPw\cf0 ;\
+	\
+	\cf7 // \'b7\'ce\'b1\'d7\'c0\'ce\'b0\'fa \'c8\'b8\'bf\'f8\'b0\'a1\'c0\'d4 \'b9\'f6\'c6\'b0\cf0 \
+	JButton \cf3 btnLogin\cf0 , \cf3 btnRegister\cf0 ;\
+	\
+	\cf2 public\cf0  LoginFrame() \{\
+		\cf7 // \'b7\'b9\'c0\'cc\'ba\'ed\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'f3\'b4\'dc\'bf\'a1 \'b9\'e8\'c4\'a1\cf0 \
+		\cf3 lblTitle\cf0  = \cf2 new\cf0  JLabel(\cf8 "\'b7\'ce\'b1\'d7\'c0\'ce \'c6\'d0\'b3\'ce"\cf0 );\
+		\cf7 // TitleBorder\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \'b0\'e6\'b0\'e8\'bc\'b1\'b0\'fa \'c5\'d8\'bd\'ba\'c6\'ae\'b8\'a6 \'b0\'b0\'c0\'cc \'c3\'e2\'b7\'c2\cf0 \
+		EtchedBorder \cf6 border\cf0  = \cf2 new\cf0  EtchedBorder();\
+		\cf3 lblTitle\cf0 .setBorder(\cf6 border\cf0 );\
+		\
+		JPanel \cf6 p1\cf0  = \cf2 new\cf0  JPanel();\
+		\cf6 p1\cf0 .add(\cf3 lblTitle\cf0 );\
+		add(\cf8 "North"\cf0 , \cf6 p1\cf0 );\
+		\
+		\cf3 lblId\cf0  = \cf2 new\cf0  JLabel(\cf8 "\'be\'c6\'c0\'cc\'b5\'f0"\cf0 );\
+		\cf3 tfId\cf0  = \cf2 new\cf0  JTextField(20);\
+		\cf7 // ToolTip\'c0\'ba \'b8\'b6\'bf\'ec\'bd\'ba \'c4\'bf\'bc\'ad\'b0\'a1 \'c0\'a7\'c4\'a1\'c7\'df\'c0\'bb \'b6\'a7 \'ba\'b8\'bf\'a9\'c1\'f6\'b4\'c2 \'ba\'b8\'c3\'e6 \'bc\'b3\'b8\'ed\cf0 \
+		\cf3 tfId\cf0 .setToolTipText(\cf8 "\'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4!!!"\cf0 );\
+		JPanel \cf6 idPanel\cf0  = \cf2 new\cf0  JPanel();\
+		\cf6 idPanel\cf0 .add(\cf3 lblId\cf0 );\
+		\cf6 idPanel\cf0 .add(\cf3 tfId\cf0 );\
+		\
+		\cf3 lblPw\cf0  = \cf2 new\cf0  JLabel(\cf8 "\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3"\cf0 );\
+		\cf3 tfPw\cf0  = \cf2 new\cf0  JPasswordField(20);\
+		\cf3 tfPw\cf0 .setToolTipText(\cf8 "\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'cf\'bc\'bc\'bf\'e4!!!"\cf0 );\
+		JPanel \cf6 pwPanel\cf0  = \cf2 new\cf0  JPanel();\
+		\cf6 pwPanel\cf0 .add(\cf3 lblPw\cf0 );\
+		\cf6 pwPanel\cf0 .add(\cf3 tfPw\cf0 );\
+		\
+		JPanel \cf6 loginPanel\cf0  = \cf2 new\cf0  JPanel();\
+		\cf6 loginPanel\cf0 .add(\cf6 idPanel\cf0 );\
+		\cf6 loginPanel\cf0 .add(\cf6 pwPanel\cf0 );\
+		add(\cf8 "Center"\cf0 , \cf6 loginPanel\cf0 );\
+		\
+		\cf3 btnLogin\cf0  = \cf2 new\cf0  JButton(\cf8 "\'b7\'ce\'b1\'d7\'c0\'ce"\cf0 );\
+		\cf3 btnRegister\cf0  = \cf2 new\cf0  JButton(\cf8 "\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3"\cf0 );\
+		\
+		JPanel \cf6 btnPanel\cf0  = \cf2 new\cf0  JPanel();\
+		\cf6 btnPanel\cf0 .add(\cf3 btnLogin\cf0 );\
+		\cf6 btnPanel\cf0 .add(\cf3 btnRegister\cf0 );\
+		\
+		\cf7 // btnLogin \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a3\'b8\'e9 \'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'cd\'bc\'ad\cf0 \
+		\cf7 // \'be\'c6\'c0\'cc\'b5\'f0\'b0\'a1 root\'c0\'cc\'b0\'ed \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 1234 \'c0\'cc\'b8\'e9 \'b7\'ce\'b1\'d7\'c0\'ce \'bc\'ba\'b0\'f8\'c0\'cc\'b6\'f3\'b0\'ed \'c3\'e2\'b7\'c2\cf0 \
+		\cf7 // \'b1\'d7\'b7\'b8\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'b7\'ce\'b1\'d7\'c0\'ce \'bd\'c7\'c6\'d0\'b6\'f3\'b0\'ed lblTitle\'bf\'a1 \'c3\'e2\'b7\'c2\cf0 \
+		\cf3 btnLogin\cf0 .addActionListener(\cf2 new\cf0  ActionListener() \{\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  actionPerformed(ActionEvent \cf6 e\cf0 ) \{\
+				\cf7 // \'c0\'d4\'b7\'c2\'c7\'d1 \'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2\cf0 \
+				String \cf6 id\cf0  = \cf3 tfId\cf0 .getText();\
+				\cf2 char\cf0  [] \cf6 pw\cf0  = \cf3 tfPw\cf0 .getPassword();\
+				\cf7 // char \'b9\'e8\'bf\'ad\'c0\'bb \'b9\'ae\'c0\'da\'bf\'ad\'b7\'ce \'ba\'af\'c8\'af\cf0 \
+				String \cf6 password\cf0  = \cf2 new\cf0  String(\cf6 pw\cf0 );\
+				\cf2 if\cf0 (\cf6 id\cf0 .equals(\cf8 "root"\cf0 )&&\cf6 password\cf0 .equals(\cf8 "1234"\cf0 )) \{\
+					\cf3 lblTitle\cf0 .setText(\cf8 "\'b7\'ce\'b1\'d7\'c0\'ce \'bc\'ba\'b0\'f8"\cf0 );\
+				\}\cf2 else\cf0 \
+					\cf3 lblTitle\cf0 .setText(\cf8 "\'b7\'ce\'b1\'d7\'c0\'ce \'bd\'c7\'c6\'d0"\cf0 );\
+			\}\
+		\});\
+		\
+		\cf7 // \'c8\'b8\'bf\'f8\'b0\'a1\'c0\'d4 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a3\'b8\'e9 \'b4\'d9\'b8\'a5 \'c7\'c1\'b7\'b9\'c0\'d3\'c0\'bb \'c3\'e2\'b7\'c2\cf0 \
+		\cf3 btnRegister\cf0 .addActionListener(\cf2 new\cf0  ActionListener() \{\
+			\cf5 @Override\cf0 \
+			\cf2 public\cf0  \cf2 void\cf0  actionPerformed(ActionEvent \cf6 e\cf0 ) \{\
+				\cf2 new\cf0  LabelFrame();\
+				\
+			\}\
+		\});\
+		add(\cf8 "South"\cf0 , \cf6 btnPanel\cf0 );\
+		\
+		setBounds(400, 400, 400, 400);\
+		setBackground(Color.\cf3 orange\cf0 );\
+		setTitle(\cf8 "\'b7\'ce\'b1\'d7\'c0\'ce"\cf0 );\
+		setVisible(\cf2 true\cf0 );\
+		\cf7 // \'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a6 \'b6\'a7 \'c1\'be\'b7\'e1\'c7\'d8\'c1\'d6\'b4\'c2 \'b1\'e2\'b4\'c9 \'c3\'df\'b0\'a1\cf0 \
+		\cf2 this\cf0 .setDefaultCloseOperation(\cf3 EXIT_ON_CLOSE\cf0 );\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** JComboBox\
+\
+=> \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'c7\'d7\'b8\'f1 \'c1\'df\'bf\'a1\'bc\'ad \'c7\'cf\'b3\'aa\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=> \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd \'b9\'e8\'bf\'ad\'c0\'cc\'b3\'aa \'ba\'a4\'c5\'cd\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+=> addItem, removeItem, insertItem \'b0\'b0\'c0\'ba \'b8\'de\'bc\'d2\'b5\'e5\'b7\'ce \'c7\'d7\'b8\'f1\'c0\'bb \'c3\'df\'b0\'a1\'c7\'cf\'b0\'c5\'b3\'aa \'bb\'e8\'c1\'a6 \'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> setEditable(true)\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9 \'c7\'d7\'b8\'f1\'c0\'bb \'c6\'ed\'c1\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** JList\
+\
+=> \'bf\'a9\'b7\'af \'b0\'b3\'c0\'c7 \'c7\'d7\'b8\'f1 \'c1\'df\'bf\'a1\'bc\'ad \'c7\'cf\'b3\'aa \'b6\'c7\'b4\'c2 \'bf\'a9\'b7\'af \'b0\'b3\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=> \'bb\'fd\'bc\'ba\'c0\'ba \'b9\'e8\'bf\'ad\'c0\'cc\'b3\'aa \'ba\'a4\'c5\'cd\'b8\'a6 \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\
+=> getSelectedIndex()\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'bc\'b1\'c5\'c3\'c7\'d1 \'c7\'d7\'b8\'f1 \'c7\'d1 \'b0\'b3\'c0\'c7 \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'b8\'ae\'c5\'cf\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'b0\'ed getSelectedIndexes()\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b8\'e9 \
+\'bc\'b1\'c5\'c3\'c7\'d1 \'b8\'f0\'b5\'e7 \'c7\'d7\'b8\'f1\'c0\'c7 \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'b8\'ae\'c5\'cf\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+\
+** JComboBox \'bf\'cd JList\'bf\'a1\'bc\'ad \'c1\'df\'bf\'e4\'c7\'d1 \'b0\'cd\'c0\'ba \'bc\'b1\'c5\'c3\'c7\'d1 \'c7\'d7\'b8\'f1\'c0\'bb \'c3\'a3\'be\'c6\'bf\'c0\'b4\'c2 \'b0\'cd\'c0\'d4\'b4\'cf\'b4\'d9.\
+\
+\'c3\'e2\'b7\'c2\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 \'b9\'e8\'bf\'ad\'c0\'cc\'b3\'aa \'ba\'a4\'c5\'cd\'b8\'a6 \'bf\'dc\'ba\'ce\'bf\'a1 \'b8\'b8\'b5\'e9\'be\'ee\'bc\'ad \'bb\'e7\'bf\'eb\
+\'c7\'ca\'bf\'e4\'c7\'d1 \'b9\'e8\'bf\'ad\'c0\'cc\'b3\'aa \'ba\'a4\'c5\'cd\'bf\'a1\'bc\'ad \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'a3\'be\'c6\'bf\'c0\'b5\'b5\'b7\'cf \'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+\
+** JTable\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c7\'e0\'b0\'fa \'bf\'ad\'b7\'ce \'ba\'d0\'c7\'d2\'c7\'d8\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'d8\'c1\'d6\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae\
+=> MVC \'c6\'d0\'c5\'cf\'c0\'b8\'b7\'ce \'b1\'b8\'c7\'f6\
+=> \'c8\'ad\'b8\'e9 \'c3\'e2\'b7\'c2\'c0\'bb \'b4\'e3\'b4\'e7\'c7\'cf\'b4\'c2 JTable \'b0\'fa \'c0\'cc Table\'bf\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'f8\'b1\'de\'c7\'cf\'b4\'c2 TableModel\'b7\'ce \'b3\'aa\'b4\'a9\'be\'ee\'bc\'ad \'b1\'b8\'c7\'f6\
+=> JTable\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'d2 \'b6\'a7 TableModel\'c0\'bb \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bb\'fd\'bc\'ba\'c7\'d8\'b5\'b5 \'b5\'c7\'b0\'ed \'b8\'d5\'c0\'fa JTable\'c0\'bb \'b8\'b8\'b5\'e7 \'c8\'c4 \
+TableModel\'c0\'bb setModel()\'bf\'a1 \'b4\'eb\'c0\'d4\'c7\'d8\'bc\'ad \'bc\'b3\'c1\'a4\'c7\'d8\'b5\'b5 \'b5\'cb\'b4\'cf\'b4\'d9.\
+=> JTable\'c0\'ba JScrollPane \'c0\'a7\'bf\'a1 \'b9\'e8\'c4\'a1\'c7\'d8\'be\'df \'bd\'ba\'c5\'a9\'b7\'d1 \'b9\'d9\'b0\'a1 \'bb\'fd\'b1\'e2\'b0\'ed \'c4\'c3\'b7\'b3\'c0\'cc\'b8\'a7\'b5\'b5 \'c3\'e2\'b7\'c2\'c0\'cc \'b5\'cb\'b4\'cf\'b4\'d9.\
+JTable\'c0\'ba JScrollPane\'c0\'a7\'bf\'a1 \'b9\'e8\'c4\'a1\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'c4\'c3\'b7\'b3\'c0\'cc\'b8\'a7\'c0\'cc \'c3\'e2\'b7\'c2\'b5\'c7\'c1\'f6 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> JTable\'bf\'a1\'bc\'ad \'bc\'b1\'c5\'c3\'b5\'c8 \'c7\'e0 \'b9\'f8\'c8\'a3\'b4\'c2 getSelectedRow() \'b8\'de\'bc\'d2\'b5\'e5\'b7\'ce \'b8\'ae\'c5\'cf\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'bd\'c0\'b4\'cf\'b4\'d9.\
+=> \'b5\'a5\'c0\'cc\'c5\'cd \'c3\'df\'b0\'a1 \'b3\'aa \'bb\'e8\'c1\'a6\'b4\'c2 JTable\'bf\'a1 \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'cf\'b0\'ed JTable\'c0\'c7 getModel()\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b0\'a1\'c1\'ae\'bf\'c2 TableModel\'bf\'a1 \'c3\'df\'b0\'a1\'c7\'cf\'b0\'c5\'b3\'aa \'bb\'e8\'c1\'a6\'c7\'d5\'b4\'cf\'b4\'d9.\
+addRow(String [] row) \'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'df\'b0\'a1\
+removeRow(int idx)\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad idx \'b9\'f8\'c2\'b0 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e8\'c1\'a6\
+=> \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'c3\'ca\'b1\'e2 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'f0\'c0\'d4\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8 \'c7\'ca\'bf\'e4\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\
+\'c4\'c3\'b7\'b3\'c0\'cc\'b8\'a7 \'b9\'e8\'bf\'ad(1\'c2\'f7\'bf\'f8)\'b0\'fa \'b5\'a5\'c0\'cc\'c5\'cd \'b9\'e8\'bf\'ad(2\'c2\'f7\'bf\'f8)\
+\
+\'b9\'f8\'c8\'a3, \'c0\'cc\'b8\'a7, \'b3\'aa\'c0\'cc, \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3 \'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'c5\'d7\'c0\'cc\'ba\'ed\'c0\'bb \'b8\'b8\'b5\'e9\'b0\'ed \'c6\'ed\'c1\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf\'c7\'cf\'b1\'e2\
+\{\'a1\'b0\'b9\'f8\'c8\'a3\'a1\'b1, \'a1\'b0\'c0\'cc\'b8\'a7\'a1\'b1, \'a1\'b0\'b3\'aa\'c0\'cc\'a1\'b1, \'a1\'b0\'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3\'a1\'b1\} : \'c4\'c3\'b7\'b3\'c0\'cc\'b8\'a7 \'b9\'e8\'bf\'ad\
+\
+\{\{\'a1\'b01\'a1\'b1, \'a1\'b0\'b1\'e8\'a1\'b1, \'a1\'b027\'a1\'b1, \'a1\'b0010\'a1\'b1\}, \'a1\'b02\'a1\'b1, \'a1\'b0\'c0\'cc\'a1\'b1, \'a1\'b0\'b9\'da\'a1\'b1, \'a1\'b0012\'a1\'b1\}\} : \'b5\'a5\'c0\'cc\'c5\'cd \'b9\'e8\'bf\'ad\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'f0\'c0\'d4\'c7\'d2 \'b6\'a7\'b4\'c2 \'c0\'af\'c8\'bf\'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'ce\'c1\'f6 \'c8\'ae\'c0\'ce\'c7\'cf\'b0\'ed \'bb\'f0\'c0\'d4 - \'c0\'af\'c8\'bf\'bc\'ba \'b0\'cb\'bb\'e7\
+\'c0\'cc\'b8\'a7\'c0\'ba \'bb\'fd\'b7\'ab \'ba\'d2\'b0\'a1\'b4\'c9\
+\'b3\'aa\'c0\'cc\'b5\'b5 \'bb\'fd\'b7\'ab \'ba\'d2\'b0\'a1\'b4\'c9\
+\'b9\'f8\'c8\'a3\'b5\'b5 \'bb\'fd\'b7\'ab \'ba\'d2\'b0\'a1\'b4\'c9\
+\'c0\'cc\'b8\'a7\'c0\'ba 3\'c0\'da \'c0\'cc\'bb\'f3\
+\
+=> \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bb\'e8\'c1\'a6\'c7\'d2 \'b6\'a7\'b4\'c2 \'c1\'a4\'b8\'bb\'b7\'ce \'bb\'e8\'c1\'a6\'c7\'d2 \'b0\'cd\'c0\'ce\'c1\'f6 \'c7\'d1 \'b9\'f8 \'c1\'a4\'b5\'b5 \'b9\'af\'b0\'ed \'bb\'e8\'c1\'a6\
+\
+=> \'b8\'de\'bc\'bc\'c1\'f6 \'b9\'da\'bd\'ba\'b8\'a6 \'c3\'e2\'b7\'c2\
+JOptionPane.showMessageDialog(null, \'c1\'a6\'b8\'f1, \'b8\'de\'bd\'c3\'c1\'f6, \'b8\'f0\'be\'e7);\
+\'b8\'f0\'be\'e7\'c0\'ba JOptionPane.INFORMATION_MESSAGE\
+\
+\'bd\'c7\'bd\'c0)\
+\pard\pardeftab720\partightenfactor0
+\cf10 package swing;\
+\
+import java.awt.Button;\
+import java.awt.Color;\
+import java.awt.TextField;\
+import java.awt.event.ActionEvent;\
+import java.awt.event.ActionListener;\cf11 \
+\
+\cf10 import javax.swing.JButton;\
+import javax.swing.JComboBox;\
+import javax.swing.JFrame;\
+import javax.swing.JLabel;\
+import javax.swing.JList;\
+import javax.swing.JOptionPane;\
+import javax.swing.JPanel;\
+import javax.swing.JScrollPane;\
+import javax.swing.JTable;\
+import javax.swing.table.DefaultTableModel;\cf11 \
+\
+public class SelectFrame extends JFrame \{\
+	JComboBox oop;\
+	JList language;\
+	\
+	// JComboBox\'bf\'cd JList\'bf\'a1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b9\'e8\'bf\'ad\
+	String [] ar;\
+	String [] br;\
+	\
+	// \'b9\'f6\'c6\'b0\
+	JButton btn;\
+	\
+	// Table\
+	JTable table;\
+	\
+	// \'c0\'d4\'b7\'c2\'c7\'d2 \'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'fa\'c0\'e5\'c7\'d2 \'ba\'af\'bc\'f6\
+	int idx = 2;\
+	// \'c0\'cc\'b8\'a7\'b0\'fa \'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3\'b8\'a6 \'c0\'d4\'b7\'c2\'c7\'d2 \'c5\'d8\'bd\'ba\'c6\'ae \'c7\'ca\'b5\'e5\
+	TextField txtName, txtPhone;\
+	// \'b3\'aa\'c0\'cc\'b8\'a6 \'bc\'b1\'c5\'c3\'c7\'d2 \'c4\'de\'ba\'b8\'b9\'da\'bd\'ba\
+	JComboBox cbAge;\
+	// \'bb\'f0\'c0\'d4\'b0\'fa \'bb\'e8\'c1\'a6\'b8\'a6 \'c0\'a7\'c7\'d1 \'b9\'f6\'c6\'b0\
+	Button btnInsert, btnDelete;\
+	\
+	public SelectFrame() \{\
+		//int [] month = \{0,31,28,31,30,31,30,31,31,30,31,30,31\};\
+		\
+		ar = new String[4];\
+		ar[0] = "----";\
+		ar[1] = "Encapsulation-\'c4\'b8\'bd\'b6\'c8\'ad";\
+		ar[2] = "Inheritance-\'bb\'f3\'bc\'d3\'bc\'ba";\
+		ar[3] = "Polymorphism-\'b4\'d9\'c7\'fc\'bc\'ba";\
+		\
+		br = new String[4];\
+		br[0] = "Java";\
+		br[1] = "JavaScript";\
+		br[2] = "SQL";\
+		br[3] = "Swift";\
+		\
+		oop = new JComboBox(ar);\
+		language = new JList(br);\
+		btn = new JButton("\'c8\'ae\'c0\'ce");\
+		\
+		JPanel panel = new JPanel();\
+		panel.add(oop);\
+		panel.add(language);\
+		panel.add(btn);\
+		add("North", panel);\
+		\
+		// btn\'c0\'bb \'b4\'a9\'b8\'a3\'b8\'e9 oop\'bf\'a1\'bc\'ad \'bc\'b1\'c5\'c3\'c7\'d1 \'c7\'d7\'b8\'f1\'b0\'fa language\'bf\'a1\'bc\'ad \'bc\'b1\'c5\'c3\'c7\'d1 \'c7\'d7\'b8\'f1\'c0\'bb \'c4\'dc\'bc\'d6\'bf\'a1 \'c3\'e2\'b7\'c2\
+		btn.addActionListener(new ActionListener() \{\
+			@Override\
+			public void actionPerformed(ActionEvent e) \{\
+				// ComboBox\'bf\'a1\'bc\'ad \'bc\'b1\'c5\'c3\'c7\'d1 \'c7\'d7\'b8\'f1\'c0\'c7 \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'c3\'a3\'be\'c6\'bf\'c0\'b1\'e2\
+				int idx = oop.getSelectedIndex();\
+				// List\'bf\'a1\'bc\'ad \'bc\'b1\'c5\'c3\'c7\'d1 \'c7\'d7\'b8\'f1\'c0\'c7 \'c0\'ce\'b5\'a6\'bd\'ba\'b8\'a6 \'c3\'a3\'be\'c6\'bf\'c0\'b1\'e2\
+				int [] idxes = language.getSelectedIndices();\
+				\
+				System.out.printf("\'c4\'de\'ba\'b8\'b9\'da\'bd\'ba \'bc\'b1\'c5\'c3:%s\\n", ar[idx]);\
+				System.out.printf("==============\\n");\
+				for(int i : idxes) \{\
+					System.out.printf("%s\\n", br[i]);\
+				\}\
+			\}\
+		\});\
+		\
+		// Table\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'d2 \'b5\'a5\'c0\'cc\'c5\'cd \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'fd\'bc\'ba\
+		String [] headers = \{"\'b9\'f8\'c8\'a3", "\'c0\'cc\'b8\'a7", "\'b3\'aa\'c0\'cc", "\'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3"\};\
+		String [][] datas = \{\
+				\{"1", "\'c1\'b6\'c3\'a2\'c8\'c6", "28", "010-5457-6063"\},\
+				\{"2", "\'b7\'f9\'c7\'fd\'b8\'b2", "27", "010-5653-7447"\}\};\
+		// \'b5\'a5\'c0\'cc\'c5\'cd \'b9\'e8\'bf\'ad\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'d2 \'b8\'f0\'b5\'a8\'c0\'bb \'bb\'fd\'bc\'ba\
+		DefaultTableModel model = new DefaultTableModel(datas, headers);\
+		// Table\'c0\'bb \'bb\'fd\'bc\'ba\
+		table = new JTable(model);\
+		// Table\'c0\'ba \'bd\'ba\'c5\'a9\'b7\'d1 \'b0\'a1\'b4\'c9\'c7\'d1 Pane \'c0\'a7\'bf\'a1 \'c3\'e2\'b7\'c2\'c7\'d8\'be\'df \'c7\'d5\'b4\'cf\'b4\'d9.\
+		JScrollPane sc = new JScrollPane(table);\
+		add(sc);\
+		\
+		JLabel lblName = new JLabel("\'c0\'cc\'b8\'a7");\
+		txtName = new TextField(10);\
+		JLabel lblAge = new JLabel("\'b3\'aa\'c0\'cc");\
+		String [] arAge = new String[100];\
+		for(int i=0; i<100; i=i+1) \{\
+			arAge[i] = String.format("%d", i+1);\
+		\}\
+		cbAge = new JComboBox(arAge);\
+		JLabel lblPhone = new JLabel("\'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3");\
+		txtPhone = new TextField(15);\
+		\
+		btnInsert = new Button("\'c3\'df\'b0\'a1");\
+		btnDelete = new Button("\'bb\'e8\'c1\'a6");\
+		\
+		JPanel southPanel = new JPanel();\
+		southPanel.add(lblName);\
+		southPanel.add(txtName);\
+		southPanel.add(lblAge);\
+		southPanel.add(cbAge);\
+		southPanel.add(lblPhone);\
+		southPanel.add(txtPhone);\
+		southPanel.add(btnInsert);\
+		southPanel.add(btnDelete);\
+		\
+		add("South", southPanel);\
+		\
+		// \'bb\'f0\'c0\'d4 \'b9\'f6\'c6\'b0 \'c5\'ac\'b8\'af \'c0\'cc\'ba\'a5\'c6\'ae \'b1\'b8\'c7\'f6\
+		btnInsert.addActionListener(new ActionListener() \{\
+			@Override\
+			public void actionPerformed(ActionEvent e) \{\
+				// \'c0\'d4\'b7\'c2\'c7\'d1 \'b3\'bb\'bf\'eb \'c0\'fc\'ba\'ce \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2\
+				String name = txtName.getText();\
+				int age = cbAge.getSelectedIndex() + 1;\
+				String phone = txtPhone.getText();\
+				// name\'c0\'ba \'c1\'c2\'bf\'ec \'b0\'f8\'b9\'e9\'be\'f8\'c0\'cc 3\'c0\'da \'c0\'cc\'bb\'f3\
+				if(name.trim().length() < 3) \{\
+					JOptionPane.showMessageDialog(null, "\'c0\'cc\'b8\'a7\'c0\'ba 3\'c0\'da\'c0\'cc\'bb\'f3 \'c7\'ca\'bc\'f6 \'c0\'d4\'b7\'c2");\
+					return;\
+				\}\
+				// phone\'c0\'ba \'c7\'ca\'bc\'f6 \'c0\'d4\'b7\'c2\
+				if(phone.trim().length() <1) \{\
+					JOptionPane.showMessageDialog(null, "\'c0\'fc\'c8\'ad\'b9\'f8\'c8\'a3\'b4\'c2 \'c7\'ca\'bc\'f6 \'c0\'d4\'b7\'c2");\
+					return;\
+				\}\
+				// JTable\'c0\'ba MVC \'c6\'d0\'c5\'cf\'c0\'b8\'b7\'ce \'b1\'b8\'c7\'f6\
+				// JTable\'c0\'ba \'c8\'ad\'b8\'e9\'bf\'a1 \'c3\'e2\'b7\'c2\'b5\'c7\'b4\'c2 \'ba\'ce\'ba\'d0\'b8\'b8 \'c1\'a6\'be\'ee\
+				// \'b5\'a5\'c0\'cc\'c5\'cd \'bb\'f0\'c0\'d4\'b0\'fa \'bb\'e8\'c1\'a6\'b4\'c2 \'b8\'f0\'b5\'a8\'c0\'cc \'bc\'f6\'c7\'e0\
+				DefaultTableModel model = (DefaultTableModel)table.getModel();\
+				idx = idx + 1;\
+				String [] row = \{idx+"", name.trim(), age+"", phone.trim()\};\
+				//\'b5\'a5\'c0\'cc\'c5\'cd \'c3\'df\'b0\'a1\
+				model.addRow(row);\
+				JOptionPane.showMessageDialog(null, "\'c3\'df\'b0\'a1 \'bc\'ba\'b0\'f8");\
+				// \'c0\'d4\'b7\'c2\'b5\'b5\'b1\'b8 \'b5\'e9\'c0\'bb \'c3\'ca\'b1\'e2\'c8\'ad\
+				txtName.setText("");\
+				cbAge.setSelectedIndex(0);\
+				txtPhone.setText("");\
+			\}\
+		\});\
+		\
+		// \'bb\'e8\'c1\'a6 \'b9\'f6\'c6\'b0 \'c5\'ac\'b8\'af \'c0\'cc\'ba\'a5\'c6\'ae \'b1\'b8\'c7\'f6\
+		btnDelete.addActionListener(new ActionListener() \{\
+			@Override\
+			public void actionPerformed(ActionEvent e) \{\
+				// \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1\'bc\'ad \'bc\'b1\'c5\'c3\'b5\'c8 \'c7\'e0 \'b9\'f8\'c8\'a3 \'b0\'a1\'c1\'ae\'bf\'c0\'b1\'e2\
+				int idx = table.getSelectedRow();\
+				// \'bc\'b1\'c5\'c3\'c0\'cc \'be\'c8\'b5\'c8 \'b0\'e6\'bf\'ec\'b4\'c2 \'c0\'bd\'bc\'f6\
+				if(idx <0) \{\
+					JOptionPane.showMessageDialog(null, "\'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed \'bb\'e8\'c1\'a6\'b8\'a6 \'b4\'a9\'b8\'a3\'bc\'bc\'bf\'e4!!!");\
+					return;\
+				\}\
+				// \'c1\'a4\'b8\'bb\'b7\'ce \'bb\'e8\'c1\'a6\'c7\'d2 \'b0\'cd\'c0\'ce\'c1\'f6 \'c8\'ae\'c0\'ce\
+				int r = JOptionPane.showConfirmDialog(null, "\'c1\'a4\'b8\'bb\'b7\'ce \'bb\'e8\'c1\'a6\'c7\'d4??", \
+									"\'c1\'f8\'c2\'a5 \'bb\'e8\'c1\'a6", JOptionPane.OK_CANCEL_OPTION);\
+				if(r==JOptionPane.OK_OPTION) \{\
+				System.out.println(r);\
+				\
+				DefaultTableModel model = (DefaultTableModel)table.getModel();\
+				model.removeRow(idx);\
+				\}\
+			\}\
+		\});\
+		\
+		setBounds(400, 400, 600, 400);\
+		// \'b9\'e8\'c4\'a1\'b5\'c7\'b4\'c2 \'c4\'c4\'c6\'f7\'b3\'cd\'c6\'ae \'c5\'a9\'b1\'e2\'b5\'e9\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c7\'c1\'b7\'b9\'c0\'d3\'c0\'c7 \'bb\'e7\'c0\'cc\'c1\'ee\'b8\'a6 \'c1\'b6\'c1\'a4\
+		pack();\
+		setBackground(Color.orange);\
+		setTitle("\'c7\'d7\'b8\'f1\'bc\'b1\'c5\'c3");\
+		setVisible(true);\
+		// \'b4\'dd\'b1\'e2 \'b9\'f6\'c6\'b0\'c0\'bb \'b4\'a9\'b8\'a6 \'b6\'a7 \'c1\'be\'b7\'e1\'c7\'d8\'c1\'d6\'b4\'c2 \'b1\'e2\'b4\'c9 \'c3\'df\'b0\'a1\
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \'b0\'e1\'b0\'fa)\
+\pard\pardeftab720\partightenfactor0
+\cf0 \'c4\'de\'ba\'b8\'b9\'da\'bd\'ba \'bc\'b1\'c5\'c3:----\
+==============\
+Java\
+JavaScript\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** \'bb\'f3\'b4\'eb\'b0\'e6\'b7\'ce\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d8\'bc\'ad \'c0\'cc\'b9\'cc\'c1\'f6 \'c6\'c4\'c0\'cf\'c0\'bb \'b7\'b9\'c0\'cc\'ba\'ed\'bf\'a1 \'c3\'e2\'b7\'c2\
+\
+ImageIcon icon = new ImageIcon(\'a1\'b0\'be\'c6\'c0\'cc\'c4\'dc \'c6\'c4\'c0\'cf \'c0\'a7\'c4\'a1\'a1\'b1);\
+JLable lbl = new JLabel(icon);\
+\
+** \'c0\'a7\'c0\'c7 \'b9\'ae\'c0\'e5\'c0\'bb \'bc\'ba\'b0\'f8\'c7\'cf\'b8\'e9 1\'c3\'ca\'b8\'b6\'b4\'d9 \'bc\'fd\'c0\'da\'b8\'a6 1\'ba\'ce\'c5\'cd 1\'c1\'f5\'b0\'a1 \'c7\'cf\'b8\'e9\'bc\'ad \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b0\'ed \'bd\'c3\'c0\'db\
+\'bc\'fd\'c0\'da\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'bc\'ba\'b0\'f8\'c7\'cf\'b8\'e9 \'c0\'cc\'b9\'cc\'c1\'f6\'b8\'a6 \'b9\'f8\'b0\'a5\'be\'c6 \'b0\'a1\'b8\'e9\'bc\'ad \'c3\'e2\'b7\'c2\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
